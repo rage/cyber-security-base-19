@@ -44,9 +44,7 @@ class ExerciseList extends React.Component {
       })
 
     const allExercises = flatten(sectionPages.map(page => page.exercises))
-    const quizIds = allExercises
-      .filter(o => o.type === "quiznator")
-      .map(o => o.id)
+    const quizIds = allExercises.filter(o => o.type === "quiz").map(o => o.id)
     const quizDetails = await fetchManyQuizDetails(quizIds)
     const quizIdToTitle = {}
     quizDetails.forEach(o => {

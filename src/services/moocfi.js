@@ -19,15 +19,6 @@ export function authenticate(credentials) {
   return new Promise((resolve, reject) => {
     tmcClient.authenticate(credentials).then(
       res => {
-        if (
-          typeof window !== "undefined" &&
-          typeof window.Quiznator !== "undefined"
-        ) {
-          window.Quiznator.setUser({
-            id: res.username,
-            accessToken: res.accessToken,
-          })
-        }
         loginStateChanged()
         resolve(res)
       },
@@ -85,12 +76,6 @@ export function loggedIn() {
 }
 
 export function signOut() {
-  if (
-    typeof window !== "undefined" &&
-    typeof window.Quiznator !== "undefined"
-  ) {
-    window.Quiznator.removeUser()
-  }
   store.remove("tmc.user")
   store.remove("tmc.user.details")
   loginStateChanged()

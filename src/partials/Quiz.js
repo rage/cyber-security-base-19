@@ -2,14 +2,13 @@ import React from "react"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { normalizeExerciseId } from "../util/strings"
+// import Quiz from "moocfi-quizzes"
+import { Paper } from "@material-ui/core"
+import { accessToken } from "../services/moocfi"
 
-const quizWrapper = styled.div`
-  code {
-    color: black !important;
-  }
-`
+const Quiz = props => <div>Placeholder for new quiz</div>
 
-class Quiznator extends React.Component {
+class QuizPartial extends React.Component {
   componentDidMount() {
     const { id } = this.props
     if (!id || typeof window === "undefined") {
@@ -27,15 +26,14 @@ class Quiznator extends React.Component {
       return <div>There should be quiz here but no quiz id is specified.</div>
     }
     return (
-      <quizWrapper id={normalizeExerciseId(`quiz-${id}`)}>
-        <div
-          id={`unloaded-quiz-${id}`}
-          className="quiz-plugin"
-          data-quiz-id={id}
-        />
-      </quizWrapper>
+      <Paper style={{ padding: "1rem" }}>
+        {
+          // now this component we must get from the widgets... which is not yet published as npm package!
+        }
+        <Quiz id={id} languageId="fi_FI" accessToken={accessToken()} />
+      </Paper>
     )
   }
 }
 
-export default withSimpleErrorBoundary(Quiznator)
+export default withSimpleErrorBoundary(QuizPartial)
