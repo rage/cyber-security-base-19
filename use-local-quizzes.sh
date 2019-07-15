@@ -3,8 +3,13 @@
 PATH_TO_PACKAGE=${1:-"../quizzes/packages/moocfi-quizzes"};
 
 
-rm -r node_modules/moocfi-quizzes;
-mkdir node_modules/moocfi-quizzes;
+if [ ! -d "$PATH_TO_PACKAGE" ]; then
+      echo "Given argument '$PATH_TO_PACKAGE' is not a directory"
+      exit -1
+fi
+
+rm -r ./node_modules/moocfi-quizzes;
+mkdir ./node_modules/moocfi-quizzes;
 
 if [ ! -d "$PATH_TO_PACKAGE/node_modules" ]; then
   PATH_TO_THIS=$PWD
