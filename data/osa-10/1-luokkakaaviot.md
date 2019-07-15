@@ -377,4 +377,4 @@ Alla on kuvattuna isompi luokkakaavio, jossa on luokat A, B, C, D ja E, sekä ra
 </programming-exercise>
 
 
-<quiznator id="5c8b61cb244fe21455cbe44c"></quiznator>
+<quiz id="5c8b61cb244fe21455cbe44c"></quiz>

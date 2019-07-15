@@ -9,4 +9,4 @@ Kuudennessa osassa tutustuttiin luokka- ja oliometodien eroihin, hajautustaulun 
 
 Vastaa vielä alla olevaan kyselyyn.
 
-<quiznator id='5c571494017ffc13eddca70b'></quiznator>
+<quiz id='5c571494017ffc13eddca70b'></quiz>

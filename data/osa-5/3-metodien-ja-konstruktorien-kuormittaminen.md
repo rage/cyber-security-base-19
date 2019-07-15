@@ -191,7 +191,7 @@ Esko, ikä 0 vuotta
 
 </sample-output>
 
-<quiznator id='5c534d44017ffc13eddc9f9f'></quiznator>
+<quiz id='5c534d44017ffc13eddc9f9f'></quiz>
 
 
 ## Metodin kuormittaminen
@@ -255,7 +255,7 @@ public void vanhene(int vuodet) {
 ```
 
 
-<quiznator id='5c534d03fd9fd71425c62a6e'></quiznator>
+<quiz id='5c534d03fd9fd71425c62a6e'></quiz>
 
 <youtube id='b6YmqoQopvs'></youtube>
 

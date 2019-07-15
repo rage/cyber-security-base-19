@@ -8,7 +8,6 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@material-ui/core": "^4.0.0",
     "@material-ui/icons": "^4.0.0",
-    "@material-ui/styles": "^4.0.0",
     "@rstacruz/gatsby-remark-component": "^1.2.0-pre.1",
     "axios": "^0.18.0",
     "babel-plugin-styled-components": "^1.10.0",
@@ -40,6 +39,7 @@
     "interactjs": "^1.4.2",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
+    "moocfi-quizzes": "^0.1.15",
     "pdf-slideshow": "^0.1.4",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
@@ -75,7 +75,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "upgrade-interactive": "npm-check --update",
     "now-dev": "gatsby develop -p $PORT",
-    "now-build": "npm run build"
+    "now-build": "npm run build",
+    "local-quizzes-package": "./locally-depend-on-quizzes.sh"
   },
   "devDependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.2.0",

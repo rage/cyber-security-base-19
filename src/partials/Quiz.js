@@ -1,12 +1,11 @@
 import React from "react"
+import { useState } from "react"
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { normalizeExerciseId } from "../util/strings"
-// import Quiz from "moocfi-quizzes"
+import Quiz from "moocfi-quizzes"
 import { Paper } from "@material-ui/core"
 import { accessToken } from "../services/moocfi"
-
-const Quiz = props => <div>Placeholder for new quiz</div>
 
 class QuizPartial extends React.Component {
   componentDidMount() {
@@ -30,7 +29,12 @@ class QuizPartial extends React.Component {
         {
           // now this component we must get from the widgets... which is not yet published as npm package!
         }
-        <Quiz id={id} languageId="fi_FI" accessToken={accessToken()} />
+        <Quiz
+          id={id}
+          languageId="fi_FI"
+          accessToken={accessToken()}
+          address="https://quizzes.mooc.fi"
+        />
       </Paper>
     )
   }

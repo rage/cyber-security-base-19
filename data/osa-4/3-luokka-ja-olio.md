@@ -860,9 +860,9 @@ Pekka ja Antti yhteensä 3 vuotta
 </sample-output>
 
 
-<quiznator id='5c409ea9fd9fd71425c5f871'></quiznator>
+<quiz id='5c409ea9fd9fd71425c5f871'></quiz>
 
-<quiznator id='5c409ecd017ffc13eddc6d37'></quiznator>
+<quiz id='5c409ecd017ffc13eddc6d37'></quiz>
 
 
 <programming-exercise name='Henkilo' tmcname='osa04-Osa04_20.Henkilo'>
