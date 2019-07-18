@@ -14,7 +14,7 @@ mkdir ./node_modules/moocfi-quizzes;
 if [ ! -d "$PATH_TO_PACKAGE/node_modules" ]; then
   PATH_TO_THIS=$PWD
   cd $PATH_TO_PACKAGE
-  yarn install --prod
+  yarn install
   cd $PATH_TO_THIS
 fi
 
