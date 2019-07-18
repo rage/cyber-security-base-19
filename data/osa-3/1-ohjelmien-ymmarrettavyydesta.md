@@ -268,7 +268,7 @@ Yleisesti ottaen voidaan ajatella niin, että vaikeasti ymmärrettävät ohjelma
 </text-box>
 
 
-<quiznator id="5c385fa799236814c5bb4371"></quiznator>
+<quiz id="5c385fa799236814c5bb4371"></quiz>
 
 
 ## Sovellus ja sen osat
@@ -313,5 +313,5 @@ Ohjelmoijan näkökulmasta tämä tarkoittaa ensisijaisesti sitä, että ohjelmi
 Voidaan todeta, että hyvin harva ohjelma kirjoitetaan vain kerran. Tätä ajatusta jatkaen on hyvä pyrkiä tilanteeseen, missä ohjelman käyttäjä pääsee kokeilemaan sitä mahdollisimman nopeasti -- tällöin muutostoiveiden kerääminen myös alkaa nopeasti. Ohjelmistoja tehdessä onkin hyvä usein luoda ensin <a href="https://en.wikipedia.org/wiki/Proof_of_concept" target="_blank" rel="noopener">Proof of Concept</a>-sovellus, jolla voidaan kokeilla idean toimivuutta. Jos idea on hyvä, sitä jatkokehitetään -- samalla myös ohjelma kehittyy.
 
 
-<quiznator id="5c385de6ddb6b814af31d7d0"></quiznator>
+<quiz id="5c385de6ddb6b814af31d7d0"></quiz>
 

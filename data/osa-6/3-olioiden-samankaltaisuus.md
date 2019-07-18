@@ -202,7 +202,7 @@ Kirjat olivat samat
 </sample-output>
 
 
-<quiznator id='5c571401fd9fd71425c631b1'></quiznator>
+<quiz id='5c571401fd9fd71425c631b1'></quiz>
 
 
 ## Equals ja ArrayList
@@ -228,7 +228,7 @@ if (!kirjat.contains(olioKirja)) {
 Tämä oletusmetodeihin kuten `equals`iin tukeutuminen on oikeastaan syy sille, miksi Java haluaa, että ArrayListiin ja HashMapiin lisättävät muuttujat ovat viittaustyyppisiä. Jokaisella viittaustyyppisellä muuttujalla on oletusmetodeja kuten equals, joten luokan ArrayList sisäistä toteutusta ei tarvitse muuttaa lainkaan erilaisia muuttujia lisättäessä. Alkeistyyppisillä muuttujilla tällaisia oletusmetodeja ei ole.
 
 
-<quiznator id='5c57145b244fe21455cb7687'></quiznator>
+<quiz id='5c57145b244fe21455cb7687'></quiz>
 
 ## Suurpiirteinen vertailu hajautusarvon avulla
 

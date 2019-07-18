@@ -69,7 +69,7 @@ null
 
 </sample-output>
 
-<quiznator id='5c571399ddb6b814af3225a9'></quiznator>
+<quiz id='5c571399ddb6b814af3225a9'></quiz>
 
 
 <programming-exercise name='Lempinimet' tmcname='osa06-Osa06_03.Lempinimet'>
@@ -202,7 +202,7 @@ Sisältö: ...
 Hajautustauluun lisättäessä avain-arvo -parin arvo voi olla käytännössä mitä tahansa. Arvo voi olla kokonaisluku, lista, tai vaikkapa toinen hajautustaulu.
 
 
-<quiznator id='5c5713c9017ffc13eddca708'></quiznator>
+<quiz id='5c5713c9017ffc13eddca708'></quiz>
 
 
 ## Milloin hajautustaulua oikein tulisi käyttää?

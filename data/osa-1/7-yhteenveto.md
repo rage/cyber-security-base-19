@@ -9,4 +9,4 @@ Ensimmäinen osa käsitteli ohjelmoinnin ja tietokoneiden toiminnan kannalta ole
 Vastaa alla olevaan kyselyyn kun olet valmis ensimmäisen osan tehtävien kanssa.
 
 
-<quiznator id="5c12b7f263de8e5db0cf8b93"></quiznator>
+<quiz id="5c12b7f263de8e5db0cf8b93"></quiz>

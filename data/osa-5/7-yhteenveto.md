@@ -10,4 +10,4 @@ Viidennessä osassa syvennyttiin olioiden maailmaan. Tarkastelimme alkeis- ja vi
 
 Vastaa vielä alla olevaan kyselyyn.
 
-<quiznator id='5c534d9b3972a91474102e32'></quiznator>
+<quiz id='5c534d9b3972a91474102e32'></quiz>
