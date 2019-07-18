@@ -18,7 +18,7 @@ Custom markdown components are located in `src/partials`
 If you want to use local, unpublished version of moocfi-quizzes for testing, run `./use-local-quizzes.sh` before running the application.
 If your configuration differs from the default, add the path to the moocfi-quizzes as the first argument to the script.
 An illustration of the default configuration:
-
+```
   (parent directory)
   /                \ 
 (this repo)      [quizzes](https://github.com/rage/quizzes)
@@ -27,6 +27,7 @@ An illustration of the default configuration:
                       |       
                   moocfi-quizzes
 
+```
 ## Authors
 
 Material template created by [Henrik Nygren](https://github.com/nygrenh) and [Antti Leinonen](https://github.com/Redande).
