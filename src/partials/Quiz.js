@@ -26,14 +26,11 @@ class QuizPartial extends React.Component {
     }
     return (
       <Paper style={{ padding: "1rem" }}>
-        {
-          // now this component we must get from the widgets... which is not yet published as npm package!
-        }
         <Quiz
           id={id}
           languageId="fi_FI"
           accessToken={accessToken()}
-          address="https://quizzes.mooc.fi"
+          backendAddress="https://quizzes.mooc.fi"
         />
       </Paper>
     )
