@@ -726,7 +726,7 @@ lilja,1
 </sample-data>
 
 
-Oletetaan, että käyttäjä syöttää yllä olevat tiedot ohjelmaan riveittäin. Syötteen lopettaminen lopetetaan tyhjällä merkkijonolla. Ohjelma, joka laskisi syötettyjen henkilöiden keski-iän voidaan toteuttaa seuraavasti.
+Oletetaan, että käyttäjä syöttää yllä olevat tiedot ohjelmaan riveittäin. Syötteen lukeminen lopetetaan tyhjällä merkkijonolla. Ohjelma, joka laskisi syötettyjen henkilöiden keski-iän voidaan toteuttaa seuraavasti.
 
 
 ```java
