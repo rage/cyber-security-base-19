@@ -25,7 +25,7 @@ class QuizPartial extends React.Component {
       return <div>There should be quiz here but no quiz id is specified.</div>
     }
     return (
-      <Paper style={{ padding: "1rem" }}>
+      <Paper id={normalizeExerciseId(`quiz-${id}`)}>
         <Quiz
           id={id}
           languageId="fi_FI"
