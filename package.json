@@ -14,6 +14,7 @@
     "clsx": "^1.0.4",
     "code-states-visualizer": "^0.1.1",
     "color": "^3.1.1",
+    "commonmark": "^0.29.0",
     "core-js": "^3.1.2",
     "crowdsorcerer": "^0.1.79",
     "fetch-ponyfill": "^6.0.2",
