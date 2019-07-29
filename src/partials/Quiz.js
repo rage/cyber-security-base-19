@@ -7,6 +7,10 @@ import Quiz from "moocfi-quizzes"
 import { Paper } from "@material-ui/core"
 import { accessToken } from "../services/moocfi"
 
+const StyledPaper = styled(Paper)`
+  overflow: hidden;
+`
+
 class QuizPartial extends React.Component {
   componentDidMount() {
     const { id } = this.props
@@ -25,14 +29,14 @@ class QuizPartial extends React.Component {
       return <div>There should be quiz here but no quiz id is specified.</div>
     }
     return (
-      <Paper id={normalizeExerciseId(`quiz-${id}`)}>
+      <StyledPaper id={normalizeExerciseId(`quiz-${id}`)}>
         <Quiz
           id={id}
           languageId="fi_FI"
           accessToken={accessToken()}
           backendAddress="https://quizzes.mooc.fi"
         />
-      </Paper>
+      </StyledPaper>
     )
   }
 }
