@@ -11,6 +11,7 @@ const StyledPaper = styled(Paper)`
   overflow: hidden;
   margin: 2rem 0 2rem 0;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 40px -12px !important;
+  border-radius: 1rem !important;
 `
 
 class QuizPartial extends React.Component {
