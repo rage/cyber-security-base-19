@@ -160,3 +160,20 @@ Koe on täysin ilmainen. Koeilmoittautumisessa (= Avoimen yliopiston kurssi-ilmo
 ### Milloin näyttökoe järjestetään?
 
 Lue tietoja näyttökokeista täältä: [Mahdollisuus opinto-oikeuteen](/opinto-oikeus#heading-nayttokokeet)
+
+###  Ohjelmakoodini rivi "import javafx..." on punaisella
+
+Osalla opiskelijoista osan 12 graafisten tehtävien ohjelmakoodi ei käänny, koska rivi "import javafx..." on alleviivattu punaisella.
+
+Tämä ongelma johtuu siitä, että koneella on asennettuna AdoptOpenJDK, joka ei sisällä graafisiin tehtäviin tarvittavaa JavaFX-kirjastoa. Ongelma korjaantuu poistamalla koneelta AdoptOpenJDK ja asentamalla tilalle Oraclen Java.
+
+AdoptOpenJDK:n poistaminen onnistuu Windowsilla seuraavasti:
+1. Mene Windows-valikosta Ohjauspaneeli --> Ohjelmat --> Poista asennettu ohjelma
+2. Etsi ohjelmalistasta "AdoptOpenJDK JDK with Hotspot 8.0.212.04 (x64)" (tai vastaava, versionumero saattaa olla eri)
+3. Paina hiiren oikealla näppäimellä ja valitse "Poista"
+
+AdoptOpenJDK:n poistaminen onnistuu macOS:lla seuraavasti:
+1. Mene Finder:ssä kansioon /Library/Java/JavaVirtualMachines/
+2. Poista sieltä kansio jdk1.8.0 sisältöineen
+
+Kun AdoptOpenJDK on poistettu, voit asentaa Oraclen Javan seuraavien ohjeiden mukaisesti: [https://materiaalit.github.io/tmc-asennus/netbeans/](https://materiaalit.github.io/tmc-asennus/netbeans/)
