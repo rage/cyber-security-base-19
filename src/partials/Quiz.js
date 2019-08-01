@@ -1,6 +1,8 @@
 import React from "react"
-import { useState } from "react"
 import styled from "styled-components"
+import LoginStateContext from "../contexes/LoginStateContext"
+import LoginControls from "../components/LoginControls"
+
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { normalizeExerciseId } from "../util/strings"
 import Quiz from "moocfi-quizzes"
@@ -15,18 +17,24 @@ const StyledPaper = styled(Paper)`
 `
 
 class QuizPartial extends React.Component {
-  componentDidMount() {
-    const { id } = this.props
-    if (!id || typeof window === "undefined") {
-      return
-    }
-    if (!window.loadQuiz) {
-      return
-    }
-    window.loadQuiz(document.getElementById(`unloaded-quiz-${id}`))
-  }
+  static contextType = LoginStateContext
 
   render() {
+    if (!this.context.loggedIn) {
+      return (
+        <StyledPaper
+          style={{ padding: "1rem" }}
+          id={normalizeExerciseId(`quiz-${id}`)}
+        >
+          <div>
+            <p>Kirjaudu sisään nähdäksesi tehtävän.</p>
+
+            <LoginControls />
+          </div>
+        </StyledPaper>
+      )
+    }
+
     const { id } = this.props
     if (!id) {
       return <div>There should be quiz here but no quiz id is specified.</div>
