@@ -11,7 +11,7 @@ title: 'Ongelman osia ja niiden ratkaisumalleja'
 
 </text-box>
 
-<quiz id="5c24a9123cc3ec11bcd78bb3"></quiz>
+<quiz id="38dcffe8-2431-4357-ba9c-1d1405abff5d"></quiz>
 
 Samat pienet ongelmat (tai "osaongelmat") toistuvat ohjelmissa yhä uudestaan ja uudestaan: "Lue käyttäjältä syötettä", "Laske lukujen summa", "Laske lukujen keskiarvo",  "Lue käyttäjältä syötettä kunnes", "Montako lukua käyttäjä on syöttänyt.", jne.
 
@@ -230,7 +230,7 @@ if (luku > 5) {
 ```
 
 
-<quiz id="5c1f6a263516ce119a7f45df"></quiz>
+<quiz id="333846bf-2099-4aca-89e7-1a313babf7a5"></quiz>
 
 
 Ehtotoiminnallisuutta voi yhdistää myös muiden ratkaisumallien kanssa. Tarkastellaan ongelmaa "Lue käyttäjältä kaksi lukua. Mikäli lukujen summa on yli 100, tulosta käyttäjälle merkkijono `liikaa`. Mikäli lukujen summa on alle 0, tulosta käyttäjälle merkkijono `liian vähän`. Muulloin, tulosta käyttäjälle merkkijono `ok`.". Ohjelma, joka yhdistää lukemisen, laskemisen ja ehtolauseen on annettu alla.
@@ -871,7 +871,7 @@ Alla muutamia ohjelman esimerkkitulosteita.
 </sample-output>
 
 
-<quiz id="5c1f6c8b64cf001162cb9790"></quiz>
+<quiz id="36820352-22b1-46bd-9d8e-1bdfac286615"></quiz>
 
 
 <programming-exercise name='Positiivisten lukujen keskiarvo' tmcname='osa02-Osa02_10.PositiivistenLukujenKeskiarvo'>

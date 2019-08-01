@@ -9,4 +9,4 @@ Kymmenennessä osassa osassa tutustuimme luokkakaavioihin ja pakkauksiin. Otimme
 
 Vastaa vielä alla olevaan kyselyyn.
 
-<quiz id='5c895ab2017ffc13eddd1169'></quiz>
+<quiz id='3a1060fd-24f4-4d95-91f2-1db134f58cca'></quiz>

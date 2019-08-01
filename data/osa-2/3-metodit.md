@@ -611,7 +611,7 @@ Kun metodin sisällä kasvatetaan muuttujan `luku` arvoa kolmella, se onnistuu. 
 Parametri `luku` kopioidaan metodin käyttöön, eli metodia `kasvataKolmella` varten luodaan oma muuttuja nimeltä `luku`, johon pääohjelmassa olevan muuttujan `luku` arvo kopioidaan metodikutsun yhteydessä. Metodissa `kasvataKolmella` oleva muuttuja `luku` on olemassa vain metodin suorituksen ajan, eikä sillä ole yhteyttä pääohjelman samannimiseen muuttujaan.
 
 
-<quiz id="5c1f6924a50dbe1223d1a9e2"></quiz>
+<quiz id="32494d33-2001-4927-b455-19b707448b33"></quiz>
 
 
 ## Metodi voi palauttaa arvon
@@ -822,7 +822,7 @@ public static int summa(int eka, int toka) {
 Nyt pääohjelman muuttujan `luku1` arvo kopioituu metodin parametrin `eka` arvoksi ja pääohjelman muuttujan `luku2` arvo kopioituu metodin parametrin `toka` arvoksi.
 
 
-<quiz id="5c1f6959da457b11ff9f1242"></quiz>
+<quiz id="3223adf8-1fe9-4a06-a59b-19a3ca238c21"></quiz>
 
 
 <youtube id='zEHvycTo81c'></youtube>

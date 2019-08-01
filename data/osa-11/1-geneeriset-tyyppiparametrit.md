@@ -12,7 +12,7 @@ hidden: false
 
 </text-box>
 
-<quiz id='5c93ae0b3972a9147410b2fd'></quiz>
+<quiz id='30b31acc-1eff-4097-81ea-f9091ccbae57'></quiz>
 
 
 Olemme listoihin tutustumisesta lähtien kertoneet tietorakenteille niiden sisältämän arvon tyypin. Esimerkiksi merkkijono-olioita sisältävä lista on esitelty muodossa `ArrayList<String>` ja merkkijonoja avaimina ja arvoina sisältävä hajautustaulu on esitelty muodossa `HashMap<String, String>`. Miten ihmeessä luokan voi toteuttaa niin, että luokka voi sisältää annetun tyyppisiä olioita?
@@ -122,7 +122,7 @@ public class Pari<T, K> {
 }
 ```
 
-<quiz id="5c93b1e4fd9fd71425c6af09"></quiz>
+<quiz id="4154f2a6-2995-40f5-bdbe-2168a5b128bd"></quiz>
 
 
 Huomattava osa Javan tietorakenteista käyttää tyyppiparametreja ja mahdollistaa eri tyyppisten muuttujien lisäämisen niihin. Esimerkiksi ArrayList saa yhden tyyppiparametrin, HashMap kaksi.
@@ -346,4 +346,4 @@ null
 </programming-exercise>
 
 
-<quiz id='5c93b56cfd9fd71425c6af16'></quiz>
+<quiz id='416a19d5-29a2-4860-812c-217376daf02d'></quiz>

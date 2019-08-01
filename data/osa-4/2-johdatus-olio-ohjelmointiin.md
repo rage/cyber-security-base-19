@@ -20,5 +20,5 @@ Aloitamme nyt ensiaskeleet olio-ohjelmointiin hyvin perinteisen teknologian eli 
 
 </pdf-slideshow>
 
-<quiz id="5c4aa67b3972a9147410161a"></quiz>
+<quiz id="2b9e2bdd-1bc3-4058-93e0-df0c85713f4b"></quiz>
 
