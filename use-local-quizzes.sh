@@ -11,7 +11,7 @@ fi
 rm -r ./node_modules/moocfi-quizzes;
 mkdir ./node_modules/moocfi-quizzes;
 
-if [ ! -d "$PATH_TO_PACKAGE/node_modules" ]; then
+if [ ! -d "$PATH_TO_PACKAGE/dist" ]; then
   PATH_TO_THIS=$PWD
   cd $PATH_TO_PACKAGE
   yarn install
