@@ -44,6 +44,7 @@
     "pdf-slideshow": "^0.1.4",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
+    "react-content-loader": "^4.2.2",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
     "react-jss": "^8.6.1",
