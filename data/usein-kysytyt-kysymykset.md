@@ -177,3 +177,15 @@ AdoptOpenJDK:n poistaminen onnistuu macOS:lla seuraavasti:
 2. Poista sieltä kansio jdk1.8.0 sisältöineen
 
 Kun AdoptOpenJDK on poistettu, voit asentaa Oraclen Javan seuraavien ohjeiden mukaisesti: [https://materiaalit.github.io/tmc-asennus/netbeans/](https://materiaalit.github.io/tmc-asennus/netbeans/)
+
+### En näe suorittamiani tehtäviä pistevisualisaatiossa
+
+Valitse sivun yläkulmasta oma profiilisi. Valitse vetovalikossa *"Minkä kurssin version pisteet, deadlinet ja kolikot haluat nähdä?"* sama kurssin version mitä olet tekemässä NetBeansissä.
+
+Voit tarkistaa mikä krussiversio sinulla on NetBeansissä valitsemalla TMC -> Settings
+
+### En näe kolikkojani
+
+Valitse sivun yläkulmasta oma profiilisi. Valitse vetovalikossa *"Minkä kurssin version pisteet, deadlinet ja kolikot haluat nähdä?"* sama kurssin version mitä olet tekemässä NetBeansissä.
+
+Voit tarkistaa mikä krussiversio sinulla on NetBeansissä valitsemalla TMC -> Settings
