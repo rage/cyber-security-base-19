@@ -302,7 +302,7 @@ public static void main(String[] args) {
 Tässä siis ensin tapahtuu metodikutsu joka palauttaa arvon 5.0 joka sitten tulostetaan tulostuskomennon avulla.
 
 
-<quiz id="5c1f68f33516ce119a7f45db"></quiz>
+<quiz id="33ac4bf8-20e3-484c-a818-1a6c8fff6e28"></quiz>
 
 
 **Muuttuja ei ole olemassa ennen sen esittelyä, ja muuttuja on olemassa vain niiden aaltosulkujen sisällä kuin missä se on esitelty**. Metodien yhteydessä tämä tarkoittaa sitä, että metodeilla on pääsy vain niihin muuttujiin, jotka ovat määritelty metodien sisällä, tai jotka metodi saa parametrina. Alla oleva esimerkki konkretisoi tilanteen, missä `kasvataKolme`-metodin sisällä yritetään muuttaa `main`-metodissa määritellyn `luku`-muuttujan arvoa.

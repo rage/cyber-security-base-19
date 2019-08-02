@@ -111,7 +111,7 @@ System.out.println(luku);
 ```
 
 
-<quiz id="5c385a3b244fe21455cb2764"></quiz>
+<quiz id="28d3f7b0-19fc-4725-8b19-d0c84aec371f"></quiz>
 
 
 <programming-exercise name='Alkioiden arvojen vaihtaminen' tmcname='osa03-Osa03_18.AlkioidenArvojenVaihtaminen'>
