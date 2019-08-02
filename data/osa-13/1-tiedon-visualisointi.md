@@ -429,7 +429,7 @@ public void start(Stage ikkuna) {
 }
 ```
 
-<quiznator id="5cb02d5dddb6b814af32ca5a"></quiznator>
+<quiz id="5d3e5c53-3b58-4f52-8e4d-2fae99fcfe9d"></quiz>
 
 Edellinen lähdekoodi tuottaa seuraavanlaisen kaavion.
 

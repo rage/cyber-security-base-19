@@ -8,5 +8,5 @@ Kahdeksannessa osassa tutustuimme perintään ja rajapintoihin. Perintä tuo per
 
 Vastaa vielä alla olevaan kyselyyn.
 
-<quiznator id="5c782a44017ffc13eddcf319"></quiznator>
+<quiz id="3335dea2-2098-4247-993d-1a300099f9c9"></quiz>
 

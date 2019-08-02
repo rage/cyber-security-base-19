@@ -302,7 +302,7 @@ public static void main(String[] args) {
 Tässä siis ensin tapahtuu metodikutsu joka palauttaa arvon 5.0 joka sitten tulostetaan tulostuskomennon avulla.
 
 
-<quiznator id="5c1f68f33516ce119a7f45db"></quiznator>
+<quiz id="33ac4bf8-20e3-484c-a818-1a6c8fff6e28"></quiz>
 
 
 **Muuttuja ei ole olemassa ennen sen esittelyä, ja muuttuja on olemassa vain niiden aaltosulkujen sisällä kuin missä se on esitelty**. Metodien yhteydessä tämä tarkoittaa sitä, että metodeilla on pääsy vain niihin muuttujiin, jotka ovat määritelty metodien sisällä, tai jotka metodi saa parametrina. Alla oleva esimerkki konkretisoi tilanteen, missä `kasvataKolme`-metodin sisällä yritetään muuttaa `main`-metodissa määritellyn `luku`-muuttujan arvoa.
@@ -611,7 +611,7 @@ Kun metodin sisällä kasvatetaan muuttujan `luku` arvoa kolmella, se onnistuu. 
 Parametri `luku` kopioidaan metodin käyttöön, eli metodia `kasvataKolmella` varten luodaan oma muuttuja nimeltä `luku`, johon pääohjelmassa olevan muuttujan `luku` arvo kopioidaan metodikutsun yhteydessä. Metodissa `kasvataKolmella` oleva muuttuja `luku` on olemassa vain metodin suorituksen ajan, eikä sillä ole yhteyttä pääohjelman samannimiseen muuttujaan.
 
 
-<quiznator id="5c1f6924a50dbe1223d1a9e2"></quiznator>
+<quiz id="32494d33-2001-4927-b455-19b707448b33"></quiz>
 
 
 ## Metodi voi palauttaa arvon
@@ -822,7 +822,7 @@ public static int summa(int eka, int toka) {
 Nyt pääohjelman muuttujan `luku1` arvo kopioituu metodin parametrin `eka` arvoksi ja pääohjelman muuttujan `luku2` arvo kopioituu metodin parametrin `toka` arvoksi.
 
 
-<quiznator id="5c1f6959da457b11ff9f1242"></quiznator>
+<quiz id="3223adf8-1fe9-4a06-a59b-19a3ca238c21"></quiz>
 
 
 <youtube id='zEHvycTo81c'></youtube>

@@ -70,7 +70,7 @@ Ruth Lichterman
 
 </sample-output>
 
-<quiznator id="5c4aaa92244fe21455cb56ac"></quiznator>
+<quiz id="4028c11a-28d5-4fe5-8ada-20cf231657af"></quiz>
 
 
 ## Olioita listalla
