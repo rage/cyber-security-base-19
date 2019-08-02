@@ -21,16 +21,21 @@ class QuizPartial extends React.Component {
 
   render() {
     if (!this.context.loggedIn) {
-      return (
-        <StyledPaper
-          style={{ padding: "1rem" }}
-          id={normalizeExerciseId(`quiz-${id}`)}
-        >
-          <div>
-            <p>Kirjaudu sisään nähdäksesi tehtävän.</p>
+      const loginPrompt = (
+        <div style={{ padding: "1rem", textAlign: "center" }}>
+          <p>Kirjaudu sisään nähdäksesi tehtävän.</p>
+          <LoginControls />
+        </div>
+      )
 
-            <LoginControls />
-          </div>
+      return (
+        <StyledPaper id={normalizeExerciseId(`quiz-${id}`)}>
+          <Quiz
+            id={id}
+            languageId="fi_FI"
+            backendAddress="https://quizzes.mooc.fi"
+            customContent={loginPrompt}
+          />
         </StyledPaper>
       )
     }
