@@ -180,12 +180,12 @@ Kun AdoptOpenJDK on poistettu, voit asentaa Oraclen Javan seuraavien ohjeiden mu
 
 ### En näe suorittamiani tehtäviä pistevisualisaatiossa
 
-Valitse sivun yläkulmasta oma profiilisi. Valitse vetovalikossa *"Minkä kurssin version pisteet, deadlinet ja kolikot haluat nähdä?"* sama kurssin version mitä olet tekemässä NetBeansissä.
+Valitse sivun yläkulmasta oma profiilisi. Valitse vetovalikossa *"Minkä kurssin version pisteet, deadlinet ja kolikot haluat nähdä?"* sama kurssin versio mitä olet tekemässä NetBeansissä.
 
 Voit tarkistaa mikä krussiversio sinulla on NetBeansissä valitsemalla TMC -> Settings
 
 ### En näe kolikkojani
 
-Valitse sivun yläkulmasta oma profiilisi. Valitse vetovalikossa *"Minkä kurssin version pisteet, deadlinet ja kolikot haluat nähdä?"* sama kurssin version mitä olet tekemässä NetBeansissä.
+Valitse sivun yläkulmasta oma profiilisi. Valitse vetovalikossa *"Minkä kurssin version pisteet, deadlinet ja kolikot haluat nähdä?"* sama kurssin versio mitä olet tekemässä NetBeansissä.
 
 Voit tarkistaa mikä krussiversio sinulla on NetBeansissä valitsemalla TMC -> Settings
