@@ -11,5 +11,5 @@ Yhdeksännessä osassa eli Ohjelmoinnin jatkokurssin toisessa osassa tutustuimme
 Vastaa vielä alla olevaan kyselyyn.
 
 
-<quiznator id='5c816762ddb6b814af32810c'></quiznator>
+<quiz id='2acbcb20-1b3d-41ee-9ca7-dad8b5e9bbad'></quiz>
 

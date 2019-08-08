@@ -73,7 +73,7 @@ if (summa == 0) {
 ```
 
 
-<quiznator id="5c3740e43972a914740fe479"></quiznator>
+<quiz id="1e53711a-c104-497b-9f14-9b13f626739f"></quiz>
 
 
 ## Alkuaskeleet ohjelmien automaattiseen testaukseen

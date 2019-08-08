@@ -10,4 +10,4 @@ Neljännessä osassa tutustuttiin tiedon lukemiseen tiedostosta ja otettiin ensi
 
 Vastaa vielä alla olevaan kyselyyn.
 
-<quiznator id="5c409e78017ffc13eddc6d34"></quiznator>
+<quiz id="33563c4e-20ac-4be2-baf6-1a408da6ef44"></quiz>

@@ -13,8 +13,8 @@ Tarkemmat ohjeet koeilmoittatumiseen löydät sivulta [Koe ja Moodle-ilmoittautu
 
 Vastaa vielä alla oleviin kyselyihin.
 
-<quiznator id='5c64220d017ffc13eddcc9d4'></quiznator>
+<quiz id='3297c567-2033-4842-8cd1-19df27c81144'></quiz>
 
-<quiznator id="5c654a9fddb6b814af32492c"></quiznator>
+<quiz id="3fb41cc8-288b-4c0e-9856-20937d658774"></quiz>
 
-<quiznator id="5c668d2099236814c5bbb8f6"></quiznator>
+<quiz id="24dae14a-ea92-4ed9-b953-bc7734b436e1"></quiz>

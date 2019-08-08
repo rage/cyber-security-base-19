@@ -20,7 +20,24 @@ Käytämme graafisten käyttöliittymien luomiseen Javan [JavaFx](https://en.wik
 
 <br/>
 
-<text-box variant='hint' name='Graafiset käyttöliittymät ja tarvittavat kirjastot'>
+<text-box variant='hint' name='Oikea Javan versio Windowsilla ja macOS:lla'>
+
+Jos sinulla on AdoptOpenJDK asennettuna, se pitää tässä kohtaa vaihtaa, koska AdoptOpenJDK:n mukana ei tule tarvittavaa JavaFX-kirjastoa. Voit tarkistaa asennetun Javan version avaamalla Komentorivin Windowsilla tai Terminaalin macOS:lla, kirjoittamalla sinne komennon "java -version" (ilman lainausmerkkejä) ja painamalla syöttönäppäintä (enter). Jos komentoriville tulostuvassa tekstissä lukee AdoptOpenJDK, sinulla on asennettuna AdoptOpenJDK.
+
+AdoptOpenJDK:n poistaminen onnistuu Windowsilla seuraavasti:
+1. Mene Windows-valikosta Ohjauspaneeli --> Ohjelmat --> Poista asennettu ohjelma
+2. Etsi ohjelmalistasta "AdoptOpenJDK JDK with Hotspot 8.0.212.04 (x64)" (tai vastaava, versionumero saattaa olla eri)
+3. Paina hiiren oikealla näppäimellä ja valitse "Poista"
+
+AdoptOpenJDK:n poistaminen onnistuu macOS:lla seuraavasti:
+1. Mene Finder:ssä kansioon /Library/Java/JavaVirtualMachines/
+2. Poista sieltä kansio jdk1.8.0 sisältöineen
+
+Kun olet poistanut AdoptOpenJDK:n, voit asentaa Oraclen Javan seuraavien ohjeiden mukaisesti: [https://materiaalit.github.io/tmc-asennus/netbeans/](https://materiaalit.github.io/tmc-asennus/netbeans/)
+
+</text-box>
+
+<text-box variant='hint' name='Graafiset käyttöliittymät ja tarvittavat kirjastot Linuxilla'>
 
 Graafisten käyttöliittymien luomiseen käytetään JavaFX-nimistä kirjastoa. Linux-koneilla joudut -- riippuen Javan asennuksesta -- asentamaan myös openjfx-kirjaston. Tämän asentaminen onnistuu Ubuntussa (komentoriviltä) komennolla:
 

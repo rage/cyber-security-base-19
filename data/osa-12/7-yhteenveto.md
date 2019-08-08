@@ -8,4 +8,4 @@ Kahdennessatoista osassa eli Ohjelmoinnin jatkokurssin viidennessä osassa tutus
 
 Vastaa vielä seuraavaan kyselyyn.
 
-<quiznator id='5c9dc51f244fe21455cc051e'></quiznator>
+<quiz id='3c736fcc-2679-4c61-90ae-1ee9af138996'></quiz>

@@ -9,4 +9,4 @@ Kolmannessatoista osassa eli Ohjelmoinnin jatkokurssin kuudennessa osassa tutust
 
 Vastaa vielä seuraavaan kyselyyn.
 
-<quiznator id="5caf7dcdfd9fd71425c6d7ab"></quiznator>
+<quiz id="91d3d228-5cd0-4e12-a0f8-4a926599db3d"></quiz>

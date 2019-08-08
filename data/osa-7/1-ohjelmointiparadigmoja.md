@@ -425,7 +425,7 @@ Toinen: 0/100
 </programming-exercise>
 
 
-<quiznator id="5c6548fec41ed4148d96de8f"></quiznator>
+<quiz id="3aa71d4e-2554-4c9f-b21b-1dfe49e550b6"></quiz>
 
 Kerrataan seuraavaksi olio-ohjelmointia laajemman olioita olioiden sisällä käsittelevän tehtävän kautta.
 
