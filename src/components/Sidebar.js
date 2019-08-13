@@ -116,8 +116,8 @@ var content2 = [
     path: "/opettajille",
   },
   {
-    title: "Usein kysytyt kysymykset",
-    path: "/usein-kysytyt-kysymykset",
+    title: "Frequently asked questions",
+    path: "/faq",
   },
   { separator: true, title: "Ohjelmoinnin perusteet" },
 ]
