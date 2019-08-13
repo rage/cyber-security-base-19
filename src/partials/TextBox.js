@@ -33,6 +33,7 @@ const Body = styled.div`
 
 const variantToColor = {
   hint: "#528afc",
+  emph: "#528afc",
   learningObjectives: "#57b181",
 }
 
