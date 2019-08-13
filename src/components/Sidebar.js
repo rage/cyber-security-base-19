@@ -119,7 +119,6 @@ var content2 = [
     title: "Frequently asked questions",
     path: "/faq",
   },
-  { separator: true, title: "Ohjelmoinnin perusteet" },
 ]
 
 var futurePages = [] // { title: "Osa 14", tba: "19.4.2019" }
@@ -146,25 +145,28 @@ const MobileWrapperOrFragment = props => {
 
 class Sidebar extends React.Component {
   render() {
-    let edges =
-      this.props.data?.allMarkdownRemark?.edges.map(o => o.node?.frontmatter) ||
-      []
-    if (process.env.NODE_ENV === "production") {
-      edges = edges.filter(o => !o.hidden)
+    let collect = function(props, filt) {
+      let edges =
+        props.data?.allMarkdownRemark?.edges.map(o => o.node?.frontmatter) || []
+      if (process.env.NODE_ENV === "production") {
+        edges = edges.filter(o => !o.hidden)
+      }
+      edges = edges.filter(o => o.path.startsWith(filt))
+      edges.sort((a, b) =>
+        a.title.localeCompare(b.title, undefined, {
+          numeric: true,
+          sensitivity: "base",
+        }),
+      )
+      return edges
     }
-    edges.sort((a, b) =>
-      a.title.localeCompare(b.title, undefined, {
-        numeric: true,
-        sensitivity: "base",
-      }),
-    )
-    let content = content2.concat(edges)
+
+    let content = content2
+    content = content.concat([
+      { separator: true, title: "Introduction to Cyber Security" },
+    ])
+    content = content.concat(collect(this.props, "/module-1"))
     content = content.concat(futurePages)
-    let middlepoint = content.findIndex(o => o.title === "Osa 7")
-    content.splice(middlepoint + 1, 0, {
-      separator: true,
-      title: "Ohjelmoinnin jatkokurssi",
-    })
 
     return (
       <MobileWrapperOrFragment mobileMenuOpen={this.props.mobileMenuOpen}>
