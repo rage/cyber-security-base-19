@@ -166,6 +166,8 @@ class Sidebar extends React.Component {
       { separator: true, title: "Introduction to Cyber Security" },
     ])
     content = content.concat(collect(this.props, "/module-1"))
+    content = content.concat([{ separator: true, title: "Securing Software" }])
+    content = content.concat(collect(this.props, "/module-2"))
     content = content.concat(futurePages)
 
     return (
