@@ -22,15 +22,15 @@ increasing, it is still commonly believed that cyber crime is an underreported
 area of illegality.
 
 <!--
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b40"></div>
+        <div class="quiznator-plugin" data-quiz-id="46aae867-2cfa-476a-a5a0-242328b78384"></div>
 
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b41"></div>
+        <div class="quiznator-plugin" data-quiz-id="46c6d36e-2d0c-43b8-ad96-24316f7ee876"></div>
 
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b4a"></div>
+        <div class="quiznator-plugin" data-quiz-id="4c02e4a5-3061-427e-aba2-26deb4e1d5c2"></div>
 
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b4b"></div>
+        <div class="quiznator-plugin" data-quiz-id="4c1ecfab-3072-4ecd-b397-26ecfba93ab3"></div>
 
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b42"></div-->
+        <div class="quiznator-plugin" data-quiz-id="46e2be74-2d1e-4007-b58b-243fb6464d67"></div-->
 
 The above conveys a bleak picture of the current state of things. At the same time, however, governments, organizations, corporations and institutions are funnelling more and more money, research and effort into improving the situation.
 
