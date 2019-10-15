@@ -28,7 +28,7 @@ companies have also noticed the impending GDPR and have introduced various
 types of cyber security insurance which would cover some costs caused by a
 breach (for example a loss of profit).
 
-<!--div class="quiznator-plugin" data-quiz-id="46fea97b-2d2f-4c56-bd81-244dfd0db259"></div-->
+<!--div class="quiznator-plugin" data-quiz-id="def5e380-e54f-56f1-af59-ea0d53f2deff"></div-->
 
 However, the law is for the law abiding; for a criminal it is just a deterrent.
 The Internet provides anonymity and distances the attacker from the victim,
