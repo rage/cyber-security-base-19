@@ -71,7 +71,11 @@ findings. At least one study, however, from [Oxford Economics](https://www.oxfor
 surveys and case studies. Those findings show that cyber attacks do indeed
 result in major business impact on victims.
 
+<<<<<<< HEAD
 <quiz id="dc53f354-58e3-583f-8b98-7f3b89698138"></quiz>
+=======
+<!-- div class="quiznator-plugin" data-quiz-id="8ae531e4-03ed-5895-9b73-d53dbdf73440"></div -->
+>>>>>>> 0651ce7d48e104874d3db69b2805290537ebb5af
 
 The job of a vulnerability researcher is to come up with recommendations for
 minimizing the risk to an organization. The tasks of protecting enterprise
