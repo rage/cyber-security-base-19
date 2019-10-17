@@ -95,25 +95,12 @@ const MenuExpanderWrapper = styled.div`
 
 var content2 = [
   {
-    title: "Tietoa kurssista",
+    title: "About the series",
     path: "/",
   },
   {
-    title: "Osaamistavoitteet",
-    path: "/osaamistavoitteet",
-  },
-  {
-    title: "Arvostelu ja kokeet",
-    path: "/arvostelu-ja-kokeet",
-  },
-  {
-    title: "Mahdollisuus opinto-oikeuteen",
-    path: "/opinto-oikeus",
-  },
-  { title: "Tukiväylät", path: "/tukivaylat" },
-  {
-    title: "Opettajille ja opinto-ohjaajille",
-    path: "/opettajille",
+    title: "Course descriptions and timetable",
+    path: "/descriptions",
   },
   {
     title: "Frequently asked questions",
@@ -192,7 +179,7 @@ class Sidebar extends React.Component {
           </Button>
         </MenuExpanderWrapper>
         <SidebarContainer mobileMenuOpen={this.props.mobileMenuOpen}>
-          <Brand>Ohjelmoinnin MOOC 2019</Brand>
+          <Brand>Cyber security base 2019-2020</Brand>
           <TreeViewContainer>
             <TreeView data={content} />
           </TreeViewContainer>

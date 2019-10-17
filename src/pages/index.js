@@ -19,286 +19,66 @@ const IndexPage = () => (
   <Layout>
     <Banner />
     <Container>
-      <section id="yleistä">
-        <h1>Tietoa kurssista</h1>
-        <p>
-          Ohjelmoinnin MOOC on kaikille avoin ja ilmainen ohjelmoinnin perusteet
-          opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin
-          perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi
-          algoritmien laatimiseen. Kurssille osallistuminen ei vaadi
-          ennakkotietoja ohjelmoinnista.
-        </p>
-        <p>
-          Ohjelmoinnin MOOC vastaa sisällöltään Helsingin yliopiston
-          tietojenkäsittelytieteen laitoksen kursseja Ohjelmoinnin perusteet ja
-          Ohjelmoinnin jatkokurssi. Kurssit vastaavat yhteensä kymmentä
-          opintopistettä (5+5).
-        </p>
-        <p>
-          <b>Kurssi on käynnissä!</b> Luo tunnus tai kirjaudu sisään, jonka
-          jälkeen valitse <Link to="/osa-1">Osa 1</Link> navigaatiosta.
-        </p>
-      </section>
+      <h1>About the Course Series</h1>
+      <p>
+        Cyber Security Base is a free course series by University of Helsinki
+        and MOOC.fi in collaboration with F-Secure that focuses on building core
+        knowledge and abilities related to the work of a cyber security
+        professional.
+      </p>
 
-      <section id="kurssin-kaksi-versiota">
-        <h2>Sisältö ja kurssin versiot</h2>
-        <p>
-          Kurssi koostuu 14 tehtäväsarjasta. Kunkin tehtäväsarjan tekemiseen
-          kannattaa varata aikaa noin 5-20 tuntia. Varaamme oikeuden aikataulun
-          ja aiheiden muutoksiin, kuitenkin niin, että jokaista tehtäväsarjaa on
-          mahdollista suorittaa vähintään kahden viikon ajan.
-        </p>
-        <p>
-          Kurssista on kaksi versiota: aikataulutettu versio, jossa on
-          viikoittaiset deadlinet ja aikatauluton versio, jossa tehtäviä voi
-          tehdä täysin omaan tahtiin. Aikatauluttoman kurssin tehtävät
-          julkaistaan aina aikataulutetun kurssin jälkeen. Voit siirtyä
-          aikataululliselta kurssilta aikatauluttomaan mikäli niin haluat.
-          Kurssin vaihtaminen toiseen suuntaan ei ole mahdollista. Huomaa
-          kuitenkin että aikatauluttomasta versiosta ei voi hakea
-          opinto-oikeutta.
-        </p>
-        <p>
-          Kurssin osat 1-7 vastaavat kurssia Ohjelmoinnin perusteet. Osat 8-14
-          vastaavat kurssia Ohjelmoinnin jatkokurssi.
-        </p>
-      </section>
+      <p>
+        Learn about tools used to analyse flaws in software systems, necessary
+        knowledge to build secure software systems (esp. within Web), the skills
+        needed to perform risk and threat analysis on existing systems and the
+        relevant legislation within EU.
+      </p>
 
-      <section id="sisältö-ja-aikataulu">
-        <h3>Aikataulu - kesä 2019</h3>
+      <p>
+        The course series consists of 6 smaller courses, each with a specific
+        theme. Themes include a brief introduction to cyber security,
+        operational security, web software development, types of vulnerabilities
+        typical of web software, discovery and mitigation of such
+        vulnerabilities, and advanced topics such as secure software
+        architectures and cryptography. There will be several case studies as
+        well as projects for participants. At the end of the course series,
+        we'll also organize a friendly capture-the-flag competition where
+        participants will try to solve some security puzzles.
+      </p>
 
-        <p>
-          Kesän 2019 aikataulutetussa Ohjelmoinnin MOOCissa kurssimateriaali on
-          kokonaisuudessaan saatavilla kurssin alusta lähtien. Tämä mahdollistaa
-          kurssin tekemisen nopeammalla tahdilla, mikäli niin haluaa tehdä.
-          Normaalissa kesän aikataulussa kunkin osan tekemiseen on noin viikko.
-          Ensimmäisen osan tehtävät tulee palauttaa 20.5. klo 23:59:00 mennessä.
-        </p>
+      <p>
+        Each course is open for a certain period of time, and must be completed
+        during that window.
+      </p>
 
-        <p>
-          Mikäli olet tekemässä Kesän aikataulutettua versiota kurssista
-          (Ohjelmoinnin perusteet), valitse kurssin profiilista kohdasta "Minkä
-          kurssin version pisteet, deadlinet ja kolikot haluat nähdä."
-          vaihtoehto "Kesä: Aikataulutettu Ohjelmoinnin MOOC"
-        </p>
+      <h1>Work load and prerequisites</h1>
+      <p>
+        There will be programming assignments, essays, quizzes and puzzles
+        throughout the courses, and completing a specific part of a course means
+        working and completing most if not all of them. We expect that
+        individuals work some 2-10 hours per week on the courses depending on
+        their background. Some programming background and ICT experience is
+        required.
+      </p>
 
-        <p>
-          Mikäli olet tekemässä Kesän aikataulutettua versiota kurssista
-          (Ohjelmoinnin jatkokurssi), valitse kurssin profiilista kohdasta
-          "Minkä kurssin version pisteet, deadlinet ja kolikot haluat nähdä."
-          vaihtoehto "Kesä: Aloitan kurssin aikataulutettuna osasta 8
-          (Ohjelmoinnin jatkokurssi)"
-        </p>
+      <p>
+        The course has started! You don't need to register to start doing the
+        course. There is an optional registration for those who want ECTS
+        credits that can be done AFTER completing the course. More instructions
+        in the material. So just head to the material and start doing the
+        courses!
+      </p>
 
-        <p>
-          Huom! Voit tehdä myös kesällä aikataulutonta versiota kurssista.
-          Valitse tällöin kurssin profiilista kohdasta "Minkä kurssin version
-          pisteet, deadlinet ja kolikot haluat nähdä." vaihtoehto "Aikatauluton
-          ohjelmoinnin MOOC". Lisäksi valitse sama kurssi kun aloitat
-          ohjelmoimaan NetBeanssissa. Tälloin voit tehdä kutakin osaa vuoden
-          loppuun asti.
-        </p>
-
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>Aikataulu</TableCell>
-              <TableCell>Deadline</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow>
-              <TableCell>Osa 1</TableCell>
-              <TableCell>20.5.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 2</TableCell>
-              <TableCell>24.5.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 3</TableCell>
-              <TableCell>27.5.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 4</TableCell>
-              <TableCell>3.6.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 5</TableCell>
-              <TableCell>10.6.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 6</TableCell>
-              <TableCell>17.6.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 7</TableCell>
-              <TableCell>24.6.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 8</TableCell>
-              <TableCell>8.7.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 9</TableCell>
-              <TableCell>15.7.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 10</TableCell>
-              <TableCell>22.7.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 11</TableCell>
-              <TableCell>29.7.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 12</TableCell>
-              <TableCell>5.8.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 13</TableCell>
-              <TableCell>12.8.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 14</TableCell>
-              <TableCell>19.8.2019</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-
-        <p>
-          <b>
-            Määräajat ovat aina maanantaisin. Määräaikojen kellonajat ovat aina
-            23:59:00 – osan 1 tehtävät tulee palauttaa siis viimeistään
-            <s>13.5.2019</s> 20.5.2019 klo 23:59:00. Virallisena määräaikana
-            käytetään tehtäväpalvelimen kelloa, joka on Suomen ajassa. Huomaa,
-            että oman koneesi kello voi olla jäljessä tai edellä, joten älä jätä
-            tehtävien tekemistä ja palauttamista viime hetkeen.
-          </b>
-        </p>
-
-        <p>
-          <b>
-            (Edit 13.5.) 1. ja 2. osan määräaikoja on pidennetty (13.5. ->
-            20.5.),(20.5. -> 24.5.).
-          </b>
-        </p>
-      </section>
-
-      <section id="sisältö-ja-aikataulu-kevat-2019">
-        <h3>Aikataulu - kevät 2019</h3>
-        <p>
-          Keväisin tarjottava Ohjelmoinnin MOOC tarjoaa mahdollisuuden
-          opinto-oikeuteen tietojenkäsittelytieteen opintoihin Helsingin
-          yliopistolla. Mikäli haet kurssin kautta opinto-oikeutta, lue kaikki
-          opinto-oikeuden hakemiseen liittyvät tiedot huolellisesti. Esimerkiksi
-          tehtävien aikarajoista EI voida joustaa lainkaan. Ehdot
-          opinto-oikeuden saamiseksi päivittyvät lähempänä yhteishakua.
-          Lisätietoa opinto-oikeudesta saat{" "}
-          <GatsbyLink to="/opinto-oikeus">täältä</GatsbyLink>.
-        </p>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>Aikataulu</TableCell>
-              <TableCell>Julkaisu</TableCell>
-              <TableCell>Deadline</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            <TableRow>
-              <TableCell>Osa 1</TableCell>
-              <TableCell>14.12.2018</TableCell>
-              <TableCell>21.1.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 2</TableCell>
-              <TableCell>28.12.2018</TableCell>
-              <TableCell>28.1.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 3</TableCell>
-              <TableCell>11.1.2019</TableCell>
-              <TableCell>4.2.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 4</TableCell>
-              <TableCell>25.1.2019</TableCell>
-              <TableCell>11.2.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 5</TableCell>
-              <TableCell>1.2.2019</TableCell>
-              <TableCell>18.2.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 6</TableCell>
-              <TableCell>8.2.2019</TableCell>
-              <TableCell>25.2.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 7</TableCell>
-              <TableCell>15.2.2019</TableCell>
-              <TableCell>4.3.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 8</TableCell>
-              <TableCell>1.3.2019</TableCell>
-              <TableCell>18.3.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 9</TableCell>
-              <TableCell>8.3.2019</TableCell>
-              <TableCell>25.3.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 10</TableCell>
-              <TableCell>15.3.2019</TableCell>
-              <TableCell>1.4.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 11</TableCell>
-              <TableCell>22.3.2019</TableCell>
-              <TableCell>8.4.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 12</TableCell>
-              <TableCell>29.3.2019</TableCell>
-              <TableCell>15.4.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 13</TableCell>
-              <TableCell>12.4.2019</TableCell>
-              <TableCell>29.4.2019</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Osa 14</TableCell>
-              <TableCell>19.4.2019</TableCell>
-              <TableCell>6.5.2019</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-
-        <p>
-          <b>
-            Määräajat ovat aina maanantaisin. Määräaikojen kellonajat ovat aina
-            23:59:00 – osan 1 tehtävät tulee palauttaa siis viimeistään
-            21.1.2019 klo 23:59:00. Virallisena määräaikana käytetään
-            tehtäväpalvelimen kelloa, joka on Suomen ajassa. Huomaa, että oman
-            koneesi kello voi olla jäljessä tai edellä, joten älä jätä tehtävien
-            tekemistä ja palauttamista viime hetkeen.
-          </b>
-        </p>
-      </section>
-
-      <section id="ilmoittautuminen">
-        <h2>Ilmoittautuminen</h2>
-
-        <p>
-          Kurssille ei tarvitse eikä voi ilmoittautua. Ilmoittautuneiksi
-          katsotaan ne osallistujat, jotka tekevät kurssin ohjelmointitehtäviä.
-        </p>
-      </section>
+      <h1>ECTS credits for Finnish residents</h1>
+      <p>
+        If you reside in Finland, you can get a total of 10 ECTS credits for the
+        course from the Open University of University of Helsinki. Your own
+        school, college or university has the option of accepting these as a
+        part of your studies -- you have to, however, ask your local
+        administration whether they will do so. We are looking into the
+        possibility of offering certificates for completion of the course series
+        to all participants as well.
+      </p>
     </Container>
   </Layout>
 )
