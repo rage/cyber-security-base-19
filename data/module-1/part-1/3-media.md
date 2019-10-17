@@ -21,16 +21,7 @@ the Office of National Statistics show that the frequency of incidents is
 increasing, it is still commonly believed that cyber crime is an underreported
 area of illegality.
 
-<!--
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b40"></div>
-
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b41"></div>
-
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b4a"></div>
-
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b4b"></div>
-
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b42"></div-->
+<quiz id="a0937634-c6ce-5b0b-8d63-f63b83b362a1"></quiz>
 
 The above conveys a bleak picture of the current state of things. At the same time, however, governments, organizations, corporations and institutions are funnelling more and more money, research and effort into improving the situation.
 

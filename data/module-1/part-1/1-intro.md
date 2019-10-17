@@ -46,4 +46,4 @@ risk can be minimized but not removed completely!
 
 </text-box>
 
-<!-- div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b3c"></div -->
+<quiz id="bdd2b8e6-688d-57b3-ac82-2a580ef07d21"></quiz>

@@ -71,7 +71,7 @@ findings. At least one study, however, from [Oxford Economics](https://www.oxfor
 surveys and case studies. Those findings show that cyber attacks do indeed
 result in major business impact on victims.
 
-<!-- div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b3d"></div -->
+<quiz id="dc53f354-58e3-583f-8b98-7f3b89698138"></quiz>
 
 The job of a vulnerability researcher is to come up with recommendations for
 minimizing the risk to an organization. The tasks of protecting enterprise
@@ -90,14 +90,4 @@ Watch James Lyne's talk [Everyday cybercrime -- and what you can do about it]('h
 
 </text-box>
 
- 
-<!--
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b3e"></div>
-
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b3f"></div>
-
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b48"></div>
-
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b4c"></div>
-
-        <div class="quiznator-plugin" data-quiz-id="5bd74cd7b40615fd8fa14b49"></div-->
+<quiz id="c680b34d-2b60-536e-968e-1d53c8183c94"></quiz>
