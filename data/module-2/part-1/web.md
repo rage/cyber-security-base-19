@@ -1,6 +1,6 @@
 ---
 path: '/module-2.1/1-web'
-title: 'Structure and Development of Web Applications'
+title: 'Ports and Applications'
 hidden: false
 ---
 ## Ports and applications
