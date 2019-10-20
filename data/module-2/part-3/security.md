@@ -155,31 +155,23 @@ credentials for the action that he or she seeks to take.
 
 The next assignment is done within Test My Code.
 
-<div class="assignments">
-  <div class="assignment">
-    <header>
-      <h1 class="panel-title">
-        <a data-toggle="collapse" class="collapsed" href="#t-megaupload">
-          Megaupload (Click to Open!)
-        </a>
-      </h1>
-    </header>
-    <div id="t-megaupload" class="collapse">
+<programming-exercise name="Megaupload" tmcname="t-megaupload">
 
-<p>The assignment template contains the functionality for uploading and storing personal files on a web server. The files uploaded by an individual should not be accessible by anyone else. However, there seems to be a few flaws in how this has been implemented. Fix the application so that everyone can access only the files that they have uploaded.</p>
+The assignment template contains the functionality for uploading and storing
+personal files on a web server. The files uploaded by an individual should not
+be accessible by anyone else. However, there seems to be a few flaws in how
+this has been implemented. Fix the application so that everyone can access only
+the files that they have uploaded.
 
-<p>The application has the following username and password combinations for testing:</p>
+The application has the following username and password combinations for testing:
 
-<ul>
-<li>roger:carrots</li>
-<li>valiant:vaudeville</li>
-</ul>
+- roger:carrots
+- valiant:vaudeville
 
-<p>Note that the application has no automated tests. Once you believe that you have solved the issue(s), return your solution to TMC.</p>
+Note that the application has no automated tests. Once you believe that you
+have solved the issue(s), return your solution to TMC.
 
-    </div>
-  </div>
-</div>
+</programming-exercise>
 
 
 <div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9229"></div>
