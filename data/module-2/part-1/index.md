@@ -3,33 +3,8 @@ path: '/module-2.1'
 title: 'Part I'
 overview: true
 ---
-<only-for-course-variant variant="dl">
-  <deadline>21.1.2019</deadline>
-</only-for-course-variant>
+<deadline>23.12.2019</deadline>
 
-<only-for-course-variant variant="nodl">
-  <deadline>4.1.2020</deadline>
-</only-for-course-variant>
-
-<only-for-course-variant variant="ohja-dl">
-  <deadline>Tämä osa ei ole osa profiilista valitsemaasi kurssia</deadline>
-</only-for-course-variant>
-
-<only-for-course-variant variant="ohja-nodl">
-  <deadline>Tämä osa ei ole osa profiilista valitsemaasi kurssia</deadline>
-</only-for-course-variant>
-
-<only-for-course-variant variant="kesa-dl">
-  <deadline>13.5.2019</deadline>
-</only-for-course-variant>
-
-<only-for-course-variant variant="kesa-ohja-dl">
-  <deadline>Tämä osa ei ole osa profiilista valitsemaasi kurssia</deadline>
-</only-for-course-variant>
-
-<only-for-not-logged-in>
-  <deadline>Kirjaudu sisään nähdäksesi deadlinen tälle osalle</deadline>
-</only-for-not-logged-in>
 
 This part focuses on security issues related to interconnected software. The
 participant will learn the principles of developing web applications, typical
@@ -38,12 +13,42 @@ discovered and mitigated.
 
 <please-login></please-login>
 
+
+
+### How to get started
+
+This material contains the securing software part of the course series called
+[Cyber Security Base](https://cybersecuritybase.mooc.fi/). During this course,
+you will learn how web software works and is developed, the types of typical
+security flaws in such software, the vulnerabilities that these flaws cause,
+and how these flaws can be fixed.
+
+Once you have created the account, please answer a background questionnaire at
+https://elomake.helsinki.fi/lomakkeet/74256/lomake.html. Answering the
+questionnaire should take less than 10 minutes and will be very valuable for
+the research conducted on this course.
+
+When answering the short essay questions in this course, please answer them
+carefully and with thought. Other participants in the course will review them
+and may give you feedback.
+
+### How to pass the course
+
+In order to pass the course you will need to return all the essays and give at
+least 3 peer reviews for each essay. Also, you will need to pass all the
+multiple choice questions.
+
+Essays must be within 20% of the proposed length. If they're not within this
+limit you will not get any points for your answer. We also may reject your
+answer if it's flagged too many times as spam or if it doesn't contain deep
+enough discussion. Also, we may reject your peer reviews if you haven't put
+genuine effort into them.
+
+If you want ECTS credits you will need to register here AFTER completing the
+course: https://cyber-points.mooc.fi
+
+
 <text-box variant=emph name='On Securing Software'>
-
-
-This material contains the securing software part of the course series called [Cyber Security Base with F-Secure](https://cybersecuritybase.mooc.fi/). During this course, you will learn how web software works and is developed, the types of typical security flaws in such software,
-the vulnerabilities that these flaws cause, and how these flaws can be
-fixed.
 
 By continuing, you agree to not to do any harm with this information or other similar information on the internet.
 
