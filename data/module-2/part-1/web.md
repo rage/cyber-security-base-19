@@ -3,7 +3,6 @@ path: '/module-2.1/1-web'
 title: 'Ports and Applications'
 hidden: false
 ---
-## Ports and applications
 
 
 Each computer has a series of communication points that are called
