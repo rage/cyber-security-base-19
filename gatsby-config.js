@@ -3,8 +3,8 @@ const blue = require("@material-ui/core/colors/red").default
 
 module.exports = {
   siteMetadata: {
-    title: "Ohjelmoinnin MOOC 2019",
-    siteUrl: `https://ohjelmointi-19.mooc.fi`,
+    title: "Cyber security base 2019-2020",
+    siteUrl: `https://cybersecuritybase.mooc.fi`,
   },
   plugins: [
     "gatsby-plugin-react-helmet",

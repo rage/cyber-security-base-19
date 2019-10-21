@@ -1,8 +1,8 @@
 {
   "@context": "http://schema.org",
   "@type": "Course",
-  "name": "Ohjelmoinnin MOOC 2019",
-  "description": "Helsingin yliopiston kaikille avoin ja ilmainen ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.",
+  "name": "Cyber security base 2019-2020",
+  "description": "Cyber Security Base is a free course series by University of Helsinki and MOOC.fi in collaboration with F-Secure that focuses on building core knowledge and abilities related to the work of a cyber security professional.",
   "provider": {
     "@type": "Organization",
     "name": "MOOC.fi",
@@ -16,7 +16,7 @@
   "hasCourseInstance": [
     {
       "@type": "CourseInstance",
-      "name": "Ohjelmoinnin MOOC 2019",
+      "name": "Cyber security base 2019-2020",
       "courseMode": ["MOOC", "online"],
       "location": {
         "@type": "Place",
@@ -31,8 +31,8 @@
       },
       "inLanguage": {
         "@type": "Language",
-        "name": "Finnish",
-        "alternateName": "fi"
+        "name": "English",
+        "alternateName": "en"
       },
       "isAccessibleForFree": true
     }
