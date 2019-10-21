@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="201.35378mm"
+   height="54.64592mm"
+   viewBox="0 0 713.45826 193.62727"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="code_abstraction_levels.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5295"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4,0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path5297"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker4538"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="TriangleOutM">
+      <path
+         transform="scale(0.4,0.4)"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         id="path4540"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutM"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutM"
+       style="overflow:visible"
+       inkscape:isstock="true"
+       inkscape:collect="always">
+      <path
+         id="path4333"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
+         transform="scale(0.4,0.4)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="276.49754"
+     inkscape:cy="204.24404"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1385"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-28.142853,-93.712433)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="28.142853"
+       y="208.84096"
+       id="text4138"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4140"
+         x="28.142853"
+         y="208.84096"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">int main() {</tspan><tspan
+         sodipodi:role="line"
+         x="28.142853"
+         y="226.02846"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'"
+         id="tspan4142">  printf(&quot;Hello world!&quot;);</tspan><tspan
+         sodipodi:role="line"
+         x="28.142853"
+         y="243.21596"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'"
+         id="tspan4144">}</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="334.59506"
+       y="166.35345"
+       id="text4146"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4148"
+         x="334.59506"
+         y="166.35345"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">55</tspan><tspan
+         sodipodi:role="line"
+         x="334.59506"
+         y="183.54095"
+         id="tspan4150"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">48 89 e5</tspan><tspan
+         sodipodi:role="line"
+         x="334.59506"
+         y="200.72845"
+         id="tspan4152"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">bf 94 05 40 00</tspan><tspan
+         sodipodi:role="line"
+         x="334.59506"
+         y="217.91595"
+         id="tspan4154"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">b8 00 00 00 00</tspan><tspan
+         sodipodi:role="line"
+         x="334.59506"
+         y="235.10345"
+         id="tspan4156"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">e8 e7 fe ff ff</tspan><tspan
+         sodipodi:role="line"
+         x="334.59506"
+         y="252.29095"
+         id="tspan4158"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">b8 00 00 00 00</tspan><tspan
+         sodipodi:role="line"
+         x="334.59506"
+         y="269.47845"
+         id="tspan4160"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">5d</tspan><tspan
+         sodipodi:role="line"
+         x="334.59506"
+         y="286.66595"
+         id="tspan4162"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">c3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="563.42859"
+       y="166.87596"
+       id="text4164"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4166"
+         x="563.42859"
+         y="166.87596"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">push   rbp</tspan><tspan
+         sodipodi:role="line"
+         x="563.42859"
+         y="184.06346"
+         id="tspan4168"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">mov    rbp,rsp</tspan><tspan
+         sodipodi:role="line"
+         x="563.42859"
+         y="201.25096"
+         id="tspan4170"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">mov    edi,0x400594</tspan><tspan
+         sodipodi:role="line"
+         x="563.42859"
+         y="218.43846"
+         id="tspan4172"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">mov    eax,0x0</tspan><tspan
+         sodipodi:role="line"
+         x="563.42859"
+         y="235.62596"
+         id="tspan4174"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">call   4003f0 &lt;printf@plt&gt;</tspan><tspan
+         sodipodi:role="line"
+         x="563.42859"
+         y="252.81346"
+         id="tspan4176"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">mov    eax,0x0</tspan><tspan
+         sodipodi:role="line"
+         x="563.42859"
+         y="270.00098"
+         id="tspan4178"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">pop    rbp</tspan><tspan
+         sodipodi:role="line"
+         x="563.42859"
+         y="287.18848"
+         id="tspan4180"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Ubuntu Mono';-inkscape-font-specification:'Ubuntu Mono'">ret</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#TriangleOutM)"
+       d="m 218.57143,222.3622 92.85714,0"
+       id="path4182"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path4536"
+       d="m 448.57143,222.3622 92.85714,0"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker4538)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="234.14285"
+       y="210.93362"
+       id="text5256"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5258"
+         x="234.14285"
+         y="210.93362"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">Compiler</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text5260"
+       y="209.6479"
+       x="454.14285"
+       style="font-style:normal;font-weight:normal;font-size:13.75px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu"
+         y="209.6479"
+         x="454.14285"
+         id="tspan5262"
+         sodipodi:role="line">Disassembler</tspan></text>
+    <path
+       id="path8667"
+       d="m 366.77976,134.51939 q -1.8659,0 -3.19464,-1.32874 -1.32874,-1.32874 -1.32874,-3.19463 l 0,-19.90286 q 0,-1.86589 1.32874,-3.19463 1.32874,-1.32874 3.19464,-1.32874 l 30.75896,0 q 1.86589,0 3.19464,1.32874 1.32874,1.32874 1.32874,3.19463 l 0,19.90286 q 0,1.86589 -1.32874,3.19463 -1.32875,1.32874 -3.19464,1.32874 l -30.75896,0 z m -0.90468,-24.42623 0,19.90286 q 0,0.36752 0.26858,0.6361 0.26857,0.26857 0.6361,0.26857 l 30.75896,0 q 0.36753,0 0.6361,-0.26857 0.26857,-0.26858 0.26857,-0.6361 l 0,-19.90286 q 0,-0.36752 -0.26857,-0.6361 -0.26857,-0.26857 -0.6361,-0.26857 l -30.75896,0 q -0.36753,0 -0.6361,0.26857 -0.26858,0.26858 -0.26858,0.6361 z m 38.90104,26.23558 4.52338,0 0,2.71403 q 0,1.13084 -1.32874,1.92244 -1.32874,0.79159 -3.19464,0.79159 l -45.23376,0 q -1.8659,0 -3.19464,-0.79159 -1.32874,-0.7916 -1.32874,-1.92244 l 0,-2.71403 49.75714,0 z m -20.35519,2.71403 q 0.45234,0 0.45234,-0.45234 0,-0.45234 -0.45234,-0.45234 l -4.52338,0 q -0.45234,0 -0.45234,0.45234 0,0.45234 0.45234,0.45234 l 4.52338,0 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path8726"
+       d="m 117.95309,138.49807 q 0,3.4974 -2.12758,5.52297 -2.12758,2.02558 -5.65412,2.02558 l -25.472689,0 q -3.52654,0 -5.65412,-2.02558 -2.127583,-2.02557 -2.127583,-5.52297 0,-1.54468 0.102008,-3.0165 0.102006,-1.47182 0.40803,-3.1768 0.306021,-1.70498 0.77234,-3.16222 0.46632,-1.45725 1.253234,-2.84164 0.786912,-1.38438 1.806987,-2.36074 1.020072,-0.97635 2.491893,-1.55925 1.47182,-0.5829 3.249663,-0.5829 0.262304,0 1.224088,0.62661 0.961783,0.62662 2.171299,1.39896 1.209516,0.77234 3.147655,1.39896 1.938139,0.62661 3.890852,0.62661 1.952711,0 3.890853,-0.62661 1.93814,-0.62662 3.14765,-1.39896 1.20952,-0.77234 2.1713,-1.39896 0.96179,-0.62661 1.22409,-0.62661 1.77784,0 3.24966,0.5829 1.47182,0.5829 2.4919,1.55925 1.02007,0.97636 1.80699,2.36074 0.78691,1.38439 1.25323,2.84164 0.46632,1.45724 0.77234,3.16222 0.30602,1.70498 0.40803,3.1768 0.102,1.47182 0.102,3.0165 z m -9.32638,-26.02644 q 0,4.63405 -3.27881,7.91286 -3.2788,3.27881 -7.912853,3.27881 -4.634048,0 -7.912855,-3.27881 -3.278809,-3.27881 -3.278809,-7.91286 0,-4.63404 3.278809,-7.91285 3.278807,-3.27881 7.912855,-3.27881 4.634053,0 7.912853,3.27881 3.27881,3.27881 3.27881,7.91285 z"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 637.95309,138.49807 q 0,3.4974 -2.12758,5.52297 -2.12758,2.02558 -5.65412,2.02558 l -25.47269,0 q -3.52654,0 -5.65412,-2.02558 -2.12758,-2.02557 -2.12758,-5.52297 0,-1.54468 0.102,-3.0165 0.10201,-1.47182 0.40803,-3.1768 0.30602,-1.70498 0.77234,-3.16222 0.46632,-1.45725 1.25324,-2.84164 0.78691,-1.38438 1.80698,-2.36074 1.02008,-0.97635 2.4919,-1.55925 1.47182,-0.5829 3.24966,-0.5829 0.2623,0 1.22409,0.62661 0.96178,0.62662 2.1713,1.39896 1.20951,0.77234 3.14765,1.39896 1.93814,0.62661 3.89085,0.62661 1.95272,0 3.89086,-0.62661 1.93814,-0.62662 3.14765,-1.39896 1.20952,-0.77234 2.1713,-1.39896 0.96179,-0.62661 1.22409,-0.62661 1.77784,0 3.24966,0.5829 1.47182,0.5829 2.4919,1.55925 1.02007,0.97636 1.80699,2.36074 0.78691,1.38439 1.25323,2.84164 0.46632,1.45724 0.77234,3.16222 0.30602,1.70498 0.40803,3.1768 0.102,1.47182 0.102,3.0165 z m -9.32638,-26.02644 q 0,4.63405 -3.27881,7.91286 -3.27881,3.27881 -7.91286,3.27881 -4.63404,0 -7.91285,-3.27881 -3.27881,-3.27881 -3.27881,-7.91286 0,-4.63404 3.27881,-7.91285 3.27881,-3.27881 7.91285,-3.27881 4.63405,0 7.91286,3.27881 3.27881,3.27881 3.27881,7.91285 z"
+       id="path8735" />
+  </g>
+</svg>

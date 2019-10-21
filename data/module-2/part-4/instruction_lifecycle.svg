@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="632.824" height="117.737" viewBox="0 0 593.27226 110.37831">
+    <defs>
+        <marker orient="auto" id="d" overflow="visible">
+            <path d="M2.308 0l-3.46 2v-4l3.46 2z" fill-rule="evenodd" stroke="#000" stroke-width=".4pt"/>
+        </marker>
+        <marker orient="auto" id="c" overflow="visible">
+            <path d="M2.308 0l-3.46 2v-4l3.46 2z" fill-rule="evenodd" stroke="#000" stroke-width=".4pt"/>
+        </marker>
+        <marker id="b" orient="auto" overflow="visible">
+            <path d="M2.308 0l-3.46 2v-4l3.46 2z" fill-rule="evenodd" stroke="#000" stroke-width=".4pt"/>
+        </marker>
+        <marker orient="auto" id="a" overflow="visible">
+            <path d="M2.308 0l-3.46 2v-4l3.46 2z" fill-rule="evenodd" stroke="#000" stroke-width=".4pt"/>
+        </marker>
+    </defs>
+    <path fill="none" stroke="#000" stroke-width=".516" stroke-linecap="square" d="M.258 65.673h56.548v26.84H.258z"/>
+    <text y="287.677" x="108.591" style="line-height:125%" font-weight="400" font-size="13.75" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(-96.475 -204.084)">
+        <tspan style="-inkscape-font-specification:Ubuntu" y="287.677" x="108.591" font-family="Ubuntu">Start</tspan>
+    </text>
+    <path fill="none" stroke="#000" stroke-width="1.248" stroke-linecap="square" d="M116.017 48.432h144.71v61.322h-144.71z"/>
+    <text y="277.114" x="212.086" style="line-height:125%" font-weight="400" font-size="13.75" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(-88.475 -211.165)">
+        <tspan style="-inkscape-font-specification:Ubuntu" y="277.114" x="212.086" font-family="Ubuntu">Fetch the instruction</tspan><tspan style="-inkscape-font-specification:Ubuntu" y="294.301" x="212.086" font-family="Ubuntu">the instruction</tspan><tspan style="-inkscape-font-specification:Ubuntu" y="311.489" x="212.086" font-family="Ubuntu">pointer is pointing to</tspan>
+    </text>
+    <path fill="none" stroke="#000" stroke-width="1.292" stroke-linecap="square" d="M320.31 48.455h155.27v61.278H320.31z"/>
+    <text style="line-height:125%" x="413.923" y="295.504" font-weight="400" font-size="13.75" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(-88.475 -211.165)">
+        <tspan x="413.923" y="295.504" style="-inkscape-font-specification:Ubuntu" font-family="Ubuntu">Execute the instruction</tspan>
+    </text>
+    <path fill="none" stroke="#000" stroke-width=".516" stroke-linecap="square" d="M536.466 65.673h56.548v26.84h-56.548z"/>
+    <text style="line-height:125%" x="638.8" y="292.626" font-weight="400" font-size="13.75" font-family="sans-serif" letter-spacing="0" word-spacing="0" transform="translate(-88.475 -209.034)">
+        <tspan x="638.8" y="292.626" style="-inkscape-font-specification:Ubuntu" font-family="Ubuntu">Halt</tspan>
+    </text>
+    <path d="M151.09 289.394h43.827" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#a)" transform="translate(-88.475 -211.165)"/>
+    <path d="M353.09 289.394h45.077" fill="none" stroke="#000" stroke-width="2" marker-end="url(#b)" transform="translate(-88.475 -211.165)"/>
+    <path d="M569.09 289.394h44.264" fill="none" stroke="#000" stroke-width="2" stroke-dasharray="4,2" marker-end="url(#c)" transform="translate(-88.475 -211.165)"/>
+    <path d="M492.5 253.862c.5-61.5-213.5-48-213-4.5" fill="none" stroke="#000" stroke-width="2" marker-end="url(#d)" transform="translate(-88.475 -211.165)"/>
+</svg>
