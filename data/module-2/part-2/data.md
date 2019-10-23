@@ -572,12 +572,4 @@ application works as intended, return it to TMC.
 </programming-exercise>
 
 
-<div class="quiznator-plugin" data-quiz-id="5be98a0257a13b8543cb0f46"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5be98a0257a13b8543cb0f47"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5be98a0257a13b8543cb0f48"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5be98a0257a13b8543cb0f49"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5be98a0257a13b8543cb0f4a"></div>
+<quiz id="95d9cb69-8a76-5504-a6d6-dfa0478bec5e"></quiz>

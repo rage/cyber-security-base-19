@@ -257,7 +257,7 @@ content, one cannot only rely on the browser (i.e. the client).
 
 </text-box>
 
-  <div class="quiznator-plugin" data-quiz-id="5be98a0257a13b8543cb0f45"></div>
+<quiz id="0be2397d-a2de-5c6a-92da-61b69fd2348b"></quiz>
 
 
 ### Adding elements to a page

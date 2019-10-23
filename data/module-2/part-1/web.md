@@ -204,10 +204,10 @@ Note that while we implement port scanners and other tools, we will later also l
 
 Note that port scanning can be seen as a preparation for a cyber attack. It
 may be also that your internet service provider (ISP) has prohibited making
-port scans. Before participating in the following quizz, verify that you are
+port scans. Before participating in the following quiz, verify that you are
 allowed to do so.
 
-<div class="quiznator-plugin" data-quiz-id="5be0212ef9930d994cd8e654"></div>
+<quiz id="19534f77-5d80-5501-b54f-04438c93d908"></quiz>
 
 
 
@@ -258,4 +258,4 @@ F-Secure web server asks us to look for the content from the address
 If you do not reside in Finland and make the same request as above, you are likely directed to another address.
 </text-box>
 
-<div class="quiznator-plugin" data-quiz-id="5be0212ef9930d994cd8e655"></div>
+<quiz id="aa8695f9-8bab-5f95-b449-6a547dc06b8c"></quiz>

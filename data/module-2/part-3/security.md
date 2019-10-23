@@ -87,13 +87,8 @@ other unsanitized data are used as a part of a SQL query.
 _(source [xkcd: Exploits of a mom.](https://xkcd.com/327/))_
 
 
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9219"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c921a"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c921b"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c921c"></div>
+<quiz id="2d373a9b-8a8c-50f0-a663-e1480cdebdc2"></quiz>
+<quiz id="af597c85-8ba2-4d23-89ce-e7cb946f5467"></quiz>
 
 Whilst SQL injections are perhaps the most common examples of Injection
 vulnerabilities (see e.g. [Ruby on Rails](http://rails-sqli.org/) and [Spring
