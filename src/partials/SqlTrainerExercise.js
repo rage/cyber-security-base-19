@@ -1,9 +1,11 @@
 import React from "react"
 import styled from "styled-components"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faInfoCircle, faUserGraduate } from "@fortawesome/free-solid-svg-icons"
+import { faDatabase as icon } from "@fortawesome/free-solid-svg-icons"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
+import { normalizeExerciseId } from "../util/strings"
 
 const Wrapper = styled.aside`
   padding 1rem;
@@ -31,26 +33,29 @@ const Body = styled.div`
   padding-bottom: 0.5rem;
 `
 
-const variantToColor = {
-  hint: "#528afc",
-  learningObjectives: "#57b181",
-}
-
-const variantToIcon = {
-  hint: faInfoCircle,
-  learningObjectives: faUserGraduate,
-}
-
-const TextBox = props => {
+const SqltrainerExercise = props => {
   return (
-    <Wrapper style={{ "--color": variantToColor[props.variant] }}>
+    <Wrapper
+      id={normalizeExerciseId(`sqltrainer-exercise-${props.name}`)}
+      style={{ "--color": "rgb(115, 101, 152)" }}
+    >
       <Header>
-        <StyledIcon icon={variantToIcon[props.variant]} size="1x" />
-        {props.name}
+        <StyledIcon icon={icon} size="1x" />
+        SQL Trainer -tehtävä: {props.name}
       </Header>
-      <Body>{props.children}</Body>
+      <Body>
+        {props.children}
+        Löydät harjoittelujärjestelmän osoitteesta{" "}
+        <OutboundLink
+          href="https://sql-t.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://sql-t.herokuapp.com/
+        </OutboundLink>
+      </Body>
     </Wrapper>
   )
 }
 
-export default withSimpleErrorBoundary(TextBox)
+export default withSimpleErrorBoundary(SqltrainerExercise)

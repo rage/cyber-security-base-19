@@ -22,6 +22,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInfoCircle as icon } from "@fortawesome/free-solid-svg-icons"
 import DropdownMenu from "./DropdownMenu"
 import { Link } from "gatsby"
+import { withTranslation } from "react-i18next"
 
 const Row = styled.div`
   margin-bottom: 1.5rem;
@@ -70,8 +71,6 @@ class CourseOptionsEditor extends React.Component {
     e.preventDefault()
     this.setState({ submitting: true })
     let extraFields = {
-      applies_for_study_right: this.state.applies_for_study_right,
-      digital_education_for_all: this.state.digital_education_for_all,
       marketing: this.state.marketing,
       research: this.state.research,
       course_variant: this.state.currentCourseVariant,
@@ -147,26 +146,22 @@ class CourseOptionsEditor extends React.Component {
           <InfoBox>
             <Card>
               <CardContent>
-                Olet kirjautunut tunnuksella {this.state.email} sisään
+                {this.props.t("loggedInWith")}
+                {this.state.email}
               </CardContent>
             </Card>
           </InfoBox>
         </Loading>
-        <h1>Opiskelijan tiedot</h1>
+        <h1>{this.props.t("studentInfo")}</h1>
         <Form>
-          <InfoBox>
-            Kerro itsestäsi. Nämä tiedot auttavat suoritusten merkitsemisessä ja
-            kurssin järjestämisessä. Voit muokata tietoja myöhemmin kurssin
-            asetuksista. Tietojen täyttämisen jälkeen paina "Tallenna" sivun
-            alareunasta.
-          </InfoBox>
+          <InfoBox>{this.props.t("aboutYourself")}</InfoBox>
           <Loading loading={this.state.loading} heightHint="490px">
             <div>
               <Row>
                 <TextField
                   variant="outlined"
                   type="text"
-                  label="Etunimi"
+                  label={this.props.t("firstName")}
                   autoComplete="given-name"
                   name="first_name"
                   InputLabelProps={{
@@ -186,7 +181,7 @@ class CourseOptionsEditor extends React.Component {
                 <TextField
                   variant="outlined"
                   type="text"
-                  label="Sukunimi"
+                  label={this.props.t("lastName")}
                   autoComplete="family-name"
                   name="last_name"
                   InputLabelProps={{
@@ -206,7 +201,7 @@ class CourseOptionsEditor extends React.Component {
                 <TextField
                   variant="outlined"
                   type="text"
-                  label="Helsingin yliopiston opiskelijanumero"
+                  label={this.props.t("sid")}
                   name="student_number"
                   InputLabelProps={{
                     shrink:
@@ -216,54 +211,9 @@ class CourseOptionsEditor extends React.Component {
                   fullWidth
                   value={this.state.student_number}
                   onChange={this.handleInput}
-                  helperText="Jätä tyhjäksi, jos et ole tällä hetkellä Helsingin yliopiston opiskelija."
+                  helperText={this.props.t("nosid")}
                   onFocus={this.handleFocus}
                   onBlur={this.handleUnFocus}
-                />
-              </Row>
-
-              <Row>
-                <DropdownMenu
-                  selectedVariant={
-                    this.state.currentCourseVariant ||
-                    this.props.courseVariant ||
-                    "dl"
-                  }
-                  setSelectedVariant={this.setSelectedVariant}
-                />
-              </Row>
-              {!this.props.courseVariant &&
-                (this.state.currentCourseVariant === "nodl" ||
-                  this.state.currentCourseVariant === "ohja-nodl") && (
-                  <Row>
-                    <InfoBox>
-                      <Card>
-                        <CardContent>
-                          <StyledIcon icon={icon} />
-                          Jos olet vaihtamassa aikataulullisesta kurssista
-                          aikatauluttomaan, katso tämä ohje ohjelmointitehtävien
-                          pisteiden siirtämiseksi:{" "}
-                          <Link to="/vaihda-aikatauluttomaan">
-                            Kurssin vaihto aikatauluttomaan versioon
-                          </Link>
-                          .
-                        </CardContent>
-                      </Card>
-                    </InfoBox>
-                  </Row>
-                )}
-
-              <Row>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={this.state.applies_for_study_right}
-                      onChange={this.handleCheckboxInput}
-                      name="applies_for_study_right"
-                      value="1"
-                    />
-                  }
-                  label="Aion hakea aikataulutetun Ohjelmoinnin MOOCin kautta opinto-oikeutta Helsingin yliopistoon."
                 />
               </Row>
 
@@ -277,7 +227,7 @@ class CourseOptionsEditor extends React.Component {
                       value="1"
                     />
                   }
-                  label="Olen tällä hetkellä opiskelijana Digital Education for All -hankkeessa. Jätä tämä valitsematta mikäli et tiedä kyseisestä hankkeesta."
+                  label="I'm participating in the Digital Education for All program. Please don't select this if you don't know what this is."
                 />
               </Row>
 
@@ -291,38 +241,24 @@ class CourseOptionsEditor extends React.Component {
                       value="1"
                     />
                   }
-                  label="Minulle voi lähettää tietoa uusista kursseista"
+                  label={this.props.t("marketing")}
                 />
               </Row>
             </div>
           </Loading>
 
-          <h2>Kurssilla tehtävästä tutkimuksesta</h2>
+          <h2>{this.props.t("researchTitle")}</h2>
 
-          <p>
-            Kurssilla tehdään oppimiseen liittyvää tutkimusta. Tällä
-            tutkimuksella on useampia tavoitteita:
-          </p>
+          <p>{this.props.t("research1")}</p>
 
           <ol>
-            <li>
-              luoda oppimateriaali, joka ottaa yksilölliset erot huomioon ja
-              reagoi tarvittaessa tarjoten kohdennetumpaa oppisisältöä
-            </li>
-            <li>
-              kehittää digitaalisissa ympäristöissä tapahtuvaan oppimiseen
-              liittyvää ymmärrystä ja tietoa, sekä
-            </li>
-            <li>
-              tukea tutkimustiedon kautta muita oppimateriaalien kehittäjiä ja
-              oppimisen tutkijoita. Tämä johtaa luonnollisesti myös parempaan
-              oppimiskokemukseen opiskelijoille.
-            </li>
+            <li>{this.props.t("research2")}</li>
+            <li>{this.props.t("research3")}</li>
+            <li>{this.props.t("research4")}</li>
           </ol>
 
           <p>
-            Tällaisesta oppimisanalytiikaksi kutsutusta tutkimuksesta
-            kiinnostuneiden kannattaa tutustua esimerkiksi artikkeliin{" "}
+            {this.props.t("research5")}
             <OutboundLink
               href="https://dl.acm.org/citation.cfm?id=2858798"
               target="_blank"
@@ -334,27 +270,14 @@ class CourseOptionsEditor extends React.Component {
             .
           </p>
 
-          <p>
-            Tutkimusdatan hallinnasta vastaa Helsingin yliopiston
-            tietojenkäsittelytieteen laitoksen Agile Education Research -ryhmän
-            Arto Hellas. Anonymisoimattomaan tutkimusdataan eivät pääse käsiksi
-            muut tutkijat. Voit myös pyytää milloin tahansa sinusta kerätyn
-            datan poistamista lähettämällä sähköpostin osoitteeseen
-            arto.hellas@cs.helsinki.fi
-          </p>
+          <p>{this.props.t("research6")}</p>
 
-          <p>
-            Työskentelystä kerättyä tietoa käytetään tutkimuksessa. Kerätty
-            tieto sisältää tietoa oppimateriaalien käytöstä, kurssitehtävien
-            tekemisestä sekä kokeissa pärjäämisestä. Tutkimustuloksista ei
-            pystytä tunnistamaan yksittäisiä opiskelijoita. Jos et osallistu
-            tutkimukseen, siitä ei tule minkäänlaisia seuraamuksia.
-          </p>
+          <p>{this.props.t("research7")}</p>
 
           <Row>
             <Loading loading={this.state.loading} heightHint="115px">
               <RadioGroup
-                aria-label="Tutkimukseen osallistuminen"
+                aria-label={this.props.t("researchAgree")}
                 name="research"
                 value={this.state.research}
                 onChange={this.handleInput}
@@ -362,12 +285,12 @@ class CourseOptionsEditor extends React.Component {
                 <FormControlLabel
                   value="1"
                   control={<Radio color="primary" />}
-                  label="Osallistun oppimiseen liittyvään tutkimukseen. Valitsemalla tämän autat sekä nykyisiä että tulevia opiskelijoita."
+                  label={this.props.t("researchYes")}
                 />
                 <FormControlLabel
                   value="0"
                   control={<Radio />}
-                  label="En osallistu oppimiseen liittyvään tutkimukseen."
+                  label={this.props.t("researchNo")}
                 />
               </RadioGroup>
             </Loading>
@@ -382,13 +305,13 @@ class CourseOptionsEditor extends React.Component {
               color="primary"
               fullWidth
             >
-              Tallenna
+              {this.props.t("save")}
             </Button>
           </Row>
         </Form>
         {this.state.error && (
           <InfoBox>
-            <b>Täytä vaaditut kentät.</b>
+            <b>{this.props.t("fillRequired")}</b>
           </InfoBox>
         )}
       </FormContainer>
@@ -396,4 +319,6 @@ class CourseOptionsEditor extends React.Component {
   }
 }
 
-export default withSimpleErrorBoundary(CourseOptionsEditor)
+export default withTranslation("common")(
+  withSimpleErrorBoundary(CourseOptionsEditor),
+)

@@ -1,4 +1,5 @@
 import React, { Fragment } from "react"
+import "../i18n"
 import Helmet from "react-helmet"
 import Sidebar from "../components/Sidebar"
 import ContentArea from "../components/ContentArea"
@@ -7,7 +8,6 @@ import { StaticQuery, graphql } from "gatsby"
 import * as store from "store"
 import Pheromones from "../util/pheromones"
 import styled from "styled-components"
-
 import courseMetaData from "../../course-metadata.json"
 
 import "./reboot.css"
