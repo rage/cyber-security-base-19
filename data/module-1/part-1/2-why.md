@@ -1,7 +1,7 @@
 ---
 path: '/module-1/2-why'
 title: 'What is cyber security and why should we care about it?'
-hidden: false
+hidden: true
 ---
 
 Software is literally everywhere. Initially software resided on mainframes and only few people were in contact with it. Somewhat later the personal computer was invented and thanks to its popularity, software moved to our homes. (That said, in the home software was still restricted and an attacker would need physical access to the target.)
@@ -54,7 +54,7 @@ Even though the software or/and the protocol it implements is at its mature phas
 - [Heartbleed](http://www.codenomicon.com/news/pressrelease/2014/04/09/codenomicon_advising_internet_community_on_serious_internet_vulnerability_dubbed_heartbleed.html)
 - [Heist](http://arstechnica.com/security/2016/08/new-attack-steals-ssns-e-mail-addresses-and-more-from-https-pages/)
 - [Krack](https://arstechnica.com/information-technology/2017/10/severe-flaw-in-wpa2-protocol-leaves-wi-fi-traffic-open-to-eavesdropping/)
- 
+
 </text-box>
 
 The world is changing and cyber security is a rapidly-growing global issue.

@@ -1,12 +1,12 @@
 ---
 path: '/module-2.5/1-framework'
 title: 'Making Mistakes is (not) Harder with Modern Frameworks'
-hidden: false
+hidden: true
 ---
 
 This part of the course is devoted into (security) issues that developers make
 when working with modern frameworks as well as ways how software developers can
-mitigate such issues in a rapid fashion. 
+mitigate such issues in a rapid fashion.
 
 
 ## Typical Security Issues Are (almost) Resolved
@@ -79,7 +79,7 @@ issues, they do not provide protection against flaws in the business logic of
 the application. A security consultant does not only look for vulnerabilities
 that are related to a user breaking into a system. She also looks for
 vulnerabilities that are related to the user being able to do something that he
-or she should not be able to do from the start. 
+or she should not be able to do from the start.
 
 <programming-exercise name="Millionaire" tmcname="t-millionaire">
 

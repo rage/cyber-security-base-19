@@ -1,7 +1,7 @@
 ---
 path: '/module-1/5-legal'
 title: 'Responsibilities and liabilities'
-hidden: false
+hidden: true
 ---
 
 This course will not delve deeply into the law, but note that companies and

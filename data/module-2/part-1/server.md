@@ -1,7 +1,7 @@
 ---
 path: '/module-2.1/2-servers'
 title: 'Web Servers and Web Applications'
-hidden: false
+hidden: true
 ---
 
 
@@ -77,7 +77,7 @@ Most Java Development environments come with Maven; if you installed NetBeans pr
 
 </text-box>
 
-Using [Spring Boot](https://projects.spring.io/spring-boot/), a web application that returns "Hello World!" to any request looks as follows. 
+Using [Spring Boot](https://projects.spring.io/spring-boot/), a web application that returns "Hello World!" to any request looks as follows.
 
 
 ```java
@@ -285,7 +285,7 @@ It contains information on both the Spring framework that we are using as well
 as on the Test My Code -server specific components. If we would want to add new
 dependencies -- i.e. libraries that contain code that we wish to utilize -- we
 would add the dependencies within the \<dependencies\>-element. When
-working with Test My Code however, adding new dependencies has been disabled. 
+working with Test My Code however, adding new dependencies has been disabled.
 
 </text-box>
 

@@ -1,7 +1,7 @@
 ---
 path: '/module-2.4/1-finding'
 title: 'Finding defects'
-hidden: false
+hidden: true
 ---
 
 This part of the course is devoted into further discovery of defects in
@@ -412,7 +412,7 @@ shell. If you have not used shell before, see this
 We recommend -- if you are not using Linux or Mac -- that you install
 VirtualBox and a Linux distribution such as Ubuntu on your computer. If you are
 not familiar with how this could be done, follow the tutorial at
-[https://www.lifewire.com/run-ubuntu-within-windows-virtualbox-2202098](https://www.lifewire.com/run-ubuntu-within-windows-virtualbox-2202098). 
+[https://www.lifewire.com/run-ubuntu-within-windows-virtualbox-2202098](https://www.lifewire.com/run-ubuntu-within-windows-virtualbox-2202098).
 
 The VirtualBox/Ubuntu will come handy later as well.
 

@@ -1,7 +1,7 @@
 ---
 path: '/module-2.6/1-threat'
 title: 'Threat Analysis'
-hidden: false
+hidden: true
 ---
 
 
