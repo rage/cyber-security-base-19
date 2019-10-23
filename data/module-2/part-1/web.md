@@ -1,7 +1,7 @@
 ---
 path: '/module-2.1/1-web'
 title: 'Ports and Applications'
-hidden: false
+hidden: true
 ---
 
 
@@ -113,7 +113,7 @@ zip file that should work on all operating systems.
 Once everything is istalled, select **MOOC** as your organization and select  **Securing Software 2019** as your course.
 
 
-Once this is done, you will receive a pop up that lists the assignments that you may download. 
+Once this is done, you will receive a pop up that lists the assignments that you may download.
 
 #### Possible issues:
 

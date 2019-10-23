@@ -1,7 +1,7 @@
 ---
 path: '/module-1/3-media'
 title: 'Media reports only the tip of the iceberg'
-hidden: false
+hidden: true
 ---
 
 Security-related news has become more and more common. Media reports about

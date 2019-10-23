@@ -1,7 +1,7 @@
 ---
 path: '/module-2.2/1-web'
 title: 'Web Applications continued...'
-hidden: false
+hidden: true
 ---
 
 
@@ -46,7 +46,7 @@ trigger reloads.
 
 When the above plugins are in use, it is possible to also use
 [LiveReload](http://livereload.com/) to trigger a site refresh in the browser.
-Chrome plugin for LiveReload can be found 
+Chrome plugin for LiveReload can be found
 [here](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei).
 
 
@@ -143,7 +143,7 @@ any blocking downloading of content.
 <text-box variant=emph name="Javascript tutorials">
 
 The Mozilla Developer Network has a high-quality and comprehensive
-[Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) tutorial. 
+[Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) tutorial.
 
 </text-box>
 

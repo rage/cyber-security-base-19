@@ -2,6 +2,7 @@
 path: '/module-2.2'
 title: 'Part II'
 overview: true
+hidden: true
 ---
 <deadline>23.12.2019</deadline>
 

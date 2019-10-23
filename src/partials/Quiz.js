@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import LoginStateContext from "../contexes/LoginStateContext"
 import LoginControls from "../components/LoginControls"
-
+import { withTranslation } from "react-i18next"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 import { normalizeExerciseId } from "../util/strings"
 import Quiz from "moocfi-quizzes"
@@ -20,10 +20,11 @@ class QuizPartial extends React.Component {
   static contextType = LoginStateContext
 
   render() {
+    const { id, t } = this.props
     if (!this.context.loggedIn) {
       const loginPrompt = (
         <div style={{ padding: "1rem", textAlign: "center" }}>
-          <p>Kirjaudu sisään nähdäksesi tehtävän.</p>
+          <p>{t("loginToSeeExercise")}</p>
           <LoginControls />
         </div>
       )
@@ -40,7 +41,6 @@ class QuizPartial extends React.Component {
       )
     }
 
-    const { id } = this.props
     if (!id) {
       return <div>There should be quiz here but no quiz id is specified.</div>
     }
@@ -57,4 +57,4 @@ class QuizPartial extends React.Component {
   }
 }
 
-export default withSimpleErrorBoundary(QuizPartial)
+export default withTranslation("common")(withSimpleErrorBoundary(QuizPartial))

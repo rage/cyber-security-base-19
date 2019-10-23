@@ -1,7 +1,7 @@
 ---
 path: '/module-2.3/1-security'
 title: 'Most Common Security Vulnerabilities'
-hidden: false
+hidden: true
 ---
 
 This part of the course is devoted to the discovery and reporting of security
@@ -343,7 +343,7 @@ latest developments of the field.
 
 It is important to also follow the relevant mailing lists. For example, Ruby on
 Rails has a public mailing list at
-[https://groups.google.com/forum/#!forum/rubyonrails-security](https://groups.google.com/forum/#!forum/rubyonrails-security). 
+[https://groups.google.com/forum/#!forum/rubyonrails-security](https://groups.google.com/forum/#!forum/rubyonrails-security).
 
 </text-box>
 

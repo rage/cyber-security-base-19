@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { graphql, StaticQuery } from "gatsby"
 import { Button } from "@material-ui/core"
+import CourseSettings from "../../course-settings"
 
 import Logo from "./Logo"
 import TreeView from "./TreeView"
@@ -93,22 +94,9 @@ const MenuExpanderWrapper = styled.div`
   }
 `
 
-var content2 = [
-  {
-    title: "About the series",
-    path: "/",
-  },
-  {
-    title: "Course descriptions and timetable",
-    path: "/descriptions",
-  },
-  {
-    title: "Frequently asked questions",
-    path: "/faq",
-  },
-]
+var content2 = CourseSettings.default.sidebarEntries
 
-var futurePages = [] // { title: "Osa 14", tba: "19.4.2019" }
+var futurePages = CourseSettings.default.sidebarFuturePages
 
 const MobileWrapper = styled.div`
   @media only screen and (max-width: ${SMALL_MEDIUM_BREAKPOINT}) {
@@ -132,32 +120,28 @@ const MobileWrapperOrFragment = props => {
 
 class Sidebar extends React.Component {
   render() {
-    let collect = function(props, filt) {
-      let edges =
-        props.data?.allMarkdownRemark?.edges.map(o => o.node?.frontmatter) || []
-      if (process.env.NODE_ENV === "production") {
-        edges = edges.filter(o => !o.hidden)
-      }
-      edges = edges.filter(o => o.path.startsWith(filt))
-      edges.sort((a, b) =>
-        a.title.localeCompare(b.title, undefined, {
-          numeric: true,
-          sensitivity: "base",
-        }),
-      )
-      return edges
+    let edges =
+      this.props.data?.allMarkdownRemark?.edges.map(o => o.node?.frontmatter) ||
+      []
+    if (process.env.NODE_ENV === "production") {
+      edges = edges.filter(o => !o.hidden)
     }
-
-    let content = content2
-    content = content.concat([
-      { separator: true, title: "Introduction to Cyber Security" },
-    ])
-    //content = content.concat(collect(this.props, "/module-1"))
-    content = content.concat([{ separator: true, title: "Securing Software" }])
-    //content = content.concat(collect(this.props, "/module-2"))
-    content = content.concat([{ separator: true, title: "Project I" }])
-    //content = content.concat(collect(this.props, "/module-3"))
+    edges = edges.filter(o => !o.information_page)
+    edges.sort((a, b) =>
+      a.title.localeCompare(b.title, undefined, {
+        numeric: true,
+        sensitivity: "base",
+      }),
+    )
+    let content = content2.concat(edges)
     content = content.concat(futurePages)
+    if (CourseSettings.default.splitCourses) {
+      let middlepoint = content.findIndex(o => o.title === "Osa 7")
+      content.splice(middlepoint + 1, 0, {
+        separator: true,
+        title: "Ohjelmoinnin jatkokurssi",
+      })
+    }
 
     return (
       <MobileWrapperOrFragment mobileMenuOpen={this.props.mobileMenuOpen}>
@@ -181,7 +165,7 @@ class Sidebar extends React.Component {
           </Button>
         </MenuExpanderWrapper>
         <SidebarContainer mobileMenuOpen={this.props.mobileMenuOpen}>
-          <Brand>Cyber security base 2019-2020</Brand>
+          <Brand>{CourseSettings.default.name}</Brand>
           <TreeViewContainer>
             <TreeView data={content} />
           </TreeViewContainer>
@@ -205,6 +189,7 @@ const query = graphql`
           id
           frontmatter {
             title
+            information_page
             path
             hidden
           }

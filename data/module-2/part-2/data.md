@@ -1,7 +1,7 @@
 ---
 path: '/module-2.2/2-data'
 title: "The Data has Value -- Let's store it!"
-hidden: false
+hidden: true
 ---
 
 
@@ -43,7 +43,7 @@ project by adding the following dependency to the `pom.xml` file.
 </dependency>
 ```
 
-The previously added dependency provides H2-specific support for interacting with the database. 
+The previously added dependency provides H2-specific support for interacting with the database.
 
 A program that uses a database needs to (1) create a database connection, (2)
 execute a query to the database, (3) do something with the query results, and
@@ -175,7 +175,7 @@ Fox	Sasha Nein
 Riddle	Voldemort
 ```
 
-Now, when the application is started again, agent Voldemort is within the database and the details of a new agent is queried from the user. 
+Now, when the application is started again, agent Voldemort is within the database and the details of a new agent is queried from the user.
 
 ```sample
 Agents in database:
@@ -226,7 +226,7 @@ existing classes into database schemas and to build queries using objects. This
 has created a situation where large parts of the typical database interaction
 is no longer implemented by the developer, but by a framework. The developer
 effectively only needs to implement the database interaction in those parts,
-where the existing approaches are not sufficient. 
+where the existing approaches are not sufficient.
 
 One standard for ORM technique in Java is the [Java Persistence
 Api](http://en.wikipedia.org/wiki/Java_Persistence_API) (JPA), which has been
@@ -327,7 +327,7 @@ The above examples follow the JPA specification. The Spring project called
 Spring Data JPA provides a superclass
 [AbstractPersistable](http://docs.spring.io/autorepo/docs/spring-data-jpa/current/api/org/springframework/data/jpa/domain/AbstractPersistable.html)
 that can be inherited. It provides functionality that makes the previous
-definitions a bit more straightforward. 
+definitions a bit more straightforward.
 
 ```java
 // package
