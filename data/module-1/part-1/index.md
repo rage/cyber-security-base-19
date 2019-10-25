@@ -35,15 +35,16 @@ and may give you feedback.
 
 ### How to pass the course
 
-In order to pass the course you will need to return all the essays and give at
-least 3 peer reviews for each essay. Also, you will need to pass all the
-multiple choice questions.
+In order to pass the course you will need to obtain 17 points (max 22 points).
+Each passed essay is equivalent to 5 points, and each passed multiple choice
+question is equivalent to 1 point.
 
-Essays must be within 20% of the proposed length. If they're not within this
-limit you will not get any points for your answer. We also may reject your
-answer if it's flagged too many times as spam or if it doesn't contain deep
-enough discussion. Also, we may reject your peer reviews if you haven't put
-genuine effort into them.
+To pass an essay you must return an essay and provide at least 3 peer reviews
+for each essay.  Essays must be within 20% of the proposed length. If they're
+not within this limit you will not get any points for your answer. We also may
+reject your answer if it's flagged too many times as spam or if it doesn't
+contain deep enough discussion. Also, we may reject your peer reviews if you
+haven't put genuine effort into them.
 
 You'll receive instructions for the ECTS credits after passing the course.
 
