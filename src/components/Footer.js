@@ -105,7 +105,7 @@ class Footer extends React.Component {
             <StyledCardContent>
               <GithubContainer>
                 <OutboundLink
-                  href="https://github.com/rage/ohjelmointi-19"
+                  href="https://github.com/rage/cyber-security-base-19"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
