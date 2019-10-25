@@ -5,7 +5,7 @@ const courseSettings = {
   subtitle: "a free course series about cyber security",
   slug: "cyber-security-base-2019",
   tmcCourse: "cyber-security-base-2019",
-  quizzesId: "38240a7b-7e64-4202-91e2-91f6d46f6198-xx",
+  quizzesId: "4908eebe-584e-49e0-a580-c0d399c21ec3",
   tmcOrganization: "mooc",
   bannerPath: "banner.svg",
   sidebarEntries: [

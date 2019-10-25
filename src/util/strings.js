@@ -21,6 +21,7 @@ export function splitGroupNameToWordAndNumber(string) {
 }
 
 export function improveGroupName(string) {
+  string = string.replace("osa", "part")
   var stringParts = splitGroupNameToWordAndNumber(string)
   return (
     capitalizeFirstLetter(stringParts[0]) +
