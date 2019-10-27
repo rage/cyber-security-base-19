@@ -1,7 +1,7 @@
 ---
 path: '/module-1/4-tech'
 title: 'Cyber security is not only a tech problem'
-hidden: true
+hidden: false
 ---
 
 

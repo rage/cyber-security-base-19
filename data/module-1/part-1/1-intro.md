@@ -1,7 +1,7 @@
 ---
 path: '/module-1/1-introduction'
 title: 'Introduction'
-hidden: true
+hidden: false
 ---
 Cyber security can be seen as group of defensive processes, technologies, and
 practices that are specifically designed to protect internet connected

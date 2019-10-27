@@ -1,7 +1,7 @@
 ---
 path: '/module-1/2-why'
 title: 'What is cyber security and why should we care about it?'
-hidden: true
+hidden: false
 ---
 
 Software is literally everywhere. Initially software resided on mainframes and only few people were in contact with it. Somewhat later the personal computer was invented and thanks to its popularity, software moved to our homes. (That said, in the home software was still restricted and an attacker would need physical access to the target.)

@@ -14,6 +14,11 @@ The course series consists of 6 smaller courses, each with a specific theme. The
 
 Each course is open for a certain period of time, and must be completed during that window.
 
+# News
+
+_[27.10.2019]_ The first course 'Introduction to Cyber Security' is now open.
+The course consists of 1 part. Click 'Part I' on the side bar to access the content.
+
 # Work load and prerequisites
 
 There will be programming assignments, essays, quizzes and puzzles throughout the courses, and completing a specific part of a course means working and completing most if not all of them. We expect that individuals work some 2-10 hours per week on the courses depending on their background. Some programming background and ICT experience is required.
@@ -24,6 +29,8 @@ The course has started! You don't need to register to start doing the course. Th
 
 If you reside in Finland, you can get a total of 10 ECTS credits for the course from the Open University of University of Helsinki. Your own school, college or university has the option of accepting these as a part of your studies -- you have to, however, ask your local administration whether they will do so. We are looking into the possibility of offering certificates for completion of the course series to all participants as well.
 
-# Support channel
+# Support channel and contact information
 
 https://t.me/cybersecuritybase
+
+For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.fi.

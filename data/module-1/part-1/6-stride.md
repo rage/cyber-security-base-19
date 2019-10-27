@@ -1,7 +1,7 @@
 ---
 path: '/module-1/6-stride'
 title: 'STRIDE and DREAD'
-hidden: true
+hidden: false
 ---
 
 When beginning development of a new application, there are few factors that

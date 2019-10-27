@@ -1,7 +1,7 @@
 ---
 path: '/module-1/7-reflect'
 title: 'Read and reflect'
-hidden: true
+hidden: false
 ---
 
 
