@@ -4,6 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 import { Button } from "@material-ui/core"
 import CourseSettings from "../../course-settings"
 
+import Search from "./Search"
 import Logo from "./Logo"
 import TreeView from "./TreeView"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
@@ -169,6 +170,7 @@ class Sidebar extends React.Component {
           <TreeViewContainer>
             <TreeView data={content} />
           </TreeViewContainer>
+          <Search />
           <LogoContainer>
             <Logo />
           </LogoContainer>

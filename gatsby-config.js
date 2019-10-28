@@ -3,6 +3,8 @@ const blue = require("@material-ui/core/colors/red").default
 
 const CourseSettings = require('./course-settings').default
 
+const removeMd = require("remove-markdown")
+
 module.exports = {
   siteMetadata: {
     title: CourseSettings.name,
@@ -108,7 +110,21 @@ module.exports = {
               }
             }
           },
-          `@rstacruz/gatsby-remark-component`
+          `@rstacruz/gatsby-remark-component`,
+          {
+            resolve: "@gatsby-contrib/gatsby-plugin-elasticlunr-search",
+            options: {
+              fields: ["title", "rawMarkdownBody"],
+              resolvers: {
+                MarkdownRemark: {
+                  title: node => node.frontmatter.title,
+                  path: node => node.frontmatter.path,
+                  rawMarkdownBody: node => removeMd(node.rawMarkdownBody)
+                }
+              },
+              filter: (node) => process.env.NODE_ENV !== "production" || !node.frontmatter.hidden
+            }
+          }
         ]
       }
     },
