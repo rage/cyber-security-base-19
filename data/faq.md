@@ -65,13 +65,16 @@ It depends on the course part. The criteria can be like the following: "In order
 You get an online certificate (you can print it if you like).
 
 ### Where do I get the certificate?
-The grading and certificates for all the parts of the course will be available at https://cyber-points.mooc.fi/
+
+Certificates will be available later.
 
 ### How do I get the ECTS?
-We are working in cooperation with the Open University of Helsinki (OUH) and they will register the ECTS. Once a course part is finished and the list of students entitled to ECTS and their information is passed to the OUH. Email is sent to the email addresses used on the course with detailed instructions. So if you used an email address created just for this course, please, check it's inbox and use it as your communication mail.
+
+We are working in cooperation with the Open University of Helsinki (OUH). Once you complete a course an email is sent to your MOOC.fi account email address with detailed instructions.
 
 ### How soon should I ask the registration of the ECTS to WebOodi?
-As soon as the Open University of Helsinki (OUH) contacts you you will have six (6) weeks time to aks the registration of the ECTS to WebOodi. After that we will not register them. You will still get the certificate.
+
+As soon as you receive the registration instructions. The registration closes 6 weeks after each course end date. After that we will not register them. You will still get the certificate.
 
 ### Can I get the ECTS registered in my home university if I do not study in Finland?
 It is possible and it has been done. Sometimes extra paper work is needed. It really depends on the University in question. We suggest discussing with your local study counselor beforehand.
