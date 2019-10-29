@@ -228,24 +228,5 @@ export async function getCourseVariant() {
 }
 
 async function getCourse() {
-  if (!accessToken()) {
-    return CourseSettings.default.tmcCourse
-  }
-  const variant = await getCourseVariant()
-  if (variant === "nodl") {
-    return "2019-ohjelmointi-nodl"
-  }
-  if (variant === "ohja-dl") {
-    return "2019-mooc-vain-jatkokurssi"
-  }
-  if (variant === "ohja-nodl") {
-    return "2019-mooc-vain-jatkokurssi-nodl"
-  }
-  if (variant === "kesa-dl") {
-    return "2019-ohjelmointi-kesa"
-  }
-  if (variant === "kesa-ohja-dl") {
-    return "2019-mooc-vain-jatkokurssi-kesa"
-  }
   return CourseSettings.default.tmcCourse
 }
