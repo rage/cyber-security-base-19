@@ -191,10 +191,10 @@ public class PortScanner {
 }
 ```
 
-<p>For this assignment, you should write the code needed for the method
+For this assignment, you should write the code needed for the method
 `getAccessiblePorts` to scan the given range of ports. The method
 should scan the ports at a given address, and then return the list of ports
-that have a service listening for them.</p>
+that have a service listening for them.
 
 Once completed, submit your solution to the TMC server for assessment.
 
