@@ -82,11 +82,11 @@ misconfigurations, and weaknesses.
 
 <text-box variant="emph" name="TED: a source of infinite goodness">
 
-Watch Dan Cornell's talk [It's all about the coders]('https://www.youtube.com/watch?v=fi44mL7mcq0')
+Watch Dan Cornell's talk [It's all about the coders](https://www.youtube.com/watch?v=fi44mL7mcq0)
 
-Watch Paul Carugati's talk [Cyber Self-Defense]('https://www.youtube.com/watch?v=knLDY7hRm5I')
+Watch Paul Carugati's talk [Cyber Self-Defense](https://www.youtube.com/watch?v=knLDY7hRm5I)
 
-Watch James Lyne's talk [Everyday cybercrime -- and what you can do about it]('https://www.ted.com/talks/james_lyne_everyday_cybercrime_and_what_you_can_do_about_it?language=en') on TEDTv.
+Watch James Lyne's talk [Everyday cybercrime -- and what you can do about it](https://www.ted.com/talks/james_lyne_everyday_cybercrime_and_what_you_can_do_about_it?language=en) on TEDTv.
 
 </text-box>
 
