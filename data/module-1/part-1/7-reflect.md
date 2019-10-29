@@ -6,7 +6,7 @@ hidden: false
 
 
 Read the following article and answer the  following question: "Do you find
-mnemonic lists meaningful or not?" Justify your opinion in about 300 words.
+mnemonic/Top-X lists meaningful or not?" Justify your opinion in about 300 words.
 
 - Iván Arce, Kathleen Clark-Fisher, Neil Daswani, Jim DelGrosso, Danny Dhillon,
 Christoph Kern, Tadayoshi Kohno, Carl Landwehr, Gary McGraw, Brook Schoenfield,
