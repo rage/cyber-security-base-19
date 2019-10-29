@@ -88,7 +88,6 @@ _(source [xkcd: Exploits of a mom.](https://xkcd.com/327/))_
 
 
 <quiz id="2d373a9b-8a8c-50f0-a663-e1480cdebdc2"></quiz>
-<quiz id="af597c85-8ba2-4d23-89ce-e7cb946f5467"></quiz>
 
 Whilst SQL injections are perhaps the most common examples of Injection
 vulnerabilities (see e.g. [Ruby on Rails](http://rails-sqli.org/) and [Spring
@@ -150,7 +149,7 @@ credentials for the action that he or she seeks to take.
 
 The next assignment is done within Test My Code.
 
-<programming-exercise name="Megaupload" tmcname="t-megaupload">
+<programming-exercise name="Megaupload" tmcname="Set3-01.Megaupload">
 
 The assignment template contains the functionality for uploading and storing
 personal files on a web server. The files uploaded by an individual should not
@@ -169,13 +168,7 @@ have solved the issue(s), return your solution to TMC.
 </programming-exercise>
 
 
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9229"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9221"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9222"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9223"></div>
+<quiz id="83933e2f-b6a9-5c0e-962e-d48b898cc062"></quiz>
 
 ## Security Misconfiguration
 
@@ -241,14 +234,7 @@ good
 that can be used for XSS testing.
 
 
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c921d"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c921e"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c921f"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9220"></div>
-
+<quiz id="bbf5436f-d245-5969-8280-86f330de3f14"></quiz>
 
 ## Using Components with Known Vulnerabilities
 
@@ -299,7 +285,7 @@ assumes that the Maven version is at least 3.1, whilst older versions (Maven
 The next assignment is partially done within Test My Code and partially within
 the following questionnaire.
 
-<programming-exercise name="Oldies but goodies" tmcname="t-oldies">
+<programming-exercise name="Oldies but goodies" tmcname="Set3-02.OldiesButGoodies">
 
 The assignment template contains a simple Spring Framework application that
 uses a version of Spring released in December 2009. You can launch the
@@ -319,7 +305,7 @@ submitted to server.
 </programming-exercise>
 
 
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9228"></div>
+<quiz id="b4cc3307-042a-57d2-980e-14662d8805db"></quiz>
 
 ## Unvalidated Redirects and Forwards
 
@@ -358,14 +344,7 @@ request to the target application as the user is accessing the source site,
 making it possible to access data as an authenticated user that should not be
 accessible. Many frameworks these days include CSRF defences by default.
 
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9224"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9225"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9226"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bf3a1e6283b5de1d59c9227"></div>
-
+<quiz id="555f2288-82d9-5cb9-b3af-f0b36d6858c4"></quiz>
 
 In this this part of the securing software course, we looked at some of the
 most common web security issues. During the next part, we will look a bit

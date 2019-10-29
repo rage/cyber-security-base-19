@@ -376,26 +376,20 @@ Similarly to the previous part, these assignments are submitted to the Test My C
 
 </text-box>
 
-        <div class="assignments">
-          <div class="assignment">
-            <header>
-              <h1 class="panel-title">
-                <a data-toggle="collapse" class="collapsed" href="#t-tasks">
-                  Tasks (Click to Open!)
-                </a>
-              </h1>
-            </header>
-            <div id="t-tasks" class="collapse">
+<programming-exercise name="Port Scanner" tmcname="Set2-01.Tasks">
 
-        <p>The assignment template has some functionality for adding tasks. Your task is to alter the loadTasks function so that the existing tasks are loaded when the page is shown to the user. Do this using Javascript -- note that the server will return a list of objects.</p>
+The assignment template has some functionality for adding tasks. Your task is
+to alter the loadTasks function so that the existing tasks are loaded when the
+page is shown to the user. Do this using Javascript -- note that the server
+will return a list of objects.
 
-        <p>If you wish an additional challenge, add the functionality to remove tasks as well.</p>
+If you wish an additional challenge, add the functionality to remove tasks as well.
 
-        <p>Note that the application has no automated tests. Once you are able to list the tasks, return your solution to TMC.</p>
+Note that the application has no automated tests. Once you are able to list the
+tasks, return your solution to TMC.
 
-            </div>
-          </div>
-        </div>
+</programming-exercise>
+
 
 <text-box variant=emph name="Cross-origin Resource Sharing">
 

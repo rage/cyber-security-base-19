@@ -44,7 +44,7 @@ with form data.
 
 
 
-<programming-exercise name="CSRF" tmcname="t-csrf">
+<programming-exercise name="CSRF" tmcname="Set5-01.CSRF">
 
 The assignment template contains an application that provides the opportunity
 to change the password of the user. Currently, if the user is logged in, the
@@ -81,7 +81,7 @@ that are related to a user breaking into a system. She also looks for
 vulnerabilities that are related to the user being able to do something that he
 or she should not be able to do from the start.
 
-<programming-exercise name="Millionaire" tmcname="t-millionaire">
+<programming-exercise name="Millionaire" tmcname="Set5-02.Millionaire">
 
 The assignment template contains the core elements of the "Who wants to be a
 millionaire?"-game that we looked into earlier in the course. In this template,
@@ -97,7 +97,7 @@ TMC.
 
 </programming-exercise>
 
-<programming-exercise name="Online Webshop" tmcname="t-onlinewebshop">
+<programming-exercise name="Online Webshop" tmcname="Set5-03.OnlineWebshop">
 
 The assignment template contains a version of the previously seen application
 "EuroShopper". There are some issues in the code that -- although not direct
@@ -333,16 +333,7 @@ changes are pushed to production frequently, which also leads to the need for
 the automatization, optimization, and simplification of the deployment process.
 This also makes the whole process more transparent and auditable.
 
-<div class="quiznator-plugin" data-quiz-id="5c04f70453b5a872e9c481cf"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c04f70453b5a872e9c481d0"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c04f70453b5a872e9c481d1"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c04f70453b5a872e9c481d2"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c04f70453b5a872e9c481d3"></div>
-
+<quiz id="d8636f02-274a-5f39-b6d5-b05553a1c8c9"></quiz>
 
 Automating the deployment of new changes can be beneficial when patching the
 system(s) against common security flaws. When new security flaws are published,

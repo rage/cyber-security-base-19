@@ -106,7 +106,7 @@ user requesting the content.
 In the above example, any request that is made to the web application will
 return the text "Hello World!".
 
-<programming-exercise name="Hello Web!" tmcname="t-hello-web">
+<programming-exercise name="Hello Web!" tmcname="Set1-02.HelloWeb">
 
 
 In this assignment, you will familiarize yourself with the very basic
@@ -215,7 +215,7 @@ public class GreetingController {
 If the server hosting the application would be running on port `8080`, a request to `http://localhost:8080/greet?user=Ada` would receive a response "Hi Ada, how are you?".
 
 
-<programming-exercise name="Calculator" tmcname="t-calculator">
+<programming-exercise name="Calculator" tmcname="Set1-03.Calculator">
 
 
 In this assignment, you will familiarize yourself with handling (1) requests to
@@ -362,7 +362,7 @@ from the method is sent directly to the user, but that it is used to determine
 the template that will be used to create the view.
 
 
-<programming-exercise name="Hello Templates" tmcname="t-hellotemplates">
+<programming-exercise name="Hello Templates" tmcname="Set1-04.HelloTemplates">
 
 Next, we will look into returning content created using a template. Implement
 the following functionality to the class `HelloTemplateController` (in the
@@ -542,7 +542,7 @@ principle with any repeatable element; it could be used, for example, with the
 
 *Note!* One of the most classic mistakes is to define the list of items as a string `th:each="item : list"`. This does not work.
 
-<programming-exercise name="Hello List" tmcname="t-hellolist">
+<programming-exercise name="Hello List" tmcname="Set1-05.HelloList">
 
 In this assignment we will look into using lists and using them as data for the
 templates.
@@ -559,7 +559,7 @@ Once finished, submit the assignment to the TMC server.
 
 </programming-exercise>
 
-<programming-exercise name="Notebook" tmcname="t-notebook">
+<programming-exercise name="Notebook" tmcname="Set1-06.Notebook">
 
 
 Implement a notebook application to the class `NotebookController` in the

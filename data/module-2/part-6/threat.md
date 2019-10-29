@@ -73,15 +73,7 @@ The following image is related to the next question.
 
 
 
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd72049"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd7204a"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd72053"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd7204b"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd7204c"></div>
+<quiz id="8fd9a0a6-a325-5976-8eca-2f6c82d98f6b"></quiz>
 
 ### Message Sequence Chart
 
@@ -175,9 +167,9 @@ The underlying technologies are one point of interest in DFDs. Virtual
 machines, load balancers and such should also be drawn in. Basically anything
 that handles the data in a way or another.
 
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd7204d"></div>
+<quiz id="a8877f72-b7c7-5445-9548-307c3809ea13"></quiz>
 
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd7204e"></div>
+<quiz id="1cedbfed-f361-58ae-a8ab-fce5e7537913"></quiz>
 
 ## Boundaries
 
@@ -201,7 +193,7 @@ files in the filesystem (not a boundary if looked from the filesystem
 point-of-view).  Machines and virtual machines are also boundaries as processes
 do not move between machines or virtual machines.
 
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd7204f"></div>
+<quiz id="9086dc05-7d65-550b-bb17-bb8ddb3eab26"></quiz>
 
 Containing boundaries are boundaries that do not come from the system but are
 usually created on purpose. Containing boundaries are isolated from the hosts
@@ -275,7 +267,7 @@ if it is passing through the data or is it actively "tampered" with. Sometimes
 for some boxes the "looking into what it is doing" is impossible and these
 should be treated as untrustworthy termination and new traffic points.
 
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd72050"></div>
+<quiz id="ef7aeccf-f5fe-5504-ad69-44f4f4e551bf"></quiz>
 
 ## Taint Analysis
 
@@ -322,7 +314,7 @@ to get you started with the tainting checker.
 
 </text-box>
 
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd72051"></div>
+<quiz id="c532fc92-05d5-5466-83d8-2ad73c916171"></quiz>
 
 ## Data lifetime
 
@@ -355,15 +347,6 @@ found from the [Secure Coding
 Guidelines](http://www.oracle.com/technetwork/java/seccodeguide-139067.html#2)
 for Java SE.
 
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd72052"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd72055"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd72056"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd72057"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5c0f41b0369632ba3cd72054"></div>
-
+<quiz id="277afb93-21f4-5ade-be42-68875c5aeaaa"></quiz>
 
 During this course, we have taken an introductory tour to securing (web) software. In the course project, some of this knowledge is taken into use. Stay tuned.

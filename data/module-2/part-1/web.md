@@ -106,7 +106,7 @@ assignments directly from the programming environment. First install Java if
 you don't have it already from:
 [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
 Then grab a Netbeans bundle that includes the Test My Code plugin from here:
-[http://update.testmycode.net/installers/tmc-netbeans_org_mooc/](http://update.testmycode.net/installers/tmc-netbeans_org_mooc/).
+[http://update.testmycode.net/installers/tmc-netbeans\_org\_mooc/](http://update.testmycode.net/installers/tmc-netbeans_org_mooc/).
 Choose either an installer for your operating system or download the portable
 zip file that should work on all operating systems.
 
@@ -138,7 +138,7 @@ If you choose not to use the NetBeans + TMC combination, there are also other op
 </text-box>
 
 
-<programming-exercise name="Port Scanner" tmcname='t-port-scanner'>
+<programming-exercise name="Port Scanner" tmcname='Set1-01.PortScanner'>
 
 In this assignment, you will gain some hands-on experience on working with ports in Java and familiarize yourself with the tools used for some of the programming tasks in this course.
 
@@ -213,7 +213,16 @@ allowed to do so.
 
 ## Talking with the remote program
 
-If a computer has a port open, the program listening to that port can likely be talked with. One of the simplest approaches for trying out such discussion is the use of [Telnet](https://en.wikipedia.org/wiki/Telnet), which is available in most of the operating systems: if not, you can always download e.g. [PuTTY](https://en.wikipedia.org/wiki/PuTTY). Telnet connections are made to a specific address and to a specific port. For example, a connection to the F-Secure web server could be initiated through the address `f-secure.com` and the port `80`.
+If a computer has a port open, the program listening to that port can likely be
+talked with. One of the simplest approaches for trying out such discussion is
+the use of [Telnet](https://en.wikipedia.org/wiki/Telnet), which is available
+in most of the operating systems: if not, you can always download e.g.
+[PuTTY](https://en.wikipedia.org/wiki/PuTTY). Modern macos no longer has built-in Telnet
+but you can use netcat (nc) like demonstrated [here](https://medium.com/ayuth/bring-telnet-back-on-macos-high-sierra-11de98de1544).
+
+Telnet connections are made to a specific address and to a specific port. For
+example, a connection to the F-Secure web server could be initiated through the
+address `f-secure.com` and the port `80`.
 
 When discussing with an application, it is important to know the protocol --
 discussion format -- that the application follows. One such example is the
@@ -252,7 +261,7 @@ Location: http://f-secure.com/fi_FI/
 
 In the above example, instead of returning the content of the page, the
 F-Secure web server asks us to look for the content from the address
-[http://f-secure.com/fi_FI/](http://f-secure.com/fi_FI/).
+[http://f-secure.com/fi\_FI/](http://f-secure.com/fi_FI/).
 
 <text-box variant=emph name="Ohh.. Some logic in that server?">
 If you do not reside in Finland and make the same request as above, you are likely directed to another address.

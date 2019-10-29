@@ -127,7 +127,7 @@ try {
 ```
 
 
-<programming-exercise name="Hello Database" tmcname='t-hellodatabase-ex'>
+<programming-exercise name="Hello Database" tmcname='Set2-02.HelloDatabase'>
 
 You have a database with the following schema at your disposal.
 
@@ -150,7 +150,7 @@ Once completed, return the assignment to the TMC server.
 
 </programming-exercise>
 
-<programming-exercise name="Hello Insert" tmcname='t-helloinsert-ex'>
+<programming-exercise name="Hello Insert" tmcname='Set2-03.HelloInsert'>
 
 The same database schema from the previous assignment is at your disposal here.
 Implement the functionality for adding an agent to the database. The
@@ -396,7 +396,7 @@ public class PersonController {
 }
 ```
 
-<programming-exercise name="Hello Web with a Database" tmcname='t-hellowebwithdatabase-ex'>
+<programming-exercise name="Hello Web with a Database" tmcname='Set2-04.HelloWebWithDatabase'>
 
 The assignment template contains an application that always returns the message
 "Hello Web!" to the user. Change the implementation so that the message content
@@ -470,7 +470,7 @@ public void bankTransfer(Long fromAccount, Long toAccount, Integer amount) {
 }
 ```
 
-<programming-exercise name="Bank Transfer" tmcname='t-banktransfer'>
+<programming-exercise name="Bank Transfer" tmcname='Set2-05.BankTransfer'>
 
 The assignment template has a simple application for managing accounts and
 transfers. There is, however, small things to be fixed in the transfer
@@ -559,7 +559,7 @@ entities. Getting familiar with the programming environment always helps!
 </text-box>
 
 
-<programming-exercise name="Simple Banking" tmcname='t-simplebanking'>
+<programming-exercise name="Simple Banking" tmcname='Set2-06.SimpleBanking'>
 
 The assignment template has the entities for managing accounts and clients, but
 they are missing a connection. Modify the application so that a customer may

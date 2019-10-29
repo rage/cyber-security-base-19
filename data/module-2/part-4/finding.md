@@ -114,10 +114,9 @@ execution continues.
 
 _Note that the above is highly dependent on the way the execution is implemented._
 
+<quiz id="7eeb29a9-bda0-5cc3-a378-de174ac24c32"></quiz>
 
-<div class="quiznator-plugin" data-quiz-id="5bfbc7da83a29d3ad9170444"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bfbc7da83a29d3ad9170445"></div>
+<quiz id="46594f96-fa7b-5a0b-ab1e-ea0e8dc7fb38"></quiz>
 
 If the attacker is able to write over the instruction pointer, then the
 attacker can direct the execution of the process to code in an unexpected
@@ -205,7 +204,7 @@ do.
 </text-box>
 
 
-<div class="quiznator-plugin" data-quiz-id="5bfbc7da83a29d3ad9170446"></div>
+<quiz id="b8d0d489-0759-5160-afe1-3c6c7b610852"></quiz>
 
 
 ## Fuzzing
@@ -252,16 +251,7 @@ harness.
 
 
 
-<div class="quiznator-plugin" data-quiz-id="5bfbc7da83a29d3ad9170447"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bfbc7da83a29d3ad9170448"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bfbc7da83a29d3ad9170449"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bfbc7da83a29d3ad917044a"></div>
-
-<div class="quiznator-plugin" data-quiz-id="5bfbc7da83a29d3ad917044b"></div>
-
+<quiz id="53e437dc-4bb8-5c0c-8d6e-67dd083877b7"></quiz>
 
 <text-box variant=emph name="Sanitizing input">
 
@@ -648,7 +638,7 @@ the server (here only 501 replies as there was really nothing suitable
 listening on the other end). Next, you get to try this yourself!
 
 
-<programming-exercise name="HackMyPassword" tmcname="t-hackmypassword">
+<programming-exercise name="HackMyPassword" tmcname="Set4-01.HackMyPassword">
 
 The assignment template contains a small web application that needs to be hacked.
 

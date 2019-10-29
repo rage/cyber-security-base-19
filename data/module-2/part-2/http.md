@@ -96,7 +96,7 @@ attack](https://www.owasp.org/index.php/Session_hijacking_attack).
 
 
 
-<programming-exercise name="EuroShopper" tmcname='t-euroshopper'>
+<programming-exercise name="EuroShopper" tmcname='Set2-07.EuroShopper'>
 
 The assignment template has a very basic web shop functionality. Study the code
 and add a vulnerability to it that makes it possible to conduct a session
