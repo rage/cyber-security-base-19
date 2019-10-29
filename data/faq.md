@@ -87,3 +87,20 @@ Yes. The course consists of different modules, and they can be taken independent
 
 ### Is there going to be a CTF again?
 Yes. There will be a CTF with new puzzles.
+
+# Merging the course completions into study modules in WebOodi
+
+You can merge your completions into two study modules in WebOodi after completing the courses.
+The modules are as follows:
+
+First module:
+  * Introduction to Cyber Security (1 op)
+  * Securing Software (3 op)
+  * Course Project I (1 op)
+
+Second module:
+  * Advanced Topics (3 op)
+  * Course Project II (1 op)
+  * Capture The Flag (1 op)
+
+Instructions for merging the completions can be found here: https://www.helsinki.fi/en/open-university/studying/during-your-studies/certificate-of-studies#section-11827
