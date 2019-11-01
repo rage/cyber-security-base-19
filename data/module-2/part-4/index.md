@@ -14,7 +14,7 @@ discovered and mitigated.
 
 <please-login></please-login>
 
-
+The course consists of 6 parts.
 
 ### How to get started
 
@@ -45,9 +45,9 @@ answer if it's flagged too many times as spam or if it doesn't contain deep
 enough discussion. Also, we may reject your peer reviews if you haven't put
 genuine effort into them.
 
-If you want ECTS credits you will need to register here AFTER completing the
-course: https://cyber-points.mooc.fi
-
+To pass the course you need to get 134 points (max 157 points).  Each passed
+essay or completed programming exercise is equivalent to 5 points, and each
+passed multiple choice question is equivalent to 1 point.
 
 <text-box variant=emph name='On Securing Software'>
 
