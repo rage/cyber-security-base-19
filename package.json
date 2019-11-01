@@ -45,7 +45,7 @@
     "jquery": "^3.4.1",
     "jss": "^9.8.7",
     "moment": "^2.24.0",
-    "moocfi-quizzes": "^0.4.10",
+    "moocfi-quizzes": "^0.4.11",
     "pdf-slideshow": "^0.1.4",
     "prismjs": "^1.16.0",
     "react": "^16.8.6",
