@@ -16,6 +16,10 @@ Each course is open for a certain period of time, and must be completed during t
 
 # News
 
+_[3.11.2019]_ The first part of the second course 'Security Software' is now open.
+The course consists of 6 parts. The second part will be available next week.
+Click 'Part I' under 'Securing Software' on the side bar to access the content.
+
 _[27.10.2019]_ The first course 'Introduction to Cyber Security' is now open.
 The course consists of 1 part. Click 'Part I' on the side bar to access the content.
 

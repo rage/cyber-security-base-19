@@ -1,7 +1,7 @@
 ---
 path: '/module-2.1/2-servers'
 title: 'Web Servers and Web Applications'
-hidden: true
+hidden: false
 ---
 
 

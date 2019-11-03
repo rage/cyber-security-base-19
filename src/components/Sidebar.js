@@ -133,7 +133,7 @@ class Sidebar extends React.Component {
         sensitivity: "base",
       }),
     )
-    let content = content2.concat(edges)
+    let content = content2.concat([])
     content = content.concat(futurePages)
     if (CourseSettings.default.splitCourses) {
       let middlepoint = content.findIndex(o => o.title === "Osa 7")

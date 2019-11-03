@@ -1,7 +1,7 @@
 ---
 path: '/module-2.1/1-web'
 title: 'Ports and Applications'
-hidden: true
+hidden: false
 ---
 
 
