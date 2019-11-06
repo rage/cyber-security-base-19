@@ -70,6 +70,19 @@ Follow the following instruction so that NetBeans may have an access to the Inte
 </p> -->
 
 
+With modern MacOS, it is likely that you cannot open NetBeans, instead you will
+receive a message "macOS cannot verify that this app is free from malware".
+
+In order to go around it, do as follows:
+
+- Go to System Preferences, and open Security & Privacy.
+- In the General Tab, under Allow apps downloaded from, you should see the app
+  you’ve been tying to open – click on the Open Anyway button to its right.
+- You will once again see a warning message that tells you the app cannot be
+  verified as safe, but this time you will have the option to open it anyway.
+  If you are certain you want to execute the app, click on Open.
+
+
 <br/>
 <br/>
 <br/>
