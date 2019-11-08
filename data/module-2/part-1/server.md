@@ -234,7 +234,7 @@ Once finished, submit the assignment to the TMC server.
 
 </programming-exercise>
 
-<text-box variant=emph name="Handing dependencies in Maven">
+<text-box variant=emph name="Handling dependencies in Maven">
 
 Maven projects handle dependencies based on the configuration file `pom.xml`,
 which can be found in the project root. For example, in the previous
