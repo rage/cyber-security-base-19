@@ -1,53 +1,9 @@
 ---
 path: '/module-2.2/1-web'
 title: 'Web Applications continued...'
-hidden: true
+hidden: false
 ---
 
-
-A few of the participants have asked for information on how to reload the
-changes automatically to the web application. There exists a few ways to do
-this, one of which is the use of [Spring Boot developer
-tools](http://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-devtools.html).
-They can be enabled by including the following dependency to the `pom.xml`
-file.
-
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-devtools</artifactId>
-</dependency>
-```
-
-When the developer tools are in use, changes in the code trigger an automatic
-restart of the web application. This depends on the used programming
-environment. In NetBeans, one may need to additionally take the Spring Boot
-Maven plugin into use. This can be done by adding the following snippet to the
-`pom.xml`.
-
-```xml
-<build>
-    <plugins>
-        <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId>
-            <configuration>
-                <fork>true</fork>
-            </configuration>
-        </plugin>
-    </plugins>
-</build>
-```
-
-Now, the application can be restarted from the command line using the command
-`mvn spring-boot:run` (when in the same folder with the `pom.xml` file). This
-launches the application. As the program is developed in NetBeans, changes will
-trigger reloads.
-
-When the above plugins are in use, it is possible to also use
-[LiveReload](http://livereload.com/) to trigger a site refresh in the browser.
-Chrome plugin for LiveReload can be found
-[here](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei).
 
 
 ## Dynamic Content in the Browser

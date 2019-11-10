@@ -32,7 +32,7 @@ const courseSettings = {
 	},
     { separator: true, title: "Securing Software" },
 	{ title: "Part I", path: "/module-2.1", },
-	{ title: "Part II", path: "/module-2.2", tba: "11.11.2019"},
+	{ title: "Part II", path: "/module-2.2", },
 	{ title: "Part III", path: "/module-2.3", tba: "18.11.2019"},
 	{ title: "Part IV", path: "/module-2.4", tba: "18.11.2019"},
 	{ title: "Part V", path: "/module-2.5", tba: "25.11.2019"},

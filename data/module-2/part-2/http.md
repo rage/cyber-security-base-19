@@ -1,7 +1,7 @@
 ---
 path: '/module-2.2/3-http'
 title: 'The HTTP protocol'
-hidden: true
+hidden: false
 ---
 
 

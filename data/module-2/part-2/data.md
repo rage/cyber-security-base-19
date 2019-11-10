@@ -1,7 +1,7 @@
 ---
 path: '/module-2.2/2-data'
 title: "The Data has Value -- Let's store it!"
-hidden: true
+hidden: false
 ---
 
 
