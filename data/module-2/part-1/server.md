@@ -225,7 +225,7 @@ to the class `CalculatorController` that can be found in the package
 
 * A request to the path `/add` sums the values in the request parameters
   `first` and `second` together and returns the response to the user. Note that
-  the parameters are numbers and should also be treated as such.
+  the parameters are integers and should also be treated as such.
 * A request to the path `/multiply` multiplies the values in the request
   parameters `first` and `second` and returns the response to the user. Note
   that the parameters are numbers and should also be treated as such.
