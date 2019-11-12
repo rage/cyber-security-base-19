@@ -88,6 +88,12 @@ Yes. The course consists of different modules, and they can be taken independent
 ### Is there going to be a CTF again?
 Yes. There will be a CTF with new puzzles.
 
+### The point visualization doesn't work correctly
+The point visualization is still under development. It currently works in the introductory course, but not in others. So not seeing your points doesn't mean they haven't been stored!
+
+### Encountering 'Cannot run program "cmd"' when doing programming exercises
+The issue is probably due to an error with very recent Java 8 JDK versions. See the [Installation guide](/netbeans-installation-guide) for specifics and solutions.
+
 # Merging the course completions into study modules in WebOodi
 
 You can merge your completions into two study modules in WebOodi after completing the courses.
