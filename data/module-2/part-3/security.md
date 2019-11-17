@@ -31,7 +31,7 @@ In order to work on the assignments in this part of the course, you need to
 download the [WebGoat Lesson server](https://github.com/WebGoat/WebGoat). The
 latest stable build (at the time of the writing of this material) is the
 version 7.0.1, which can be downloaded at
-[https://s3.amazonaws.com/webgoat-war/webgoat-container-7.0.1-war-exec.jar](https://s3.amazonaws.com/webgoat-war/webgoat-container-7.0.1-war-exec.jar).
+[https://github.com/WebGoat/WebGoat/wiki](https://github.com/WebGoat/WebGoat/wiki).
 
 Once you have downloaded WebGoat, it can be started from the command line using the command:
 
