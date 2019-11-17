@@ -1,7 +1,7 @@
 ---
 path: '/module-2.3/1-security'
 title: 'Most Common Security Vulnerabilities'
-hidden: true
+hidden: false
 ---
 
 This part of the course is devoted to the discovery and reporting of security
