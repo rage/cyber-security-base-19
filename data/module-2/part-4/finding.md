@@ -446,18 +446,12 @@ Cyber Secu‪rity Base 128
 
 With files it is easier to use the `-r` option to get radamsa to read all the
 samples and `-o` option to write the mutated samples to some folder. With `%`
-sign you can add the number of the iteration to the file name. Below on left is
-the original corn image and on the middle and right couple of examples after
-radamsa modified the image.
+sign you can add the number of the iteration to the file name.
+
 
 ```shell
 radamsa -n 100 -o output-samples/img-%n.jpg -r orig-samples/
 ```
-
-
-	<figure>
-	  <img src="corn.jpg" width="32%" alt="Unicorn"/><img src="corn-mutated.jpg" width="32%" alt="Not so unicorn"/><img src="corn-mutated-99.jpg" width="32%" alt="Not so unicorn"/>
-	</figure>
 
 
 By itself Radamsa does not inject the bad data to the target software. This has
