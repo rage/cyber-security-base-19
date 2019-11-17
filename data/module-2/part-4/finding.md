@@ -1,7 +1,7 @@
 ---
 path: '/module-2.4/1-finding'
 title: 'Finding defects'
-hidden: true
+hidden: false
 ---
 
 This part of the course is devoted into further discovery of defects in
