@@ -196,8 +196,8 @@ the other C-programs.
 So, what could one do to avoid binary exploits? -- plenty!
 
 See some examples of what
-[Microsoft](https://www.microsoft.com/security/sir/strategy/default.aspx#!section_3_3)
-(if the link does not work, click it again :D) and
+[Microsoft](https://www.microsoft.com/en-us/security/operations/security-intelligence-report)
+(the older security reports at the bottom of the page, for example, volume 21 or 22 are more detailed) and
 [Linux](https://7h3ram.blogspot.fi/2012/07/exploit-mitigation-techniques-on-linux.html)
 do.
 
