@@ -262,7 +262,7 @@ The Dependency-Check plugin can be taken into use by including the following sta
   <plugin>
     <groupId>org.owasp</groupId>
     <artifactId>dependency-check-maven</artifactId>
-    <version>1.4.4</version>
+    <version>5.2.4</version>
     <executions>
       <execution>
         <goals>
@@ -277,9 +277,10 @@ The Dependency-Check plugin can be taken into use by including the following sta
 ```
 
 Once included, the project can be analyzed by running the command `mvn dependency-check:check`
-from the command line. Note that the version 1.4.4
-assumes that the Maven version is at least 3.1, whilst older versions (Maven
-3.0) can be used with 1.4.2.
+from the command line. The correct plugin version depends on which Maven you are running.
+If you are using Maven 3.6, then you should change the plugin version to 5.2.4.
+You can use version 1.4.4 with Maven version 3.1, whilst older versions (Maven
+3.0) can be used with 1.4.2. 
 
 
 The next assignment is partially done within Test My Code and partially within
@@ -297,6 +298,10 @@ of security vulnerabilities in the software. When the plugin reports
 vulnerabilities, e.g. `CVE-2014-1904`, you can find their many of their
 descriptions using the Common Vulnerabilities and Exposures database at
 [https://cve.mitre.org/index.html](https://cve.mitre.org/index.html).
+
+If you have problems running the check, check that the plugin version is
+compatible with your maven.  The easiest way to handle this is to download the
+latest maven and set the plugin version to 5.2.4.
 
 Once you have identified the vulnerabilities, answer the questionnaire that
 follows this assignment -- the assignment template has no tests and can be
