@@ -338,7 +338,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "Person")
-public class Person extends AbstractPersistable&lt;Long&gt; {
+public class Person extends AbstractPersistable<Long> {
 
     @Column(name = "name")
     private String name;
@@ -359,7 +359,7 @@ contents.
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface PersonRepository extends JpaRepository&lt;Person, Long&gt; {
+public interface PersonRepository extends JpaRepository<Person, Long> {
 }
 ```
 
