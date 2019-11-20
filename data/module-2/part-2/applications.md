@@ -332,7 +332,7 @@ Similarly to the previous part, these assignments are submitted to the Test My C
 
 </text-box>
 
-<programming-exercise name="Port Scanner" tmcname="Set2-01.Tasks">
+<programming-exercise name="Tasks" tmcname="Set2-01.Tasks">
 
 The assignment template has some functionality for adding tasks. Your task is
 to alter the loadTasks function so that the existing tasks are loaded when the
