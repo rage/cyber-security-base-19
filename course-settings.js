@@ -4,8 +4,8 @@ const courseSettings = {
   siteUrl: "https://cybersecuritybase.mooc.fi",
   subtitle: "a free course series about cyber security",
   slug: "cyber-security-base-2019",
-  tmcCourse: "mooc-securing-software-19",
-  quizzesId: "4908eebe-584e-49e0-a580-c0d399c21ec3",
+  tmcCourse: "securing-software-19",
+  quizzesId: "2c364035-8eb9-442e-911a-5a93f11f3fb6",
   tmcOrganization: "mooc",
   bannerPath: "banner.svg",
   sidebarEntries: [
