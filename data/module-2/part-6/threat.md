@@ -62,7 +62,7 @@ physical machine LAMP website example.
 
 Danny Dhillon writes about  Developer-Driven Threat Modeling in IEEE Security &
 Privacy issue in  Jul-Aug
-2011.[article](http://www.infoq.com/articles/developer-driven-threat-modeling).
+2011 [[link]](http://www.infoq.com/articles/developer-driven-threat-modeling).
 In this article he tells how they use DFDs and how they scale up.
 
 </text-box>
