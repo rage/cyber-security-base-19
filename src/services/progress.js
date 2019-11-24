@@ -31,11 +31,11 @@ export async function fetchProgress() {
     },
   )
   const toBeDeleted = []
-  Object.entries(progressByGroup).forEach(([group, serviceEntries]) => {
+  /* Object.entries(progressByGroup).forEach(([group, serviceEntries]) => {
     if (!Object.keys(serviceEntries).find(o => o === "Programming exercises")) {
       toBeDeleted.push(group)
     }
-  })
+  }) */
 
   toBeDeleted.forEach(o => {
     delete progressByGroup[o]
