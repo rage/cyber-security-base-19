@@ -1,7 +1,7 @@
 ---
 path: '/module-2.5/1-framework'
 title: 'Making Mistakes is (not) Harder with Modern Frameworks'
-hidden: true
+hidden: false
 ---
 
 This part of the course is devoted into (security) issues that developers make
