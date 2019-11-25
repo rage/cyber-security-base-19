@@ -35,10 +35,6 @@ and may give you feedback.
 
 ### How to pass the course
 
-In order to pass the course you will need to return all the essays and give at
-least 3 peer reviews for each essay. Also, you will need to pass all the
-multiple choice questions.
-
 Essays must be within 20% of the proposed length. If they're not within this
 limit you will not get any points for your answer. We also may reject your
 answer if it's flagged too many times as spam or if it doesn't contain deep
