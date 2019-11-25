@@ -45,7 +45,7 @@ answer if it's flagged too many times as spam or if it doesn't contain deep
 enough discussion. Also, we may reject your peer reviews if you haven't put
 genuine effort into them.
 
-To pass the course you need to get 134 points (max 157 points).  Each passed
+To pass the course you need to get 130 points (max 152 points).  Each passed
 essay or completed programming exercise is equivalent to 5 points, and each
 passed multiple choice question is equivalent to 1 point.
 
