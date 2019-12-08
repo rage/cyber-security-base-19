@@ -80,7 +80,7 @@ save) it using your favourite text editor, and copy-paste it.
 
 ### Submitting the project
 
-The widget for submitting the essay will be added later on, or before, 9.12.
+<quiz id="b1df2f26-8da5-4026-806f-eb21215c4887"></quiz>
 
 
 <exercises-in-this-section></exercises-in-this-section>

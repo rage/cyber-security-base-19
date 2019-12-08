@@ -16,6 +16,8 @@ Each course is open for a certain period of time, and must be completed during t
 
 # News
 
+_[9.12.2019]_ Submission for Project I is now open.
+
 _[3.12.2019]_ The description of the project is now public.  The project
 consists of 1 part.  The submission widget for the essay will be opened later.
 Click 'Part I' under 'Project I' on the side bar to access the content.
