@@ -123,6 +123,9 @@ Note that you may have to download the _dependencies_ that the framework uses.
 In NetBeans, this can be done by selecting the Dependencies, and selecting
 "Download Declared Dependencies".
 
+You can run the server from Netbeans by selecting `Run` and `Run Project`,
+and access it with a browser at `localhost:8080`.
+
 Once finished, submit the assignment to the TMC server.
 
 </programming-exercise>
