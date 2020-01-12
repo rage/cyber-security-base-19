@@ -7,9 +7,10 @@ import { fetchQuizzesProgress } from "./quizzes"
 
 export async function fetchProgress() {
   // await fetchQuizzesProgress()
-  const serviceIdentifiers = ["Programming exercises", "Quizzes"]
+  const serviceIdentifiers = ["Quizzes"]
+  //const serviceIdentifiers = ["Programming exercises", "Quizzes"]
   const progressesCollection = await Promise.all([
-    fetchProgrammingProgress(),
+    //fetchProgrammingProgress(),
     fetchQuizzesProgress(),
   ])
   const userDetails = await getCachedUserDetails()
