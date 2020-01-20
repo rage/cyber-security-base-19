@@ -2,7 +2,7 @@
 path: '/module-4.4/index'
 title: 'Part IV'
 overview: true
-hidden: true
+hidden: false
 ---
 
 
@@ -102,9 +102,8 @@ Another limitation of the GSM encryption that had become evident already at the 
 
 When it was time to develop 4G no significant limitations had been observed with the 3G encryption. However, it was not straight-forward to use the 3G encryption as a model for 4G encryption. This was due to the fact that in 4G network the base station takes over many duties carried out in 3G by the radio network controller. In the end, it was decided that encryption would terminate in the base station. This decision was complemented by using a separate encryption between the base station and the rest of the network. This arrangement implies that, in opposite to 3G, the user data is available inside the base station in cleartext form.
 
-In the year 2017, the development of 5G is progressing fast. One of the key questions of the 5G security is whether the user data should be decrypted inside the base station. What makes this question even more critical, compared to the situation with 4G, is that parts of 5G networks are expected to be dense, i.e., there will be many base stations in _vulnerable_ locations.
 
-The 4G encryption algorithms are [SNOW3G](https://en.wikipedia.org/wiki/SNOW), [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) and [ZUC](https://en.wikipedia.org/wiki/Zuc_stream_cipher). The 5G encryption algorithms have not yet been chosen at the year 2017. All encryption functions in all generations of mobile communications technology are [stream ciphers](https://en.wikipedia.org/wiki/Stream_cipher). Both AES and KASUMI are actually [block ciphers](https://en.wikipedia.org/wiki/Block_cipher) but they are used in stream [cipher mode](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation). Stream cipher is suitable for high-speed communication scenarios because major part of encryption/decryption can be done already before the plaintext/ciphertext is even available.
+The 4G (and current 5G) encryption algorithms are based on [SNOW3G](https://en.wikipedia.org/wiki/SNOW), [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) and [ZUC](https://en.wikipedia.org/wiki/Zuc_stream_cipher). All encryption functions in all generations of mobile communications technology are [stream ciphers](https://en.wikipedia.org/wiki/Stream_cipher). Both AES and KASUMI are actually [block ciphers](https://en.wikipedia.org/wiki/Block_cipher) but they are used in stream [cipher mode](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation). Stream cipher is suitable for high-speed communication scenarios because major part of encryption/decryption can be done already before the plaintext/ciphertext is even available.
 
 <quiz id="5ad60e08-3031-5626-b33e-c61f943307a5"></quiz>
 
@@ -142,25 +141,31 @@ We have now discussed how _mutual authentication_ works in 3G. It is worth notin
 
 In the 4G network the actual identity of the visited network was added as another input to the computations. Then the mobile device knows in a roaming situation that it is connected to the same network to which the HSS has delivered the random challenge and the related parameters.
 
-For the 5G networks, it is an on-going discussion during the year 2017, whether the shared key -based authentication should be replaced or complemented by an authentication mechanism based on public-key cryptography.
+For the 5G networks, the authentication is also based on a shared key. However,
+there are additional security features: in 3G and 4G, the identifier of the
+phone (that is the identifier that HSS uses to find the correct shared key and
+generate a challenge) is sent plain-text. In 5G, this is encrypted with a
+public key of HSS.
 
 ## Key agreement
 
 In all generations, key generation happens as a by-product of authentication. Different one-way functions are used to derive keys for different purposes, using the shared master key and the randomly generated challenge bit string as inputs.
 
 In the GSM networks, the encryption key is the only key that is needed. In the 3G networks, another key was needed for the purpose of protecting _integrity_ of control communications. In the 4G networks, there is a whole _hierarchy_ of cryptographic keys intended for different purposes.
-
-It is expected that 5G networks would have at least as complex key hierarchy than the one used in 4G.
+5G networks have more complex key hierarchy than the one used in 4G, see for example [Figure 5](https://www.cablelabs.com/insights/a-comparative-introduction-to-4g-and-5g-authentication).
 
 <quiz id="4591f002-22b4-53a8-ad68-6fae45c14114"></quiz>
 
 ## Integrity protection
 
 In all generations of cellular technology, encryption is provided by a stream cipher. This kind of cipher has the following property. If one bit of the ciphertext is flipped (from zero to one or vice versa) then the impact to the decryption is that the corresponding bit of the plaintext is also flipped. One consequence of this property is that an attacker who is able to guess correctly the contents of the plaintext would be able to modify the ciphertext in such manner that the decryption of the modified ciphertext would result into any plaintext of attacker&rsquo;s choice.
+An example of such attack is [Alter](https://alter-attack.net/).
 
 A separate cryptographic protection mechanism was introduced in 3G networks in order to protect against such an attack. It is especially the control communication whose contents may be easily guessable at least in some situations. Therefore, a _message authentication code_ was added to the _control plane_ messages. These messages contain the data that needs to be exchanged between the mobile device and the network to guarantee correct functioning of the network. The message authentication code is computed based on the message itself, an integrity key and a time-varying counter. The shared integrity key is derived during the authentication and key agreement procedure. The time-varying counter is needed to protect against a replay attack where a previously recorded genuine control message is sent at time chosen by the attacker.
 
-One of the good properties of a stream cipher is that it does not increase the size of the message at all. In contrast to that, a message authentication code makes the message longer. This was one of the main reasons why message authentication code is _not_ added to _user plane_ messages. This is the case for both 3G and 4G networks. In the beginning of the year 2017, it is still open whether the user plane would be protected with message authentication codes in 5G technology.
+One of the good properties of a stream cipher is that it does not increase the size of the message at all. In contrast to that, a message authentication code makes the message longer. This was one of the main reasons why message authentication code is _not_ added to _user plane_ messages. This is the case for both 3G and 4G networks.
+In current version of 5G, user plane protection with message authentication code is optional.
+
 
 <quiz id="b81aa278-8b4d-56ec-b64d-adc92780268e"></quiz>
 
@@ -172,7 +177,7 @@ Starting from 3G, this kind of attack is prevented in cellular networks by the m
 
 The goal of the attack is to request the user to send its permanent identity IMSI (International Mobile Subscriber Identity). After the user has been identified the IMSI catcher may, for example, simply reject the user without even starting the authentication procedure. After this the mobile device would try to attach to another base station which in this case typically belongs to the legitimate network. The human user would then have a very limited chance to even notice that something unusual has happened.
 
-There is a serious effort of trying to prevent IMSI catchers in 5G technology. One possibility to achieve this is to encrypt the IMSI by a _public key_ of the network whenever it is sent over the radio interface. Of course, the mobile device should get the public key in some other way than transmitted from the base station.
+There is a serious effort of trying to prevent IMSI catchers in 5G technology: IMSI is encrypted by a _public key_ of the network whenever it is sent over the radio interface. Of course, the mobile device should get the public key in some other way than transmitted from the base station.
 
 <quiz id="92b21274-539a-5c08-b329-ca807c532ad8"></quiz>
 <quiz id="8cc97581-6f7f-592d-8e26-ff908ed95562"></quiz>

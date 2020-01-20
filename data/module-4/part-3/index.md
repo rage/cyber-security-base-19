@@ -2,7 +2,7 @@
 path: '/module-4.3/index'
 title: 'Part III'
 overview: true
-hidden: true
+hidden: false
 ---
 
 

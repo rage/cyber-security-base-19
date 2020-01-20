@@ -2,7 +2,7 @@
 path: '/module-4.5/index'
 title: 'Part V'
 overview: true
-hidden: true
+hidden: false
 ---
 
 <deadline>22.02.2020</deadline>
@@ -65,7 +65,13 @@ If we look at what Wikipedia says about the latest evolution of the Internet cal
 
 Sometimes these devices are called smart devices but it could be omitted as addition of an Internet connection or that it shares data does not make them smart and definitely it does not make them secure. It can make them a complex challenge for their owners and administrators of the networks they are connected to. From a company point of view this represents a large source of new devices that are difficult to manage and secure. Especially, because the new devices may run something really custom and haphazardly made software.
 
-To top it all, we have to mention the number of these devices. Depending on the study you read it is from vast quantities to unfathomable. For example, IDC says  there is around 30 billion connected devices worldwide after the next two years ([https://www.idc.com/infographics/IoT](https://www.idc.com/infographics/IoT)). So this is the playground for this part of the course. Gargantuan number of not so smart devices equipped with Internet connection with sharing of data as their main purpose.
+To top it all, we have to mention the number of these devices. Depending on the
+study you read it is from vast quantities to unfathomable. For example, [IDC](https://www.idc.com/getdoc.jsp?containerId=prUS45213219)
+predicts there will be around 42 billion connected devices worldwide in 2025
+years. One [prediction](https://www.statista.com/statistics/471264/iot-number-of-connected-devices-worldwide/) for 2020 is 30 billion devices.
+So this is the playground for this part of the course. Gargantuan number of not
+so smart devices equipped with Internet connection with sharing of data as
+their main purpose.
 
 Sounds a bit bleak but from the security perspective IoT is. However, remember that IoT is a nice idea and it has its place in the world. Such as, the industrial IoT where sharing data for maintenance and operational purposes makes industrial equipment a lot more responsive and useful, and creates a much safer working environment. Also in agriculture planting, irrigation, harvesting and even soil monitoring have uses for IoT. But in any case care must be taken when implementing and deploying any smart device in home or industry.
 
@@ -178,7 +184,7 @@ Encryption of the data at rest and in transit between the devices or the cloud i
 
 ### Lifecycle management
 
-One of the most interesting problems in the security of IoT devices is the lifecycle management of these devices. If you simply look at the fact that you are going to have tens of billions of devices out in the wild. Devices that have constraints that limit their capabilities to run conventional crypto with long enough keys. Moreover, the devices may not have any easy way to communicate with the user. Consider then that, after the manufacturer has shipped of tens of thousands devices, a serious vulnerability is found on the devices. Is there any good way to fix this? For example, Huawei home gateway used RomPager that had an vulnerability called the [Misfortune Cookie](http://mis.fortunecook.ie/) (CVE-2014-9223). The web servers implementor issued a fix to the device, but years after the problem still persists as vulnerable devices still exist. Why is that? One reason could be that there is no good, easy, and secure way (that a person without a CS degree could manage) to upload new firmware on you router for example. What could be done to solve? One possible solution could be to implement a service to the network that would monitor the devices and identify the vulnerable ones. This kind of fingerprinting has been proposed already earlier, one example could be DHCP fingerprinting in which the DHCP server would ask some extra information about the device. What to do when the malicious/vulnerable devices have been found from the network and how they can coexist with other devices. Well, the trend seems to be to isolate the vulnerable devices to different VLANs. This is an important problem and it has been talked about alot and for example at least IETF has started working on a standard way to solve the issue (see IETF's Security Areas working group [charter](https://datatracker.ietf.org/wg/suit/about/) about the issue).
+One of the most interesting problems in the security of IoT devices is the lifecycle management of these devices. If you simply look at the fact that you are going to have tens of billions of devices out in the wild. Devices that have constraints that limit their capabilities to run conventional crypto with long enough keys. Moreover, the devices may not have any easy way to communicate with the user. Consider then that, after the manufacturer has shipped of tens of thousands devices, a serious vulnerability is found on the devices. Is there any good way to fix this? For example, Huawei home gateway used RomPager that had an vulnerability called the [Misfortune Cookie](https://www.bleepingcomputer.com/news/security/4-year-old-misfortune-cookie-rears-its-head-in-medical-gateway-device/) (CVE-2014-9223). The web servers implementor issued a fix to the device, but years after the problem still persists as vulnerable devices still exist. Why is that? One reason could be that there is no good, easy, and secure way (that a person without a CS degree could manage) to upload new firmware on you router for example. What could be done to solve? One possible solution could be to implement a service to the network that would monitor the devices and identify the vulnerable ones. This kind of fingerprinting has been proposed already earlier, one example could be DHCP fingerprinting in which the DHCP server would ask some extra information about the device. What to do when the malicious/vulnerable devices have been found from the network and how they can coexist with other devices. Well, the trend seems to be to isolate the vulnerable devices to different VLANs. This is an important problem and it has been talked about alot and for example at least IETF has started working on a standard way to solve the issue (see IETF's Security Areas working group [charter](https://datatracker.ietf.org/wg/suit/about/) about the issue).
 
 ## Good practices
 
