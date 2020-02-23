@@ -5,7 +5,7 @@ const courseSettings = {
   subtitle: "a free course series about cyber security",
   slug: "cyber-security-base-2019",
   tmcCourse: "securing-software-19",
-  quizzesId: "559755d3-c805-4e33-8d5f-b56f54ffb7bd",
+  quizzesId: "a5e01bab-9c7c-490f-8ad7-d59f1a9a0ca4",
   tmcOrganization: "mooc",
   bannerPath: "banner.svg",
   sidebarEntries: [
@@ -46,6 +46,8 @@ const courseSettings = {
 	{ title: "Part III", path: "/module-4.3/index"},
 	{ title: "Part IV", path: "/module-4.4/index"},
 	{ title: "Part V", path: "/module-4.5/index"},
+    { separator: true, title: "Project II" },
+	{ title: "Part I", path: "/module-5.1/index", },
   ],
   sidebarFuturePages: [],
   splitCourses: false,

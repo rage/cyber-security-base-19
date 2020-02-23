@@ -16,6 +16,9 @@ Each course is open for a certain period of time, and must be completed during t
 
 # News
 
+_[23.02.2020]_ The second project is now open.
+Click 'Part I' under 'Project II' on the side bar to access the content.
+
 _[13.01.2020]_ The first two parts of the fourth course 'Advanced Topics' is now open.
 The course consists of 5 parts. The next parts will be available next week.
 Click 'Part I' under 'Advanced Topics' on the side bar to access the content.
