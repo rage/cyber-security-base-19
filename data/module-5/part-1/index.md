@@ -117,13 +117,15 @@ ssh to it, and use it as a normal operating system.
 - Log into the newly created box `vagrant ssh`.
 - Install snort to the box, i.e., `apt install snort`
 - Download community rules, `wget https://www.snort.org/downloads/community/community-rules.tar.gz`
-- Unpack it to snort rules folder (`/etc/snort/rules/`), i.e., `tar xzf community-rules.tar.gz -C /etc/snort/rules`
+- Unpack it to snort rules folder (`/etc/snort/rules/`), i.e., `tar xzf community-rules.tar.gz` and `cp community-rules/*.rules /etc/snort/rules/`
 - wget the emerging rules set, i.e., `wget https://rules.emergingthreats.net/open/snort-2.9.0/emerging.rules.tar.gz`
-- `tar xzf emerging.rules.tar.gz -C /etc/snort/rules/`
+- `tar xzf emerging.rules.tar.gz` and and `cp rules/*.rules /etc/snort/rules/`
+- make sure that the community rules and the emergency rules are both unpacked to `/etc/snort/rules/` folder.
 - Modify the `/etc/snort/snort.conf` to include all the rules in the `/etc/snort/snort.conf` or use the one we provided: [snort.conf](snort.conf)
 - Note that some of the rules may conflict and cannot be enabled at the same time.
-- Do remember that in a production setup you would not enable all of the rules by default but would choose a set of rules that you think are the important ones. Which of them are, there is a good question?
+- Do remember that in a production setup you would not enable all of the rules by default but would choose a set of rules that you think are the important ones. 
 - Finalize snort configuration. We for example changed the file /etc/snort/snort.debian.conf to to the following: [snort.debian.conf](snort.debian.conf).
+This was needed so that snort monitors the correct network interface if metasploitable 3 is run inside the virtualbox.
 - Restart snort with "sudo service snort restart"
 - Test the box and it's snort with metasploitable commandline, i.e., `msfconsole`
 
