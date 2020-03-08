@@ -16,6 +16,10 @@ Each course is open for a certain period of time, and must be completed during t
 
 # News
 
+_[08.02.2020]_ The CTF description page is now open.
+Click 'Part I' under 'CTF' on the side bar to access the content.
+The actual challenges will be made public later. Check the page for more details.
+
 _[23.02.2020]_ The second project is now open.
 Click 'Part I' under 'Project II' on the side bar to access the content.
 
