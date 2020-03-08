@@ -48,6 +48,8 @@ const courseSettings = {
 	{ title: "Part V", path: "/module-4.5/index"},
     { separator: true, title: "Project II" },
 	{ title: "Part I", path: "/module-5.1/index", },
+    { separator: true, title: "CTF" },
+	{ title: "Part I", path: "/module-6.1/index", },
   ],
   sidebarFuturePages: [],
   splitCourses: false,
