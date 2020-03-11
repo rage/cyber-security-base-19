@@ -30,7 +30,7 @@ the research conducted on this course.
 ### How to pass the course
 
 The challenges in this CTF come in three difficulty levels: easy, medium and hard.
-To unlock a difficulty level one must complete all the challenges in the previous level.
+To unlock a difficulty level one must complete 80% of the challenges in the previous level.
 
 In order to ensure everyone has a fair chance to get the first completion,
 we're releasing the challenges in batches -- easy challenges are to be released on Wednesday (11.3.2020),
