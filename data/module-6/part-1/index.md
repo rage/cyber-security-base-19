@@ -30,15 +30,22 @@ the research conducted on this course.
 ### How to pass the course
 
 The challenges in this CTF come in three difficulty levels: easy, medium and hard.
-To unlock a difficulty level one must complete all the challenges in the previous level.
 
 In order to ensure everyone has a fair chance to get the first completion,
 we're releasing the challenges in batches -- easy challenges are to be released on Wednesday (11.3.2020),
 medium challenges on Thursday (12.3.2020), and hard challenges on Friday (13.3.2020).
 
-The link to the challenges and submission site will be added on this page later.
+The exercises are published starting from 15:00, and new exercise will be added roughly every 20 minutes.
+
+There are 10 easy challenges, 9 medium, and 4 hard.
+
+The exercises can be found [here](https://capture-the-flag.testmycode.io/).
+Use your MOOC account to login.
 
 To finish a challenge, find a special code and submit it to the site.
+
+For certain challenges, binary inspection command line tools like `strings` or `xxd` will be useful.
+
 
 To pass the CTF, you need to complete at least 80% the easy challenges and at
 least 60% of the medium challenges, before the deadline.  The deadline for
