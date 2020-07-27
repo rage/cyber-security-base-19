@@ -52,39 +52,46 @@ use for both reading and writing. However, instead of working with a file, the
 "writing" is done to a given port at the remote machine, and "reading" is done
 from a stream of data that the remote machine sends.
 
-<text-box variant=emph name="Coding horror: they're asking me to do Java?!!">
+<text-box variant=emph name="Coding horror: they're asking me to do Python?!!">
 
 From now on, the materials will include programming examples as well as
-programming assignments in Java. Whilst one may think that [Java
-sucks](https://wiki.theory.org/index.php/YourLanguageSucks), it can -- in the
-end -- be a decent language to work with due to, among other things, static
-typing, a good developer base, and an abundance of high-quality libraries and
-developer tools.
+programming assignments in Python. Python has decent libraries and syntax has a gentle
+learning curve. The language is not without its [issues](https://wiki.theory.org/index.php/YourLanguageSucks)
+but it very suitable for this course.
 
-At F-Secure, there is no single or preferred programming language that one works with when developing software. Several of the smaller projects and scripts are written in languages like [Python](https://www.python.org/), and some of the larger software tend to be created with statically typed languages. This also naturally depends on whether the goal of the project is to be something that lives only for a few moments, or if it is supposed to be alive after five years.
-
-Knowing more than a single language is definitely a good thing. The same thing goes for the courses offered at the University of Helsinki, where the first programming language that students start with is Java.
+The previous iterations of this course were based on Java, Spring framework, and Thymeleaf.
+It is recommended to look into this frameworks as well as knowing more than a single
+language is definitely a good thing, and is a sign of a mature software developer.
 
 </text-box>
 
 Programming languages typically come with libraries which typically reduce the
 amount of code that a programmer must write to achieve a specific task. For
-example, accessing a remote computer in Java can be done using the
-[Socket](https://docs.oracle.com/javase/8/docs/api/java/net/Socket.html) class
-from the Java API. In principle, the programmer only needs to create an
-instance of the Socket-class (the constructor takes the ip and the port of the
-target machine as parameters), and then -- for example -- read the data from
+example, accessing a remote computer in Python can be done using the
+[socket](https://docs.python.org/3/library/socket.html) module.
+In principle, the programmer only needs to create an
+instance of socket, connect it to the target (ip and the port of the
+target machine is given as parameters), and then -- for example -- read the data from
 the target machine.
 
-```java
-String address = "127.0.0.1";
-int port = 12321;
+```python
+address = "127.0.0.1"
+port = 12321
 
-Socket socket = new Socket(address, port);
-Scanner reader = new Scanner(socket.getInputStream());
+s = socket.socket()
+s.connect((address, port))
+data = s.recv(1024)         # Attempt to read at most 1024 bytes
 ```
 
-The above example will -- depending on the target server -- throw an exception if the port cannot be connected to. See [Java(TM) Lesson on Exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html) for how to handle exceptions.
+The above example will -- depending on the target server -- throw an exception
+if the port cannot be connected to. See [Python tutorial on
+Exceptions](https://docs.python.org/3/tutorial/errors.html)
+for how to handle exceptions. Alternatively you can use `connect_ex`
+instead of `connect`.
+
+Note that `connect` parameters are wrapped in a additional parentheses.
+The reason for this is that `connect` takes _one_ parameter, and in our case
+it is a tuple of form `(address, port)`.
 
 Port scanners are a common tool that security researchers use to identify
 services available on a given machine. Port scanners work by iterating through
@@ -95,110 +102,63 @@ investigated further.
 
 <text-box variant=emph name="Getting the tools ready">
 
-In order to be able to work on the programming assignments, you will need a
-programming environment that supports Java and Maven. NetBeans and IntelliJ --
-among others -- tend to do this out of the box.
-
-We suggest that you use NetBeans with Java 8 (Netbeans unfortunately has
-problems with newer versions of Java at the moment) and the Test My Code
-plugin. The Test My Code plugin is used for downloading and submitting
-assignments directly from the programming environment. First install Java if
-you don't have it already from:
-[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html).
-Then grab a Netbeans bundle that includes the Test My Code plugin from here:
-[http://update.testmycode.net/installers/tmc-netbeans\_org\_mooc/](http://update.testmycode.net/installers/tmc-netbeans_org_mooc/).
-Choose either an installer for your operating system or download the portable
-zip file that should work on all operating systems.
-
-Once everything is istalled, select **MOOC** as your organization and select  **Securing Software 2019** as your course.
-
-
-Once this is done, you will receive a pop up that lists the assignments that you may download.
-
-#### Possible issues:
-
-- No Maven support: note that some NetBeans downloads may have Maven support
-  disabled by default. If you do not have Maven support in NetBeans, see
-  [Fixing Maven in NetBeans](https://github.com/UniversityHelsinkiTKTL/tmc-plugin-installation-guide/blob/master/FixingMavenInNetbeans.md)
-  to address this issue.
-
-- Assignments listed as *unloadable* in NetBeans: if the assignments are listed
-  as *unloadable* in NetBeans and NetBeans has Maven support, select the
-  projects and choose "Clean and build". This should resolve the issue. If not,
-  let us know at mooc@cs.helsinki.fi!
-
-
-
-If you choose not to use the NetBeans + TMC combination, there are also other options:
-
-- You may use other clients for Test My Code such as the [TMC command line client](https://github.com/testmycode/tmc-cli) and the [TMC IntelliJ plugin](https://plugins.jetbrains.com/plugin/8551). Both of these are in <i>beta</i> though so they won't work as reliably as the Netbeans plugin.
-- You can retrieve the assignment templates from the [TMC course page](https://tmc.mooc.fi/org/mooc/courses/383), complete them locally, and submit them to TMC as a zip using the previous site. Note that you must retain the original folder structure.
-
+In order to be able to work on the programming assignments, you will need
+install several software packages...some of them are not so installer-friendly.
+Please read and follow the [instructions](/python-installation-guide).
 
 </text-box>
 
 
 <programming-exercise name="Port Scanner" tmcname='Set1-01.PortScanner'>
 
-In this assignment, you will gain some hands-on experience on working with ports in Java and familiarize yourself with the tools used for some of the programming tasks in this course.
+In this assignment, you will gain some hands-on experience on working with
+ports in Python and familiarize yourself with the tools used for some of the
+programming tasks in this course.
 
-The assignment template that you can retrieve either using Test My Code (NetBeans plugin, experimental IntelliJ plugin) or the Test My Code web site contains the following code.
+The assignment template that you can retrieve either using Test My Code, or the
+Test My Code web site contains the following code in portscanner.py.
 
-```java
-package sec.portscanner;
+```python
+#!/usr/bin/env python3
+import sys
+import socket
 
-import java.net.Socket;
-import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeSet;
 
-public class PortScanner {
+def get_accessible_ports(address, min_port, max_port):
+    found_ports = []
 
-  final static int MIN_PORT = 1024;
-  final static int MAX_PORT = 49151;
+    # write code here
 
-  public static void main(String[] args) throws Exception {
-    Scanner reader = new Scanner(System.in);
+    return found_ports
 
-    System.out.println("Which address should I scan?");
-    String address = reader.nextLine();
-    System.out.println("Start at port?");
-    int start = Integer.parseInt(reader.nextLine());
-    System.out.println("End at port?");
-    int end = Integer.parseInt(reader.nextLine());
 
-    Set<Integer> ports = getAccessiblePorts(address, start, end);
-    System.out.println("");
+def main(argv):
+    address = sys.argv[1]
+    min_port = int(sys.argv[2])
+    max_port = int(sys.argv[3])
+    ports = get_accessible_ports(address, min_port, max_port)
+    for p in ports:
+        print(p)
 
-    if (ports.isEmpty()) {
-      System.out.println("None found :(");
-    } else {
-      System.out.println("Found:");
-      ports.stream().forEach(p -> System.out.println("\t" + p));
-    }
-  }
+# This makes sure the main function is not called immediatedly
+# when TMC imports this module
+if __name__ == "__main__":
+    if len(sys.argv) != 4:
+        print('usage: python %s address min_port max_port' % sys.argv[0])
+    else:
+        main(sys.argv)
 
-  public static Set<Integer> getAccessiblePorts(String address, int start, int end) {
-    Set<Integer> accessiblePorts = new TreeSet<>();
-    start = Math.max(start, MIN_PORT);
-    end = Math.min(end, MAX_PORT);
-
-    // write the code needed to scan the ports from
-    // start to end at the given address
-
-    return accessiblePorts;
-  }
-}
 ```
 
 For this assignment, you should write the code needed for the method
-`getAccessiblePorts` to scan the given range of ports. The method
+`get_accessible_ports` to scan the given range of ports. The method
 should scan the ports at a given address, and then return the list of ports
 that have a service listening for them.
 
 Once completed, submit your solution to the TMC server for assessment.
 
-Note that while we implement port scanners and other tools, we will later also look into existing software that have similar functionality.
+Note that while we implement port scanners and other tools, we will later also
+look into existing software that have similar functionality.
 
 </programming-exercise>
 
