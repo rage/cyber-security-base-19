@@ -166,194 +166,91 @@ is no longer implemented by the developer, but by a framework. The developer
 effectively only needs to implement the database interaction in those parts,
 where the existing approaches are not sufficient.
 
-One standard for ORM technique in Java is the [Java Persistence
-Api](http://en.wikipedia.org/wiki/Java_Persistence_API) (JPA), which has been
-implemented by a set of frameworks. When using JPA and an implementation of the
-standard such as [Hibernate](http://www.hibernate.org/), developing basic
-database queries becomes quite straightforward.
 
-<text-box variant=emph name="Including JPA to a Spring Boot Project">
+## Django Models
 
-Including Java Persistence API support to a Spring project requires adding the
-dependency `spring-boot-starter-data-jpa` to the `pom.xml`. In the following
-snippet, both the JPA starter and the H2 Database Engine are included.
+The convention is that persistent data structures that app wants to store in a database
+is defined `models.py`. The data structures should be defined a subclass of `models.model`.
 
-```xml
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-data-jpa</artifactId>
-</dependency>
-<dependency>
-    <groupId>com.h2database</groupId>
-    <artifactId>h2</artifactId>
-</dependency>
+```python
+# models.py
+
+from django.db import models
+
+class Person(models.Model):
+    name = models.TextField()
+    age = models.IntegerField()
+
 ```
 
-We do not need to include the H2 Database Engine version as it is already
-stated in the Spring Boot parent project.
+The class allows us to manipulate the database.
+We can add a new Person with
 
-</text-box>
-
-
-## Classes and Entities
-
-The JPA standard states that each class that represents a database table should
-be defined as an _entity_; this can be done with the annotation `@Entity`.
-Moreover, each class that represents a table should have an identifier that can
-be used to identify a specific instance of that class. Such an identifier is
-typically an object variable which is annotated using the `@Id` annotation.
-Finally, the class should implement the `Serializable`-interface.
-
-For example, the following class that represents a person would be transformed
-into a database table on the fly, and instances of it could be stored to that
-database table.
-
-```java
-// package
-
-import java.io.Serializable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
-public class Person implements Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String name;
-
-    // getters and setters
-}
+```python
+bob = Person.objects.create(name='Bob', age=42)
+alice = Person.objects.create(name='Alice', age=37)
 ```
 
-If the programmer wishes to, the column names and the database table name can be included using the annotations `@Column` and `@Table`.
+We can fetch all persons with
 
-```java
-// package
-
-import java.io.Serializable;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "Person")
-public class Person implements Serializable {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id")
-    private Long id;
-    @Column(name = "name")
-    private String name;
-
-    // getters and setters
-}
+```python
+persons = Person.objects.all()
 ```
 
-The above configuration defines a database table called "Person" that has the
-columns "id" and "name". The column types are inferred from the variable types
-(but can be also defined through the `@Column` annotation).
+We can query the database with
 
-The above examples follow the JPA specification. The Spring project called
-Spring Data JPA provides a superclass
-[AbstractPersistable](http://docs.spring.io/autorepo/docs/spring-data-jpa/current/api/org/springframework/data/jpa/domain/AbstractPersistable.html)
-that can be inherited. It provides functionality that makes the previous
-definitions a bit more straightforward.
-
-```java
-// package
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "Person")
-public class Person extends AbstractPersistable<Long> {
-
-    @Column(name = "name")
-    private String name;
-
-    // getters and setters
-}
+```python
+bobs = Person.objects.filter(name='Bob')
+middleaged = Person.objects.filter(age__gte=40)
+alice = Person.objects.get(name='Alice') # Works only if there is a unique entry
 ```
 
-Now, creating the queries that alter the data in table "Person" is rather
-straightforward. We need to implement an interface that extends the interface
-[JpaRepository](http://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/JpaRepository.html).
-This provides us all the basic functionality needed for altering the database
-contents.
+For query notation, see the [documentation](https://docs.djangoproject.com/en/3.0/topics/db/queries/#retrieving-objects).
 
+We can update the entries (as long as we save them)
 
-```java
-// package
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface PersonRepository extends JpaRepository<Person, Long> {
-}
+```python
+bob.age = 45
+bob.save()
 ```
 
-Note that we only created an interface, but not the actual implementation. The
-Spring framework takes care of the rest for us, given that we tell it to
-_autowire_ -- i.e. include -- the implementation of the interface to our
-application. This is done using an annotation called `@Autowired`.
+The models are saved in a database. The default database is a sqlite stored in
+`db.sqlite` file.  The same database is also used for storing user sessions, as
+well as, registered users and admins (something that django provides as a
+built-in service).
 
-The database functionality can be included to a controller as follows:
+Whenever the model specifications are changed, Django needs to be told to
+update the schema in `db.sqlite`. Two commands are required
 
-
-```java
-// package and imports
-
-@Controller
-public class PersonController {
-
-    @Autowired
-    private PersonRepository personRepository;
-
-    // when a request is made to the address "/persons"
-    @RequestMapping("/persons")
-    public String listAll(Model model) {
-
-        // find all persons from the database and add them to the model
-        model.addAttribute("persons", personRepository.findAll());
-
-        // then create a view from a file called "persons.html" and
-        // send it as a response to the request
-        return "persons";
-    }
-
-    // etc ...
-}
+```shell
+python3 manage.py makemigrations
+python3 manage.py migrate
 ```
+
+The first command will make a migration Python file, located in
+`pages/migrations` and starting with a number, while the second command updates
+the database.  During the early development cycle it may be the case that
+migrating the database is too cumbersome with the existing database. If there
+is no valuable information in `db.sqlite` a valid cop-out strategy is to delete
+the migration files and the database and sync the database from scratch.
+Naturally, this is not a good idea if the database has any valuable information.
+
+
+
 
 <programming-exercise name="Hello Web with a Database" tmcname='Set2-04.HelloWebWithDatabase'>
 
 The assignment template contains an application that always returns the message
 "Hello Web!" to the user. Change the implementation so that the message content
-is randomly selected from the messages in the database. That is, if the
-database has messages "Hello" and "World", the message "Hello" should be shown
-now and then, as should the message "World".
+is selected from the messages in the database. The id of the message is given
+as a GET parameter `id`. The database has 3 messages with ids 1, 42, and 99.
+
+Hint: see how to query with [primary keys](https://docs.djangoproject.com/en/3.0/topics/db/queries/#the-pk-lookup-shortcut).
 
 Once finished, return your solution to TMC.
 
 </programming-exercise>
 
-<text-box variant=emph name="H2 Database Engine and Spring">
-
-By default, when developing applications, Spring loads the H2 database engine
-in memory. This means that as the application is restarted, the data will be
-lost. For other options, see [Working with SQL
-databases](http://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-sql.html).
-
-</text-box>
 
 
 ## Database Transactions
@@ -363,50 +260,98 @@ executed, or that none of them are. Database management systems offer support
 for implementing transactions, but, as we often work outside the database,
 additional steps are needed.
 
-Spring provides transaction support on both class- and method-level through the
-`@Transactional` annotation. If a method has been annotated using the
-`@Transactional` annotation, then all the database functionality within that
-method will be performed within a single transaction. If the annotation is on
-the class level (i.e. before the class definition), then all the methods in
-that class are transactional.
+Transactions matter also if there are multiple database users, which may lead 
+to unintented consequences. Consider the following classic problem of transforming money
+from one account to another.
 
-Perhaps the most classic transaction example is shown below. If the execution
-of the method fails (e.g. an exception is thrown) after money has been
-withdrawn from one account and the money has not yet been added to another,
-then the original withdraw will be also canceled. Without the annotation
-`@Transactional`, the money would disappear.
+```python
+def transfer(sender, receiver, amount):
+    acc1 = Account.objects.get(iban=sender)
+    acc2 = Account.objects.get(iban=receiver)
 
-```java
-@Transactional
-public void bankTransfer(Long fromAccount, Long toAccount, Integer amount) {
-    Account from = accountRepository.findOne(fromAccount);
-    Account to = accountRepository.findOne(toAccount);
+    acc1.balance -= amount
+    acc2.balance += amount
 
-    from.setBalance(from.getBalance() - amount);
-    to.setBalance(to.getBalance() + amount);
-}
+    acc1.save()
+    acc2.save()
 ```
 
-The annotation `@Transactional` also indicates that the entities are managed
-within the method. That is, the entities that have been loaded from the
-database are tracked, and the changes that are made to them are written to the
-database at the end of the method.
+Consider two threads A and B calling `transfer` at the same time with the following sequence:
+* Thread A retrieves the accounts 
+* Thread B retrieves the accounts
+* Thread B updates and saves the accounts
+* Thread A updates and saves the accounts
 
-If the method would not have been annotated with the `@Transactional`
-annotation, the accounts would have to be separately saved if we want to commit
-the changes to the database.
+If both sender and receiver were the same, the net effect of this operation is
+that the action of Thread B will be overwritten by Thread A. While this
+sequence of events is unlikely to happen, we should obviously prevent it from
+happening in the first place.
 
+In order to do that, Django provides `transaction.atomic` either as a decorator for a function
 
-```java
-@Transactional
-public void bankTransfer(Long fromAccount, Long toAccount, Integer amount) {
-    Account from = accountRepository.findOne(fromAccount);
-    Account to = accountRepository.findOne(toAccount);
+```python
+from django.db import transaction
 
-    from.setBalance(from.getBalance() - amount);
-    to.setBalance(to.getBalance() + amount);
-}
+@transaction.atomic
+def transfer(sender, receiver, amount):
+    acc1 = Account.objects.get(iban=sender)
+    acc2 = Account.objects.get(iban=receiver)
+
+    acc1.balance -= amount
+    acc2.balance += amount
+
+    acc1.save()
+    acc2.save()
 ```
+
+or as a context manager within a function
+
+```python
+from django.db import transaction
+
+def transfer(sender, receiver, amount):
+	with transaction.atomic():
+		acc1 = Account.objects.get(iban=sender)
+		acc2 = Account.objects.get(iban=receiver)
+
+		acc1.balance -= amount
+		acc2.balance += amount
+
+		acc1.save()
+		acc2.save()
+```
+
+What happens in the background is the following. Whenever `transaction.atomic`
+is reached Django sends `BEGIN TRANSACTION` command to SQLite (Actually it
+sends `SAVEPOINT` but it is almost the same thing).
+Once the function is done Django sends `COMMIT` to SQLite which completes the transaction.
+
+SQLite does not allow any writes whenever there is an open (second) transaction. 
+So in our previous example, _both_ threads A and B will fail, by throwing an exception.
+More importantly, the fail will happen only during the commit. That is, the local
+objects `acc1` and `acc2` that are currently held in memory during the call of `transfer` are updated,
+and have different values, but the database itself is not updated.
+
+SQLite locks the _entire_ database, that is, as long as transaction is open
+no writes are possible. To see this effect in practice, we can open a connection to the
+database and open a transaction without closing it
+
+```shell
+$ sqlite3 src/db.sqlite3 
+SQLite version 3.30.1 2019-10-10 20:19:45
+Enter ".help" for usage hints.
+sqlite> BEGIN TRANSACTION;
+sqlite> 
+```
+
+As long as this connection is open, no other connection (manual or Django) can
+write to the database.  This is a very conservative approach (and one of the
+downsides of SQLite). Fancier database engines do not lock the database, and
+[select for
+update](https://docs.djangoproject.com/en/3.0/ref/models/querysets/#select-for-update)
+is probably needed to lock the objects that are about to be modified.
+
+
 
 <programming-exercise name="Bank Transfer" tmcname='Set2-05.BankTransfer'>
 
@@ -415,8 +360,9 @@ transfers. There is, however, small things to be fixed in the transfer
 functionality. Think about the fixes that are needed, perform them, and return
 the assignment to the TMC server.
 
-Note that the assignment has no tests; this means that you get to define what
-types of changes are needed.
+The automatic test for atomic operation here is quite conservative. Make sure
+that during the transfer view, there are no other SQL commands before the
+atomic portion. Also, use only one atomic section.
 
 </programming-exercise>
 
