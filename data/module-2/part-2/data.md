@@ -371,87 +371,50 @@ atomic portion. Also, use only one atomic section.
 
 When working with databases, information in one table can refer to information
 in another table. A customer -- for example -- can have multiple orders, and
-each order points to a specific customer. In Java, the references for such a
-case would be written as follows.
+each order points to a specific customer. In Django, the references for such a
+case would be written using a `ForeignKey`.
 
-```java
-// package and imports
+```python
+from django.db import models
 
-public class Customer {
-    // variables
+from django.contrib.auth.models import User
 
-    private List<Order> orders = new ArrayList<>();
-
-    // getters and setters
-}
+class Account(models.Model):
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
+    iban = models.TextField()
 ```
 
-```java
-// package and imports
+Here `User` is a Django built-in model for [users](https://docs.djangoproject.com/en/3.0/ref/contrib/auth/).
 
-public class Order {
-    // variables
+The above statement allows users to have multiple accounts.
+If only one account is allowed per user one can use [`OneToOneField`](https://docs.djangoproject.com/en/3.0/ref/models/fields/#django.db.models.OneToOneField).
 
-    private Customer customer;
+We can access the User object from Account object with
 
-    // getters and setters
-}
+```python
+acc = Account.objects.get(pk=0)
+user = acc.owner
 ```
 
+We can also cross-search accounts using owner's information 
 
-When working with JPA and databases, the programmer needs to define the
-relationships with annotations. These relationship types are `@OneToMany`,
-`@ManyToOne` and `@ManyToMany`. The above classes would be transformed into the
-following entities.
-
-```java
-// package and imports
-
-@Entity
-public class Customer extends AbstractPersistable<Long> {
-    // variables
-
-    // the field customer in Order points here
-    @OneToMany(mappedBy = "customer")
-    private List<Order> orders = new ArrayList<>();
-
-    // getters and setters
-}
+```python
+accounts_owned_by_johns = Account.objects.filter(owner__first_name='John')
 ```
-
-```java
-// package and imports
-
-@Entity
-public class Order extends AbstractPersistable<Long> {
-    // variables
-
-    @ManyToOne
-    private Customer customer;
-
-    // getters and setters
-}
-```
-
-
-<text-box variant=emph name="@OneToMany and @ManyToMany annotations in practice">
-
-In practice, when you write a reference from one entity class to another (e.g.
-a list), the IDE will ask you for the type of relationship between the
-entities. Getting familiar with the programming environment always helps!
-
-</text-box>
 
 
 <programming-exercise name="Simple Banking" tmcname='Set2-06.SimpleBanking'>
 
 The assignment template has the entities for managing accounts and clients, but
-they are missing a connection. Modify the application so that a customer may
-have multiple accounts, but each account belongs only to a single client.
-Adding an account must also add the account to a client.
+it is incomplete. Modify the application so that addition and listing
+the accounts actually works.
 
-Look for hints and tips in the existing classes and templates. When the
-application works as intended, return it to TMC.
+The web server has 3 users with the following passwords:
+ * admin:admin
+ * bob:squarepants
+ * alice:redqueen
+
+When the application works as intended, return it to TMC.
 
 </programming-exercise>
 
