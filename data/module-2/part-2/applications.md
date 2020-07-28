@@ -40,7 +40,12 @@ it will likely help you immensely, and likely also reduce the possibility of
 writing code with plenty of holes that others must fix...)
 
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">“Maybe switching to [insert new JS framework] will compensate for my lack of actual JavaScript knowledge” - front-end developers in 2015.</p>&mdash; I Am Devloper (@iamdevloper) <a href="https://twitter.com/iamdevloper/status/610191865216786432">14. June 2015</a></blockquote>
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">“Maybe
+switching to [insert new JS framework] will compensate for my lack of actual
+JavaScript knowledge” - front-end developers in 2015.</p>&mdash; I Am Devloper
+(@iamdevloper) <a
+href="https://twitter.com/iamdevloper/status/610191865216786432">14. June
+2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </text-box>
@@ -48,14 +53,17 @@ writing code with plenty of holes that others must fix...)
 
 Javascript file names typically end with `.js` and they are included to a HTML
 page using the `script` element. The element `script` has an attribute `src`,
-which defines the location of the source code file.
+which defines the location of the source code file. Alternatively, one can
+add the code directly to HTML by surrounding it with `<script>` tags.
 
-When adding Javascript code to a Spring Boot project, it is typically added to
-the folder `src/main/resources/public/javascript/`. All the files in the folder
-`src/main/resources/public` are made publicly available and downloadable
-through the server. Given that a Javascript file -- say `code.js` is in the
-folder `javascript`, the `script`-element is used as follows: `<script
-th:src="@{/javascript/code.js}"></script>`.
+Javascript source files can be stored under a directory meant for static files
+(same place as CSS files or images), see [documentation](https://docs.djangoproject.com/en/3.0/howto/static-files/).
+The app-specific directory is typically along the lines `pages/static/`,
+but one can also configure to have global static directory. The configuration
+is done in `config/settings.py`. To access the files from the template, one
+needs to prefix it with a path specified in `settings.py`, typically `static/`.
+For example, `<script src="static/javascript/code.js"></script>`, or you can use
+a `{% static %}` [tag](https://docs.djangoproject.com/en/3.0/howto/static-files/).
 
 Assume that the file `code.js` has the following content, i.e. a function that
 displays an alert pop-up with the text "Hello there!".
@@ -90,7 +98,7 @@ any blocking downloading of content.
         </article>
 
         <!-- Ask the browser to load the Javascript -->
-        <script th:src="@{javascript/code.js}"></script>
+        <script src="static/javascript/code.js"></script>
 
     </body>
 </html>
@@ -129,7 +137,7 @@ is used.
         </article>
 
         <!-- Ask the browser to load the Javascript -->
-        <script th:src="@{javascript/code.js}"></script>
+        <script src="static/javascript/code.js"></script>
 
     </body>
 </html>
@@ -186,7 +194,7 @@ field is not empty.
         </article>
 
         <!-- Ask the browser to load the Javascript -->
-        <script th:src="@{javascript/code.js}"></script>
+        <script src="static/javascript/code.js"></script>
 
     </body>
 </html>
@@ -218,7 +226,11 @@ content, one cannot only rely on the browser (i.e. the client).
 
 ### Adding elements to a page
 
-New elements can be created using the [createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) function. In the example below, a new `p` element is created, and text content is added to it. Finally, the paragraph is added to an element with the id "messages".
+New elements can be created using the
+[createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+function. In the example below, a new `p` element is created, and text content
+is added to it. Finally, the paragraph is added to an element with the id
+"messages".
 
 ```javascript
 var paragraph = document.createElement("p");
@@ -232,7 +244,10 @@ document.querySelector("#messages").appendChild(paragraph);
 
 <text-box variant=emph name="DOM">
 
-These Javascript calls use the Document Object Model (DOM) interface for altering the HTML document. See [https://developer.mozilla.org/en-US/docs/Web/API/Document\_Object\_Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) for additional information.
+These Javascript calls use the Document Object Model (DOM) interface for
+altering the HTML document. See
+[https://developer.mozilla.org/en-US/docs/Web/API/Document\_Object\_Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+for additional information.
 
 </text-box>
 
@@ -291,38 +306,15 @@ If you are familiar with debuggers and breakpoints in IDEs, similar functionalit
 
 ## Returning JSON Data from the Web Application
 
-The controller classes can return JSON data as well. If a method that returns
-an object is annotated using the `@ResponseBody` annotation, then the object
-will be returned as a JSON object by default. Let us assume that we have a
-class Book, which is as follows:
+Django views can return JSON data as well. This is done by using `JsonResponse`.
 
+```python
+# views.py
+from django.http import JsonResponse
 
-```java
-public class Book {
-    private String name;
+def taskView(request):
+    return JsonResponse({'name' : 'Book of Eli', 'author' : 'Eli'})
 
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-}
-```
-
-Now a controller that returns a Book object and has been annotated with the
-`@ResponseBody` annotation would return a JSON object as a response to the
-request made to that address.
-
-```java
-@RequestMapping("/books")
-@ResponseBody
-public Book getBook() {
-    Book book = new Book();
-    book.setName("The Book of Eli.");
-    return book;
-}
 ```
 
 
@@ -341,8 +333,10 @@ will return a list of objects.
 
 If you wish an additional challenge, add the functionality to remove tasks as well.
 
-Note that the application has no automated tests. Once you are able to list the
-tasks, return your solution to TMC.
+The automated test relies on using selenium with chromedriver and chrome, make
+sure that you have installed them properly, see
+[instructions](/python-installation-guide), otherwise you cannot do local
+tests.
 
 </programming-exercise>
 
@@ -361,21 +355,7 @@ defines guidelines for the browser. Following those guidelines, the browser can
 restrict and allow queries to specific external resources. It is configured on
 the server.
 
-Simple CORS support is added through the `@CrossOrigin` annotation, which is
-given the application addresses, from which requests can be made to the server.
-In the configuration below, books can be retrieved from any application.
-
-```java
-@CrossOrigin(origins = "/**")
-@RequestMapping("/books")
-@ResponseBody
-public Book getBook() {
-    Book book = new Book();
-    book.setName("Spring API");
-    return book;
-}
-```
-
-Additional information on how CORS and Spring can be found in the [Spring documentation](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/cors.html).
+At the moment, Django does not have a built-in CORS support, but it is possible
+to install a trird-party [app](https://pypi.org/project/django-cors-headers/) to enable CORS.
 
 </text-box>
