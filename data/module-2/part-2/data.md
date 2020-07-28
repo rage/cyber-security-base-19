@@ -29,102 +29,35 @@ Check out the tutorial at [https://sqlbolt.com/](https://sqlbolt.com/)
 </text-box>
 
 
-## Java Database Connectivity API
+## Python and SQLite
 
-We will use the [H2 Database Engine](http://www.h2database.com/html/main.html)
-for getting started with databases. H2 Database Engine can be added to a Maven
-project by adding the following dependency to the `pom.xml` file.
+We will use SQLite with python since it is ridiculously easy to use.
+SQLite is a naive SQL database engine, which makes it very easy to use,
+for example one does not need to care about setting up database user rights
+because there are no users. While SQLite is an ideal engine for learning 
+SQL, more serious projects should use more refined database engines such as
+[MySQL](https://www.mysql.com/) or [PostgreSQL](https://www.postgresql.org/).
+Note that all of them support vanilla SQL commands, the differences are within
+performance, extensions to SQL, as well as access rights.
 
-```xml
-<dependency>
-    <groupId>com.h2database</groupId>
-    <artifactId>h2</artifactId>
-    <version>1.4.193</version>
-</dependency>
+SQLite stores its database in a file, for example `db.sqlite`. Accessing the file
+in Python can be as follows.
+
+```python
+import sqlite3
+
+conn = sqlite3.connect('db.sqlite')
+cursor = conn.cursor()
+
 ```
 
-The previously added dependency provides H2-specific support for interacting with the database.
-
-A program that uses a database needs to (1) create a database connection, (2)
-execute a query to the database, (3) do something with the query results, and
-(4) close the connection. When using Java and
-[JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity), a program
-that does the previously mentioned steps could be as follows -- we assume, that
-there exists a database table called "Book" with the columns "id" and "name".
-
-```java
-// Open connection
-Connection connection = DriverManager.getConnection("jdbc:h2:file:./database", "sa", "");
-
-// Execute query and retrieve the query results
-ResultSet resultSet = connection.createStatement().executeQuery("SELECT * FROM Book");
-
-// Do something with the results -- here, we print the books
-while (resultSet.next()) {
-    String id = resultSet.getString("id");
-    String name = resultSet.getString("name");
-
-    System.out.println(id + "\t" + name);
-}
-
-// Close the connection
-resultSet.close();
-connection.close();
-```
-
-Perhaps the most important part here is the class
-[ResultSet](https://docs.oracle.com/javase/8/docs/api/java/sql/ResultSet.html),
-which provides an access to the query results. The method `next` moves to the
-next row in the result table, and the method `getString("column name")`
-retrieves the value for column "column name" for that row as a String.
-
-<text-box variant=emph name="On creating a database connection">
-
-The command `DriverManager.getConnection("jdbc:h2:file:./database", "sa", "");`
-creates a JDBC connection to a database called "database". The username is "sa"
-and the password is empty.
-
-If no such database called "database" exists, the file will be created to the
-root of the project. In this case, the file `database.mv.db` would be created
-during the first run, which would be complemented by a file called
-`database.trace.db` later. One could also create the database connection to an
-in-memory database, for example by
-`DriverManager.getConnection("jdbc:h2:mem:./database", "sa", "");`. Here, the
-database file would not exist on the file system, and the information would be
-lost during application restart.
-
-For more information on the tools and commands that the H2 Database Engine
-supports, see a tutorial at
-[http://www.h2database.com/html/tutorial.html](http://www.h2database.com/html/tutorial.html).
-
-</text-box>
+Once the cursor has been established, we can use `cursor.execute()` to execute a single
+SQL command or `cursor.executescript()` to execute multiple SQL commands. If we
+modify the database, then we should save the changes with `cursor.commit()`.
+For more information, see Python's sqlite [library](https://docs.python.org/3/library/sqlite3.html).
 
 
-The data in a database is typically organized so that it represents the problem
-domain and follows a specific structure. This structure, i.e.
-[schema](https://en.wikipedia.org/wiki/Database_schema), defines the database
-table names, the columns in each table, and the datatypes for each column. In
-addition to the schema, a database contains data.
 
-H2 Database Engine provides support for loading schemas and data using the
-[RunScript](http://www.h2database.com/javadoc/org/h2/tools/RunScript.html)
-class. In the example below, the content of `database-schema.sql` and
-`database-import.sql` is inserted to the database after the database connection
-has been made.
-
-```java
-// Open connection to database
-Connection connection = DriverManager.getConnection("jdbc:h2:file:./database", "sa", "");
-
-try {
-    // If database has not yet been created, create it
-    RunScript.execute(connection, new FileReader("database-schema.sql"));
-    RunScript.execute(connection, new FileReader("database-import.sql"));
-} catch (Throwable t) {
-    System.out.println(t.getMessage());
-}
-// ...
-```
 
 
 <programming-exercise name="Hello Database" tmcname='Set2-02.HelloDatabase'>
@@ -157,45 +90,53 @@ Implement the functionality for adding an agent to the database. The
 application should function as follows (input from the user given in red):
 
 ```sample
-Agents in database:
+Active agents:
+
 Secret	Clank
 Gecko	Gex
 Robocod	James Pond
 Fox	Sasha Nein
 
-Add one:
-What id? Riddle
-What name? Voldemort
+What would you like to do: [a]dd, [r]emove, or [q]uit? a
 
-Agents in database:
+id? Riddle
+name? Voldemort
+
+Active agents:
+
 Secret	Clank
 Gecko	Gex
 Robocod	James Pond
 Fox	Sasha Nein
 Riddle	Voldemort
+
+What would you like to do: [a]dd, [r]emove, or [q]uit? q
 ```
 
 Now, when the application is started again, agent Voldemort is within the database and the details of a new agent is queried from the user.
 
 ```sample
-Agents in database:
+Active agents:
+
 Secret	Clank
 Gecko	Gex
 Robocod	James Pond
 Fox	Sasha Nein
 Riddle	Voldemort
 
-Add one:
-What id? Feather
-What name? Major Tickle
+What would you like to do: [a]dd, [r]emove, or [q]uit? a
 
-Agents in database:
+id? Feather
+name? Major Tickle
+
+Active agents:
+
 Secret	Clank
 Gecko	Gex
 Robocod	James Pond
 Fox	Sasha Nein
 Riddle	Voldemort
-Feather	Major Tickle</pre>
+Feather	Major Tickle
 ```
 
 </programming-exercise>
@@ -203,13 +144,10 @@ Feather	Major Tickle</pre>
 <text-box variant=emph name="Parameterized queries and SQL Injection Prevention">
 
 Read the [OWASP SQL Injection Prevention Cheat
-Sheet](https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet).
-If you implemented the insert query in the previous assignment without
-parameterized queries, i.e. as below, redo the assignment.
+Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html).
+Try to implement the delete query incorrectly, that is, form the string
+directly. The automated test should catch this mistake.
 
-```java
-String query = "INSERT INTO Agent (id, name) VALUES ('" + id + "', '" + name + "')";
-```
 </text-box>
 
 
