@@ -22,54 +22,11 @@ One of the important lists that they maintain is the [OWASP Top
 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) which
 contains a list of the ten most critical web application security risks. The
 most recent list is from
-[2017](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf).
+[2017](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/).
 
 </text-box>
 
 
-In order to work on the assignments in this part of the course, you need to
-download the [WebGoat Lesson server](https://github.com/WebGoat/WebGoat). The
-latest stable build (at the time of the writing of this material) is the
-version 7.0.1, which can be downloaded at
-[https://github.com/WebGoat/WebGoat/wiki](https://github.com/WebGoat/WebGoat/wiki).
-
-Once you have downloaded WebGoat, it can be started from the command line using the command:
-
-```shell
-java -jar webgoat-container-7.0.1-war-exec.jar -httpPort 8081
-```
-
-This launches the WebGoat server on the port 8081. Once the server has been started, the application can be accessed at `http://localhost:8081/WebGoat`.
-
-In this part, the assignments are done within the WebGoat server and reported
-in the questionnaires in this material. The goal is to practice the discovery
-of vulnerabilities as well as reporting them on a level that others can
-replicate the found vulnerability. The level of detail for the reporting should
-be as follows (you can assume that the user is logged in to WebGoat as a
-guest):
-
-```sample
-Issue: SQL Injection
-Steps to reproduce:
-1. Open Injection Flaws
-2. Select Numeric SQL Injection
-3. Open Developer Console
-4. Inspect the Weather Station Element
-5. In the Developer Console, find the select element that
-   lists the weather stations.
-6. Edit one of the option elements within the select element and
-   change the option value to "101 OR station < 9999999".
-7. Select the altered option from the dropdown list on the page
-8. Press Go!
-9. You can now see all weather the weather data.
-```
-
-In addition to reporting issues, you are expected to review the issue reports
-from others. Try following them step by step and see if you can reproduce the
-security issues that others have found. If you are unable to reproduce an issue
-by following the steps in the report, indicate the specific step that caused
-you to fail to reproduce the issue and why. If, on the other hand, you are able
-to reproduce the issue, thank them for the report.
 
 
 
@@ -86,16 +43,41 @@ other unsanitized data are used as a part of a SQL query.
 
 _(source [xkcd: Exploits of a mom.](https://xkcd.com/327/))_
 
+<programming-exercise name="SQL injection" tmcname='Set2-07.EuroShopper'>
 
-<quiz id="2d373a9b-8a8c-50f0-a663-e1480cdebdc2"></quiz>
+Python SQLite API provides two main methods for executing commands, `execute` and `executescript`.
+The latter along with the unsanitized data allows you to escape the current command, and tricks like
+`DROP TABLES` become possible. However, with `execute` you cannot escape the current command but you can still do
+significant damage.
 
-Whilst SQL injections are perhaps the most common examples of Injection
+The exercise contains a database with the schema
+
+```SQL
+CREATE TABLE Users (name TEXT, password TEXT, admin BOOL);
+CREATE TABLE Tasks (name TEXT, body TEXT);
+```
+
+The exercise also contains a script with oracle that allows you to query the Tasks table. 
+The query is written in an unsafe manner. Complete `find_password` that finds admin password stored in Users table.
+
+Hints:
+* Most likely, you cannot query Users table directly, instead design a query
+  that will test whether the admin password _starts_ with a given sequence.
+* You will need to do many queries, oracle limits itself to 320 queries which should be enough.
+* Look into nested queries
+* You can assume that there is only one admin, marked with `admin = 1`, you can also assume that the password is at most 8 characters.
+* Do not modify the oracle code, the automated test uses its own oracle with a random admin password. 
+
+</programming-exercise>
+
+
+While SQL injections are perhaps the most common examples of Injection
 vulnerabilities (see e.g. [Ruby on Rails](http://rails-sqli.org/) and [Spring
 Data JPA](https://pivotal.io/security/cve-2016-6652)), other types of
 injections also exist. It can be, for example, possible to execute code on the
 application server (see e.g. [Ruby on
 Rails](http://ronin-ruby.github.io/blog/2013/01/09/rails-pocs.html) and
-[Spring](https://jira.spring.io/browse/SPR-5308)).
+[Spring](https://jira.spring.io/browse/SPR-5308)) or [Django](https://docs.djangoproject.com/en/3.0/topics/http/sessions/#using-cookie-based-sessions).
 
 
 ## Broken Authentication
@@ -149,26 +131,21 @@ credentials for the action that he or she seeks to take.
 
 The next assignment is done within Test My Code.
 
-<programming-exercise name="Megaupload" tmcname="Set3-01.Megaupload">
+<programming-exercise name="Hihaupload" tmcname="Set3-01.Megaupload">
 
 The assignment template contains the functionality for uploading and storing
 personal files on a web server. The files uploaded by an individual should not
 be accessible by anyone else. However, there seems to be a few flaws in how
 this has been implemented. Fix the application so that everyone can access only
-the files that they have uploaded.
+the files that they have uploaded (unauthorized actions should redirect to `/`).
 
 The application has the following username and password combinations for testing:
 
-- roger:carrots
-- valiant:vaudeville
-
-Note that the application has no automated tests. Once you believe that you
-have solved the issue(s), return your solution to TMC.
+- alice:redqueen
+- bob:squarepants
 
 </programming-exercise>
 
-
-<quiz id="83933e2f-b6a9-5c0e-962e-d48b898cc062"></quiz>
 
 ## Security Misconfiguration
 
@@ -181,7 +158,7 @@ where the database or other components are running?', 'are the software
 components and libraries as well as the operating systems up to date?', 'are
 the used passwords high quality?' and so on.
 
-As an example, one of the [recent Denial of Service
+As an example, one of the [Denial of Service
 attacks](https://www.theguardian.com/technology/2016/oct/26/ddos-attack-dyn-mirai-botnet)
 was partially made possible by thousands of internet of things devices with
 default passwords (or poor passwords).
@@ -233,8 +210,21 @@ good
 [checklist](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
 that can be used for XSS testing.
 
+<programming-exercise name="Cookie heist" tmcname="Set3-01.Megaupload">
 
-<quiz id="bbf5436f-d245-5969-8280-86f330de3f14"></quiz>
+The exercise contains a simple direct message application, where messages are
+not properly sanitized. Write a message to `src/msg.html` that steals the cookie.
+
+To steal the cookie use Javascript with POST and submit it to `mail/` request
+on the same server (note that in practice this can be _any_  server but for
+automatic testing we added the `mail/` service to the same server to simulate the heist).
+The parameter to `mail/` should be a JSON object with a field `content` containing the victim's cookie as a string.
+
+Hints:
+* Look into Tasks exercise on how to do POST requests with Javascript.
+* For debugging purposes, the server will print to the console any mail obtained through `mail/` request.
+
+</programming-exercise>
 
 ## Using Components with Known Vulnerabilities
 
@@ -248,69 +238,31 @@ including the operating system (see e.g. [The Dirty
 COW](http://thehackernews.com/2016/10/linux-kernel-exploit.html)).
 
 Most dependency management tools have plugins that can analyze the used
-dependencies and identify components with vulnerabilities. For example, the
-[Dependency-Check](https://jeremylong.github.io/DependencyCheck/dependency-check-maven/index.html)
-Maven plugin can be used to determine whether the current project utilizes
-faulty components.
+dependencies and identify components with vulnerabilities. For example,
+Python packages `safety` (and `safety-db`) can be used to check any vulnerable packages.
 
-The Dependency-Check plugin can be taken into use by including the following statement to the project pom.xml:
 
-```xml
-...
-<plugins>
-  ...
-  <plugin>
-    <groupId>org.owasp</groupId>
-    <artifactId>dependency-check-maven</artifactId>
-    <version>5.2.4</version>
-    <executions>
-      <execution>
-        <goals>
-          <goal>check</goal>
-        </goals>
-      </execution>
-    </executions>
-  </plugin>
-  ...
-</plugins>
-...
+<programming-exercise name="Safety first" tmcname="Set3-02.OldiesButGoodies">
+
+Python package `safety` can be used to find installed vulnerable packages.
+The package relies on another package `safety-db` which is simply a curated
+JSON file of known vulnerable python modules.
+
+In this assignment, the goal is to write a simple query system that given
+the safety-db json file and a package name returns a list of all vulnerabilities
+associated with that package. 
+
+The output should contain a list of tuples
+```python
+[(id1, version1, cveid1), (id2, version2, cveid2), ...]
 ```
 
-Once included, the project can be analyzed by running the command `mvn dependency-check:check`
-from the command line. The correct plugin version depends on which Maven you are running.
-If you are using Maven 3.6, then you should change the plugin version to 5.2.4.
-You can use version 1.4.4 with Maven version 3.1, whilst older versions (Maven
-3.0) can be used with 1.4.2. 
-
-
-The next assignment is partially done within Test My Code and partially within
-the following questionnaire.
-
-<programming-exercise name="Oldies but goodies" tmcname="Set3-02.OldiesButGoodies">
-
-The assignment template contains a simple Spring Framework application that
-uses a version of Spring released in December 2009. You can launch the
-application from command line using the command `mvn jetty:run`, which launches
-server.
-
-Run the Maven Dependency Check plugin on the application to identify the types
-of security vulnerabilities in the software. When the plugin reports
-vulnerabilities, e.g. `CVE-2014-1904`, you can find their many of their
-descriptions using the Common Vulnerabilities and Exposures database at
-[https://cve.mitre.org/index.html](https://cve.mitre.org/index.html).
-
-If you have problems running the check, check that the plugin version is
-compatible with your maven.  The easiest way to handle this is to download the
-latest maven and set the plugin version to 5.2.4.
-
-Once you have identified the vulnerabilities, answer the questionnaire that
-follows this assignment -- the assignment template has no tests and can be
-submitted to server.
+During the writing of this exercise the `safety-db` package was quite broken,
+so instead of installing `safety-db`, you should download the json file `insecure_full.json` directly
+from [here](https://github.com/pyupio/safety-db/tree/master/data).
 
 </programming-exercise>
 
-
-<quiz id="b4cc3307-042a-57d2-980e-14662d8805db"></quiz>
 
 ## Unvalidated Redirects and Forwards
 
@@ -318,7 +270,7 @@ Unvalidated Redirects and Forwards may cause the web application to redirect
 the user to an unwanted location. This may happen, for example, if the address
 to which the user is forwarded after an action can be tampered with. For
 further information, see the [OWASP Cheat
-sheet](https://www.owasp.org/index.php/Unvalidated_Redirects_and_Forwards_Cheat_Sheet).
+sheet](https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html).
 
 <text-box variant=emph name="Incident Databases">
 
@@ -326,10 +278,8 @@ Knowing the top 10 most critical web application security issues is a good
 start. However, new security flaws are constantly discovered, and a security
 professional needs to keep up with the development of the field. Incident
 databases such as [Common Vulnerabilities and
-Exposures](https://cve.mitre.org/) and
-[https://fusiontables.google.com/DataSource?snapid=S283929Jw2s](https://fusiontables.google.com/DataSource?snapid=S283929Jw2s)
-that is maintained by OWASP and [Web Application Security
-Consortium](http://www.webappsec.org/) are crucial for keeping up with the
+Exposures](https://cve.mitre.org/) 
+are crucial for keeping up with the
 latest developments of the field.
 
 It is important to also follow the relevant mailing lists. For example, Ruby on
@@ -349,7 +299,26 @@ request to the target application as the user is accessing the source site,
 making it possible to access data as an authenticated user that should not be
 accessible. Many frameworks these days include CSRF defences by default.
 
-<quiz id="555f2288-82d9-5cb9-b3af-f0b36d6858c4"></quiz>
+<programming-exercise name="CSRF Prompt-By Pass" tmcname="Set3-02.OldiesButGoodies">
+
+The exercise contains an unsafe bank application that uses GET methods without
+any CSRF protection. 
+
+The application has the following username and password combinations for testing:
+
+- alice:redqueen
+- bob:squarepants
+
+Write an HTML file that when opened (if the user is logged in) moves $10 to Alice's account.
+Note that there is a confirmation dialog which you also need to deal with.
+
+Do not use Javascript, instead use `img` tags.
+
+The automated test will ignore the DNS name of the server in img tags, so you
+can use `localhost:8000` freely, or any other name, depending on your setup.
+
+</programming-exercise>
+
 
 In this this part of the securing software course, we looked at some of the
 most common web security issues. During the next part, we will look a bit
