@@ -11,7 +11,7 @@ mitigate such issues in a rapid fashion.
 
 ## Typical Security Issues Are (almost) Resolved
 
-In the [third part](part3.html) of this course, we visited some of the most
+In the [fourth part](/module-2.4/1-finding) of this course, we visited some of the most
 common security issues in software. These are listed in the OWASP [top ten
 list](https://www.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf),
 which contains the ten most common security flaws in software. They are as
@@ -44,16 +44,18 @@ with form data.
 
 
 
-<programming-exercise name="CSRF" tmcname="Set5-01.CSRF">
+<programming-exercise name="Bad configuration" tmcname="Set5-01.CSRF">
 
-The assignment template contains an application that provides the opportunity
-to change the password of the user. Currently, if the user is logged in, the
-user can potentially be forced to change his or her password through a CSRF
-attack.
+The assignment template contains a variant of the
+banking application used in the previous exercise. 
 
-Look into the security configuration of the application and fix the situation.
-Once fixed, a CSRF token should be added to the requests that are handling
-data.
+Go over the code and fix the security issues.
+
+The users are
+* bob:squarepants
+* alice:redqueen
+* patrick:asteroid
+
 
 Once you believe that you have solved the issue(s), return your solution to
 TMC.
@@ -74,7 +76,7 @@ its dependencies) currently provide.
 ## ..but Problems tend to Reside in Business Logic
 
 
-Whilst frameworks provide ample support against the most common security
+While frameworks provide ample support against the most common security
 issues, they do not provide protection against flaws in the business logic of
 the application. A security consultant does not only look for vulnerabilities
 that are related to a user breaking into a system. She also looks for
@@ -84,32 +86,16 @@ or she should not be able to do from the start.
 <programming-exercise name="Millionaire" tmcname="Set5-02.Millionaire">
 
 The assignment template contains the core elements of the "Who wants to be a
-millionaire?"-game that we looked into earlier in the course. In this template,
+millionaire?"-game. In this template,
 you can observe that the link that is used to input details after finishing the
-game can be accessed by anyone -- although it should be hidden.
+game can be accessed by anyone -- although it should be hidden,
+moreover user can go back and change the topic midway.
 
-Change the application so that only those who finished the game can enter their
-details -- everyone with the link should not be able to do so. Do not change
-the address though, but do it in the business logic of the application.
+Fix these issues Do not change the address scheme though, but do it in the
+business logic of the application.
 
 Once you believe that you have solved the issue(s), return your solution to
 TMC.
-
-</programming-exercise>
-
-<programming-exercise name="Online Webshop" tmcname="Set5-03.OnlineWebshop">
-
-The assignment template contains a version of the previously seen application
-"EuroShopper". There are some issues in the code that -- although not direct
-security issues -- may influence how profitable the online web shop will
-eventually be. Look into the application code and try the webshop out.
-
-You should be able to identify at least one type of issue that potentially
-makes it possible to pay less than expected to the webshop. Identify the issue
-and fix it.
-
-Once you believe that you have solved the issue(s), return your solution to
-TMC. This assignment has no tests.
 
 </programming-exercise>
 
