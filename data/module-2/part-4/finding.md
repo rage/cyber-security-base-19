@@ -524,6 +524,36 @@ American Fuzzy Lop, or AFL, by Michal Zalewski, which is an instrumenting synthe
 
 </text-box>
 
+<programming-exercise name="HackMyPassword" tmcname="Set4-01.HackMyPassword">
+
+The assignment template contains a small web application that needs to be hacked.
+
+Your "friend" forgot his admin password, and you need to "retrieve it".
+The account username is admin and since your friend isn't the sharpest tool
+in the shed, you suspect that he uses a popular password. The candidate
+passwords are listed in `candidates.txt`
+and the list is taken from
+[https://github.com/danielmiessler/SecLists/tree/master/Passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords).
+
+To access the admin panel go to `http://localhost:8000/admin/login/?next=/admin/`
+once you have fired up the server.
+
+Use `requests.Session()` to probe the server (otherwise a certain cookie is not transmitted).
+You will also need to deal with csrf token.  Use the provided helper function to extract the token.
+The template also provides a function to check whether the login was successful.
+
+Do not forget to submit _all_ the login form fields, including the submit button.
+
+For debugging purposes, you can change the admin password with
+```shell
+python3 manage.py changepassword admin
+```
+and get the original password back by redownloading the database `db.sqlite`.
+
+The automated test uses a random admin password.
+
+</programming-exercise>
+
 
 ### BURP suite
 
@@ -629,37 +659,16 @@ password payload is changed.
 
 The attack then tries all the passwords and gathers the resulting answers from
 the server (here only 501 replies as there was really nothing suitable
-listening on the other end). Next, you get to try this yourself!
+listening on the other end). 
 
-
-<programming-exercise name="HackMyPassword" tmcname="Set4-01.HackMyPassword">
-
-The assignment template contains a small web application that needs to be hacked.
-
-Your "friend" forgot his password, and you need to "retrieve it". You have
-figured out that his username is "ted". Using burp suite and a suitable list of
-passwords (pick the top 10000 passwords from
-[https://github.com/danielmiessler/SecLists/tree/master/Passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords)),
-determine the password for your "friend".
-
-Note that if you do not own the license for Burp Suite, we highly recommend
-that you choose [OWASP
-Zap](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project). Doing
-this assignment with the free version of Burp Suite will take very long.
-
-Once you find out the password, change the return value of the method
-<code>thePassword</code> in the class <code>IFiguredItOut</code> to match the
-correct password and submit the assignment to the server.
-
-</programming-exercise>
 
 <text-box variant=emph name="Just password hacking?">
 
-Whilst the previous practical example was about hacking a password, you can use
+While the previous practical example was about hacking a password, you can use
 Burp Suite (or OWASP Zap) to scan web applications for any vulnerabilities.
 Even though there are no explicitly outlined assignments for this in this
-material we still recommend and expect that you try out those tools with the
-WebGoat server from last week!
+material we still recommend you try out those tools for example with the
+[WebGoat server](https://owasp.org/www-project-webgoat/). 
 
 </text-box>
 
