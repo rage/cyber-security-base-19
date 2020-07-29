@@ -5,9 +5,21 @@ hidden: false
 ---
 
 
-Almost everything that we've done so far has relied on the HTTP protocol. The HTTP protocol is the protocol that browsers and servers use for communication. It defines eight separate request methods, from which the `GET` and `POST` are most widely used. Each request method has a set of restrictions and suggestions on the content of the message and on how the message should be processed by the server. For example, [Java Servlet API (version 2.5)](http://jcp.org/aboutJava/communityprocess/mrel/jsr154/index2.html) includes the following suggestion for handling the normal GET requests, i.e. the ones that users use for retrieving data.
+Almost everything that we've done so far has relied on the HTTP protocol. The
+HTTP protocol is the protocol that browsers and servers use for communication.
+It defines eight separate request methods, from which the `GET` and `POST` are
+most widely used. Each request method has a set of restrictions and suggestions
+on the content of the message and on how the message should be processed by the
+server. For example, the [HTTP protocol](https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)
+includes the following suggestion for handling the normal GET requests, i.e.
+the ones that users use for retrieving data.
 
-_The GET method should be safe, that is, without any side effects for which users are held responsible. For example, most form queries have no side effects. If a client request is intended to change stored data, the request should use some other HTTP method._
+_In particular, the convention has been established that the GET and HEAD
+methods SHOULD NOT have the significance of taking an action other than
+retrieval. These methods ought to be considered "safe". This allows user agents
+to represent other methods, such as POST, PUT and DELETE, in a special way, so
+that the user is made aware of the fact that a possibly unsafe action is being
+requested._
 
 #### Data is retrieved using the GET method
 
@@ -23,16 +35,15 @@ Host: f-secure.com
 
 ```
 
-We have used the `@RequestMapping` annotation for handling GET requests that
-are sent to the server. Actually, the same annotation can be used for any of
-the HTTP request methods; the annotation can be configured using attributes.
-For example, the following annotation would capture GET requests to the path
-"/salmiakki": `@RequestMapping(value = "/salmiakki", method = RequestMethod.GET)`.
+Any parameters that are provided to the server are part of the URL, for
+example, `http://localhost:8000/greet?user=ada`.  Consequently, these
+parameters will be shown in the URL bar of the browser.
+
 
 
 #### Data is sent using the POST method
 
-The practical difference between the POST and GET requests is that whilst GET
+The practical difference between the POST and GET requests is that while GET
 methods may contain information within the path and the request parameters,
 content can be added to the body of the POST method. The type of the data in
 the body is sent as a part of a request header, and it can contain images,
@@ -47,9 +58,15 @@ Content-Length: 10
 ...data...
 ```
 
+Unlike in GET, the parameters are not shown in the URL browser (also it doesn't make sense
+to show them as the parameters can be, for example, images). Moreover, a modern browser
+will ask you whether to resubmit the form if you try to reload a web page that has been
+retrieved using a POST method: a sign that POST should be considered as something that modifies
+the server data while GET is simply to query the server. 
+
 <text-box variant=emph name="Other request methods">
 
-Whilst the GET and POST methods are most widely used in the communication
+While the GET and POST methods are most widely used in the communication
 between servers and browsers, other types of requests also exist. These include
 requesting the types of options that the server supports, asking to delete a
 resource, etc.
@@ -88,24 +105,33 @@ maintained.
 <text-box variant=emph name="Session Management Cheat Sheet">
 
 Familiarize yourself with the [OWASP Session Management Cheat
-Sheet](https://www.owasp.org/index.php/Session_Management_Cheat_Sheet) and
-[Session hijacking
-attack](https://www.owasp.org/index.php/Session_hijacking_attack).
+Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html). 
+
+Consider also checking information on [Session hijacking](https://en.wikipedia.org/wiki/Session_hijacking).
 
 </text-box>
 
 
 
-<programming-exercise name="EuroShopper" tmcname='Set2-07.EuroShopper'>
+<programming-exercise name="Bank heist" tmcname='Set2-07.EuroShopper'>
 
-The assignment template has a very basic web shop functionality. Study the code
-and add a vulnerability to it that makes it possible to conduct a session
-highjacking attack on the web site. Limit your approach to predictable session
-tokens and client-side attacks such as inserting malicious Javascript codes.
-The template already contains a mistake that will make your job a bit easier.
+The assignment contains a very simple bank application with 3 normal users
 
-Once finished, submit the assignment to TMC. There are no tests for the
-assignment, so you can modify the application as much as you want.
+* bob:squarepants
+* alice:redqueen
+* patrick:asteroid
+
+The application has a predictable session id generation.
+Figure out the formula and obtain Alice's balance by guessing Alice's session id (assuming she is logged in).
+
+Hints:
+* Note that the server code is now in `server/` directory. Do not modify the server, instead modify the session sniffer in `src/` folder.
+* The server has a `/balance/` web page that provides the balance in JSON format for the logged in user.
+* To test your code, log in as Alice in a browser, and only then try to guess the session id with the session sniffer.
+* Multiple guesses are probably required.
+* Use Python library [requests](https://www.w3schools.com/python/ref_requests_get.asp).
+* The session id for Django web servers is stored in a cookie named `sessionid`.
+
 
 </programming-exercise>
 
