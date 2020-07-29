@@ -102,8 +102,7 @@ TMC.
 <text-box variant=emph name="Business Logic Security Cheat Sheet">
 
 OWASP has been working on a draft that contains typical vulnerabilities in
-business logic. See the draft at
-[https://www.owasp.org/index.php/Business_Logic_Security_Cheat_Sheet](https://www.owasp.org/index.php/Business_Logic_Security_Cheat_Sheet).
+business logic. See Chapter 35 in [Cheat Sheet book](https://owasp.org/www-pdf-archive/OWASP_Cheatsheets_Book.pdf).
 
 </text-box>
 
@@ -202,7 +201,7 @@ breached? What if the development team had not suggested such requirements to
 the customer?
 
 Adding [evil user
-stories](https://www.owasp.org/index.php/Agile_Software_Development:_Don't_Forget_EVIL_User_Stories)
+stories](https://www.nixu.com/blog/cyber-attack-motives-part-2-evil-user-stories)
 to the requirements is a start. Evil user stories outline functionality that an
 evil user expects to be available, which may lead to unwanted results. For
 example, "As a hacker, I can modify the sales of different menu items, so that
@@ -210,7 +209,7 @@ the daily sales reports no longer are accurate."
 
 A good starting point for thinking about evil user stories is the OWASP [Top
 Ten Proactive Controls
-list](https://www.owasp.org/index.php/OWASP_Proactive_Controls).
+list](https://owasp.org/www-project-proactive-controls/).
 
 </text-box>
 
@@ -328,12 +327,12 @@ be exploited. If the deployment is an automatic and frequent operation,
 patching will also likely be very quick.
 
 One might perceive all deployments as a risk because it might break something.
-One way to mitigate the risk of new deployments are so-called <a
-href="http://martinfowler.com/bliki/CanaryRelease.html" target="_blank">canary
-releases</a>. If one has multiple machines that have to be updated, changes can
-be pushed only to a small percentage of the nodes. Then one can observe the
-nodes that have the newer code in place, and see if the work as intended. If
-everything is ok, the changes can be deployed to the rest of the network.
+One way to mitigate the risk of new deployments are so-called [canary
+releases](http://martinfowler.com/bliki/CanaryRelease.html). If one has
+multiple machines that have to be updated, changes can be pushed only to a
+small percentage of the nodes. Then one can observe the nodes that have the
+newer code in place, and see if the work as intended. If everything is ok, the
+changes can be deployed to the rest of the network.
 
 
 <text-box variant=emph name="Quick iterations -- why is security often neglected?">
