@@ -10,7 +10,7 @@ Encryption algorithms can be roughly divided into 3 categories:
 
 * algorithms without a key
 * algorithms based on a symmetric hidden key
-* algorithms based on an asymetric public/private key
+* algorithms based on an asymmetric public/private key
 
 
 The "security" of the encryption technique without a key comes from the idea
@@ -22,7 +22,7 @@ outside newspaper puzzles.
 
 
 Algorithms based on a symmetric hidden key assume that both encryption and decryption algorithms
-are known but both parties share a hidden key so that without the key dectyption is very difficult.
+are known but both parties share a hidden key so that without the key decryption is very difficult.
 Perhaps the most known such algorithm is Caesar
 cipher, named after Julius Caesar. The cipher involves shifting letters by a certain
 amount, and wrapping around. Here the key is an integer indicating the shift. ROT13 is a special
@@ -33,7 +33,7 @@ while his nephew Augustus used a shift of 1.
 It is crucial that the number of candidates for a key is very large, making a brute-force
 attack impossible. For example, Caesar cipher can be easily broken, even
 without a computer, since there are only 26 options. A more contemporary case
-is Content Scambling System (CSS) for DVDs introduced in 1996, and compromised in 1999. CSS was using a 40-bit key,
+is Content Scrambling System (CSS) for DVDs introduced in 1996, and compromised in 1999. CSS was using a 40-bit key,
 leaving 2<sup>40</sup> options for a key value.
 The reason for such a "small" key is at the time United States have
 restrictions on exporting strong cryptographic methods (nowadays, the
@@ -45,7 +45,7 @@ the key in advance. To solve the issue algorithms based on a public/private
 key are used. The main idea is as follows: A recipient has two keys
 one public and one private. A sender encrypts a message using an algorithm
 with a public key. This message can only be decrypted using a private key.
-Consequently, only the recepient can decrypt a message.
+Consequently, only the recipient can decrypt a message.
 
 Since the public key is known it is vital for the encryption algorithm that
 _one cannot deduce the private key easily from the public key_. In other words,
@@ -89,14 +89,14 @@ and Bob, and an attacker Melissa. Alice wishes to send safely a message to Bob, 
 to intercept the message.
 
 1. Melissa makes Alice believe that she is Bob.
-2. Instead Melissa provides Alice with her own public key.
+2. Alice asks Bob (Melissa in disquise) for a public key. Instead Melissa provides Alice with her own public key.
 3. Alice encrypts the information with the spoofed key and sends it back to Melissa.
-4. Melissa decrypts the information using her secrect key.
+4. Melissa decrypts the information using her secret key.
 
 The crux of the problem is that Alice cannot verify whether the public key belongs
 Bob. To solve this problem certificates are used.
 
-Certificates work as follows. Consider that you additional party Benedict.
+Certificates work as follows. Consider that there is an additional party, Benedict.
 Alice wants to send an encrypted message but is not sure whether
 Bob's public key is really his. However, Alice knows and trusts Benedict's public key.
 The verification consists of the following steps:
@@ -105,7 +105,7 @@ The verification consists of the following steps:
 2. Benedict uses Bob's public key and his identity to construct a signature, that is signed Benedict's _secret_ key, and sends Bob the signature.
 3. Bob sends Alice a certificate, that is, his information and the encrypted signature.
 4. Alice decrypts the signature using Benedict _public_ key and verifies that the information in the certificate matches the decrypted signature.
-5. Alice checks that the identity of Bob matches.
+5. Alice checks that the identity in the certificate is indeed Bob.
 6. Alice can now trust the public key provided in Bob's message.
 
 Let's look more closely at the sequence of these events. First, note that
@@ -126,7 +126,7 @@ a valid certificate for Bob. She has 3 options, none of them will succeed:
 2. She can obtain her own valid certificate, but Alice will notice that the certificate is Melissa's and not Bob's.
 3. She can modify the certificate by replacing Bob's key with her own but the content no longer match the signature, so Alice rejects the tampered signature.
 
-The key assumption here is that Alice trusts Benedict. A computer has a list of
+The key assumption here is that Alice trusts Benedict. In practice, a computer has a list of
 trusted certificate authorities, that are obtained via a secure channel, for
 example, when installing a new operating system.
 
@@ -135,4 +135,4 @@ Benedict directly, instead he asks a mediator, say William, to issue a
 certificate. William has his own certificate that he has obtained from Benedict.
 Alice then needs verify both Bob's and William's certificates. 
 
-Same scheme is also for signing executables.
+Similar scheme is also for signing executables.
