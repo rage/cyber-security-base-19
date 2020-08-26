@@ -55,3 +55,5 @@ security professionals to minimize discoverability would in turn favor the
 deprecated approach of security through obscurity.) A scale from 0-10 is
 usually used in all categories, save for discoverability which is commonly set
 to 10 on the grounds that any threat will eventually be discovered.
+
+
