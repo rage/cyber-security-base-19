@@ -1,8 +1,10 @@
 ---
 path: '/module-1/2-why'
-title: 'What is cyber security and why should we care about it?'
+title: 'Cyber security in the real world'
 hidden: false
 ---
+
+## What is cyber security and why should we care about it?
 
 Software is literally everywhere. Initially software resided on mainframes and only few people were in contact with it. Somewhat later the personal computer was invented and thanks to its popularity, software moved to our homes. (That said, in the home software was still restricted and an attacker would need physical access to the target.)
 
@@ -91,3 +93,85 @@ Watch James Lyne's talk [Everyday cybercrime -- and what you can do about it](ht
 </text-box>
 
 <quiz id="a3fa6c29-5c2a-5474-be7e-85a40b5257ed"></quiz>
+
+
+## Media reports only the tip of the iceberg
+
+Security-related news has become more and more common. Media reports about
+breaches are no longer minor items buried in miscellaneous news, but instead
+are prominent front-page material. Everything, from baby monitors to security
+cameras, from cars to luxury yachts, has been targeted and hacked. The threats
+news agencies talk about have become more complex and more professional. Stolen
+password lists have become sought-after merchandise and news about targeted
+ransomware attacks have been seen at an unprecedented rate. This reveals the
+grim truth that our lives online, and by extension our lives offline, have
+become an easy way for criminals to make money, and that this threat affects
+all industries, countries, and social spaces.
+
+Although the media is beginning to take breach news seriously, and studies such
+as the [Crime Survey of England and Wales](http://www.crimesurvey.co.uk/) from
+the Office of National Statistics show that the frequency of incidents is
+increasing, it is still commonly believed that cyber crime is an underreported
+area of illegality.
+
+<quiz id="768dea03-3242-522c-997d-ced606377fa9"></quiz>
+
+The above conveys a bleak picture of the current state of things. At the same time, however, governments, organizations, corporations and institutions are funnelling more and more money, research and effort into improving the situation.
+
+<text-box variant="emph" name="Additional links to breach news">
+
+- [Millions of email accounts compromised in massive data breach that includes Google and Yahoo](http://www.telegraph.co.uk/news/2016/05/04/millions-of-email-accounts-compromised--in-massive-data-breach-t/)
+- [Android security breach puts millions at risk of smartphone hijacking](http://www.telegraph.co.uk/technology/internet-security/11788184/Android-security-breach-puts-millions-at-risk-of-smartphone-hijacking.html)
+- [Ransomware hackers are targeting U.S. execs](http://money.cnn.com/2016/08/05/technology/ransomware-study-malwarebytes-hackers/)
+- [Hackers Turn Security Camera DVRs Into Bitcoin Miners](https://www.wired.com/2014/04/hikvision)
+
+</text-box>
+
+
+## Responsibilities and liabilities
+
+This course will not delve deeply into the law, but note that companies and
+corporations have responsibilities and liabilities for the data they gather.
+Most have made a commitment, whether legally enforceable or not, to treat data
+gathered with the utmost care. In addition, laws and regulations govern the way
+these entities must secure their data and dictate the correct procedure to
+follow after a breach has occurred.
+
+For example, the General Data Protection Regulation (GDPR) (Regulation (EU)
+[2016/679](http://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679#d1e6226-1-1))
+unifies and simplifies the regulations for data protection within the European
+Union. The GDPR replaces the current directive in this area, and has as its
+main objective in giving people control over their personal data. Furthermore,
+the regulation covers matters such as the export of personal data outside of
+the EU, sanctions for non-compliant parties, the right to erasure, and data
+breach reporting procedure. This regulation is in force as of the 25th of May,
+2018.
+
+The GDPR provides the first economical grounds for data protection: just as
+environmental regulations have internalized the cost of environmental damage to
+production, we may see the same happening with data protection. Insurance
+companies have also noticed the impending GDPR and have introduced various
+types of cyber security insurance which would cover some costs caused by a
+breach (for example a loss of profit).
+
+<quiz id="089c7d83-6243-57b4-8bee-967ff5847bea"></quiz>
+
+However, the law is for the law abiding; for a criminal it is just a deterrent.
+The Internet provides anonymity and distances the attacker from the victim,
+making it easier to step into the world of crime via the Internet. The
+commission of crimes via the Internet is commonly known as *hacking*.
+(When discussing hacking we do have to mention *ethical hacking*. An
+ethical hacker, like his criminal counterpart, is an expert who tries to
+penetrate a computer system, but the former does it with permission from the
+system owner in order to reveal security vulnerabilities that malicious actors
+could potentially exploit.)
+
+<text-box variant="emph" name="TL;DR Breaking into computers is illegal, use common sense">
+
+This information is provided for educational purposes and not for causing
+malicious or damaging attacks. Again, performing any penetration testing
+requires permission from the owner of the target. Moreover, it should be noted
+that the target may reside on the same server as other services, so permission
+from the service provider may also be needed.
+
+</text-box>
