@@ -128,7 +128,7 @@ Hints:
 * Note that the server code is now in `server/` directory. Do not modify the server, instead modify the session sniffer in `src/` folder.
 * The server has a `/balance/` web page that provides the balance in JSON format for the logged in user.
 * To test your code, log in as Alice in a browser, and only then try to guess the session id with the session sniffer.
-* Multiple guesses are probably required.
+* Multiple guesses are required (but when running checks, 10 guesses will be enough to find Alice).
 * Use Python library [requests](https://www.w3schools.com/python/ref_requests_get.asp).
 * The session id for Django web servers is stored in a cookie named `sessionid`.
 

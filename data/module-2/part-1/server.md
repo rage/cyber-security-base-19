@@ -450,7 +450,7 @@ The assignment has the server side functionality that handles a request to the
 root path and adds a list for the template to process. The template that is
 used to create the site is missing some functionality however.
 
-Your task is to (1) print the values in the list, and (2) add a form that can
+Your task is to (1) print the values in the list between `<ul>` and `</ul>` tags, and (2) add a form that can
 be used to send content to the server.
 
 Once finished, submit the assignment to the TMC server.
@@ -473,8 +473,9 @@ the session will still be intact.
 
 Implement a notebook application in `views.py`
 and the template `index.html`. The notebook application
-should list the existing notes and allow adding new notes. If there are more
+should list the existing notes, allow adding new notes, and erasing notes (see `urls.py` for the mapping but do not change it). If there are more
 than 10 notes, the application should only keep the ten most recent ones.
+
 
 Once finished, submit the assignment to the TMC server.
 
