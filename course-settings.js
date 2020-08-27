@@ -17,6 +17,10 @@ const courseSettings = {
       title: "Course descriptions and timetable",
       path: "/descriptions",
     },
+    {
+      title: "How to start and pass a course",
+      path: "/pass",
+    },
     //{
       //title: "Installing Java and NetBeans",
       //path: "/netbeans-installation-guide",
