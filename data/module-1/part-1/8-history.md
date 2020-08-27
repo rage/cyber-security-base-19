@@ -1,5 +1,5 @@
 ---
-path: '/module-1/8-history'
+path: '/module-1/4-history'
 title: 'From Brain to Stuxnet: selected history of malware'
 hidden: false
 ---
@@ -103,6 +103,8 @@ do any external damage. In such environment, internet is simulated,
 with the consequence that _every_ domain name is valid. The theorized logic behind the kill-switch is as follows: if a specific
 domain, that should not exist, exists, then surely we are in a sandbox environment, so
 we should remain dormant.
+
+<quiz id="240b4dca-070c-4b00-a937-49f20900700e"></quiz>
 
 ## Hacking
 

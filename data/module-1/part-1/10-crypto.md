@@ -1,5 +1,5 @@
 ---
-path: '/module-1/a-crypto'
+path: '/module-1/6-crypto'
 title: 'Encrypt, decrypt'
 hidden: false
 ---
@@ -58,6 +58,8 @@ factorization of very large integers is computationally very expensive.
 Asymmetric encryption is often not efficient enough for encrypting large data streams.
 So in practice, it is used just to establish a symmetric hidden key that is only a valid
 for one session, and this key is then used with a more efficient algorithm based on a symmetric hidden key. 
+
+<quiz id="a6de8d38-a03e-46e7-9294-edc41a83c4d8"></quiz>
 
 ## Cryptographic hashes
 
@@ -136,3 +138,5 @@ certificate. William has his own certificate that he has obtained from Benedict.
 Alice then needs verify both Bob's and William's certificates. 
 
 Similar scheme is also for signing executables.
+
+<quiz id="6f0ac817-95af-46b9-b72d-c3710b1ec95a"></quiz>
