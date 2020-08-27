@@ -104,7 +104,7 @@ with the consequence that _every_ domain name is valid. The theorized logic behi
 domain, that should not exist, exists, then surely we are in a sandbox environment, so
 we should remain dormant.
 
-<quiz id="240b4dca-070c-4b00-a937-49f20900700e"></quiz>
+<quiz id="c873abfc-7259-552c-8d09-a2d205d6708a"></quiz>
 
 ## Hacking
 

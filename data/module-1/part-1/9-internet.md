@@ -210,4 +210,4 @@ external party cannot induce the user identity based on the IP information.
 However, any sensitive information that is not encrypted separately in the
 payload (such as passwords sent over plain HTTP) can be read.
 
-<quiz id="f76927e8-8e58-4343-828e-9585220cd840"></quiz>
+<quiz id="d4588706-3ed9-570b-a1fc-ec4225363c49"></quiz>
