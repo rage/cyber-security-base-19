@@ -37,9 +37,9 @@ surprising, therefore, that the number of vulnerabilities in software has
 steadily risen over the years. Vulnerabilities and their statistics can be
 queried from the National Vulnerability Database and from the Common
 Vulnerability and Exposure database
-([NVD statistics query page](https://web.nvd.nist.gov/view/vuln/statistics)
+([NVD](https://nvd.nist.gov/vuln/search)
 and
-[CVE](http://cve.mitre.org/cve/cve.html)).
+[CVE](https://cve.mitre.org/cve/search_cve_list.html)).
 
 For the attackers the attacking will stay easier than defending as long as the
 attacker can attack anywhere and the latter have to defend everywhere. With a
@@ -53,7 +53,7 @@ withstand attack attempts by unskilled attackers, automated attacks.
 Even though the software or/and the protocol it implements is at its mature phase it may still hold surprises. Below are some examples of some "recent" vulnerabilities found in well-known and highly-used pieces of software.
 
 - [Beast](https://blog.qualys.com/ssllabs/2013/09/10/is-beast-still-a-threat)
-- [Heartbleed](http://www.codenomicon.com/news/pressrelease/2014/04/09/codenomicon_advising_internet_community_on_serious_internet_vulnerability_dubbed_heartbleed.html)
+- [Heartbleed](https://heartbleed.com/)
 - [Heist](http://arstechnica.com/security/2016/08/new-attack-steals-ssns-e-mail-addresses-and-more-from-https-pages/)
 - [Krack](https://arstechnica.com/information-technology/2017/10/severe-flaw-in-wpa2-protocol-leaves-wi-fi-traffic-open-to-eavesdropping/)
 
