@@ -41,7 +41,7 @@ restrictions have been loosened, but not completely removed). The short key
 allowed for a brute-force attack, breaking the encryption in 17 hours, using a contemporary computer.</p>
 
 The major issue with using a symmetrical key is that both parties need to know
-the key in advance. To solve the issue algorithms based on a public/private
+the key in advance. To solve the issue, algorithms based on a public/private
 key are used. The main idea is as follows: A recipient has two keys
 one public and one private. A sender encrypts a message using an algorithm
 with a public key. This message can only be decrypted using a private key.
@@ -64,28 +64,29 @@ for one session, and this key is then used with a more efficient algorithm based
 ## Cryptographic hashes
 
 Modern computer systems rarely store passwords as clear text. Otherwise, if the
-file containing the passwords is compromised this leads to a significant
-security breach. Instead passwords are stored as hashes. They are scrambled
-with a known _hash_ function. The key difference here is that a hash cannot be
-decrypted. When user tries to log in the stored password is not decrypted,
-instead the user input is hashed and hashes are compared.
+file containing the passwords is compromised, the attacker obtains a list of
+plain-text passwords for that particular system--a significant security
+breach. Instead passwords are stored as hashes. They are scrambled with a known
+_hash_ function. The key difference here is that a hash cannot be decrypted.
+When user tries to log in to the system, the stored password is not decrypted. Instead the
+user input is hashed and hashes are compared.
 
 Since hashes are deterministic, same password will always have the same hash. This
 leads to a possibility that an attacker can build a large library of reversed
-hashes by simply precomputing them. To fight against this attack, passwords are typically _salted_
+hashes by simply precomputing them. To fight against this attack, passwords are typically _salted_:
 a random string, unique to each user, is attached to a password before it is hashed.
 The salt is stored in plain-text, so that it can be used when a password verification is required.
 
 Currently, the most prominent hash function family is
 [SHA-2](https://en.wikipedia.org/wiki/SHA-2).  A notable hash function,
-[MD5](https://en.wikipedia.org/wiki/MD5), is also been used for hashing
+[MD5](https://en.wikipedia.org/wiki/MD5), has also been used for hashing
 sensitive data. However it has been severely compromised, and should not be
 used for any security application. MD5 is still useful, for example, as providing unique identifier for  documents.
 
 ## Certificates
 
-While encryption makes sure that 3rd party cannot eavesdrop on the communication, it is still
-still vulnerable to a man-in-the-middle attack: a 3rd party can pretend that it is the server
+While encryption makes sure that the 3rd party cannot eavesdrop on the communication, it is still
+still vulnerable to a man-in-the-middle attack: the 3rd party can pretend that it is the server
 to which the user wishes to contact. The attack is done as follows. Consider two parties, Alice
 and Bob, and an attacker Melissa. Alice wishes to send safely a message to Bob, and Melissa wishes
 to intercept the message.
@@ -96,7 +97,7 @@ to intercept the message.
 4. Melissa decrypts the information using her secret key.
 
 The crux of the problem is that Alice cannot verify whether the public key belongs
-Bob. To solve this problem certificates are used.
+to Bob. To solve this problem certificates are used.
 
 Certificates work as follows. Consider that there is an additional party, Benedict.
 Alice wants to send an encrypted message but is not sure whether
@@ -104,9 +105,9 @@ Bob's public key is really his. However, Alice knows and trusts Benedict's publi
 The verification consists of the following steps:
 
 1. Bob asks Benedict to sign his public key.
-2. Benedict uses Bob's public key and his identity to construct a signature, that is signed Benedict's _secret_ key, and sends Bob the signature.
-3. Bob sends Alice a certificate, that is, his information and the encrypted signature.
-4. Alice decrypts the signature using Benedict _public_ key and verifies that the information in the certificate matches the decrypted signature.
+2. Benedict uses Bob's public key and his identity to construct a signature, that is encrypted with Benedict's _secret_ key, and sends Bob the signature.
+3. Upon request, Bob sends Alice the certificate, that is, his information and the encrypted signature.
+4. Alice decrypts the signature using Benedict's _public_ key and verifies that the information in the certificate matches the decrypted signature.
 5. Alice checks that the identity in the certificate is indeed Bob.
 6. Alice can now trust the public key provided in Bob's message.
 
@@ -118,13 +119,13 @@ public key, so Alice can trust that the information is correct by trusting Bened
 
 This is how certificates work. In the above example, Benedict is known as a
 Certificate Authority (CA), Bob is a web server, and Alice is a normal user.
-Certificate Authorities are companies that provide certificates for web servers,
+Certificate Authorities are companies that provide certificates for web servers, 
 essentially giving them means to prove who they are.
 
 Melissa cannot fake being Bob, because she needs to provide
-a valid certificate for Bob. She has 3 options, none of them will succeed:
+a fake certificate for Bob. She has 3 options, none of them will succeed:
 
-1. She can use Bob's certificate, but she cannot decrypt the incoming traffic because it is encrypted with Bob's public key.
+1. She can use Bob's certificate, but she cannot decrypt the incoming traffic because Alice will encrypt the data with Bob's public key.
 2. She can obtain her own valid certificate, but Alice will notice that the certificate is Melissa's and not Bob's.
 3. She can modify the certificate by replacing Bob's key with her own but the content no longer match the signature, so Alice rejects the tampered signature.
 

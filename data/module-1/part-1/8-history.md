@@ -4,13 +4,13 @@ title: 'From Brain to Stuxnet: selected history of malware'
 hidden: false
 ---
 
-In this section we focus on history and development of malware and hacking in general.
+In this section we will focus on the history and the development of malware and hacking in general.
 We will provide selected historical examples and comment on patterns and trends.
 
 ## Examples of malware
 
 Malware predates commercial, wide-spread internet.
-[Brain](https://www.youtube.com/watch?v=lnedOWfPKT0), the first virus
+[Brain](https://www.youtube.com/watch?v=lnedOWfPKT0), the first _virus_
 for PC (with MS-DOS being the operating system) was written in January 1986.
 The virus infected the boot sector of floppy disks. 
 If the floppy disk was inside the PC during its boot,
@@ -29,14 +29,14 @@ of infecting a boot sector, the program would infect every executable file
 (with exception of `command.com`, an MS-DOS shell) that the user ran while
 Jerusalem was in memory. The infection worked by modifying the code of the
 program so that when user launched the program, the virus would first upload
-itself into a main memory and hooked itself to low-level commands, and then allowed
-the original program to execute itself. By hooking itself to low-level commands,
-the virus code was called for example whenever the user would open a new executable.
+itself into a main memory and hooked itself to the low-level commands, and then allowed
+the original program to execute itself. By hooking itself to the low-level commands,
+the virus code was called, for example, whenever the user would open a new executable.
 Jerusalem was a _logic bomb_, meaning that it would go off if certain conditions
 were met: if the date was Friday 13th, the virus would delete any executable
 that was run on that date.
 
-One of the first worms, and the first worm escaping 'containment', was Morris
+One of the first _worms_, and the first worm escaping 'containment', was Morris
 worm (1988), named after its creator. The difference between a worm and a computer
 virus is somewhat hazy, as there is a lot of malware that combine both aspects.
 Typically, a virus requires a host program to which it attaches while the worm
@@ -52,7 +52,7 @@ machine being infected multiple times, rendering them inoperative until the worm
 The worm infected significant portion of connected UNIX machines, resulting in Internet
 being partitioned for several days.
 
-In 1989, A trojan named _AIDS_ was discovered.
+In 1989, A _trojan_ named _AIDS_ was discovered.
 Trojans, unlike viruses or worms, do not replicate themselves. Instead they
 hide their true purpose within a program that users willingly launch.
 AIDS is the first known _ransomware_: after certain amount of
@@ -62,7 +62,7 @@ one could restore files without paying the ransom. Modern ransomware would requi
 payment in a difficult-to-trace digital currency such as bitcoin.
 
 Early PC viruses were based on executing code, meaning that they were attached
-to an executable file. The first _macro virus_ Concept was discovered in 1995,
+to an executable file or a boot sector. The first _macro virus_ Concept was discovered in 1995,
 infecting Microsoft Word documents. The concept of macro virus was made
 possible due to the significant scripting abilities in Microsoft office programs.  This
 led to a significant rise of macro viruses as now viruses could spread through
@@ -70,7 +70,7 @@ documents, especially as email attachments.
 
 The first email virus/worm/trojan, _Happy99_ appeared in January 1999. 
 The virus consisted of a trojan executable that upon execution would show firework
-animation, and installed a trojan in windows system folder. Under certain conditions,
+animation, and attached itself to an existing windows library. Under certain conditions,
 it would then send itself further over email to a new machine.
 In May, 2000, an internet worm _ILOVEYOU_ infected over 10 million Windows users.
 The worm consisted of an email asking to open an attachment "LOVE-LETTER-FOR-YOU.txt.vbs".
@@ -91,10 +91,10 @@ signature-based anti-virus software.
 
 Viruses or worms can also monitor the computer and take actions whenever they
 detect that they are being scanned.  For example,
-[Fizzer](https://www.f-secure.com/v-descs/fizzer.shtml) would kill knonwn anti-virus
-processes. An interesting case was WannaCry ransomware that encrypted the
+[Fizzer](https://www.f-secure.com/v-descs/fizzer.shtml) would kill known anti-virus
+processes. An interesting case was [WannaCry](https://www.vox.com/new-money/2017/5/15/15641196/wannacry-ransomware-windows-xp) ransomware that encrypted the
 victim's data and demanded payment in bitcoins. The original variant of the virus contained a kill
-switch, it checked whether a certain domain existed: if the domain did not exist, only then the worm would continue to spread.
+switch: it checked whether a certain domain existed. If the domain did not exist, only then the worm would continue to spread.
 Anti-virus researchers were able to slow down the spread of the virus by simply purchasing
 the domain name.  While it is not known why the creators included a kill switch,
 one plausible theory is that this was done to slow down the analysis by security experts.
@@ -165,10 +165,10 @@ and [buffer overflow](https://owasp.org/www-community/vulnerabilities/Buffer_Ove
 Hackers used, and still do, software
 vulnerabilities to hack into various systems. However, the aspect of social engineering
 in hacking cannot be overstated: human element is most of the time the
-weakest link, for example by using a weak password, or being fooled to give out
+weakest link, for example, by using a weak password, or being fooled to give out
 sensitive information to a malicious party. As an example, see Kevin Mitnick [talk](https://www.youtube.com/watch?v=NtzZBTjKngw&t=3775).
 Targeted attacks often involve a combination of social engineering and exploiting weaknesses.
-Some of the social engineering attacks may be so sophisticated making them very difficult
+Some of the social engineering attacks may be extremely sophisticated, making them very difficult
 to recognize, as demonstrated (in the same [talk](https://youtu.be/NtzZBTjKngw?t=2330)) by Kevin Mitnick.
 
 ### Advanced persistent threats
@@ -211,7 +211,7 @@ over the years.
 The attack surface is in a constant state of change. New vulnerabilities are
 discovered and old vulnerabilities are patched. Also, motives for creating
 malware has changed over the years.  For example, few years back computers were
-hijacked to mine bitcoins but has largely stopped since using normal computers
+hijacked to mine bitcoins, but this has largely stopped since using normal computers
 to mine bitcoins is no longer profitable.
 
 Modern cyber security protection does not only focus on detecting malicious
@@ -222,5 +222,5 @@ that is nowadays taken for granted was introducing a user-friendly way of
 patching software: before the user had to manually search, download, and
 install the patch, leading to many unpatched computers.
 
-While early malware creators / hackers were doing as a hobby, nowadays cyber criminality
-is more organized with the means and goal to make money.
+While early malware creators / hackers were hacking as a hobby, nowadays cyber criminality
+is more organized with the means and the goal to make money.

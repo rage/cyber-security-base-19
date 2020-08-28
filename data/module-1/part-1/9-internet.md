@@ -4,12 +4,12 @@ title: 'How does the internet work'
 hidden: false
 ---
 
-Next, we are going to discuss the major protocols stipulating the communication between th devices
+Next, we are going to discuss major protocols stipulating the communication between the devices
 connected to the Internet.
 
 ## Internet is like an onion
 
-Internet has layers. Different protocols that are responsible for communicating can be grouped
+Internet has layers. Different protocols that are responsible for communication can be grouped
 in 4 layers.
 
 1. Link layer 
@@ -31,12 +31,12 @@ whether the connection is over wireless, RJ-45 cable, or a smartphone, or a
 combination of many. Similarly, the lower layers do not care (at least in
 theory) about the payload of the application layer.
 
-Our primary interest for now is internet layer and the transport layer.
+Our primary interest for now is the internet layer and the transport layer.
 
 <text-box variant="emph" name="How many layers are needed">
 
-Grouping protocols in 4 layers is often referred as TCP/IP model (named after the two most important protocols) or
-internet protocol suite. Often the link layer is split in 2 layers, physical link, and data link, leading to 5 layers instead of 4.
+Grouping protocols in 4 layers is often referred as _TCP/IP model_ (named after the two most important protocols) or
+_internet protocol suite_. Often the link layer is split in 2 layers, physical link, and data link, leading to 5 layers instead of 4.
 
 We can also use Open Systems Interconnection model (OSI model) which has 7 layers.
  
@@ -44,7 +44,7 @@ We can also use Open Systems Interconnection model (OSI model) which has 7 layer
 
 ## Internet layer and IP protocol
 
-The key protocol at network layer is Internet Protocol (IP).
+The key protocol at the network layer is Internet Protocol (IP).
 An IP packet consists of the payload and a header. A real-life analogy would
 be a letter: the header is the envelope while the payload is the contents of the letter.
 
@@ -73,9 +73,10 @@ When a device, either the end host or a router, notices a corrupted IP packet,
 it is dropped, and an error message is sent back.
 
 Note that IP protocol does not directly tell how to deliver a packet. The decision
-is done by an IP routing algorithm at the router. The main idea is that a router studies the IP
-address and compares it to a routing table. The entries in the routing table can be viewed as IP
-ranges. If the target IP falls into a range, then the packet is submitted to the next router (or a host)
+is done by an IP routing algorithm at the router. The main idea behind such algorithm is that a router studies the IP
+address and compares it to a _routing table_. The routing table can be viewed as a set of devices (routers or hosts) connected
+to the router, each device associated with an IP address range.
+If the target IP falls into a range, then the packet is submitted to the next router (or a host)
 associated with that range. The routing tables can be either static, that is, written by hand, or can be
 dynamic, using various protocols to keep themselves up to date.
 
@@ -87,19 +88,19 @@ there is nothing that can be done to restore the connection.
 
 IP header has a field named protocol, indicating the type of a payload being
 delivered.  For example, a protocol may indicate that the payload is a
-transport layer protocol, say TCP (we will discuss this protocol later),
-or a route discovery protocol EGP or IGP.
+TCP packet (we will discuss this protocol later),
+or packets related to route discovery algorithms.
 
 A notable example among these protocols is Internet Control Message Protocol (ICMP). This protocol is used
 for sending errors and communication network information.
 The most (in)famous use of ICMP is Ping, a network utility to see whether a
 specific host is reachable and how long does it take to reach it.
-A classic DoS attack, Ping Flood, involves in flooding the victim with many ping requests
+A classic denial-of-service (DoS) attack, Ping Flood, involves in flooding the victim with many ping requests
 hoping to overwhelm the victim's computer. Another attack is [Ping of Death](https://en.wikipedia.org/wiki/Ping_of_death)
 which is actually an IP fragmentation attack with ICMP being used as the payload.
 
 The IP protocol does not care about the specifics of the lower layers except
-when determining whether fragmentation is needed. In fact, IP could be used with
+when determining whether fragmentation is needed. In fact, IP could be used over
 [pigeons](https://tools.ietf.org/html/rfc1149).
 
 ## Transport layer: TCP and UDP
@@ -108,22 +109,26 @@ IP lacks several key features making it directly unusable.
 
 Firstly, IP does not distinguish between different applications at the same
 host.  For example, if a user has an open SSH shell connection and downloads a
-web page through a browser, IP does not have means to direct incoming data to a web
+web page through a browser, IP does not have means to direct the incoming data to a web
 browser instead of a shell.
 
 Secondly, IP is stateless, meaning that each packet is processed individually.
 This means that while IP provides some protection against corrupted packets,
 it does not guarantee that the packets arrive in order. Moreover, packets can
-be duplicated. If a packet is lost for some reason, IP does not provide reliable mechanism
+be duplicated. Finally, if a packet is lost for some reason, IP does not provide reliable mechanism
 to resend the packet.
 
 Transmission Control Protocol (TCP) solves these issues.
 
+TCP connection is between two agents: a _server_ is waiting for a connection
+while the _client_ initates the connection. Here the server could be a web server
+while the client is the web browser.
+
 TCP has a state: upon connection a client and a server undergo a handshake
 protocol where several packets are sent back and forth making sure that both
 parties are on the same page.  Integrity of the data stream is maintained by
-counters on both sides and acknowledgment packets.  If the sender does not
-receive acknowledgment reply for a data packet in a certain amount of time, he
+counters on both sides, and sending an acknowledgment packet every time a data packet arrives.  If the sender does not
+receive acknowledgment reply for a data packet within a certain amount of time, he
 will resubmit the packet.
 
 TCP also introduces a concept of a port: each connection has two ports, one for
@@ -135,7 +140,7 @@ large numbers selected automatically by an operating system, based on what ports
 available.
 
 TCP provides a reliable data stream connection between two devices. The drawback
-of the protocol is significant overhead, especially due to acknowledgment
+of the protocol is significant overhead, especially due to the acknowledgment
 packets.  This latency is not acceptable in certain real-time applications,
 for example, online gaming. An alternative protocol for TCP is User Datagram
 Protocol (UDP), a simple protocol providing ports and a(n optional) checksum as
@@ -160,7 +165,7 @@ local unique IP addresses that are mapped to the same global IP address. The map
 
 ## Internet and security
 
-Neither TCP not IP protocol has any built-in security. This means, unless other
+Neither TCP nor IP protocol has any built-in security. This means, unless other
 measures are taken, traffic data can be intercepted or, worse, modified. This
 is known as a man-in-the-middle attack, and modifying traffic can extremely
 sophisticated, for example,
@@ -188,12 +193,13 @@ server, and he probably can guess the requested service based on the port, but
 the actual payload cannot be observed.
 
 It is possible to use the encryption protocol (known as TLS) used by HTTPS to
-encode normal IP traffic. Here, the user connects to a server using the
-encrypted protocol. The server then decrypts the packets, and forwards the
+encode normal IP traffic. Here, the user connects to a special server and establishes
+a secure channel. Using this channel the user sends IP data packets. 
+The server then decrypts the stream, and forwards the
 packets to the address specified in the packets. The server also modifies the
-TCP/IP headers similar to NAT so that it seems that the connection is coming
+TCP/IP headers (similar to NAT) so that it seems that the connection is coming
 from the server. This also allows for a user to receive replies, as the server
-will forward back any incoming reply back to the user.
+will forward back any incoming reply back to the user over the secure channel.
 
 This is essentially a version of Virtual Private Network (VPN). Note that we
 are wrapping an IP packet in a TLS stream, which in turns uses TCP, which again
@@ -206,8 +212,8 @@ are significantly smaller.
 
 Note that the payload is decrypted at the end point of VPN before it is
 forwarded to its real target. Since the IP address is also modified, an
-external party cannot induce the user identity based on the IP information.
+external party cannot deduce the user identity based on the IP information.
 However, any sensitive information that is not encrypted separately in the
-payload (such as passwords sent over plain HTTP) can be read.
+payload (such as passwords sent over plain HTTP) can be read after VPN.
 
 <quiz id="d4588706-3ed9-570b-a1fc-ec4225363c49"></quiz>
