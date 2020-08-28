@@ -81,7 +81,7 @@ are not immediately accepted once you have written them as they need to be peer-
 Each course has a deadline, and you have gather enough points before the deadline.
 If you do not have enough points once the deadline has passed, the points are lost.
 
-Once you have gather enough points, mooc.fi will acknowledge that you have passed the course.
+Once you have gathered enough points, mooc.fi will acknowledge that you have passed the course.
 There may be some delay between having enough points and being acknowledged for passing the course, especially
 if you have completed the course early.
 
@@ -92,16 +92,23 @@ Your next actions depend on your status:
 
 #### Instructions for students at Helsinki University
 
-Once the system has acknowledged that you have passed the course, you should register the course
+Once the system has acknowledged that you have passed the course, you
+must register the course through the Open University enrollment form to receive credits.
+The form is available 
 either through [the completed courses](https://www.mooc.fi/en/profile/completions) page
 or by following the link in the notification email.
+
+On the enrollment form, be sure that you enter the email address you used to
+complete the course in the mooc.fi system in the _Your email address on the MOOC
+course_ (in Finnish: _Käyttämäsi sähköpostiosoite MOOC-kurssilla_) field.
 
 The registration has a deadline so do not postpone it. If the deadline has
 passed, please contact the course staff via email.
 
-Upon registration, you will receive course credits in the open university
-system.  These course credits are automatically moved to WebOodi (the update is
-done weekly so there may be a delay before you see the credits in WebOodi).
+After you have completed the Open University course enrollment, you will
+receive course credits in the University of Helsinki study register typically within a week
+(in certain cases this may take longer, up to 6 weeks, due to the holiday service breaks).
+You can view the credits in WebOodi or in the national [My Studyinfo service](https://studyinfo.fi/oma-opintopolku/).
 
 Note that you have to do this for each individual course, 6 times at most.
 
@@ -127,15 +134,23 @@ If the time span is longer, we will make a decision on a case-by-case basis.
 
 #### Instructions for Finnish residents
 
-Once the system has acknowledged that you have passed the course, you should register the course
-either via [the completed courses](https://www.mooc.fi/en/profile/completions) page
+Once the system has acknowledged that you have passed the course, you
+must register the course through the Open University enrollment form to receive credits.
+The form is available
+either through [the completed courses](https://www.mooc.fi/en/profile/completions) page
 or by following the link in the notification email.
 
-The registration has a deadline so do not postpone it. If the deadline has 
+On the enrollment form, be sure that you enter the email address you used to
+complete the course in the mooc.fi system in the _Your email address on the MOOC
+course_ (in Finnish: _Käyttämäsi sähköpostiosoite MOOC-kurssilla_) field.
+
+The registration has a deadline so do not postpone it. If the deadline has
 passed, please contact the course staff via email.
 
-Upon registration, you will receive course credits in the open university 
-system.
+After you have completed the Open University course enrollment, you will
+receive course credits in the University of Helsinki study register typically within a week
+(in certain cases this may take longer, up to 6 weeks, due to the holiday service breaks).
+You can view the credits in the national [My Studyinfo service](https://studyinfo.fi/oma-opintopolku/).
 
 Note that you have to do this for each individual course, 6 times at most.
 
@@ -153,4 +168,5 @@ If you are a student at the university, you may be able to transfer these
 credits using the certificate. Discuss about this possibility with your study
 counselor before starting the course.
 
-
+Alternatively, you can enroll on the course in person in Helsinki (further
+information can be found [here](https://www.helsinki.fi/en/open-university/studying/beginning-your-studies/registration-and-fees).)
