@@ -12,17 +12,14 @@ One day the Internet spawned and began globally connecting personal computers. T
 
 Currently we are on the brink of Internet of things, which promises to connect every device to the Internet. For example, we have smart TVs, smart locks, smart cars, and smart toasters. The software ranges from large, such as the operating system, to small, such as the USB driver.
 
-There is going to be an explosion in the number of devices needing software. It has been said that by the year 2020 there will be 50 billion connections and devices. This poses a growing need for code and software developers, who will have great pressure to write both functional and secure code in a limited timeframe. Developers may face unrealistic time pressure to rush code to production.
-
-<text-box variant="emph" name = "What about the number 50?">
-
-50 billion seems to be too much and it seems that it is not going to be reached before 2020. But still the number of devices is staggering.
-
-*"I think people do tend to latch onto numbers that seem really hard to
-fathom," he says. "Fifty billion is pretty staggering."* - Even Evans,
-[Popular Internet of Things Forecast of 50 billion devices by 2020 is Outdated.](https://spectrum.ieee.org/tech-talk/telecom/internet/popular-internet-of-things-forecast-of-50-billion-devices-by-2020-is-outdated)
-
-</text-box>
+There is an ongoing explosion in the number of devices needing software.
+Number of devices connected to the internet is in tens of billions, this is especially
+due to the internet of things where dedicated devices (instead of multipurpose computers)
+are connected directly to the internet. The number of such devices is still increasing.
+This poses a growing need for code and software developers, who will
+have great pressure to write both functional and secure code in a limited
+timeframe. Developers may face unrealistic time pressure to rush code to
+production.
 
 In addition to the growing need for more code, the code base has gotten more
 complex. Every machine is connected and larger systems are now distributed.
