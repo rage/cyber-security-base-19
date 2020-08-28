@@ -258,7 +258,7 @@ class CourseOptionsEditor extends React.Component {
           </ol>
 
           <p>
-            {this.props.t("research5")}
+            {this.props.t("research5")}{" "}
             <OutboundLink
               href="https://dl.acm.org/citation.cfm?id=2858798"
               target="_blank"
