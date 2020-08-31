@@ -21,7 +21,7 @@ Cyber Security II (CSM13204).
 
 #### Introduction to Cyber Security 1 CR (ECTS)
 
-_Schedule: 28.10.2019-18.11.2019_
+_Schedule: 31.08.2020-31.12.2020_
 
 This part of the course series will introduce the participant to the relevant
 issues in cyber security. These issues include the stakeholders' and users'
@@ -31,7 +31,7 @@ increasing amount of software and maintenance.
 
 #### Securing Software 3 CR (ECTS)
 
-_Schedule: 04.11.2019 - 23.12.2019_
+_Schedule: Sep., 2020 - 31.12.2020_
 
 
 This part focuses on security issues related to interconnected software. The
@@ -41,14 +41,14 @@ discovered and mitigated.
 
 #### Course Project I 1 CR (ECTS)
 
-_Schedule: 9.12.2019 - 30.12.2019_
+_Schedule: Sep., 2020 - 31.12.2020_
 
 In the first project, the participants will construct software with security
 flaws, point out the flaws in the project, and provide the steps to fix them.
 
 #### Advanced Topics 3 CR (ECTS)
 
-_Schedule: 13.1.2020 - 22.2.2020_
+_Schedule: Feb., 2021 - 31.12.2021_
 
 This part focuses on security in networks, including internet security issues,
 issues in 4G networks as well as the issues and remedies planned for the
@@ -59,7 +59,7 @@ attacks will be studied.
 
 #### Course Project II 1 CR (ECTS)
 
-_Schedule: 24.2.2020 - 9.3.2020_
+_Schedule: Feb., 2021 - 31.12.2021_
 
 In the second project, the participants will install an operating system with a
 variety of vulnerabilities and then install a network intrusion prevention
@@ -68,7 +68,7 @@ penetration testing software, and attack the system they installed.
 
 #### Capture The Flag  1 CR (ECTS)
 
-_Schedule: 9.3.2020 - 16.3.2020_
+_Schedule: will be announced later_
 
 A Capture the Flag (CTF) competition will be organized at the end of the course
 series. In the competition, participants will be given a variety of tasks that

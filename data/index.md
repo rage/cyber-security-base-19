@@ -16,42 +16,8 @@ Each course is open for a certain period of time, and must be completed during t
 
 # News
 
-_[08.02.2020]_ The CTF description page is now open.
-Click 'Part I' under 'CTF' on the side bar to access the content.
-The actual challenges will be made public later. Check the page for more details.
-
-_[23.02.2020]_ The second project is now open.
-Click 'Part I' under 'Project II' on the side bar to access the content.
-
-_[13.01.2020]_ The first two parts of the fourth course 'Advanced Topics' is now open.
-The course consists of 5 parts. The next parts will be available next week.
-Click 'Part I' under 'Advanced Topics' on the side bar to access the content.
-
-_[9.12.2019]_ Submission for Project I is now open.
-
-_[3.12.2019]_ The description of the project is now public.  The project
-consists of 1 part.  The submission widget for the essay will be opened later.
-Click 'Part I' under 'Project I' on the side bar to access the content.
-
-_[24.11.2019]_ The fifth and sixth part of the second course 'Security Software' is now open.
-The course consists of 6 parts. 
-Click 'Part V' under 'Securing Software' on the side bar to access the content.
-
-_[17.11.2019]_ The third and fourth part of the second course 'Security Software' is now open.
-The course consists of 6 parts. 
-Click 'Part III' under 'Securing Software' on the side bar to access the content.
-
-_[10.11.2019]_ The second part of the second course 'Security Software' is now open.
-The course consists of 6 parts. 
-Click 'Part II' under 'Securing Software' on the side bar to access the content.
-
-
-_[3.11.2019]_ The first part of the second course 'Security Software' is now open.
-The course consists of 6 parts. The second part will be available next week.
-Click 'Part I' under 'Securing Software' on the side bar to access the content.
-
-_[27.10.2019]_ The first course 'Introduction to Cyber Security' is now open.
-The course consists of 1 part. Click 'Part I' on the side bar to access the content.
+_[31.08.2020]_ Introduction to cyber security is now open.
+Securing software and Project I will open in September, 2020. 
 
 # Work load and prerequisites
 
