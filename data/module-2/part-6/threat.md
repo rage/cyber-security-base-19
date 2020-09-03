@@ -73,7 +73,7 @@ The following image is related to the next question.
 
 
 
-<quiz id="8fd9a0a6-a325-5976-8eca-2f6c82d98f6b"></quiz>
+<quiz id="993ab8d7-d475-552b-89e7-517ef9b5826e"></quiz>
 
 ### Message Sequence Chart
 
@@ -167,9 +167,9 @@ The underlying technologies are one point of interest in DFDs. Virtual
 machines, load balancers and such should also be drawn in. Basically anything
 that handles the data in a way or another.
 
-<quiz id="a8877f72-b7c7-5445-9548-307c3809ea13"></quiz>
+<quiz id="75027e55-5c4d-58b9-b6a8-39442429b650"></quiz>
 
-<quiz id="1cedbfed-f361-58ae-a8ab-fce5e7537913"></quiz>
+<quiz id="a9ba94da-1941-53ed-b9bc-57cb53859951"></quiz>
 
 ## Boundaries
 
@@ -193,7 +193,7 @@ files in the filesystem (not a boundary if looked from the filesystem
 point-of-view).  Machines and virtual machines are also boundaries as processes
 do not move between machines or virtual machines.
 
-<quiz id="9086dc05-7d65-550b-bb17-bb8ddb3eab26"></quiz>
+<quiz id="056ff886-1bd4-598c-b8cc-99af6dcb190c"></quiz>
 
 Containing boundaries are boundaries that do not come from the system but are
 usually created on purpose. Containing boundaries are isolated from the hosts
@@ -267,7 +267,7 @@ if it is passing through the data or is it actively "tampered" with. Sometimes
 for some boxes the "looking into what it is doing" is impossible and these
 should be treated as untrustworthy termination and new traffic points.
 
-<quiz id="ef7aeccf-f5fe-5504-ad69-44f4f4e551bf"></quiz>
+<quiz id="28bbf2bf-1ead-53b0-a79e-dca9b4a02dfc"></quiz>
 
 ## Taint Analysis
 
@@ -314,7 +314,7 @@ to get you started with the tainting checker.
 
 </text-box>
 
-<quiz id="c532fc92-05d5-5466-83d8-2ad73c916171"></quiz>
+<quiz id="6bb50c34-a469-5f3e-8161-425f81db628c"></quiz>
 
 ## Data lifetime
 
@@ -347,6 +347,6 @@ found from the [Secure Coding
 Guidelines](http://www.oracle.com/technetwork/java/seccodeguide-139067.html#2)
 for Java SE.
 
-<quiz id="277afb93-21f4-5ade-be42-68875c5aeaaa"></quiz>
+<quiz id="0b0d684a-2b87-5b68-97ac-021a5c592114"></quiz>
 
 During this course, we have taken an introductory tour to securing (web) software. In the course project, some of this knowledge is taken into use. Stay tuned.
