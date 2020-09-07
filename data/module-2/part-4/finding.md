@@ -259,7 +259,7 @@ Sometimes the effort to sanitize the input has some unwanted side-effects as
 Harry Sintonen found out: "GNU `tar' archiver can be tricked into extracting
 files and directories in the given destination, regardless of the path name(s)
 specified on the command line." See,
-[[3]](https://newsfromthelab.files.wordpress.com/2016/10/tar-extract-pathname-bypass-proper.pdf)
+[[3]](https://sintonen.fi/advisories/tar-extract-pathname-bypass.txt)
 
 </text-box>
 
