@@ -88,7 +88,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 const StyledChip = styled(Chip)`
   span {
-    width: 6em;
+    width: 7em;
   }
 `
 
