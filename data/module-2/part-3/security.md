@@ -47,7 +47,7 @@ _(source [xkcd: Exploits of a mom.](https://xkcd.com/327/))_
 
 Python SQLite API provides two main methods for executing commands, `execute` and `executescript`.
 The latter along with the unsanitized data allows you to escape the current command, and tricks like
-`DROP TABLES` become possible. However, with `execute` you cannot escape the current command but you can still do
+`DROP TABLES` become possible. However, with `execute` you can execute only _one_ command. That is, you cannot escape the current command but you can still do
 significant damage.
 
 The exercise contains a database with the schema

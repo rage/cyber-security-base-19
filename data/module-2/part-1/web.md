@@ -104,7 +104,7 @@ investigated further.
 
 In order to be able to work on the programming assignments, you will need
 install several software packages...some of them are not so installer-friendly.
-Please read and follow the [instructions](/python-installation-guide).
+Please read and follow the [instructions](/installation-guide).
 
 </text-box>
 
@@ -177,7 +177,7 @@ If a computer has a port open, the program listening to that port can likely be
 talked with. One of the simplest approaches for trying out such discussion is
 the use of [Telnet](https://en.wikipedia.org/wiki/Telnet), which is available
 in most of the operating systems: if not, you can always download e.g.
-[PuTTY](https://en.wikipedia.org/wiki/PuTTY). Modern macos no longer has built-in Telnet
+[PuTTY](https://en.wikipedia.org/wiki/PuTTY) (with PuTTY make sure that your connection type is raw). Modern MacOS no longer has built-in Telnet
 but you can use netcat (nc) like demonstrated [here](https://medium.com/ayuth/bring-telnet-back-on-macos-high-sierra-11de98de1544).
 
 Telnet connections are made to a specific address and to a specific port. For
