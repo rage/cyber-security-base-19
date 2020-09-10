@@ -71,6 +71,7 @@ class CourseOptionsEditor extends React.Component {
     e.preventDefault()
     this.setState({ submitting: true })
     let extraFields = {
+      digital_education_for_all: this.state.digital_education_for_all,
       marketing: this.state.marketing,
       research: this.state.research,
       course_variant: this.state.currentCourseVariant,
