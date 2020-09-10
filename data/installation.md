@@ -24,7 +24,9 @@ Follow the instructions on the following page to install [TMC client](https://gi
 
 Note that on this course we use the command line version of TMC, not netbeans
 or any other IDE. So, you need to know the basics of command line use in the
-terminal/command prompt. There is also a Visual Studio plugin for TMC client. Use it at your own risk.
+terminal/command prompt. If you detest command line usage,
+it is possible to use Visual Studio (with python) as there is also a Visual Studio [plugin](https://github.com/rage/tmc-vscode) for TMC client. 
+This has not been tested with the exercises, so use at your own risk.
 
 ## Installing Python 3
 
