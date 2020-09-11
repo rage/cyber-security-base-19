@@ -132,7 +132,7 @@ The optional `name` parameter is sometimes handy if you need to refer to the pat
 The file `views.py` contains the actual definition of `homePageView`.
 
 
-<programming-exercise name="Hello Web!" tmcname="Set1-02.HelloWeb">
+<programming-exercise name="Hello Web!" tmcname="part1-02.helloweb">
 
 In this assignment, you will familiarize yourself with the very basic
 functionality of the web framework.
@@ -243,7 +243,7 @@ We will be mostly using this approach throughout the course.
 
 
 
-<programming-exercise name="Calculator" tmcname="Set1-03.Calculator">
+<programming-exercise name="Calculator" tmcname="part1-03.calculator">
 
 
 In this assignment, you will familiarize yourself with handling (1) requests to
@@ -323,7 +323,7 @@ def homePageView(request):
 ```
 
 
-<programming-exercise name="Hello Templates" tmcname="Set1-04.HelloTemplates">
+<programming-exercise name="Hello Templates" tmcname="part1-04.templates">
 
 Next, we will look into returning content created using a template. Implement
 the following functionality in `views.py`:
@@ -441,7 +441,7 @@ The list can be enumerated using the `{% for %}` syntax in the template
 ```
 
 
-<programming-exercise name="Hello List" tmcname="Set1-05.HelloList">
+<programming-exercise name="Hello List" tmcname="part1-05.hellolist">
 
 In this assignment we will look into using lists and using them as data for the
 templates.
@@ -468,7 +468,7 @@ Sessions are stored in a database by default, meaning that if you restart the se
 the session will still be intact.
 
 
-<programming-exercise name="Notebook" tmcname="Set1-06.Notebook">
+<programming-exercise name="Notebook" tmcname="part1-06.notebook">
 
 
 Implement a notebook application in `views.py`

@@ -324,7 +324,7 @@ Similarly to the previous part, these assignments are submitted to the Test My C
 
 </text-box>
 
-<programming-exercise name="Tasks" tmcname="Set2-01.Tasks">
+<programming-exercise name="Tasks" tmcname="part2-07.tasks">
 
 The assignment template has some functionality for adding tasks. Your task is
 to alter the loadTasks function so that the existing tasks are loaded when the
@@ -335,7 +335,7 @@ If you wish an additional challenge, add the functionality to remove tasks as we
 
 The automated test relies on using selenium with chromedriver and chrome, make
 sure that you have installed them properly, see
-[instructions](/python-installation-guide), otherwise you cannot do local
+[instructions](/installation-guide), otherwise you cannot do local
 tests.
 
 </programming-exercise>

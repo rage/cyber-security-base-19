@@ -524,7 +524,7 @@ American Fuzzy Lop, or AFL, by Michal Zalewski, which is an instrumenting synthe
 
 </text-box>
 
-<programming-exercise name="HackMyPassword" tmcname="Set4-01.HackMyPassword">
+<programming-exercise name="HackMyPassword" tmcname="part4-19.password">
 
 The assignment template contains a small web application that needs to be hacked.
 

@@ -60,7 +60,7 @@ For more information, see Python's sqlite [library](https://docs.python.org/3/li
 
 
 
-<programming-exercise name="Hello Database" tmcname='Set2-02.HelloDatabase'>
+<programming-exercise name="Hello Database" tmcname="part2-08.hellodatabase">
 
 You have a database with the following schema at your disposal.
 
@@ -83,7 +83,7 @@ Once completed, return the assignment to the TMC server.
 
 </programming-exercise>
 
-<programming-exercise name="Hello Insert" tmcname='Set2-03.HelloInsert'>
+<programming-exercise name="Hello Insert" tmcname="part2-09.helloinsert">
 
 The same database schema from the previous assignment is at your disposal here.
 Implement the functionality for adding an agent to the database. The
@@ -238,7 +238,7 @@ Naturally, this is not a good idea if the database has any valuable information.
 
 
 
-<programming-exercise name="Hello Web with a Database" tmcname='Set2-04.HelloWebWithDatabase'>
+<programming-exercise name="Hello Web with a Database" tmcname="part2-10.hellowebwithdatabase">
 
 The assignment template contains an application that always returns the message
 "Hello Web!" to the user. Change the implementation so that the message content
@@ -353,7 +353,7 @@ is probably needed to lock the objects that are about to be modified.
 
 
 
-<programming-exercise name="Bank Transfer" tmcname='Set2-05.BankTransfer'>
+<programming-exercise name="Bank Transfer" tmcname="part2-11.banktransfer">
 
 The assignment template has a simple application for managing accounts and
 transfers. There is, however, small things to be fixed in the transfer
@@ -403,7 +403,7 @@ accounts_owned_by_johns = Account.objects.filter(owner__first_name='John')
 ```
 
 
-<programming-exercise name="Simple Banking" tmcname='Set2-06.SimpleBanking'>
+<programming-exercise name="Simple Banking" tmcname="part2-12.simplebanking">
 
 The assignment template has the entities for managing accounts and clients, but
 it is incomplete. Modify the application so that addition and listing
