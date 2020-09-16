@@ -417,6 +417,3 @@ The web server has 3 users with the following passwords:
 When the application works as intended, return it to TMC.
 
 </programming-exercise>
-
-
-<quiz id="974ce483-6e5d-51e0-b1c9-2d4599b571a0"></quiz>
