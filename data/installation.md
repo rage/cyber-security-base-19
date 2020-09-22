@@ -42,12 +42,16 @@ example Macs come with preinstalled Python 2. There are many many ways to instal
 
 We assume from now on that the command for Python 3 is `python3` which should
 be the case for mac / linux.  It may be also just `python`, in which case,
-whenever we ask you to type `python3`, just type `python`. You can see the
+whenever we ask you to type `python3`, just type `python`. This is especially true if you are using windows.
+You can see the
 version of your python with
 
 ```sh
 python3 --version
 ```
+
+It is not a bad idea to have python reachable  via PATH environment variable. This should be more-or-less automatic
+for mac and linux. Official Windows installer asks whether you want to have yout python in PATH (say yes).
 
 Package installer for Python (pip) should be already installed with modern python if you installed python from python.org or using conda distribution.
 If you you installed it using apt-get or port, then most likely you will need to install pip. The package name is probably `python3-pip`,
@@ -83,6 +87,18 @@ Chromedriver doesn't come with an installer. Instead it's a zipped executable.
 You need to unzip the package, and place the executable somewhere where the PATH
 can reach it.
 
+Google Chrome has a tendency to update itself. When this happens you will need to update your chrome driver manually.
+
+## Sanity check
+
+Download the [script](/public/scripts/sanity.py) and test it with python
+
+```shell
+python3 sanity.py
+```
+
+The script will test if the python packages are installed and uses selenium to access google.com. 
+
 ## Downloading the exercises
 
 Go to a folder where you want to download the exercises, and issue command `tmc login`.
@@ -90,3 +106,17 @@ Go to a folder where you want to download the exercises, and issue command `tmc 
 If it asks for a server address, then your TMC client is outdated. Re-install the client.
 
 Provide login details, and use organization slug `mooc`.
+
+Download the exercises for securing software with the command
+
+```shell
+tmc download mooc-securing-software-20
+```
+
+You can test the exercises locally with `tmc test` and submit your solutions with `tmc submit`.
+See `tmc help` for additional commands.
+
+You can test individual exercise by going to an exercise-specific folder, or
+you can test all of them at once by issuing testing commands at root. 
+
+There is no limitations for resubmissions.
