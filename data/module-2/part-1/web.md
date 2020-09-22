@@ -167,7 +167,6 @@ may be also that your internet service provider (ISP) has prohibited making
 port scans. Before participating in the following quiz, verify that you are
 allowed to do so.
 
-<quiz id="50d97b82-0554-5ff7-a9c0-e10f88202e2c"></quiz>
 
 
 
@@ -226,5 +225,7 @@ F-Secure web server asks us to look for the content from the address
 <text-box variant=emph name="Ohh.. Some logic in that server?">
 If you do not reside in Finland and make the same request as above, you are likely directed to another address.
 </text-box>
+
+<quiz id="50d97b82-0554-5ff7-a9c0-e10f88202e2c"></quiz>
 
 <quiz id="ec7731bc-9f39-54a8-b4fc-94dd5d3f94a2"></quiz>
