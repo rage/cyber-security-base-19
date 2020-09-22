@@ -21,6 +21,7 @@ By continuing, you agree to not to do any harm with this information or other si
 
 The course consists of 6 parts.
 
+To pass the course you need 115 points out of 136.
 
 #### Before starting the course
 
