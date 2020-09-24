@@ -4,8 +4,19 @@ const courseSettings = {
   siteUrl: "https://cybersecuritybase.mooc.fi",
   subtitle: "a free course series about cyber security",
   slug: "cyber-security-base-2020",
-  tmcCourse: "securing-software-19",
+  tmcCourse: "securing-software-20",
   quizzesId: "d76439f1-f112-402e-9f9c-9c9949db573f",
+  progressSections: [
+    {
+	  name: "Introduction",
+	  quizId: "d76439f1-f112-402e-9f9c-9c9949db573f",
+    },
+	{
+	  name: "Securing Software",
+	  quizId: "0acfa107-3106-41d9-83a1-afcc10644032",
+      tmcCourse: "securing-software-20",
+	}
+  ],
   tmcOrganization: "mooc",
   bannerPath: "banner.svg",
   sidebarEntries: [
@@ -21,10 +32,10 @@ const courseSettings = {
       title: "How to start and pass a course",
       path: "/pass",
     },
-    //{
-      //title: "Installing Java and NetBeans",
-      //path: "/netbeans-installation-guide",
-    //},
+    {
+      title: "Installing Python and TMC",
+      path: "/installation-guide",
+    },
     {
       title: "Frequently asked questions",
       path: "/faq",
@@ -35,12 +46,12 @@ const courseSettings = {
       path: "/module-1",
 	},
     { separator: true, title: "Securing Software" },
-	{ title: "Part I", path: "/module-2.1", tba: "Sep., 2020"},
-	{ title: "Part II", path: "/module-2.2", tba: "Sep., 2020"},
-	{ title: "Part III", path: "/module-2.3", tba: "Sep., 2020"},
-	{ title: "Part IV", path: "/module-2.4", tba: "Sep., 2020"},
-	{ title: "Part V", path: "/module-2.5", tba: "Sep., 2020"},
-	{ title: "Part VI", path: "/module-2.6", tba: "Sep., 2020"},
+	{ title: "Part I", path: "/module-2.1"},
+	{ title: "Part II", path: "/module-2.2"},
+	{ title: "Part III", path: "/module-2.3"},
+	{ title: "Part IV", path: "/module-2.4"},
+	{ title: "Part V", path: "/module-2.5"},
+	{ title: "Part VI", path: "/module-2.6"},
     { separator: true, title: "Project I" },
 	{ title: "Part I", path: "/module-3.1", tba: "Sep., 2020"},
 

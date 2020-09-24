@@ -16,6 +16,9 @@ Each course is open for a certain period of time, and must be completed during t
 
 # News
 
+_[24.09.2020]_ Securing software is now open.
+Project I will open in September, 2020. 
+
 _[31.08.2020]_ Introduction to cyber security is now open.
 Securing software and Project I will open in September, 2020. 
 
