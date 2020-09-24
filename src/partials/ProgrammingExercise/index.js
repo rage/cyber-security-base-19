@@ -278,11 +278,11 @@ class ProgrammingExercise extends React.Component {
                       <p>
                         {this.props.t("submitNB")}{" "}
                         <OutboundLink
-                          href="https://materiaalit.github.io/tmc-asennus/netbeans/"
+                          href="/installation-guide"
                           rel="noopener noreferrer"
                           target="_blank"
                         >
-                          {this.props.t("sugmitHowTo")}
+                          {this.props.t("submitHowTo")}
                         </OutboundLink>
                         .
                       </p>

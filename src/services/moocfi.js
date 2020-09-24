@@ -187,9 +187,12 @@ export async function fetchProgrammingExerciseModelSolution(exerciseId) {
   return res.data
 }
 
-export async function fetchProgrammingProgress(exerciseName) {
+export async function fetchProgrammingProgress(tmcCourse) {
+  if (tmcCourse == null) {
+    return []
+  }
   const res = await axios.get(
-    `${BASE_URL}/org/${ORGANIZATION}/courses/${await getCourse()}/users/current/progress`,
+    `${BASE_URL}/org/${ORGANIZATION}/courses/${tmcCourse}/users/current/progress`,
     {
       headers: {
         "Content-Type": "application/json",
