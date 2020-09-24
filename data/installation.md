@@ -119,4 +119,4 @@ See `tmc help` for additional commands.
 You can test individual exercise by going to an exercise-specific folder, or
 you can test all of them at once by issuing testing commands at root. 
 
-There is no limitations for resubmissions.
+There are no limitations for resubmissions.
