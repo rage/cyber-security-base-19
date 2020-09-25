@@ -22,9 +22,6 @@ Please read the [instructions](/pass) on how to start and pass the course.
 Especially, pay extra attention on 'how to pass' section as this course
 requires additional steps in order to receive ECTS credits.
 
-Completing the course requires setting up TestMyCode environment.
-Please read the [installation instructions](/installation-guide).
-
 
 #### Support channel and contact information
 
@@ -51,16 +48,16 @@ A standard option is to use [Github](https://github.com/). If you are a student 
 can use [https://version.helsinki.fi](https://version.helsinki.fi). Make sure that the project is _public_.
 Do _not_ remove the project until you have received the points.
 
-Note that essay is not accepted immediately as it is needed to be approved by the course staff.
+Note that essay is not accepted immediately as it needs to be approved by the course staff.
 
 
 ### Essay
 
-You will then write a 1000 word report (hard limits: 800-1500) that pinpoints the flaws and the
+You will then write a 1000 word report (hard limits: 800-1500) that pinpoints the flaws and 
 describes how they can be fixed. The report _must_ follow the following structure:
 
 ```foo
-LINK: [link to the repository]
+LINK: link to the repository
 installation instructions if needed
 
 FLAW 1:
@@ -80,11 +77,9 @@ how to fix it...
 ```
 
 We recommend not to write the essay directly to the browser. Instead write (and
-save) it using your favourite text editor, and copy-paste it.
+save) it using your favourite text editor, and then use copy-paste.
 
 ### Submitting the project
 
-<quiz id="b1df2f26-8da5-4026-806f-eb21215c4887"></quiz>
+<quiz id="726f4dd6-c460-56ca-8cb7-9e1e188e293d"></quiz>
 
-
-<exercises-in-this-section></exercises-in-this-section>
