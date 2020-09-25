@@ -15,6 +15,10 @@ const courseSettings = {
 	  name: "Securing Software",
 	  quizId: "0acfa107-3106-41d9-83a1-afcc10644032",
       tmcCourse: "securing-software-20",
+	},
+	{
+	  name: "Project I",
+	  quizId: "dfaed180-236e-4b9a-8e1e-b33160abab9b",
 	}
   ],
   tmcOrganization: "mooc",
@@ -53,7 +57,7 @@ const courseSettings = {
 	{ title: "Part V", path: "/module-2.5"},
 	{ title: "Part VI", path: "/module-2.6"},
     { separator: true, title: "Project I" },
-	{ title: "Part I", path: "/module-3.1", tba: "Sep., 2020"},
+	{ title: "Part I", path: "/module-3.1"},
 
     { separator: true, title: "Advanced Topics", tba: "Feb., 2021" },
 	{ title: "Part I", path: "/module-4.1/index", tba: "Feb., 2021"},
