@@ -116,6 +116,11 @@ tmc download mooc-securing-software-20
 You can test the exercises locally with `tmc test` and submit your solutions with `tmc submit`.
 See `tmc help` for additional commands.
 
+NB! The TMC server tests the exercises with Python 3.5. Most likely, your
+Python installation will be a newer version. Make sure that you do not use
+any features that were introduced after Python 3.5. Otherwise, this may lead
+to a situation where the tests are passed locally but not remotely.
+
 You can test individual exercise by going to an exercise-specific folder, or
 you can test all of them at once by issuing testing commands at root. 
 
