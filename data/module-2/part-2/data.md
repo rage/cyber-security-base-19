@@ -79,6 +79,12 @@ agent_id agent_name
 ...
 ```
 
+You can create a test database with
+```sh
+python3 create_test_db.py
+```
+in the src directory.
+
 Once completed, return the assignment to the TMC server.
 
 </programming-exercise>
@@ -138,6 +144,12 @@ Fox	Sasha Nein
 Riddle	Voldemort
 Feather	Major Tickle
 ```
+
+You can create a test database with
+```sh
+python3 create_test_db.py
+```
+in the src directory.
 
 </programming-exercise>
 

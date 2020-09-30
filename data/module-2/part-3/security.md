@@ -57,16 +57,22 @@ CREATE TABLE Users (name TEXT, password TEXT, admin BOOL);
 CREATE TABLE Tasks (name TEXT, body TEXT);
 ```
 
-The exercise also contains a script with oracle that allows you to query the Tasks table. 
-The query is written in an unsafe manner. Complete `find_password` that finds admin password stored in Users table.
+You can create a test database with
+```sh
+python3 create_test_db.py
+```
+in the src directory.
+
+The exercise performs a single unsage query
+```python
+"SELECT body FROM Tasks WHERE name='%s' and body LIKE '%%%s%%'" % (username, query())
+```
+Complete `query` that finds the admin password stored in Users table. The result should contain only one entry containing the adming password.
 
 Hints:
-* Most likely, you cannot query Users table directly, instead design a query
-  that will test whether the admin password _starts_ with a given sequence.
-* You will need to do many queries, oracle limits itself to 320 queries which should be enough.
-* Look into nested queries
-* You can assume that there is only one admin, marked with `admin = 1`, you can also assume that the password is at most 8 characters.
-* Do not modify the oracle code, the automated test uses its own oracle with a random admin password. 
+* If `injection.py` does not contain the `query()` method, then you have outdated exercise. In that case, update the exercise.
+* You can assume that there is only one admin, marked with `admin = 1`
+* See UNIONs
 
 </programming-exercise>
 
