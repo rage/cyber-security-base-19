@@ -476,6 +476,8 @@ and the template `index.html`. The notebook application
 should list the existing notes, allow adding new notes, and erasing notes (see `urls.py` for the mapping but do not change it). If there are more
 than 10 notes, the application should only keep the ten most recent ones.
 
+The test assumes that the text input field containing the note is named `content`.
+
 
 Once finished, submit the assignment to the TMC server.
 
