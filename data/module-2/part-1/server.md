@@ -478,6 +478,11 @@ than 10 notes, the application should only keep the ten most recent ones.
 
 The test assumes that the text input field containing the note is named `content`.
 
+To run the server, you will most likely need to initialize the database so that session can be maintained.
+This can be done with
+```shell
+python3 manage.py migrate
+```
 
 Once finished, submit the assignment to the TMC server.
 
