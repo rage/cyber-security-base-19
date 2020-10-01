@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import BackgroundImage from "../images/banner.svg"
+import BackgroundImage from "../images/footer.svg"
 import { Card, CardContent } from "@material-ui/core"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { Link } from "gatsby"
@@ -55,7 +55,6 @@ const FooterBackground = styled.div`
   width: 100%;
   height: 100%;
   background-image: url(${BackgroundImage});
-  filter: invert(1) grayscale(1) brightness(1.5) opacity(0.5);
   z-index: -50000;
 `
 
