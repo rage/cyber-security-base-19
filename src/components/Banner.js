@@ -54,6 +54,10 @@ const SubHeading = styled.div`
     margin: 0 1rem;
 `
 
+const Brace = styled.span`
+  color: steelblue;
+`
+
 const Banner = () => (
   <BannerWrapper>
     <Helmet>
@@ -62,7 +66,11 @@ const Banner = () => (
         rel="stylesheet"
       />
     </Helmet>
-    <Heading>{CourseSettings.default.name}</Heading>
+    <Heading>
+      <Brace>&lt;</Brace>
+      {CourseSettings.default.name}
+      <Brace>&gt;</Brace>
+    </Heading>
     <SubHeading>{CourseSettings.default.subtitle}</SubHeading>
   </BannerWrapper>
 )
