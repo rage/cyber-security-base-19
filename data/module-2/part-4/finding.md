@@ -542,7 +542,7 @@ Use `requests.Session()` to probe the server (otherwise a certain cookie is not 
 You will also need to deal with csrf token.  Use the provided helper function to extract the token.
 The template also provides a function to check whether the login was successful.
 
-Do not forget to submit _all_ the login form fields, including the submit button.
+Do not forget to submit _all_ the relevant login form fields.
 
 For debugging purposes, you can change the admin password with
 ```shell
@@ -550,7 +550,8 @@ python3 manage.py changepassword admin
 ```
 and get the original password back by redownloading the database `db.sqlite`.
 
-The automated test uses a random admin password.
+The automated test uses a random admin password. The address parameter sent by the automated test
+does not have the `/admin/...` part.
 
 </programming-exercise>
 
