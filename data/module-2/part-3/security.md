@@ -70,7 +70,7 @@ The exercise performs a single unsafe query
 Complete `query` that finds the admin password stored in Users table. The result should contain only one entry containing the adming password.
 
 Hints:
-* If `injection.py` does not contain the `query()` method, then you have outdated exercise. In that case, update the exercise. You may have to do update manually by downloading the zip file
+* If `injection.py` contains an `Oracle` class, then you have outdated exercise. In that case, update the exercise. You may have to do the update manually by downloading the zip file
 from the TMC server with a browser.
 * You can assume that there is only one admin, marked with `admin = 1`
 * See UNIONs
