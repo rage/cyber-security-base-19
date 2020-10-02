@@ -548,7 +548,7 @@ For debugging purposes, you can change the admin password with
 ```shell
 python3 manage.py changepassword admin
 ```
-and get the original password back by redownloading the database `db.sqlite`.
+and get the original password back by deleting the database `db.sqlite`.
 
 The automated test uses a random admin password. The address parameter sent by the automated test
 does not have the `/admin/...` part.
