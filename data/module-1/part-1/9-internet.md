@@ -172,6 +172,15 @@ for example, online gaming. An alternative protocol for TCP is User Datagram
 Protocol (UDP), a simple protocol providing ports and a(n optional) checksum as
 additional services, and nothing else. 
 
+<figure>
+
+![UDP Header](./udpheader.svg)
+
+_Structure of the UDP header. Port fields are highlighed._
+
+</figure>
+
+
 <text-box variant="emph" name="LAN and NAT">
 
 Most of the internet users, home or at work, are not directly connected to the internet.
