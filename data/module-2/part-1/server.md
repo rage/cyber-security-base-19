@@ -29,7 +29,7 @@ or an image that the browser should display to the user.
 
 <figure>
 
-![Request and response](./process.svg)
+![Request and response](./request-and-response.svg)
 
 _Flow of a typical request: (1) the user clicks a link on the browser, (2) the
 browser makes a request to the server, (3) the server receives the request and
