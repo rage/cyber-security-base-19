@@ -156,6 +156,15 @@ HTTP uses port 80. A client also needs its own port. These ports are typically
 large numbers selected automatically by an operating system, based on what ports are
 available.
 
+<figure>
+
+![TCP Header](./tcpheader.svg)
+
+_Structure of the TCP header. Port fields are highlighed._
+
+</figure>
+
+
 TCP provides a reliable data stream connection between two devices. The drawback
 of the protocol is significant overhead, especially due to the acknowledgment
 packets.  This latency is not acceptable in certain real-time applications,
