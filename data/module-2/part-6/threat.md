@@ -53,10 +53,15 @@ diagram.
 Data Flow Diagrams are graphical representations of the data flow through the
 system. It is  used to get an overview of the system but can be used to
 visualize the data processing. From the diagram it should be visible what kind
-of information is going in and out of the system. Below is a very simple one
-physical machine LAMP website example.
+of information is going in and out of the system.
 
-![data flow lamp](./dfd-lamp.png)
+<figure>
+
+![data flow lamp](./dfd-lamp.svg)
+
+_A very simple one physical machine LAMP website example._
+
+</figure>
 
 <text-box variant=emph name="Example of DFD usage">
 
@@ -67,10 +72,14 @@ In this article he tells how they use DFDs and how they scale up.
 
 </text-box>
 
-The following image is related to the next question.
 
-![data flow simple](./dfd-simple.png)
+<figure>
 
+![data flow simple](./dfd-simple.svg)
+
+Image related to the next question.
+
+</figure>
 
 
 <quiz id="993ab8d7-d475-552b-89e7-517ef9b5826e"></quiz>
@@ -82,10 +91,15 @@ with more messages. The Message Sequence Chart  is an interaction diagram which
 is used to illustrate communication system components and their message
 interchange flows. In MSC all the entities have their own vertical line and
 between them the messages are drawn as horizontal arrows between the entities.
-In MSC time runs from top to bottom. Below is an example of a Axis2 web service
-SSO messaging with Shibboleth.
+In MSC time runs from top to bottom.
 
-![MSC example](./msc-example-shibboleth-sso.png)
+<figure>
+
+![MSC example](./msc-example-shibboleth-sso.svg)
+
+An example of a Axis2 web service SSO messaging with Shibboleth.
+
+</figure>
 
 ## What to include in the diagram
 
