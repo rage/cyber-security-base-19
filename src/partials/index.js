@@ -26,6 +26,7 @@ import Test from "./Test"
 import PagesInThisSection from "./PagesInThisSection"
 import ProgrammingExercise from "./ProgrammingExercise"
 import TextBox from "./TextBox"
+import FigureBox from "./FigureBox"
 import SampleData from "./SampleData"
 import SampleOutput from "./SampleOutput"
 import Youtube from "./Youtube"
@@ -70,6 +71,7 @@ const mapping = {
   "pages-in-this-section": PagesInThisSection,
   "programming-exercise": ProgrammingExercise,
   "text-box": TextBox,
+  figure: FigureBox,
   "sample-data": SampleData,
   "sample-output": SampleOutput,
   "please-login": PleaseLogin,
