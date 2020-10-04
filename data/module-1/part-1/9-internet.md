@@ -33,6 +33,15 @@ theory) about the payload of the application layer.
 
 Our primary interest for now is the internet layer and the transport layer.
 
+<figure>
+
+![stack](./stack.svg)
+
+_An example of data packet being wrapped in TCP and IP headers. Link layer is not shown._
+
+</figure>
+
+
 <text-box variant="emph" name="How many layers are needed">
 
 Grouping protocols in 4 layers is often referred as _TCP/IP model_ (named after the two most important protocols) or
