@@ -27,13 +27,17 @@ server. Once the server receives the request, it processes it and builds a
 corresponding response. The response may be, for example, HTML-code, JSON data,
 or an image that the browser should display to the user.
 
-![Request and response](./request-and-response.png)
+<figure>
+
+![Request and response](./process.svg)
 
 _Flow of a typical request: (1) the user clicks a link on the browser, (2) the
 browser makes a request to the server, (3) the server receives the request and
 constructs a response, (4) the server returns the response, (5) the response is
 processed within the browser (and, e.g., shown to the user) -- not in the
 picture._
+
+</figure>
 
 When constructing the functionality that is shown in the browser, development
 is typically focused on three separate and intertwined fronts. The structure of
