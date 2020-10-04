@@ -64,6 +64,14 @@ of 4 bytes (numbers ranging between 0--255). Partly due to bad management, IP ad
 are (almost) run out, so a new protocol IPv6 was introduced that uses 32 bytes as address. Both protocols
 are used but IPv4 is still the dominant protocol as of 2020.
 
+<figure>
+
+![IP Header](./ipheader.svg)
+
+_Structure of the IPv4 header. Several key fields are highlighed._
+
+</figure>
+
 IP protocol allows data packet fragmentation if the underlying layer has a limited
 packet size, and is smaller than the payload.  That is, if the payload is larger than
 what the link layer can transmit in one packet, IP protocol will chop the packet in smaller
