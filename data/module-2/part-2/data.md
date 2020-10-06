@@ -53,7 +53,7 @@ cursor = conn.cursor()
 
 Once the cursor has been established, we can use `cursor.execute()` to execute a single
 SQL command or `cursor.executescript()` to execute multiple SQL commands. If we
-modify the database, then we should save the changes with `cursor.commit()`.
+modify the database, then we should save the changes with `conn.commit()`.
 For more information, see Python's sqlite [library](https://docs.python.org/3/library/sqlite3.html).
 
 
