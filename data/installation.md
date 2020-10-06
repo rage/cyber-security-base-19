@@ -118,7 +118,7 @@ See `tmc help` for additional commands.
 
 NB! The TMC server tests the exercises with Python 3.5. Most likely, your
 Python installation will be a newer version. Make sure that you do not use
-any features that were introduced after Python 3.5. Otherwise, this may lead
+any features that were introduced after Python 3.5 such as f-strings. Otherwise, this may lead
 to a situation where the tests are passed locally but not remotely.
 
 You can test individual exercise by going to an exercise-specific folder, or
