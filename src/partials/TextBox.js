@@ -33,11 +33,13 @@ const Body = styled.div`
 
 const variantToColor = {
   hint: "#528afc",
+  emph: "chocolate",
   learningObjectives: "#57b181",
 }
 
 const variantToIcon = {
   hint: faInfoCircle,
+  emph: faInfoCircle,
   learningObjectives: faUserGraduate,
 }
 
