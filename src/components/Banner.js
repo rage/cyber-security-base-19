@@ -15,7 +15,7 @@ const BannerWrapper = styled.header`
   align-items: center;
   margin-bottom: 2rem;
   background-color: #c0392b;
-  background-position: 50% 50%;
+  background-position: 0% 50%;
   background-image: url(${BannerImage});
   background-size: cover;
   text-align: right;
@@ -31,7 +31,7 @@ const Heading = styled.div`
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1rem;
   color: #c0392b;
   background: white;
   padding: 0.5rem;
@@ -50,8 +50,12 @@ const SubHeading = styled.div`
     color: #c0392b;
     background: white;
     padding .5rem;
-    font-size: 1.4rem;
+    font-size: 0.7rem;
     margin: 0 1rem;
+    text-align: center;
+    @media only screen and (min-width: 720px) {
+       font-size: 1.4rem;
+	}
 `
 
 const Brace = styled.span`
