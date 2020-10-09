@@ -73,15 +73,6 @@ In this article he tells how they use DFDs and how they scale up.
 </text-box>
 
 
-<figure>
-
-![data flow simple](./dfd-simple.svg)
-
-Image related to the next question.
-
-</figure>
-
-
 <quiz id="993ab8d7-d475-552b-89e7-517ef9b5826e"></quiz>
 
 ### Message Sequence Chart
