@@ -12,6 +12,8 @@
     "logout":"Log out",
     "newAccount":"Create new account",
     "login":"Log in",
+    "openmenu":"Open menu",
+    "closemenu":"Close menu",
     "mailingListTitle":"Remind me when the course starts",
     "subscribe":"subscribe",
     "tableOfContents":"Table of contents",
