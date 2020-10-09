@@ -55,7 +55,7 @@ const FooterBackground = styled.div`
   width: 100%;
   height: 100%;
   background-image: url(${BackgroundImage});
-  z-index: -50000;
+  z-index: 0;
 `
 
 const FooterContent = styled.div`
@@ -69,6 +69,8 @@ const FooterContent = styled.div`
 const StyledCard = styled(Card)`
   width: 90%;
   max-width: 800px;
+  background-color: white;
+  z-index: 1;
 `
 
 const StyledCardContent = styled(CardContent)`

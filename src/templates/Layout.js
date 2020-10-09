@@ -53,6 +53,8 @@ const Wrapper = styled.div`
 `
 
 const SidebarPush = styled.div`
+  background-color: #fcfcfc;
+  z-index: -1000;
   @media only screen and (min-width: ${SMALL_MEDIUM_BREAKPOINT}) {
     margin-left: ${LARGE_SIDEBAR_WIDTH};
   }
