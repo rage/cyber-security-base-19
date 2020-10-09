@@ -220,15 +220,21 @@ that can be used for XSS testing.
 <programming-exercise name="Cookie heist" tmcname="part3-16.xss">
 
 The exercise contains a simple direct message application, where messages are
-not properly sanitized. Write a message to `src/msg.html` that steals the cookie.
+not properly sanitized. This allows to send messages containing HTML code, and Javascript code.
+Write a message that---when viewed by the victim in the application---will steal the victim cookie.
+Write the message in `src/msg.html`.
+The test will simulate the heist by sending the message in `src/msg.html`
+to the victim and have the victim view the message. 
 
-To steal the cookie use Javascript with POST and submit it to `mail/` request
-on the same server (note that in practice this can be _any_  server but for
-automatic testing we added the `mail/` service to the same server to simulate the heist).
-The parameter to `mail/` should be a JSON object with a field `content` containing the victim's cookie as a string.
+To steal the cookie, use Javascript to send the cookie to `mail/` on the same server.
+Note that in the real world this can be _any_  server but for
+automatic testing we added the `mail/` service to the same server to simulate the heist.
+
+Use POST request to submit the cookie.
+The request body to `mail/` should be a JSON object with a field `content` containing the victim's cookie as a string.
 
 Hints:
-* Look into Tasks exercise on how to do POST requests with Javascript.
+* Look into Tasks exercise (addTask function) on how to do Javascript POST requests with JSON as request body.
 * For debugging purposes, the server will print to the console any mail obtained through `mail/` request.
 
 </programming-exercise>
