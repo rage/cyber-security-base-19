@@ -4,7 +4,6 @@ import PagesInThisSection from "../partials/PagesInThisSection"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const CoursePageFooterWrapper = styled.footer`
-  background-color: white;
   color: black;
   padding: 3rem;
 `
