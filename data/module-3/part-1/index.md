@@ -56,7 +56,7 @@ Note that essay is not accepted immediately as it needs to be approved by the co
 You will then write a 1000 word report (hard limits: 800-1500) that pinpoints the flaws and 
 describes how they can be fixed. The report _must_ follow the following structure:
 
-```foo
+```rest
 LINK: link to the repository
 installation instructions if needed
 

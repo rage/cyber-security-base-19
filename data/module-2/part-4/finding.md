@@ -620,7 +620,7 @@ such as using a list of common passwords which are easily found from the net
 extension that uses Radamsa to generate the intruder payloads, can be used to
 create the payloads.
 
-```output
+```rest
 123456
 password
 12345678

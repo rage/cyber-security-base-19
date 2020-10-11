@@ -73,14 +73,14 @@ CREATE TABLE Agent (
 
 Write a program that outputs all the agents and their identifier codes from the database. The output format should be as follows:
 
-```sample
+```rest
 agent_id agent_name
 agent_id agent_name
 ...
 ```
 
 You can create a test database with
-```sh
+```shell
 python3 create_test_db.py
 ```
 in the src directory.
@@ -95,7 +95,7 @@ The same database schema from the previous assignment is at your disposal here.
 Implement the functionality for adding an agent to the database. The
 application should function as follows (input from the user given in red):
 
-```sample
+```rest
 Active agents:
 
 Secret	Clank
@@ -121,7 +121,7 @@ What would you like to do: [a]dd, [r]emove, or [q]uit? q
 
 Now, when the application is started again, agent Voldemort is within the database and the details of a new agent is queried from the user.
 
-```sample
+```rest
 Active agents:
 
 Secret	Clank
@@ -146,7 +146,7 @@ Feather	Major Tickle
 ```
 
 You can create a test database with
-```sh
+```shell
 python3 create_test_db.py
 ```
 in the src directory.

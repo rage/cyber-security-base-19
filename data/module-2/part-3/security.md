@@ -58,7 +58,7 @@ CREATE TABLE Tasks (name TEXT, body TEXT);
 ```
 
 You can create a test database with
-```sh
+```shell
 python3 create_test_db.py
 ```
 in the src directory.

@@ -46,7 +46,7 @@ whenever we ask you to type `python3`, just type `python`. This is especially tr
 You can see the
 version of your python with
 
-```sh
+```shell
 python3 --version
 ```
 
@@ -60,7 +60,7 @@ alternatively follow these instructions to install [pip](https://pypi.org/projec
 
 Install the following packages using pip
 
-```sh
+```shell
 python3 -m pip install django selenium beautifulsoup4 requests 
 ```
 

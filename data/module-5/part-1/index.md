@@ -65,7 +65,7 @@ You will then write a brief (1000 words) report with the title "Is it easier to 
 
 The report _must_ follow the following structure:
 
-```foo
+```rest
 General observations
 
 IDENTIFIED ATTACK 1:
@@ -131,7 +131,7 @@ This was needed so that snort monitors the correct network interface if metasplo
 
 Some useful commands to use in msfconsole are
 
-```code
+```shell-session
 use [exploit/...]
 set RHOST [targetIP]
 exploit
