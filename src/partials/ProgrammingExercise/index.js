@@ -286,6 +286,16 @@ class ProgrammingExercise extends React.Component {
                         </OutboundLink>
                         .
                       </p>
+                      <p>
+                        {this.props.t("seeSubmissions")}{" "}
+                        <OutboundLink
+                          href={`https://tmc.mooc.fi/exercises/${this.state.exerciseDetails.id}?use_clients=1`}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          {this.props.t("here")}.
+                        </OutboundLink>
+                      </p>
                       <StyledDivider />
                     </Small>
                   )}
@@ -303,17 +313,6 @@ class ProgrammingExercise extends React.Component {
                 </div>
               )}
             </div>
-
-            {this.context.loggedIn && (
-              <div>
-                <StyledDivider />
-                <ExtraDetails
-                  exerciseDetails={this.state.exerciseDetails}
-                  onUpdate={this.onUpdate}
-                  noCoins={this.props.noCoins}
-                />
-              </div>
-            )}
           </Body>
         </CardContent>
       </ProgrammingExerciseWrapper>
