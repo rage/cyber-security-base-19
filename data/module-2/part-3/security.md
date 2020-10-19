@@ -73,6 +73,7 @@ Hints:
 * If `injection.py` contains an `Oracle` class, then you have outdated exercise. In that case, update the exercise. You may have to do the update manually by downloading the zip file
 from the TMC server with a browser.
 * You can assume that there is only one admin, marked with `admin = 1`
+* See [here](https://www.w3schools.com/sql/sql_injection.asp) for various examples of SQL injections
 * See UNIONs
 
 </programming-exercise>
