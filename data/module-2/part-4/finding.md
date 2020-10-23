@@ -383,7 +383,7 @@ the samples out of thin air randomly. However, better results can be gotten
 with a set of samples to start from. The samples should represent the features
 of the format to be fuzzed. In case of network protocols captures of the real
 traffic are good starting points (with tools such as
-[wireshark](https://wwww.wireshark.org) or [tcpdump](https://www.tcpdump.org)).
+[wireshark](https://www.wireshark.org) or [tcpdump](https://www.tcpdump.org)).
 Sometimes just random files from the web will do. For example, bunch of
 available PDFs from the web for testing PDF tools or images of corn from the
 web to test image conversion tools.
