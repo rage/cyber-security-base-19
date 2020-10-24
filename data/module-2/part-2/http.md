@@ -126,7 +126,8 @@ Figure out the formula and obtain Alice's balance by guessing Alice's session id
 
 Hints:
 * Note that the server code is now in `server/` directory. Do not modify the server, instead modify the session sniffer in `src/` folder.
-* The server has a `/balance/` web page that provides the balance in JSON format for the logged in user.
+* The server has a `/balance/` web page that provides the balance in JSON format for the logged in user. Note that this web page is not included in the
+address parameter when the sniffer is called by the automated test.
 * To test your code, log in as Alice in a browser, and only then try to guess the session id with the session sniffer.
 * You should be able to figure out the session id formula by studying the [cookies](https://developers.google.com/web/tools/chrome-devtools/storage/cookies).
 * Multiple guesses are required (but when running checks, 10 guesses will be enough to find Alice).
