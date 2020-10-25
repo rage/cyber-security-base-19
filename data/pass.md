@@ -45,9 +45,9 @@ haven't put genuine effort into them.
 Please write the essays carefully and with thought. Other participants in the course
 will review them and may give you feedback.
 Essays should be written individually and using your own words. Plagiarism is not
-allowed under any circumstances, and will have consequences when get caught.
+allowed under any circumstances, and will have consequences when caught.
 
-It may happen that the course passes its deadline, and you have not received enough
+What may happen is that the course deadline is passed, and you have not received enough
 feedback for the essay to be accepted automatically. In that case the course staff
 will check the essay.
 
@@ -55,7 +55,7 @@ will check the essay.
 ##### Programming exercises
 
 The programming exercises use TMC system. Each programming exercise is worth
-of 5 points, and can be resubmitted unlimited times.
+of 5 points, and can be resubmitted an unlimited number of times.
 The exercises are tested automatically, and they can be tested locally on your
 personal computer before submitting your solution.
 
@@ -75,7 +75,7 @@ You can complete the courses out-of-order but it is recommended that you do them
 due to the prerequisites.
 
 To complete an individual course you will have to gather enough points. The point
-threshold is indicated at each individual course. Note that the essays
+threshold is indicated on each individual course. Note that the essays
 are not immediately accepted once you have written them as they need to be peer-reviewed or possibly checked by the staff.
 
 Each course has a deadline, and you have gather enough points before the deadline.
@@ -155,7 +155,7 @@ You can view the credits in the national [My Studyinfo service](https://studyinf
 Note that you have to do this for each individual course, 6 times at most.
 
 If you are a student at the university (but not at Helsinki University), you
-may be able to transfer these credits. Discuss about this possibility with your
+may be able to transfer these credits. Discuss this possibility with your
 study counselor before starting the course.
 
 
@@ -165,7 +165,7 @@ Once the system has acknowledged that you have passed the course, you will recei
 which can be downloaded at [the completed courses](https://www.mooc.fi/en/profile/completions) page.
 
 If you are a student at the university, you may be able to transfer these
-credits using the certificate. Discuss about this possibility with your study
+credits using the certificate. Discuss this possibility with your study
 counselor before starting the course.
 
 Alternatively, you can enroll on the course in person in Helsinki (further
