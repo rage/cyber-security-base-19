@@ -234,6 +234,12 @@ automatic testing we added the `mail/` service to the same server to simulate th
 Use POST request to submit the cookie.
 The request body to `mail/` should be a JSON object with a field `content` containing the victim's cookie as a string.
 
+The application has the following username and password combinations for testing:
+
+- alice:redqueen
+- bob:squarepants
+
+
 Hints:
 * Look into Tasks exercise (addTask function) on how to do Javascript POST requests with JSON as request body.
 * For debugging purposes, the server will print to the console any mail obtained through `mail/` request.
