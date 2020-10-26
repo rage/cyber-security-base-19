@@ -243,6 +243,7 @@ The application has the following username and password combinations for testing
 Hints:
 * Look into Tasks exercise (addTask function) on how to do Javascript POST requests with JSON as request body.
 * For debugging purposes, the server will print to the console any mail obtained through `mail/` request.
+* When using POST make sure that you include `/` in `mail/`.
 * In certain situations you may get `Message: unknown error: DevToolsActivePort file doesn't exist` when running `tmc test`.
 This means that your chrome installation is a bit wonky, what often helps is commenting out
 the line `options.add_argument('--user-data-dir=test/chrome_user_data')`
