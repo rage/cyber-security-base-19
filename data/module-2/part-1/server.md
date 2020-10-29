@@ -488,6 +488,11 @@ This can be done with
 python3 manage.py migrate
 ```
 
+NB! Be wary that `items = request.session.get('items', [])` doesn't create a new list in session if one doesn't exist,
+it will simply initializes `items` to `[]`. Moreover, for example, `items = []` will not update the list in sessions.
+It will only set the `items` to point to `[]`.
+Consequently, in certain cases, you have to update the actual list explicitly for example with `request.session['items'] = items`.
+
 Once finished, submit the assignment to the TMC server.
 
 </programming-exercise>
