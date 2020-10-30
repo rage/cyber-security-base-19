@@ -32,7 +32,9 @@ The course has started! You don't need to register to start doing the course. Th
 
 # ECTS credits for Finnish residents
 
-If you reside in Finland, you can get a total of 10 ECTS credits for the course from the Open University of University of Helsinki. Your own school, college or university has the option of accepting these as a part of your studies -- you have to, however, ask your local administration whether they will do so. We are looking into the possibility of offering certificates for completion of the course series to all participants as well.
+If you reside in Finland, you can get a total of 10 ECTS credits for the course from the Open University of University of Helsinki. Your own school, college or university has the option of accepting these as a part of your studies -- you have to, however, ask your local administration whether they will do so.
+Certificates will also be available for completion of the course series to all
+participants as well. For more information see the instructions [here](/pass).
 
 # Support channel and contact information
 
