@@ -158,7 +158,7 @@ in the src directory.
 Read the [OWASP SQL Injection Prevention Cheat
 Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html).
 Try to implement the delete query incorrectly, that is, form the string
-directly. The automated test should catch this mistake.
+directly. 
 
 </text-box>
 

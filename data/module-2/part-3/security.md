@@ -67,7 +67,7 @@ The exercise performs a single unsafe query
 ```python
 "SELECT body FROM Tasks WHERE name='%s' and body LIKE '%%%s%%'" % (username, query())
 ```
-Complete `query` that finds the admin password stored in Users table. The result should contain only one entry containing the adming password.
+Complete `query` that finds the admin password stored in Users table. The result should contain only one entry containing the admin password.
 
 Hints:
 * If `injection.py` contains an `Oracle` class, then you have outdated exercise. In that case, update the exercise. You may have to do the update manually by downloading the zip file
