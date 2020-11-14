@@ -342,6 +342,25 @@ Do not use Javascript, instead use `img` tags.
 The automated test will ignore the DNS name of the server in img tags, so you
 can use `localhost:8000` freely, or any other name, depending on your setup.
 
+If you want to test the csrf.html file _manually_, you probably will not succeed
+by simply opening the file in a browser. The  manual testing will not work with Chrome,
+probably will not work with Firefox, and may work with Safari.
+
+The reason for this is that the browsers recently started protecting cross-site
+cookies more seriously (in this case the required cookie is the sessionid). It
+is still possible to setup a very insecure server so that the csrf attack works but it
+requires setting up HTTPS server, which is not trivial.
+
+Instead, to test the file manually, do the following steps.
+- Start the server.
+- Login as bob.
+- in src directory, run `python3 -m http.server 9000` (this will start a second web server).
+- Go to `http://localhost:9000/csrf.html` (this will process the csrf message).
+- Reload the original page where you have logged as bob.
+
+Note that these steps are needed only if you want to test csrf.html _manually_.
+They are not required if you use `tmc test` or `tmc submit`.
+
 </programming-exercise>
 
 
