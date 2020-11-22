@@ -130,7 +130,7 @@ Hints:
 address parameter when the sniffer is called by the automated test.
 * To test your code, log in as Alice in a browser, and only then try to guess the session id with the session sniffer.
 * You should be able to figure out the session id formula by studying the [cookies](https://developers.google.com/web/tools/chrome-devtools/storage/cookies).
-* During automated tests, the counter in the session id will be a random number between 1 and 10. The sniffer should do multiple guesses to find Alice.
+* During automated tests, the counter in the session id will be a small random number (between 1 and 11). The sniffer should do multiple guesses to find Alice.
 * Use Python library [requests](https://www.w3schools.com/python/ref_requests_get.asp).
 * Note that `json.loads` does not work with byte streams when using Python 3.5. 
 * The session id for Django web servers is stored in a cookie named `sessionid`.
