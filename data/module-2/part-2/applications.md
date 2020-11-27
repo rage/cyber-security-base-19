@@ -333,12 +333,17 @@ will return a list of objects.
 
 If you wish an additional challenge, add the functionality to remove tasks as well.
 
-Hint: do not use absolute URLs, the automated test will start its own server at its own port.
 
 The automated test relies on using selenium with chromedriver and chrome, make
 sure that you have installed them properly, see
 [instructions](/installation-guide), otherwise you cannot do local
 tests.
+
+Hints:
+
+- Do not use absolute URLs, the automated test will start its own server at its own port.
+- Javascript [for-loop](https://thecodebarbarian.com/for-vs-for-each-vs-for-in-vs-for-of-in-javascript) syntax.
+
 
 </programming-exercise>
 
