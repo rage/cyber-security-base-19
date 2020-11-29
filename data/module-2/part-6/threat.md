@@ -347,7 +347,7 @@ where the dump is sent to another machine, for example with netdump, care must
 be taken that the dump is not sent with "NETDUMPKEYEXCHANGE" variable set into
 _none_. Second, the fine-grained control relies on programmers. Depending on
 the language it may not always be possible but, for example in C this would
-mean removing _memsets_. More information of this and related things can be
+mean removing unneeded data by overwriting them with _memsets_. More information of this and related things can be
 found from the [Secure Coding
 Guidelines](http://www.oracle.com/technetwork/java/seccodeguide-139067.html#2)
 for Java SE.
