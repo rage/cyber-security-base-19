@@ -426,6 +426,8 @@ The web server has 3 users with the following passwords:
  * bob:squarepants
  * alice:redqueen
 
+The logged user can be found in `request.user`.
+
 When the application works as intended, return it to TMC.
 
 </programming-exercise>
