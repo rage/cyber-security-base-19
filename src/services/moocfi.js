@@ -156,7 +156,7 @@ export function updatePassword(currentPassword, password, confirmPassword) {
     })
 }
 
-export async function fetchProgrammingExerciseDetails(exerciseName) {
+export async function fetchProgrammingExerciseDetails(exerciseName, course) {
   const accessTokenValue = accessToken()
   const headers = {
     "Content-Type": "application/json",
@@ -165,8 +165,12 @@ export async function fetchProgrammingExerciseDetails(exerciseName) {
     headers["Authorization"] = `Bearer ${accessTokenValue}`
   }
   console.log(exerciseName, headers)
+  let cid = CourseSettings.default.tmcCourse
+  if (course) {
+    cid = course
+  }
   const res = await axios.get(
-    `${BASE_URL}/org/${ORGANIZATION}/courses/${await getCourse()}/exercises/${exerciseName}`,
+    `${BASE_URL}/org/${ORGANIZATION}/courses/${cid}/exercises/${exerciseName}`,
     {
       headers: headers,
     },

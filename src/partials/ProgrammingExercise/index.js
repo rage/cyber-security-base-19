@@ -19,6 +19,9 @@ import { normalizeExerciseId } from "../../util/strings"
 import ExerciseDescription from "./ExerciseDescription"
 import ExtraDetails from "./ExtraDetails"
 import StyledDivider from "../../components/StyledDivider"
+import CourseSettings from "../../../course-settings"
+
+const courseids = CourseSettings.default.progressSections
 
 const accentColor = "#FAAA38"
 
@@ -159,9 +162,15 @@ class ProgrammingExercise extends React.Component {
       return
     }
     let exerciseDetails = null
+    const info = courseids.filter(o => o.name == this.props.course)
+    let cid = null
+    if (info.length > 0) {
+      cid = info[0].tmcCourse
+    }
     try {
       exerciseDetails = await fetchProgrammingExerciseDetails(
         this.props.tmcname,
+        cid,
       )
     } catch (error) {
       console.error(error)
