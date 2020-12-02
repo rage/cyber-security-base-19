@@ -15,9 +15,13 @@ export async function fetchQuizzesProgress(cid) {
   return response.data?.points_by_group
 }
 
-export async function fetchQuizNames() {
+export async function fetchQuizNames(cid) {
+  let course = id
+  if (cid) {
+    course = cid
+  }
   const response = await axios.get(
-    `https://quizzes.mooc.fi/api/v1/quizzes/${id}/titles/${quizzesLanguage}`,
+    `https://quizzes.mooc.fi/api/v1/quizzes/${course}/titles/${quizzesLanguage}`,
   )
   return response.data
 }

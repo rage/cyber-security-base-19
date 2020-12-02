@@ -27,7 +27,7 @@ class ExercisesInThisSection extends React.Component {
           {this.props.t("exerciseList")}
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <ExerciseList />
+          <ExerciseList course={this.props.course} />
         </ExpansionPanelDetails>
       </ExpansionPanel>
     )

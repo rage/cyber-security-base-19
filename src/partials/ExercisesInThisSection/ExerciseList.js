@@ -7,6 +7,9 @@ import ExerciseSummary from "./ExerciseSummary"
 import { fetchManyQuizDetails } from "../../services/quiznator"
 import { flatten } from "../../util/arrays"
 import { fetchQuizNames } from "../../services/quizzes"
+import CourseSettings from "../../../course-settings"
+
+const courseids = CourseSettings.default.progressSections
 
 const Title = styled.div`
   margin-bottom: 0.5em;
@@ -44,9 +47,15 @@ class ExerciseList extends React.Component {
         return a > b ? 1 : b > a ? -1 : 0
       })
 
-    const quizIdToTitle = await fetchQuizNames()
+    const info = courseids.filter(o => o.name == this.props.course)
+    let qid = null
+    if (info.length > 0) {
+      qid = info[0].quizId
+    }
+    const quizIdToTitle = await fetchQuizNames(qid)
     this.setState({ sectionPages, quizIdToTitle, render: true })
   }
+
   render() {
     if (!this.state.render) {
       return <div>Loading...</div>
