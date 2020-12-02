@@ -47,5 +47,5 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 <pages-in-this-section></pages-in-this-section>
 
 
-<exercises-in-this-section></exercises-in-this-section>
+<exercises-in-this-section course="Securing Software"></exercises-in-this-section>
 
