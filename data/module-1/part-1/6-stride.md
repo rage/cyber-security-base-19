@@ -4,7 +4,7 @@ title: 'Identifying threats'
 hidden: false
 ---
 
-When beginning development of a new application, there are few factors that
+When beginning development of a new application, there are a few factors that
 should immediately be considered. From the point of view of this course series,
 we naturally take the stance that security is the biggest one. It is essential
 to apply some kind of threat modelling in the design phase. If not, the
