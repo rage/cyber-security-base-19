@@ -79,6 +79,8 @@ agent_id agent_name
 ...
 ```
 
+The output should be ordered by agent id.
+
 You can create a test database with
 ```shell
 python3 create_test_db.py
@@ -92,7 +94,10 @@ Once completed, return the assignment to the TMC server.
 <programming-exercise name="Hello Insert" tmcname="part2-09.helloinsert">
 
 The same database schema from the previous assignment is at your disposal here.
-Implement the functionality for adding an agent to the database. The
+Implement the functionality for adding and removing an agent to the database as well as reading them.
+When reading the agents should be ordered by their ids.
+
+The
 application should function as follows (input from the user given in red):
 
 ```rest
