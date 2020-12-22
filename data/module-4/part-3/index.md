@@ -479,7 +479,13 @@ Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`)
 
 Next we take a look at how public-key cryptosystems look like. The most used system is called [RSA](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29). It is based on the following mathematical fact:
 
-<P style="background-color:lightgrey; padding-top: 15px;padding-right: 15px;padding-bottom: 15px;padding-left: 15px;"><B>if</B> <I>p</I> and <I>q</I> are primes, <I>n = p&middot;q</I> and <I>e&middot;d mod</I> (<I>p</I>-1)(<I>q</I>-1) = 1<br/><br/><B>then</B> <I>x<SUP>e&middot;d</SUP> mod n = x</I> for all values of <I>x</I>.</P>
+
+If $p$ and $q$ are primes, and $e$ and $d$ are such that
+$$
+e \cdot d \mod (p - 1)(q - 1) = 1
+$$
+then for all values of $x$ it holds that
+$x^{e \cdot d} \mod n = x$, where $n = p \cdot q$.
 
 To set up RSA keys, Alice first needs to find two large primes $p$ and $q$.
 Both primes should be at least 1000 bits long. She then needs to pick an
