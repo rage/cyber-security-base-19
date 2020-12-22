@@ -403,21 +403,39 @@ Typically the keys are longer and the algorithms are slower in public-key crypto
 
 The above mentioned possibility for even strangers to send confidential messages to you is one such thing. _Digital signature_ is another such thing: Using public-key cryptography it is possible to _sign_ messages electronically and to _authenticate_ users and their messages.
 
-At this point we cannot avoid getting a little bit mathematical. Let us denote by _a mod b_ the _remainder_ when _a_ is divided by _b_. The _b_ here is called the _modulus_. For example, 12 _mod_ 5 = 2 and 77 _mod_ 8 = 5.
+Let us denote
+by $a \mod b$ the _remainder_ when $a$ is divided by $b$. The $b$ here is
+called the _modulus_. For example, $12 \mod 5 = 2$ and $77 \mod 8 = 5$.
 
-Also, we make use of _prime _numbers, shortly _primes_. An integer, larger than 1, is a prime if it is only divisible by 1 and itself. For example, 7, 101 and 7823 are primes but 6, 15 and 100 are not.
+Also, we make use of _prime_ numbers, shortly _primes_. An integer, larger than 1, is a prime if it is only divisible by 1 and itself. For example, 7, 101 and 7823 are primes but 6, 15 and 100 are not.
 
-<p>Given integers <I>a</I>, <I>b</I> and <I>c</I>, it is easy (at least in principle) to calculate <I>a</I><SUP><I>b</I></SUP> <I>mod c</I>. This <I>modular exponentiation</I> is relatively easy to do even when the integers <I>a</I>, <I>b</I> and <I>c </I>are very big<I>. </I>With big <I>a</I> and <I>b</I> the power <I>a</I><SUP><I>b </I></SUP>becomes huge. Luckily we do not have to compute this huge number at all. Instead, it is possible to compute the remainder for each intermediate value before continuing. Let us take a simple example: <I>a</I>=2, <I>b</I>=60, <I>c</I>=1003. Now <I>a</I><SUP><I>b</I></SUP> = (2<SUP>10</SUP>)<SUP>6</SUP>.</p>
+Given integers $a$, $b$ and $c$, it is easy (at least in principle) to
+calculate $a^b \mod c$. This _modular exponentiation_ is relatively easy to do
+even when the integers $a$, $b$ and $c$ are very big.
+With big $a$ and $b$ the power $a^b$
+becomes huge. Luckily we do not have to compute this huge number at
+all. Instead, it is possible to compute the remainder for each intermediate
+value before continuing. Let us take a simple example: $a = 2$, $b = 60$,
+$c = 1003$. Now $a^b = (2^{10})^6$.
 
-<p>We first compute 2<SUP>10</SUP>=1024. Then we take the remainder of this intermediate result: 1024 <I>mod</I> 1003 = 21. Next we raise 21 to the power of 3. The result is 9261. Taking the remainder again with the modulus 1003 we get 234. The final step is to raise 234 to the power of 2: the result is 54756. Taking the remainder again we get the final result: <I>a</I><SUP><I>b</I></SUP> <I>mod c</I> = 594.<p>
+We first compute $2^{10}=1024$. Then we take the remainder of this intermediate
+result: $1024 \mod 1003 = 21$. Next we raise 21 to the power of 3. The result
+is 9261. Taking the remainder again with the modulus 1003 we get 234. The final
+step is to raise 234 to the power of 2: the result is 54756. Taking the
+remainder again we get the final result: $a^b \mod c = 594$.
 
-<p>On the other hand, when arbitrary integers <I>a</I>, <I>c</I> and <I>d</I> are given, it is very hard to find an integer <I>b</I> such that <I>a<SUP>b</SUP> mod c = d.</I> This problem is called the <EM>discrete logarithm problem</EM>. We use the notation</p>
+On the other hand, when arbitrary integers $a$, $c$ and $d$ are given, it is
+very hard to find an integer $b$ such that $a^b \mod c = d$. This problem is
+called the _discrete logarithm problem_. We use the notation
 
-<p>log<I><SUB>a</SUB> d <I>mod</I> c = b.</I></p>
+$$
+\log_a d \mod c = b.
+$$
+
 
 Because modular exponentiation can be done relatively fast even for large numbers but the inverse problem of finding the discrete logarithm becomes very hard for large numbers, modular exponentiation with large numbers is an example of a one-way function.
 
-<p>Let us take a closer look at the discrete logarithm with small numbers. We choose <I>c</I> = 101 and below see a graph depicting 2<SUP><I>x</I></SUP> mod 101.</p>
+Let us take a closer look at the discrete logarithm with small numbers. We choose $c = 101$ and below see a graph depicting $2^x \mod 101$.
 
 ![mod](mod101.png)
 
@@ -429,7 +447,14 @@ Note that the graph is not smooth and it is not growing like the &rsquo;normal&r
 
 A _key agreement protocol_ is a method for two parties, say Alice and Bob, to agree on a shared secret key over an insecure channel, but still in such way that nobody else who is eavesdropping on the channel is able to learn the shared secret. An example of such method is _Diffie-Hellman key agreement protocol_.
 
-<p>The Diffie-Hellman key exchange begins by Alice and Bob agreeing on a modulus <I>p</I> and a number <I>g</I>. Then Alice picks a random number <I>a</I> and sends Bob the number <I>g<SUP>a</SUP> mod p = u.</I> Similarly, Bob picks a random number <I>b</I> and sends Alice the number <I>g<SUP>b</SUP> mod p = v</I>. Now Alice can calculate <I>v<SUP>a</SUP> mod p</I> and Bob can calculate <I>u<SUP>b</SUP></I> mod p. These two values are both equal to <I>g<SUP>ab</SUP> mod p</I> and that value can now be used as the new shared secret key.</p>
+The Diffie-Hellman key exchange begins by Alice and Bob agreeing on a modulus
+$p$ and a number $g$. Then Alice picks a random number $a$ and
+sends Bob the number $g^a \mod p = u$. Similarly, Bob picks a
+random number $b$ and sends Alice the number $g^b \mod p =
+v$. Now Alice can calculate $v^a \mod p$ and Bob can calculate
+$u^b \mod p$. These two values are both equal to
+$g^{ab} \mod p$ and that value can now be used as the new shared
+secret key.
 
 Our HTTPS example (`TLS_<B>ECDHE</B>_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`)  makes use of a certain variant of the Diffie-Hellman key exchange.
 
@@ -439,15 +464,44 @@ Next we take a look at how public-key cryptosystems look like. The most used sys
 
 <P style="background-color:lightgrey; padding-top: 15px;padding-right: 15px;padding-bottom: 15px;padding-left: 15px;"><B>if</B> <I>p</I> and <I>q</I> are primes, <I>n = p&middot;q</I> and <I>e&middot;d mod</I> (<I>p</I>-1)(<I>q</I>-1) = 1<br/><br/><B>then</B> <I>x<SUP>e&middot;d</SUP> mod n = x</I> for all values of <I>x</I>.</P>
 
-To set up RSA keys, Alice first needs to find two large primes _p_ and _q_. Both primes should be at least 1000 bits long. She then needs to pick an integer _e_ such that it is possible to find another integer _d_ for which _e&middot;d mod_ (_p_-1)(_q_-1) = 1 holds. The public key of Alice is now the pair (_e,n_), where _n = p&middot;q_. The private key that Alice needs to decrypt messages is the pair (_d,n_). Alice should not reveal the primes _p_ and _q_ to anybody.
+To set up RSA keys, Alice first needs to find two large primes $p$ and $q$.
+Both primes should be at least 1000 bits long. She then needs to pick an
+integer $e$ such that it is possible to find another integer $d$ for which
+$$
+e \cdot d \mod (p-1)(q-1) = 1
+$$
+holds. The public key of Alice is now the
+pair $(e, n)$, where $n = p\cdot q$. The private key that Alice needs to
+decrypt messages is the pair $(d,n)$. Alice should not reveal the primes $p$
+and $q$ to anybody.
 
-<p>Let us assume that Alice has given her public key to Bob. Bob can now encrypt any &quot;message&quot; <I>x</I> that is (encoded as) an integer between 0 and <I>n</I> by calculating <I>x<SUP>e</SUP> mod n = y.</I> Bob would send the result to Alice. Alice can decrypt the cryptotext <I>y</I> because she knows the secret decrypting exponent <I>d</I>. She calculates <I>y<SUP>d</SUP> mod n = x.</I></p>
+Let us assume that Alice has given her public key to Bob. Bob can now encrypt
+any &quot;message&quot; $x$ that is (encoded as) an integer between 0 and
+$n$ by calculating $x^e \mod n = y$ .Bob would send the
+result to Alice. Alice can decrypt the cryptotext $y$ because she knows
+the secret decrypting exponent $d$. She calculates $y^d \mod n
+= x$.
 
 A traditional signature is some ink on a paper. It is based on the assumption that only one person can write a signature in a certain way. A _digital signature_ is always different for every message (otherwise you could just copy-paste it to any document) and only a person who has the _signing key_ can calculate it correctly. The signature can be verified by anybody who has the _verification key_.
 
-<p>RSA can be used also for digital signing and verification. Alice reveals the verification key (<I>e,n</I>) and uses herself the signing key (<I>d,n</I>). If Alice wants to sign message <I>x</I>, she calculates the signature as <I>x<SUP>d</SUP> mod n = s.</I> When Bob receives the message <I>x</I> and the signature <I>s</I>, he can check that <I>s<SUP>e</SUP> mod n = x.</I> If this is true then the signature must be from Alice because nobody else knows the parameter <I>d</I> thats is necessarily needed to calculate Alice&rsquo;s signatures.</p>
+RSA can be used also for digital signing and verification. Alice reveals the
+verification key $(e,n)$ and uses herself the signing key $(d,n)$. If
+Alice wants to sign message $x$, she calculates the signature as
+$x^d \mod n = s$. When Bob receives the message $x$ and the
+signature $s$, he can check that $s^e \mod n = x$. If this
+is true then the signature must be from Alice because nobody else knows the
+parameter $d$ thats is necessarily needed to calculate Alice&rsquo;s
+signatures.
 
-Usually the signature is not computed for the entire message but, instead, a hash of the message is computed first, and then the hash value is signed. This guarantees that the value to be signed does not become too big. On the verification side, similarly, the received message is first given as an input to the hash function, and parallel to that, the verification key (_e,n_) is applied to the signature. If outputs from each operation are equal then the signature is accepted. The hash value of the message is called its _fingerprint_, and it can be used instead of the entire message if no collisions have been found for the hash function.
+Usually the signature is not computed for the entire message but, instead, a
+hash of the message is computed first, and then the hash value is signed. This
+guarantees that the value to be signed does not become too big. On the
+verification side, similarly, the received message is first given as an input
+to the hash function, and parallel to that, the verification key $(e,n)$ is
+applied to the signature. If outputs from each operation are equal then the
+signature is accepted. The hash value of the message is called its
+_fingerprint_, and it can be used instead of the entire message if no
+collisions have been found for the hash function.
 
 Our HTTPS example (`TLS_ECDHE_<B>RSA</B>_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`)  makes use of RSA for digital signatures.
 
@@ -478,7 +532,7 @@ Our solution to the &rdquo;chicken-and-egg&rdquo; problem did not remove all res
 
 Such an authority _A_ is called a _Certificate Authority_ (CA). But it should be possible for Alice and Bob to be in contact with _different_ authorities. Otherwise, the CA easily becomes a bottleneck in the system.
 
-A typical solution for this problem is to arrange a _hierarchy_ of authorities. For example, Bob could have a public key of a _root _CA, e.g., in-built into his browser. This root CA would then provide certificates for other CAs that are one level lower in the hierarchy. These CAs could provide certificates for public keys of _regional_ CAs, and Alice could be in contact with one such regional CA.
+A typical solution for this problem is to arrange a _hierarchy_ of authorities. For example, Bob could have a public key of a _root_ CA, e.g., in-built into his browser. This root CA would then provide certificates for other CAs that are one level lower in the hierarchy. These CAs could provide certificates for public keys of _regional_ CAs, and Alice could be in contact with one such regional CA.
 
 Bob would need to verify all certificates in a _certificate chain_. Once all certificates are verified, Bob is finally able to verify Alice&rsquo;s signature.
 
