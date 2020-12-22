@@ -131,13 +131,14 @@ Hint: you will probably find the xor helper function helpful. Do not forget add 
 
 ### Padding oracle attack
 
-Padding oracle attack shos that a tiny amount of additional information can be enough to break the cipher.
+Padding oracle attack shows that a tiny amount of additional information can be enough to break the cipher.
 
 Earlier versions of CBC decipher implementations would return an error message to the sender if the padding of the sent message was correct. 
 This information, assuming that we have access to submit our own messages to the decipher, is enough to break CBC encryption!
 Furthermore, the breakage doesn't depend on the underlying block cipher.
 
 Assume that we have an oracle that given a ciphertext will tell whether the decrypted message has a valid padding.
+Note that we don't get to see the decrypted message, we only observe whether the padding is valid.
 
 Assume that we have two blocks of ciphertext $C_1$ and $C_2$, each of length 8.
 Write $A = decrypt(C_2)$. We know from previous exercise that
