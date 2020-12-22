@@ -547,6 +547,42 @@ The actual signature value of the certificate is provided as shown below.
 ![HTTPS](https_5_box.png)
 
 <programming-exercise name="Man in the middle" tmcname="part3-08.maninthemiddle" course="Advanced Topics">
+
+Certificates are needed to prevent man in the middle attacks. In this exercise we will create a
+man-in-the-middle server that capitalizes every letter of the HTML page. 
+
+The template contains a simple web server that connects simply shows the page address and nothing else.
+Modify the server so that it pretends to be the server given in
+`self.remote_address` but capitalizes every letter in the response.
+
+You should at least match response code, content, and content type.
+
+You can test the server manually with
+```sh
+python3 mitm.py 8000 target_domain
+```
+and by going to `http://localhost:8000`. Do not forget to add `http://` or `https://` in the `target_domain`.
+
+You can use an external target or you can start your own local target by launching a target server with
+```sh
+python3 -m http.server 9000
+```
+in the `server` folder.
+This will start the target server at port 9000 and
+```sh
+python3 mitm.py 8000 http://localhost:9000
+```
+in the `src` folder
+will start a man-in-the-middle server at 8000.
+
+_Hints:_
+
+1. Make sure to use both `self.remote_address`  and `self.path`.
+2. Requests library is your friend.
+3. You don't need to parse HTML. You can simply capitalize every letter in response (use `upper()`).
+This will certainly break certain pages, especially with javascript code.
+Fancier approach would be to parse HTML with beautifulsoup but it is not needed for this exercise.
+
 </programming-exercise>
 
 <quiz id="4b281ce2-7b76-5338-9837-142c41a210e5"></quiz>
