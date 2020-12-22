@@ -117,12 +117,29 @@ Summary: Message authentication codes are used to protect _integrity_ of the dat
 
 One of the commonly used methods for constructing a MAC function is [hmac](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code). It is built on top of some hash function, e.g. SHA-256 or SHA-3.
 
-Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_<B>SHA384</B>_256 bit keys,TLS 1.2`) makes use of a SHA384 hash function.
+Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`) makes use of a SHA384 hash function.
 
 <!-- QUIZ -->
 <quiz id="c50875ec-06a3-58dd-a534-f6fafce90eb0"></quiz>
 
 <programming-exercise name="Break the hash" tmcname="part3-01.password" course="Advanced Topics">
+
+In this exercise you are given a hash and a list of candidate passwords, and
+your task is to write a password guesser that finds the password in the candidates that was used to generate the hash.
+
+The hash follows a common format used for storing hashed password
+```
+procotol$salt$hash
+```
+Here, the protocol will always be set to 42, so you can ignore it.
+For hashing we will use SHA-384. In this exercise, the hash is constructed by hashing a message containing the salt followed by the actual password.
+In practice, the combination of salt and the password is significantly more convoluted.
+
+The salt and the password hash are both base64 encoded in the hash string, and need to be decoded.
+
+_Hints:_
+1. You will find hashlib and base64 libraries useful.
+2. The hash and the candidates are all text strings but the above libraries operate with byte arrays. Use `encode('utf-8')` to get a byte array from a text string.
 
 </programming-exercise>
 
@@ -231,7 +248,7 @@ A block cipher, like AES, is used to encrypt blocks of a certain size. What shou
 
 The simplest way to encrypt a long message is to take the first block, encrypt it using the key to produce the first cryptotext block, then take the second block, encrypt it using the same key to produce the second cryptotext block etc. This approach is one of the [block cipher modes of operation](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation), called _Electronic Codebook_ (ECB). It is the simplest way but often could be broken by frequency analysis. The attacker notices if you encrypt the same plaintext block twice because the two cryptotexts are also the same. This happens, for example, if plaintext contains some commonly used short pattern, like 'OK'.
 
-Other modes of operation avoid this problem by using extra input in addition to plaintext and key. For instance, previously computed cryptotext blocks or _counters_ could be used for this purpose. Our HTTPS example (`TLS_ECDHE_RSA_WITH_<B>AES_256_GCM</B>_SHA384_256 bit keys,TLS 1.2`) makes use of AES algorithm in _Galois/Counter Mode_. The key length is 256 bits.
+Other modes of operation avoid this problem by using extra input in addition to plaintext and key. For instance, previously computed cryptotext blocks or _counters_ could be used for this purpose. Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`) makes use of AES algorithm in _Galois/Counter Mode_. The key length is 256 bits.
 
 The next 3 exercises should be done in order.
 
@@ -456,7 +473,7 @@ $u^b \mod p$. These two values are both equal to
 $g^{ab} \mod p$ and that value can now be used as the new shared
 secret key.
 
-Our HTTPS example (`TLS_<B>ECDHE</B>_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`)  makes use of a certain variant of the Diffie-Hellman key exchange.
+Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`)  makes use of a certain variant of the Diffie-Hellman key exchange.
 
 ## RSA
 
