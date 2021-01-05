@@ -72,7 +72,9 @@ L_{i - 1} & = R_i \oplus F(R_{i - 1}, K_i) = R_i \oplus F(L_i, K_i). \\
 $$
 In other words, we can start from $L_n$ and $R_n$ and reverse all the way back to $L_0$ and $R_0$.
 
-Implement feistel cipher: complete encrypt and decrypt in `src/feistel.py`.
+![Feistel](./feistel.svg)
+
+Implement Feistel cipher: complete encrypt and decrypt in `src/feistel.py`.
 The function $F$ is a class parameter `self.roundf`, and the keys is an array in class parameters `self.keys`.
 
 You can assume that the block size $m$ of $F$ is 4.
@@ -113,6 +115,8 @@ $$
 where $encrypt$ is our block cipher.
 The final cipher message is $C_1C_2C_3\ldots$. Note that we do not include $C_0$ here, the initilization vector is sent separately.
 
+![CBC encrypt](./cbcencrypt.svg)
+
 To decrypt, note that
 $$
 P_i \oplus C_{i - 1} = decrypt(C_i)
@@ -121,6 +125,8 @@ which we can rewrite
 $$
 P_i = decrypt(C_i) \oplus C_{i - 1}.
 $$
+
+![CBC decrypt](./cbcdecrypt.svg)
 
 Complete Cbc class by implementing `encode` and `decode`. Remember to add and remove the padding.
 Note that you will also need the fully-implemented Feistel class from the previous exercise.
