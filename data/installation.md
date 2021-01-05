@@ -126,9 +126,9 @@ find any test, you can locate the bug by either starting the application yoursel
 (if the programming exercise is django, then start the server with `manage.py`)
 or submit the exercise and see the logs on TMC website. 
 
-NB! The TMC server tests the exercises with Python 3.5. Most likely, your
+NB! The TMC server tests the exercises with Python 3.7. Most likely, your
 Python installation will be a newer version. Make sure that you do not use
-any features that were introduced after Python 3.5 such as f-strings. Otherwise, this may lead
+any features that were introduced after Python 3.7 such as `:=` syntax. Otherwise, this may lead
 to a situation where the tests are passed locally but not remotely.
 You can see the error and the stacktrace by going to the TMC website.
 
