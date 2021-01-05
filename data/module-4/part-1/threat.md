@@ -66,11 +66,21 @@ As an example one can consider a webstore that stores personal profiles of the u
 
 ## Gamification of the security analysis
 
-Analysis can be tedious work but it does not have to be. What about if it was a game and the participants where the developers, architects, testers, etc in the company. Reserve a room, some catering and get prizes. Oh, and have some fun while doing the analysis.  There are at least two major contestants on this field and they are both card games. These games encourage the participants to think creatively and out-of-the-box about the threats. First, there is the Microsoft Elevation of Privilege (EoP) Card [game](https://www.microsoft.com/en-us/download/details.aspx?id=20303)  which is based on STRIDE. Second, there is the OWASP Cornucopia card [game](https://www.owasp.org/index.php/OWASP_Cornucopia) which is based mostly on OWASP Secure Coding Practices - Quick Reference Guide ([SCP](https://www.owasp.org/index.php/OWASP_Secure_Coding_Practices_-_Quick_Reference_Guide)). Cornucopia has more relevance to the web applications than EoP.
+Analysis can be tedious work but it does not have to be. What about if it was a
+game and the participants where the developers, architects, testers, etc in the
+company. Reserve a room, some catering and get prizes. Oh, and have some fun
+while doing the analysis.  There are at least two major contestants on this
+field and they are both card games. These games encourage the participants to
+think creatively and out-of-the-box about the threats. First, there is the
+Microsoft Elevation of Privilege (EoP) Card
+[game](https://www.microsoft.com/en-us/download/details.aspx?id=20303)  which
+is based on STRIDE. Second, there is the OWASP Cornucopia card
+[game](https://owasp.org/www-project-cornucopia/) which is based mostly
+on OWASP Secure Coding Practices - Quick Reference Guide
+([SCP](https://owasp.org/www-pdf-archive/OWASP_SCP_Quick_Reference_Guide_v2.pdf)).
+Cornucopia has more relevance to the web applications than EoP.
 
 ![Deck of cards](deckofcards.png)
-
-<quiz id="84a2a7c8-8623-5f40-9121-7a9ed0b006f0"></quiz>
 
 
 

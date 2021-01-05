@@ -17,7 +17,7 @@ Sometimes these devices are called smart devices but it could be omitted as addi
 To top it all, we have to mention the number of these devices. Depending on the
 study you read it is from vast quantities to unfathomable. For example, [IDC](https://www.idc.com/getdoc.jsp?containerId=prUS45213219)
 predicts there will be around 42 billion connected devices worldwide in 2025
-years. One [prediction](https://www.statista.com/statistics/471264/iot-number-of-connected-devices-worldwide/) for 2020 is 30 billion devices.
+years. 
 So this is the playground for this part of the course. Gargantuan number of not
 so smart devices equipped with Internet connection with sharing of data as
 their main purpose.
@@ -129,7 +129,25 @@ But what is considered as a physical attack on a computer system? Some examples 
 
 ### Key management problems
 
-Encryption of the data at rest and in transit between the devices or the cloud is important. Moreover, it is important to use standard cryptographic algorithms and not fall into security by obscurity mentality (it is a good idea to use properly vetted algorithms than something that you only heard to be secure). However, the heterogeneous nature of IoT device field is one of the biggest limiting factor against using standard processes and protocols. Moreover, the key management becomes an issue as for the encryption to work properly the encryption must be accompanied with lifecycle management process for the keys, from start to end. It might be easier to do something else or skip this but failing to do this properly will result in problems. Take for example the HUE personal lightning system that only calculated MD5 sum over the MAC address of the lightbulb and used that as the secret token to control the bulbs (Nitesh Dhanjani's [paper](http://www.dhanjani.com/docs/Hacking%20Lighbulbs%20Hue%20Dhanjani%202013.pdf) about the security of HUE). As another example, LIFX lamps had at least AES symmetric encryption in use but used the same key for all of the bulbs (see Alex Chapman's [post ](https://www.contextis.com/blog/hacking-into-internet-connected-light-bulbs) on Context about the reverse engineering of the bulbs).
+Encryption of the data at rest and in transit between the devices or the cloud
+is important. Moreover, it is important to use standard cryptographic
+algorithms and not fall into security by obscurity mentality (it is a good idea
+to use properly vetted algorithms than something that you only heard to be
+secure). However, the heterogeneous nature of IoT device field is one of the
+biggest limiting factor against using standard processes and protocols.
+Moreover, the key management becomes an issue as for the encryption to work
+properly the encryption must be accompanied with lifecycle management process
+for the keys, from start to end. It might be easier to do something else or
+skip this but failing to do this properly will result in problems. Take for
+example the HUE personal lightning system that only calculated MD5 sum over the
+MAC address of the lightbulb and used that as the secret token to control the
+bulbs (Nitesh Dhanjani's
+[paper](https://www.dhanjani.com/blog/2013/08/hacking-lightbulbs.html)
+about the security of HUE). As another example, LIFX lamps had at least AES
+symmetric encryption in use but used the same key for all of the bulbs (see
+Alex Chapman's
+[post](https://www.contextis.com/blog/hacking-into-internet-connected-light-bulbs)
+on Context about the reverse engineering of the bulbs).
 
 ### Lifecycle management
 

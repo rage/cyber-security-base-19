@@ -18,7 +18,6 @@ All browsers provide information about the certificate. In our example, the info
 
 What has been signed is the fingerprint of the information in the certificate. The authority who has signed the certificate is &rdquo;DigiCert SHA2 Extended Validation Server CA&rdquo;.
 
-<quiz id="e75fddf6-e2a4-5794-b8c8-71a1a9303e58"></quiz>
 
 ## Public-key infrastructure
 
@@ -71,6 +70,9 @@ python3 mitm.py 8000 http://localhost:9000
 ```
 in the `src` folder
 will start a man-in-the-middle server at 8000.
+
+Note that you can use https website as a target as well. The visible difference
+here is that the browser will not show that the displayed website is secure.
 
 _Hints:_
 

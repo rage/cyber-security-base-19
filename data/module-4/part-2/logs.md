@@ -41,7 +41,14 @@ OWASP has gathered a good [cheat sheet](https://cheatsheetseries.owasp.org/cheat
 
 ## Logging in Linux systems
 
-Here we are going to give you a very brief introduction to logging on Linux system. For other \*nix and flavors of Linux there might be some differences, such as filenames `auth.log` vs. `auth_log`, but the basics remain the same. Why Linux? Well, according to [W3tech](https://w3techs.com/technologies/overview/operating_system/all) and [Netcraft](https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html) the Linux as OS and Apache as the web server are holding the market share of the used options for setting up a webserver to serve the clients.
+Here we are going to give you a very brief introduction to logging on Linux
+system. For other \*nix and flavors of Linux there might be some differences,
+such as filenames `auth.log` vs. `auth_log`, but the basics remain the same.
+Why Linux? Well, according to
+[W3tech](https://w3techs.com/technologies/overview/operating_system/all) and
+[Netcraft](https://news.netcraft.com/archives/category/web-server-survey/)
+the Linux as OS and Apache as the web server are holding the market share of
+the used options for setting up a webserver to serve the clients.
 
 ## Linux Log Files
 
@@ -145,11 +152,6 @@ In addition, log files may contain information supplied directly by the client, 
 
 </text-box>
 
-<text-box variant=emph name="Knocking on SSH’s Door">
-
-Although, one has configured their SSH correctly and closed all the unnecessary ports one should still expect to see numbers of failed attempts. The do not use a weak password for `root` and other real life stories about logs can be found from this [article](http://searchsecurity.techtarget.com/tip/An-inside-look-at-security-log-management-forensics-investigations).
-
-</text-box>
 
 <quiz id="b0fd97a7-8ba3-53bb-94bb-8874b7315eeb"></quiz>
 
