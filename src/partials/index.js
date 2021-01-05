@@ -41,6 +41,7 @@ import AbStudy from "./AbStudy"
 import CrowdSorcerer from "./CrowdSorcerer"
 import MoodleExercise from "./MoodleExercise"
 import SqlTrainerExercise from "./SqlTrainerExercise"
+import "katex/dist/katex.min.css"
 
 import {
   Table,
