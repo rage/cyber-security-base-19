@@ -26,6 +26,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+		  `gatsby-remark-katex`,
           `gatsby-remark-copy-linked-files`,
           {
             resolve: "gatsby-remark-smartypants",
@@ -78,6 +79,7 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 920,
               withWebp: true,
+			  backgroundColor: "none",
               wrapperStyle: "margin-bottom: 1rem;"
             }
           },
