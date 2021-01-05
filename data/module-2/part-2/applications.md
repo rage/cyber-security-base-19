@@ -328,8 +328,7 @@ Similarly to the previous part, these assignments are submitted to the Test My C
 
 The assignment template has some functionality for adding tasks. Your task is
 to alter the loadTasks function so that the existing tasks are loaded when the
-page is shown to the user. Do this using Javascript -- note that the server
-will return a list of objects.
+page is shown to the user. Do this using Javascript and the server `tasks` service.
 
 If you wish an additional challenge, add the functionality to remove tasks as well.
 
@@ -343,6 +342,8 @@ Hints:
 
 - Do not use absolute URLs, the automated test will start its own server at its own port.
 - Javascript [for-loop](https://thecodebarbarian.com/for-vs-for-each-vs-for-in-vs-for-of-in-javascript) syntax.
+- The `tasks` service returns you a string that needs to be parsed into a JSON object. The JSON object
+will have a field named `tasks` containing the list of tasks.
 
 
 </programming-exercise>
