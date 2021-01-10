@@ -2,7 +2,7 @@
   "@context": "http://schema.org",
   "@type": "Course",
   "name": "Cyber security base 2019-2020",
-  "description": "Cyber Security Base is a free course series by University of Helsinki and MOOC.fi in collaboration with F-Secure that focuses on building core knowledge and abilities related to the work of a cyber security professional.",
+  "description": "Cyber Security Base is a free course series by University of Helsinki and MOOC.fi that focuses on building core knowledge and abilities related to the work of a cyber security professional.",
   "provider": {
     "@type": "Organization",
     "name": "MOOC.fi",

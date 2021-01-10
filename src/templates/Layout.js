@@ -123,12 +123,11 @@ class Layout extends React.Component {
                     {
                       name: "description",
                       content:
-                        "Helsingin yliopiston kaikille avoin ja ilmainen ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.",
+                        "Cyber Security Base is a free course series by University of Helsinki and MOOC.fi that focuses on building core knowledge and abilities related to the work of a cyber security professional.",
                     },
                     {
                       name: "keywords",
-                      content:
-                        "ohjelmointi, java, programming, CS1, MOOC, 2019, ohjelmointikurssi, avoin, ilmainen, helsingin yliopisto",
+                      content: "cyber security, python, django, cryptography",
                     },
                   ]}
                 />
