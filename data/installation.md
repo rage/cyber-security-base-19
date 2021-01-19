@@ -5,12 +5,17 @@ hidden: false
 information_page: true
 ---
 
-The exercises in this course are based on python save for few exceptions where javascript is used.
+The programming exercises in Securing Software and Advanced Topics
+are based on python, save for few exceptions where javascript is used.
 
 In order to do programming exercises, you need to install several software packages:
 
 - TestMyCode (TMC) client in order to download the exercises and upload your solutions
-- Python 3 + several packages to test python exercises
+- Python 3
+
+In addition, Securing Software requires
+
+- several additional packages to test python exercises 
 - ChromeDriver + Chrome to test javascript exercises
 
 ## Installing TMC 
@@ -53,6 +58,10 @@ python3 --version
 It is not a bad idea to have python reachable  via PATH environment variable. This should be more-or-less automatic
 for mac and linux. Official Windows installer asks whether you want to have yout python in PATH (say yes).
 
+## Installing additional packages
+
+This step is only required for Securing Software.
+
 Package installer for Python (pip) should be already installed with modern python if you installed python from python.org or using conda distribution.
 If you you installed it using apt-get or port, then most likely you will need to install pip. The package name is probably `python3-pip`,
 alternatively follow these instructions to install [pip](https://pypi.org/project/pip/).
@@ -67,7 +76,9 @@ python3 -m pip install django selenium beautifulsoup4 requests
 You need to allow your firewall software to allow python to listen and to connect to the internet.
 
 
-## Installing ChromeDriver and Chrome
+## Installing ChromeDriver and Chrome 
+
+This step is only required for Securing Software.
 
 There are few programming exercises that require writing javascript.
 In order to test these exercises locally, the tests rely on a chrome browser.
@@ -89,15 +100,18 @@ can reach it.
 
 Google Chrome has a tendency to update itself. When this happens you will need to update your chrome driver manually.
 
-## Sanity check
+### Sanity check
 
-Download the [script](/public/scripts/sanity.py) and test it with python
+To test the installed packages
+download the [script](/public/scripts/sanity.py) and test it with python
 
 ```shell
 python3 sanity.py
 ```
 
 The script will test if the python packages are installed and uses selenium to access google.com. 
+Note that this script tests the installations required for the Securing Software course.
+These packages are not needed for Advanced topics.
 
 ## Downloading the exercises
 
@@ -110,10 +124,16 @@ Provide login details, and use organization slug `mooc`.
 Download the exercises for securing software with the command
 
 ```shell
-tmc download mooc-securing-software-20
+tmc download mooc-securing-software-21
 ```
 
-NB! Do not change the name of the root directory, it should stay as `mooc-securing-software-20`.
+Download the exercises for the advanced topics with the command
+
+```shell
+tmc download mooc-cyber-advanced-topics-2021
+```
+
+NB! Do not change the name of the root directory, for example it should stay as `mooc-securing-software-21`.
 
 You can test the exercises locally with `tmc test` and submit your solutions with `tmc submit`.
 See `tmc help` for additional commands.
