@@ -12,21 +12,28 @@ system into it. Subsequently, the participants will familiarize themselves with
 penetration testing software, and attack the system they installed.
 
 
+By continuing, you agree to not to do any harm with this information or other similar information on the internet.
+
 <please-login></please-login>
 
-The project has only 1 part.
+The course consists of 1 part.
 
-### How to get started
 
-This material contains the second project of the course series called [Cyber
-Security Base](https://cybersecuritybase.mooc.fi/).  In order to submit your
-project, you will need a MOOC.fi account that you can create at at the right
-hand corner of this course material.
+#### Before starting the course
 
-Once you have created the account, please answer a background questionnaire at
-https://elomake.helsinki.fi/lomakkeet/74256/lomake.html. Answering the
-questionnaire should take less than 10 minutes and will be very valuable for
-the research conducted on this course.
+Please read the [instructions](/pass) on how to start and pass the course.
+Especially, pay extra attention on 'how to pass' section as this course
+requires additional steps in order to receive ECTS credits.
+
+Completing the course requires setting up TestMyCode environment.
+Please read the [installation instructions](/installation-guide).
+
+
+#### Support channel and contact information
+
+For support channel use [telegram](https://t.me/cybersecuritybase).
+
+For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.fi.
 
 ### How to pass the course
 
@@ -43,7 +50,10 @@ challenging and completing it may take a lot of time if you're not
 comfortable with the command line.
 
 The system that you are expected to install is [Metasploitable
-3](https://github.com/rapid7/metasploitable3/). We recommend that you create a
+3](https://github.com/rapid7/metasploitable3/). There are two versions: Windows or Ubuntu.
+For the project the Ubuntu version should be used.
+
+We recommend that you create a
 virtual machine for the installation by, e.g., using Virtualbox (See
 installation notes in Appendix A on the bottom of the page). Once you have the
 Metasploitable 3 virtual machine running, install
@@ -127,6 +137,7 @@ ssh to it, and use it as a normal operating system.
 - Finalize snort configuration. We for example changed the file /etc/snort/snort.debian.conf to to the following: [snort.debian.conf](snort.debian.conf).
 This was needed so that snort monitors the correct network interface if metasploitable 3 is run inside the virtualbox.
 - Restart snort with "sudo service snort restart"
+- It is probably easier to run snort directly on commandline `sudo snort -A console -u snort -g snort -c /etc/snort/snort.conf -i eth1 -k none`
 - Test the box and it's snort with metasploitable commandline, i.e., `msfconsole`
 
 Some useful commands to use in msfconsole are
