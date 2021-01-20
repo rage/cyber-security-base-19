@@ -14,15 +14,17 @@ const CourseProgress = ({
         {data.map(([name, data]) => {
           return [
             <b>{name}</b>,
-            Object.entries(data).map(([name, data]) => {
-              return (
-                <PartProgress
-                  appliesForStudyRight={appliesForStudyRight}
-                  name={name}
-                  data={data}
-                />
-              )
-            }),
+            Object.keys(data)
+              .sort()
+              .map(name => {
+                return (
+                  <PartProgress
+                    appliesForStudyRight={appliesForStudyRight}
+                    name={name}
+                    data={data[name]}
+                  />
+                )
+              }),
           ]
         })}
       </div>
