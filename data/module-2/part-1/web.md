@@ -155,6 +155,9 @@ For this assignment, you should write the code needed for the method
 should scan the ports at a given address, and then return the list of ports
 that have a service listening for them.
 
+Note that the test server will not submit any data; you shouldn't try to
+receive any data.
+
 Once completed, submit your solution to the TMC server for assessment.
 
 Note that while we implement port scanners and other tools, we will later also
