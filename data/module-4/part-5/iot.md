@@ -75,7 +75,7 @@ Put simply, the iPhone 6’s clock  is 32,600 times faster than the best Apollo 
 So why are the IoT devices left unprotected or with their default passwords. It might be that their configuration is complicated (configuring or updating a device without a screen can be considered too difficult for most laymen… ...the ever so elusive usable security), it could be a simple bug or even simpler as the owners of these devices might consider IoT devices as not so important and constrained devices that do not contain anything important to be worried about. However, they should be worried. They should realize that large number of IoT devices can cause huge amounts of unwanted traffic and cause Distributed Denial of Service ([DDoS](https://en.wikipedia.org/wiki/Denial-of-service_attack)) attacks. Moreover, they should realize that the criminals may consider the devices just to gain access to the other systems on the network the IoT devices are connected to, i.e., to use them as jumping boards. IoT devices can be unsecured entry points into the networks. Now that you read this far you might have thought that could all these problems stem just from the users as manufacturers have not been discussed at all. It has to be said that many of the IoT device manufacturers are not security experts (some of them can be more than others this cannot be generalized). If you have built toasters all your life and you are getting into the IoT business with a tweeting toaster you might not consider the security as the most important factor. You might think things like profit margins and so on. On the other hand when you go out and buy a toaster, the first question about the toaster is not: "what ports are open in the toaster and what kind of security features it implements". Your questions will most likely be concentrated on the toasting results (or something that people ask when buying toasters, I really do not know the answer for that). So it is not just the users but we all need the incentive to build the security and the incentive to demand for it.
 
 <!-- essay should everything be connected -->
-<quiz id="f9659b39-bea2-5551-a302-4d80ceb2b8c1"></quiz>
+<quiz id="adbf6c28-3309-5f61-b563-6a6de6283888"></quiz>
 
 
 <text-box variant=emph name="Quantifying the risks of IoT devices">
@@ -87,7 +87,7 @@ Authors of ["The Internet of Hackable Things"](https://arxiv.org/pdf/1707.08380.
 </text-box>
 
 <!-- essay what woudl happen if our smart system was compromised-->
-<quiz id="05155d68-178d-568c-a493-5e2a0b0fa34e"></quiz>
+<quiz id="67bc82f3-214f-5f0b-9389-e7ace42012a2"></quiz>
 
 ### What are the approaches to secure the IoT devices
 
@@ -170,6 +170,6 @@ One of the most interesting problems in the security of IoT devices is the lifec
 
 </text-box>
 
-<quiz id="c1f71d62-b2a0-5d5d-a2e2-328810da67d3"></quiz>
+<quiz id="a7870a29-1a42-57fb-83a2-abebe57f69d4"></quiz>
 
 Although this part of the course painted a bleak picture of IoT it has its benefits but remember the field of IoT security is still alive and evolving and we have to take care that it is done properly and not forgotten. During this course, we have taken a tour on some of the more advanced topics of security. In the course project, some of this knowledge is taken into use. Stay tuned.

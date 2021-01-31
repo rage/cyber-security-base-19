@@ -4,7 +4,7 @@ title: 'Project II'
 overview: true
 hidden: false
 ---
-<deadline>09.03.2020</deadline>
+<deadline>31.12.2021</deadline>
 
 In the second project, the participants will install an operating system with a
 variety of vulnerabilities and then install a network intrusion prevention
@@ -51,7 +51,7 @@ comfortable with the command line.
 
 The system that you are expected to install is [Metasploitable
 3](https://github.com/rapid7/metasploitable3/). There are two versions: Windows or Ubuntu.
-For the project the Ubuntu version should be used.
+For the project the Ubuntu version *should* be used.
 
 We recommend that you create a
 virtual machine for the installation by, e.g., using Virtualbox (See
@@ -65,18 +65,31 @@ Now you have a system that you can attack! Next, download [Metasploit](https://w
 
 As a primer to the attacks, read [Intrusion detection evasion: How Attackers get past the burglar alarm](https://www.sans.org/reading-room/whitepapers/detection/intrusion-detection-evasion-attackers-burglar-alarm-1284).
 
-Start your attacks by a simple port scan. If you worked through the Securing Software -course, you can also use the portscanner that you implemented as a part of the first assignments.
+Start your attacks by a simple port scan. If you worked through the Securing
+Software course, you can also use the portscanner that you implemented as a
+part of the first assignments, or you can use `nmap`.
+
+A list of known exploits in metasploitable 3 can be found for example
+[here](https://stuffwithaurum.com/2020/04/17/metasploitable-3-linux-an-exploitation-guide/),
+or you can challenge yourself and try to find them on your own from scratch.
 
 
 ### Essay
 
-You will then write a brief (1000 words) report with the title "Is it easier to fix the application than to detect attacks?". Include at least three attacks that Snort could identify and two attacks that Snort could not identify into the report. If you cannot find any attacks that Snort cannot identify, remove some of the Snort rules (and include description about this into the report as well!).
+You will then write a brief (1000 words) report with the title "Is it easier to
+fix the application than to detect attacks?". Include at least three attacks
+that Snort could identify and two attacks that Snort could not identify into
+the report. For the detected attacks include the Snort output (if the output is too long, then shorten it, for example by selecting a single line).
+A port scan does *not* count as an attack.
+If you cannot find any attacks that Snort cannot identify, remove
+some of the Snort rules (and include description about this into the report as
+well!). 
 
 
 The report _must_ follow the following structure:
 
 ```rest
-General observations
+Introduction
 
 IDENTIFIED ATTACK 1:
 <description>
@@ -94,18 +107,19 @@ MISSED ATTACK 1:
 
 MISSED ATTACK 2:
 <description>
+
+Discussion whether it is easier to fix the application than to detect attacks
 ```
 
 We recommend not to write the essay directly to the browser. Instead write (and
 save) it using your favourite text editor, and copy-paste it.
 
 Once your report is completed, you will review three reports from other course
-participants. Note that your report should be +- 20% of the expected report
-length and it must include the content expected above.
+participants.
 
 ### Submitting the project
 
-<quiz id="a77a4d33-855e-411f-a4f7-dd63b31796e2"></quiz>
+<quiz id="04865135-2d5c-53ee-b5bf-c753f54b1d34"></quiz>
 
 
 ### Installation notes
@@ -116,29 +130,55 @@ We will use the following components:
 ssh to it, and use it as a normal operating system.
 3. We will use Vagrant to install Metasploitable 3 to Virtualbox.
 4. We will use Snort to monitor the incoming attacks. Snort will be installed inside Metasploitable 3.
-5. We will use Metasploit to attack Metasploitable 3.
+5. We will use Metasploit to attack Metasploitable 3. Metasploit will be installed outside Metasploitable 3.
 
 
 #### Installation instructions
 
-- Download and install Virtualbox and Vagrant.
-- Download the Vagrantfile, i.e., `wget https://cybersecuritybase.mooc.fi/public/Vagrantfile` on to your local machine and use vagrant to build it, i.e., `vagrant up` in the same folder as the Vagrant file.
-- The default address, username and password can be read from the Vagrantfile.
-- Log into the newly created box `vagrant ssh`.
-- Install snort to the box, i.e., `apt install snort`
-- Download community rules, `wget https://www.snort.org/downloads/community/community-rules.tar.gz`
-- Unpack it to snort rules folder (`/etc/snort/rules/`), i.e., `tar xzf community-rules.tar.gz` and `cp community-rules/*.rules /etc/snort/rules/`
-- wget the emerging rules set, i.e., `wget https://rules.emergingthreats.net/open/snort-2.9.0/emerging.rules.tar.gz`
-- `tar xzf emerging.rules.tar.gz` and and `cp rules/*.rules /etc/snort/rules/`
-- make sure that the community rules and the emergency rules are both unpacked to `/etc/snort/rules/` folder.
-- Modify the `/etc/snort/snort.conf` to include all the rules in the `/etc/snort/snort.conf` or use the one we provided: [snort.conf](snort.conf)
-- Note that some of the rules may conflict and cannot be enabled at the same time.
-- Do remember that in a production setup you would not enable all of the rules by default but would choose a set of rules that you think are the important ones. 
-- Finalize snort configuration. We for example changed the file /etc/snort/snort.debian.conf to to the following: [snort.debian.conf](snort.debian.conf).
+Download and install Virtualbox and Vagrant.
+
+Download the Vagrantfile, for example,
+```bash
+wget https://cybersecuritybase.mooc.fi/public/Vagrantfile
+```
+on to your local machine and use vagrant to build it, i.e., `vagrant up` in the same folder as the Vagrant file.
+The default ip address, username and password can be read from the Vagrantfile.
+
+Log into the newly created box `vagrant ssh`.
+
+Install snort to the box, i.e., `apt install snort`.
+
+Download community rules and
+unpack it to snort rules folder (`/etc/snort/rules/`), i.e.,
+```bash
+wget https://www.snort.org/downloads/community/community-rules.tar.gz
+tar xzf community-rules.tar.gz
+cp community-rules/*.rules /etc/snort/rules/
+```
+Download the emerging rules set, i.e.,
+```bash
+wget https://rules.emergingthreats.net/open/snort-2.9.0/emerging.rules.tar.gz
+tar xzf emerging.rules.tar.gz
+cp rules/*.rules /etc/snort/rules/
+```
+Make sure that the community rules and the emergency rules are both unpacked to `/etc/snort/rules/` folder.
+
+Modify the `/etc/snort/snort.conf` to include all the rules in the `/etc/snort/snort.conf` or use the one we provided: [snort.conf](snort.conf).
+Note that some of the rules may conflict and cannot be enabled at the same time.
+Do remember that in a production setup you would not enable all of the rules by default but would choose a set of rules that you think are the important ones. 
+
+Finalize snort configuration. We for example changed the file /etc/snort/snort.debian.conf to to the following: [snort.debian.conf](snort.debian.conf).
 This was needed so that snort monitors the correct network interface if metasploitable 3 is run inside the virtualbox.
-- Restart snort with "sudo service snort restart"
-- It is probably easier to run snort directly on commandline `sudo snort -A console -u snort -g snort -c /etc/snort/snort.conf -i eth1 -k none`
-- Test the box and it's snort with metasploitable commandline, i.e., `msfconsole`
+
+Restart snort with
+```bash
+sudo service snort restart
+```
+It is probably easier to run snort directly on a command line
+```bash
+sudo snort -A console -u snort -g snort -c /etc/snort/snort.conf -i eth1 -k none
+```
+Test the box and its snort with metasploitable commandline, i.e., `msfconsole`
 
 Some useful commands to use in msfconsole are
 

@@ -6,7 +6,7 @@ hidden: false
 ---
 
 
-<deadline>22.02.2020</deadline>
+<deadline>31.12.2021</deadline>
 
 This material contains the advanced topics part of the course series [Cyber
 Security Base](https://cybersecuritybase.mooc.fi/). During this
@@ -27,8 +27,7 @@ By continuing, you agree to not to do any harm with this information or other si
 
 The course consists of 5 parts.
 
-To pass the course you need XXX points out of XXX.
-
+To pass the course you need 81 points out of 95.
 
 #### Before starting the course
 
@@ -49,4 +48,4 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 
 <pages-in-this-section></pages-in-this-section>
 
-<exercises-in-this-section></exercises-in-this-section>
+<exercises-in-this-section course="Advanced Topics"></exercises-in-this-section>

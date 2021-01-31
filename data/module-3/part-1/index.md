@@ -4,7 +4,7 @@ title: 'Part I'
 overview: true
 hidden: false
 ---
-<deadline>31.12.2020</deadline>
+<deadline>31.12.2021</deadline>
 
 
 In the first project, the participants will construct software with security
@@ -89,5 +89,5 @@ save) it using your favourite text editor, and then use copy-paste.
 
 ### Submitting the project
 
-<quiz id="726f4dd6-c460-56ca-8cb7-9e1e188e293d"></quiz>
+<quiz id="b2e421c1-c211-5200-acd7-8ff166b3163d"></quiz>
 
