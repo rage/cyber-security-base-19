@@ -16,6 +16,10 @@ Each course is open for a certain period of time, and must be completed during t
 
 # News
 
+_[01.02.2021]_ 
+Securing Software is open. 
+
+
 _[31.01.2021]_ 
 Introduction to Cyber Security, 
 Project I,

@@ -14,7 +14,7 @@ const courseSettings = {
 	{
 	  name: "Securing Software",
 	  quizId: "5fb39fe4-4e6a-469a-ac6d-9681bb938a24",
-      tmcCourse: "securing-software-20",
+      tmcCourse: "securing-software-21",
 	},
 	{
 	  name: "Project I",
@@ -59,12 +59,12 @@ const courseSettings = {
       path: "/module-1",
 	},
     { separator: true, title: "Securing Software" },
-	{ title: "Part I", path: "/module-2.1", tba: "Feb. 2021"},
-	{ title: "Part II", path: "/module-2.2", tba: "Feb. 2021"},
-	{ title: "Part III", path: "/module-2.3", tba: "Feb. 2021"},
-	{ title: "Part IV", path: "/module-2.4", tba: "Feb. 2021"},
-	{ title: "Part V", path: "/module-2.5", tba: "Feb. 2021"},
-	{ title: "Part VI", path: "/module-2.6", tba: "Feb. 2021"},
+	{ title: "Part I", path: "/module-2.1"},
+	{ title: "Part II", path: "/module-2.2"},
+	{ title: "Part III", path: "/module-2.3"},
+	{ title: "Part IV", path: "/module-2.4"},
+	{ title: "Part V", path: "/module-2.5"},
+	{ title: "Part VI", path: "/module-2.6"},
     { separator: true, title: "Project I" },
 	{ title: "Part I", path: "/module-3.1"},
 
