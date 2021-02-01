@@ -43,7 +43,7 @@ other unsanitized data are used as a part of a SQL query.
 
 _(source [xkcd: Exploits of a mom.](https://xkcd.com/327/))_
 
-<programming-exercise name="SQL injection" tmcname="part3-14.injection">
+<programming-exercise name="SQL injection" tmcname="part3-14.injection" course="Securing Software">
 
 Python SQLite API provides two main methods for executing commands, `execute` and `executescript`.
 The latter along with the unsanitized data allows you to escape the current command, and tricks like
@@ -139,7 +139,7 @@ credentials for the action that he or she seeks to take.
 
 The next assignment is done within Test My Code.
 
-<programming-exercise name="Hihaupload" tmcname="part3-15.hihaupload">
+<programming-exercise name="Hihaupload" tmcname="part3-15.hihaupload" course="Securing Software">
 
 The assignment template contains the functionality for uploading and storing
 personal files on a web server. The files uploaded by an individual should not
@@ -218,7 +218,7 @@ good
 [checklist](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
 that can be used for XSS testing.
 
-<programming-exercise name="Cookie heist" tmcname="part3-16.xss">
+<programming-exercise name="Cookie heist" tmcname="part3-16.xss" course="Securing Software">
 
 The exercise contains a simple direct message application, where messages are
 not properly sanitized. This allows to send messages containing HTML code, and Javascript code.
@@ -267,7 +267,7 @@ dependencies and identify components with vulnerabilities. For example,
 Python packages `safety` (and `safety-db`) can be used to check any vulnerable packages.
 
 
-<programming-exercise name="Safety first" tmcname="part3-17.safety">
+<programming-exercise name="Safety first" tmcname="part3-17.safety" course="Securing Software">
 
 Python package `safety` can be used to find installed vulnerable packages.
 The package relies on another package `safety-db` which is simply a curated
@@ -324,7 +324,7 @@ request to the target application as the user is accessing the source site,
 making it possible to access data as an authenticated user that should not be
 accessible. Many frameworks these days include CSRF defences by default.
 
-<programming-exercise name="CSRF Prompt-By Pass" tmcname="part3-18.csrf">
+<programming-exercise name="CSRF Prompt-By Pass" tmcname="part3-18.csrf" course="Securing Software">
 
 The exercise contains an unsafe bank application that uses GET methods without
 any CSRF protection. 

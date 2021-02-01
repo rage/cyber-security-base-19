@@ -109,7 +109,7 @@ Please read and follow the [instructions](/installation-guide).
 </text-box>
 
 
-<programming-exercise name="Port Scanner" tmcname='part1-01.portscanner'>
+<programming-exercise name="Port Scanner" tmcname='part1-01.portscanner'  course="Securing Software">
 
 In this assignment, you will gain some hands-on experience on working with
 ports in Python and familiarize yourself with the tools used for some of the

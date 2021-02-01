@@ -113,7 +113,7 @@ Consider also checking information on [Session hijacking](https://en.wikipedia.o
 
 
 
-<programming-exercise name="Bank heist" tmcname="part2-13.sessionhijack">
+<programming-exercise name="Bank heist" tmcname="part2-13.sessionhijack" course="Securing Software">
 
 The assignment contains a very simple bank application with 3 normal users
 

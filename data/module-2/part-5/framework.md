@@ -44,7 +44,7 @@ with form data.
 
 
 
-<programming-exercise name="Bad configuration" tmcname="part5-20.configuration">
+<programming-exercise name="Bad configuration" tmcname="part5-20.configuration" course="Securing Software">
 
 The assignment template contains a variant of the
 banking application used in the previous exercise. 
@@ -83,7 +83,7 @@ that are related to a user breaking into a system. She also looks for
 vulnerabilities that are related to the user being able to do something that he
 or she should not be able to do from the start.
 
-<programming-exercise name="Millionaire" tmcname="part5-21.millionaire">
+<programming-exercise name="Millionaire" tmcname="part5-21.millionaire" course="Securing Software">
 
 The assignment template contains the core elements of the "Who wants to be a
 millionaire?"-game. In this template,
