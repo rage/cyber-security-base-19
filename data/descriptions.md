@@ -68,7 +68,7 @@ penetration testing software, and attack the system they installed.
 
 #### Capture The Flag  1 CR (ECTS)
 
-_Schedule: 15.3.2021 -- 31.12.2021_
+_Schedule: 15.3.2021 -- 31.3.2021_
 
 A Capture the Flag (CTF) competition will be organized at the end of the course
 series. In the competition, participants will be given a variety of tasks that
