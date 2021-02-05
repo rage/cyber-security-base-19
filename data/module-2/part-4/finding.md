@@ -221,7 +221,7 @@ the target application in order to find crashes. Fuzzing is closest to
 black-box methodology as you give the application an input and watch what
 happens (fuzzers may also create valid inputs randomly). Fuzzers can be
 employed as black-, grey- or white-box testing, depending on the access to the
-target applications source code. you can get benefits from the source code as
+target applications source code. You can get benefits from the source code as
 you can better design the fuzzed inputs. Fuzzing can be divided into two basic
 categories, to mutation and to generation based fuzzers.
 
@@ -287,7 +287,7 @@ First step towards the smarter fuzzing is the mutation-based fuzzing in which a
 large number of valid inputs are taken and then mutated in various ways. Some
 parts of the valid inputs may experience bit flips, some parts of them might be
 repeated, deleted, replaced, shuffled. Although mutation-based fuzzing takes
-the valid inputs as its input the mutations are still random by nature. and no
+the valid inputs as its input the mutations are still random by nature. And no
 coverage of the inputs is not guaranteed. These simple mutation-based methods
 are good start for fuzzing simple network protocols, e.g., the fuzzers acts as
 the man-in-the-middle and intercepts valid messages from the client, mutates
@@ -298,7 +298,7 @@ more intelligence from the fuzzer.
 
 ### Smart fuzzers
 
-If mutation-based fuzzing was called dumb-fuzzing, the generation-based fuzzing
+If mutation-based fuzzing was called dumb-fuzzing, then generation-based fuzzing
 is called the intelligent fuzzing. In generation-based fuzzing the input is
 created from scratch based on the used specification or input format of the
 targeted application or protocol. The input creation is then split into chunks,
@@ -310,12 +310,12 @@ chunks.
 
 Evolutionary-based fuzzing is basically the same as the mutation-based above
 but it adds heuristics to the fuzzing which change the fuzzing on every
-iteration. These fuzzer would look what the previous attempts did and change
-the behaviour so that more parts of the code would be covered. These kinds of
+iteration. These fuzzers would look what the previous attempts did and change
+their behaviour so that more parts of the code would be covered. These kinds of
 fuzzers need compile-time instrumentation which adds instructions to the source
 code of the targeted application that will allow monitoring of how the input
 changed the execution path inside the application. Sometimes this kind of
-fuzzing is called Instrumented fuzzing.
+fuzzing is called "instrumented fuzzing".
 
 An alternative way for the randomness is to locate a large set of sample
 inputs. Which are then fed to the instrumented application and out of those
@@ -362,8 +362,8 @@ can be found from the Internet.
 <text-box variant=emph name="Warning">
 
 - It should be remembered that hacking into other peoples computers is illegal.
-- These tools especially the fuzzers should not be used against software in production use.
-- Some of the antivirus programs may react to the fuzz test cases.
+- These tools, especially the fuzzers should not be used against software in production use.
+- Some antivirus programs may react to the fuzz test cases.
 
 </text-box>
 
@@ -467,7 +467,7 @@ do
 done
 ```
 
-ImageMagick will complain about malformed images etc (roughly half of the
+ImageMagick will complain about malformed images etc. (roughly half of the
 mutated images were corrupt). But how do we know if something went really wrong
 and the program crashed? One way is to check what the convert returned using
 $?, which gives the return value of the last command. With classic test command
