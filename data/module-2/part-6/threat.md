@@ -6,7 +6,7 @@ hidden: false
 
 
 In the previous sections of the course we have shown how input checking is
-important and introduced some tools for Fuzzing the input. As a reminder, dumb
+important and introduced some tools for fuzzing the input. As a reminder, dumb
 fuzzing was based mainly on random inputs on a black box and smart fuzzing
 relied on test harnesses on the target application. What happens inside an
 application when the input is given to it? If one follows the target
