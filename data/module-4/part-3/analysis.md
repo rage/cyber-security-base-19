@@ -139,7 +139,7 @@ Hint: you will probably find the xor helper function helpful. Do not forget add 
 
 Padding oracle attack shows that a tiny amount of additional information can be enough to break the cipher.
 
-Earlier versions of CBC decipher implementations would return an error message to the sender if the padding of the sent message was correct. 
+Earlier versions of CBC decipher implementations would return an error message to the sender if the padding of the sent message was incorrect. 
 This information, assuming that we have access to submit our own messages to the decipher, is enough to break CBC encryption!
 Furthermore, the breakage doesn't depend on the underlying block cipher.
 
