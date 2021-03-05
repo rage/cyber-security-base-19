@@ -70,10 +70,10 @@ Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`)
 
 <programming-exercise name="Break the hash" tmcname="part3-01.password" course="Advanced Topics">
 
-In this exercise you are given a hash and a list of candidate passwords, and
-your task is to write a password guesser that finds the password in the candidates that was used to generate the hash.
+In this exercise you are given a hash and a list of candidate passwords.
+Your task is to write a password guesser which finds which password in the candidates list was the one that was used to generate the hash.
 
-The hash follows a common format used for storing hashed password
+The hash follows a common format used for storing hashed password:
 ```
 procotol$salt$hash
 ```
@@ -109,8 +109,7 @@ One of the oldest encryption methods is substituting every instance of a letter 
 
 Implement a substitution cipher: complete `encrypt` and `decrypt` functions in `src/substitution.py`.
 
-Both functions are byte arrays and should output an byte array as an output.
-The key is an array such that `key[c]` is equal to the _encrypted_ value of `c`.
+Both functions take two byte array parameters and each should also return a byte array. The key is an array such that `key[c]` is equal to the _encrypted_ value of `c`.
 
 </programming-exercise>
 
@@ -144,7 +143,8 @@ The only downside of the OTP is that the key must be as long as the actual plain
 <programming-exercise name="Repeating pads" tmcname="part3-03.xorpad" course="Advanced Topics">
 
 Implement a xorpad cipher: complete `encrypt` and `decrypt` functions in `src/xorpad.py`.
-Both functions are byte arrays and should output an byte array as an output.
+
+Both functions take two byte array parameters and each should also return a byte array.
 
 The pad can be significantly shorter than the message. In such a case you should repeat the pad as long as needed.
 
