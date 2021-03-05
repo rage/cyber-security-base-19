@@ -35,7 +35,7 @@ This is not a false impression but there is quite much more in cryptography as w
 
 But let us start with the basic setting and define some basic terms.
 
-We call the original message that is supposed to be kept hidden the _plaintext_. The idea of ciphering is to use some _encryption function_ and some _encryption key_ to get the _cryptotext._ That is the message in the hidden form. For the reverse direction, we need a _decrypting function_, a method that is used together with a _decryption key_ in order to retrieve the original plaintext.
+We call the original message that is supposed to be kept hidden the _plaintext_. The idea of ciphering is to use some _encryption function_ and some _encryption key_ to get the _ciphertext_. That is the message in the hidden form. For the reverse direction, we need a _decrypting function_, a method that is used together with a _decryption key_ in order to retrieve the original plaintext.
 
 Encryption is used to protect _confidentiality_ of the data.
 
@@ -99,7 +99,7 @@ There are nowadays also encryption methods that are _not_ symmetric, i.e., being
 
 Symmetric encryption methods are still useful in many situations, and they are typically much faster than asymmetric ones. Therefore, symmetric encryption is in wide use, and new symmetric methods are developed. One-time pad (OTP) and AES are examples of symmetric encrypting schemes.
 
-One of the oldest encryption methods is substituting every instance of a letter with some other letter. A cipher like this is called a _substitution cipher_. An example is the _CAESAR_ cipher which is an encryption algorithm where you get the cryptotext by rotating every letter in the plaintext three positions forward in the alphabet. Decryption is done by rotating every letter of the cryptotext three positions backwards.
+One of the oldest encryption methods is substituting every instance of a letter with some other letter. A cipher like this is called a _substitution cipher_. An example is the _CAESAR_ cipher which is an encryption algorithm where you get the ciphertext by rotating every letter in the plaintext three positions forward in the alphabet. Decryption is done by rotating every letter of the cipherext three positions backwards.
 
 <quiz id="70a22e3e-d564-5771-b769-3e5f49eaed60"></quiz>
 
@@ -115,13 +115,13 @@ The key is an array such that `key[c]` is equal to the _encrypted_ value of `c`.
 </programming-exercise>
 
 
-One-time pad (OTP) is one of the simplest encryption methods. To encrypt a message of, say, 140 bits you need a secret key of 140 bits. You compute the XOR of each message bit with the corresponding key bit, and you get 140 cryptotext bits,
+One-time pad (OTP) is one of the simplest encryption methods. To encrypt a message of, say, 140 bits you need a secret key of 140 bits. You compute the XOR of each message bit with the corresponding key bit, and you get 140 ciphertext bits,
 
 $$
 C = M \oplus K.
 $$
 
-The decrypting process is exactly the same as the encryption process. If you know the secret key you can decrypt the message by XORing bit-by-bit the cryptotext message and the key,
+The decrypting process is exactly the same as the encryption process. If you know the secret key you can decrypt the message by XORing bit-by-bit the ciphertext message and the key,
 
 $$
 M = C \oplus K.
@@ -153,6 +153,6 @@ deduce the pad if a short part of message is known in advance (can you figure ou
 
 </programming-exercise>
 
-Advanced Encryption Standard ([AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)) is a family of modern _block ciphers_. AES-256 has key size of 256 bits and it turns 128-bit plaintext blocks into 128-bit cryptotext blocks, and vice versa. This algorithm is quite fast even when implemented in software and considered secure enough for almost all uses. Many modern processors provide hardware support for AES.
+Advanced Encryption Standard ([AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)) is a family of modern _block ciphers_. AES-256 has key size of 256 bits and it turns 128-bit plaintext blocks into 128-bit ciphertext blocks, and vice versa. This algorithm is quite fast even when implemented in software and considered secure enough for almost all uses. Many modern processors provide hardware support for AES.
 
 <quiz id="ae028b69-e979-57f7-8aa6-c8c5d3822000"></quiz>
