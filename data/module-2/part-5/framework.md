@@ -346,7 +346,7 @@ hours and money into securing the features?
 Securing a feature post-release is almost always more cumbersome than securing
 the feature during the development process. This "cumbersomeness" or cost can
 be compared to bugs and the need of fixing them, see e.g. [the true cost of a
-software bug](http://blog.celerity.com/the-true-cost-of-a-software-bug).
+software bug](http://celerity.com/the-true-cost-of-a-software-bug).
 
 Moreover, it is challenging to estimate which features are such that will
 remain in the software and which ones will not. Whilst the goal of agile
