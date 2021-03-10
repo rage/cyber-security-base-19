@@ -45,7 +45,8 @@ The actual signature value of the certificate is provided as shown below.
 <programming-exercise name="Man in the middle" tmcname="part3-08.maninthemiddle" course="Advanced Topics">
 
 Certificates are needed to prevent man in the middle attacks. In this exercise we will create a
-man-in-the-middle server that capitalizes every letter of the HTML page. 
+man-in-the-middle server that capitalizes every letter of the HTML page. You should
+capitalize the output only if the server responses with HTML.
 
 The template contains a simple web server that connects simply shows the page address and nothing else.
 Modify the server so that it pretends to be the server given in
