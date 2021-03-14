@@ -4,7 +4,6 @@ const courseSettings = {
   siteUrl: "https://cybersecuritybase.mooc.fi",
   subtitle: "a free course series about cyber security",
   slug: "cyber-security-base-2020",
-  tmcCourse: "securing-software-20",
   quizzesId: "d76439f1-f112-402e-9f9c-9c9949db573f",
   progressSections: [
     {
@@ -77,7 +76,7 @@ const courseSettings = {
     { separator: true, title: "Project II" },
 	{ title: "Part I", path: "/module-5.1/index"},
     { separator: true, title: "CTF" },
-	{ title: "Part I", path: "/module-6.1/index", tba: "Mar., 2021"},
+	{ title: "Part I", path: "/module-6.1/index"},
   ],
   sidebarFuturePages: [],
   splitCourses: false,
