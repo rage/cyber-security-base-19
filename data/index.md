@@ -17,7 +17,11 @@ Each course is open for a certain period of time, and must be completed during t
 
 # Work load and prerequisites
 
-There will be programming assignments, essays, quizzes and puzzles throughout the courses, and completing a specific part of a course means working and completing most if not all of them. We expect that individuals work some 2-10 hours per week on the courses depending on their background. Some programming background and ICT experience is required.
+There will be programming assignments, essays, quizzes and puzzles throughout
+the courses, and completing a specific part of a course means working and
+completing most if not all of them. See course [descriptions](/descriptions)
+for estimated required hours. Some programming background and ICT experience is
+required.
 
 The course has started! You don't need to register to start doing the course. There is an optional registration for those who want ECTS credits that can be done AFTER completing the course. More instructions in the material. So just head to the material and start doing the courses!
 
