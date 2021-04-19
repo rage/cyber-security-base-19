@@ -127,7 +127,7 @@ Second course (CSM13204):
   * Course Project II (1 cr)
   * Capture The Flag (1 cr)
 
-Instructions for merging the completions can be found [here](https://www.helsinki.fi/en/open-university/studying/during-your-studies/certificate-of-studies#section-11827).
+Instructions for merging the completions can be found [here](https://studies.helsinki.fi/instructions/article/compiling-study-module-open-university).
 
 Note that for the merge, we typically require that the individual courses are completed within a year. 
 If the time span is longer, we will make a decision on a case-by-case basis.
