@@ -2,7 +2,7 @@
 
 ## Development environment
 
-Requirements: recent Node
+Requirements: Recent Node
 
 ```sh
 npm ci
