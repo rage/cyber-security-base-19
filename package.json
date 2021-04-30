@@ -52,7 +52,7 @@
     "jss": "^9.8.7",
     "katex": "^0.12.0",
     "moment": "^2.24.0",
-    "moocfi-quizzes": "^0.9.9",
+    "moocfi-quizzes": "^0.9.10",
     "pdf-slideshow": "^0.1.4",
     "prismjs": "^1.19.0",
     "react": "^16.12.0",
