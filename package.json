@@ -1,7 +1,7 @@
 {
   "name": "ohjelmoinnin-mooc",
   "engines": {
-    "node": "10.x"
+    "node": "14.x"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
