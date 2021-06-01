@@ -70,7 +70,8 @@ Software course, you can also use the portscanner that you implemented as a
 part of the first assignments, or you can use `nmap`.
 
 A list of known exploits in metasploitable 3 can be found for example
-[here](https://stuffwithaurum.com/2020/04/17/metasploitable-3-linux-an-exploitation-guide/),
+[here](https://stuffwithaurum.com/2020/04/17/metasploitable-3-linux-an-exploitation-guide/)
+(archived [link](https://web.archive.org/web/20210126234700/https://stuffwithaurum.com/2020/04/17/metasploitable-3-linux-an-exploitation-guide/) if the current one is broken),
 or you can challenge yourself and try to find them on your own from scratch.
 
 
