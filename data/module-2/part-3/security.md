@@ -84,7 +84,7 @@ vulnerabilities (see e.g. [Ruby on Rails](http://rails-sqli.org/) and [Spring
 Data JPA](https://pivotal.io/security/cve-2016-6652)), other types of
 injections also exist. It can be, for example, possible to execute code on the
 application server (see e.g. [Ruby on
-Rails](http://ronin-ruby.github.io/blog/2013/01/09/rails-pocs.html) and
+Rails](https://ronin-rb.dev/blog/2013/01/09/rails-pocs.html) and
 [Spring](https://jira.spring.io/browse/SPR-5308)) or [Django](https://docs.djangoproject.com/en/3.0/topics/http/sessions/#using-cookie-based-sessions).
 
 
