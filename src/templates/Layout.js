@@ -77,7 +77,7 @@ class Layout extends React.Component {
       if (canDoResearch()) {
         setTimeout(() => {
           this.removePheromones = Pheromones.init({
-            apiUrl: "https://data.pheromones.io/",
+            apiUrl: "https://pheromones.mooc.fi/",
             username: user.username,
             submitAfter: 20,
           })
