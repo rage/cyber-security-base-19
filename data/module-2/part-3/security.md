@@ -215,7 +215,7 @@ a simple XMLHttpRequest.
 There exists a handful of (incomplete) solutions that are used to filter out
 possible XSS attacks, including removing brackets from the code. OWASP has a
 good
-[checklist](https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet)
+[checklist](https://cheatsheetseries.owasp.org/cheatsheets/XSS_Filter_Evasion_Cheat_Sheet.html)
 that can be used for XSS testing.
 
 <programming-exercise name="Cookie heist" tmcname="part3-16.xss" course="Securing Software">
