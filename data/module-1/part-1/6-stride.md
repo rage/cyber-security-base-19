@@ -74,7 +74,7 @@ remembering that there is a strong human element in cyber security. The best
 security safeguards in the world count for very little in the following
 situations:
 
-- An bank employee accidentally emails out a file of bank details to a wrong address.
+- A bank employee accidentally emails out a file of bank details to a wrong address.
 - A corporate employee copies a set of sensitive documents to a memory stick which is then stolen.
 - A company-supplied portable devices such as a phone, laptop, or tablet has sensitive data on it, and is stolen, or accidentally left behind in a public place by the employee to whom it is assigned. (It is surprisingly common for people to forget laptops on planes, in coffee houses, etc. Encrypting devices and enforcing a policy of hard-to-crack passwords goes a long way towards protecting against data theft in such circumstances, but strong passwords are hard for humans to remember.)
 - Company staff use their private email addresses--which may or may not be protected--for corporate communication.
