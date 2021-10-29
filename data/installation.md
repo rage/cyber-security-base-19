@@ -85,7 +85,7 @@ In order to test these exercises locally, the tests rely on a chrome browser.
 
 Two pieces of software are required
 - the browser [Google Chrome](https://www.google.com/chrome/)
-- a software that allows python communicate with the the browser [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+- a software that allows python communicate with the the browser [ChromeDriver](https://sites.google.com/chromium.org/driver/)
 
 When installing ChromeDriver you need to make sure that the driver version matches the browser version,
 otherwise the driver refuses to work.
