@@ -8,7 +8,7 @@ information_page: true
 <table-of-contents></table-of-contents>
 
 ### MOOC?
-Massive Open Online Courses (MOOCs) are as the name says they open, free, and online. You do not have to care about course fees, not on this MOOC anyway. You do not have to care about commute as you can do it where you are as long as you have Internet connectivity. You do not have to care about schedules, well you have a start and end dates but between them it is upto you when you do the tasks.
+Massive Open Online Courses (MOOCs) are as the name says they open, free, and online. You do not have to care about course fees, not on this MOOC anyway. You do not have to care about commute as you can do it where you are as long as you have Internet connectivity. You do not have to care about schedules, well you have a start and end dates but between them it is up to you when you do the tasks.
 
 ### Is the course series free?
 Yes.
