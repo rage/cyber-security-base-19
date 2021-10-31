@@ -204,7 +204,7 @@ field is not empty.
 function validate() {
     var content = document.querySelector("#content").value;
     if(!content) {
-        document.querySelector("#error").innerHtml = "No content to process";
+        document.querySelector("#error").innerHTML = "No content to process";
         return;
     }
 
@@ -269,7 +269,7 @@ retrieved using dot notation.
 
 ```javascript
 var person = {name: "Jack Bauer", age: 24};
-document.querySelector("#user").innerHtml = person.name;
+document.querySelector("#user").innerHTML = person.name;
 ```
 
 Often, we wish to retrieve data from the server. This can be done using the
