@@ -33,6 +33,6 @@ participants as well. For more information see the instructions [here](/pass).
 
 # Support channel and contact information
 
-https://t.me/cybersecuritybase
+For support channel use [Discord](https://study.cs.helsinki.fi/discord/join/csb).
 
 For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.fi.
