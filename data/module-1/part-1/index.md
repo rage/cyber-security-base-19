@@ -28,7 +28,7 @@ requires additional steps in order to receive ECTS credits.
 
 #### Support channel and contact information
 
-For support channel use [telegram](https://t.me/cybersecuritybase).
+For support channel use [Discord](https://study.cs.helsinki.fi/discord/join/csb).
 
 For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.fi.
 
