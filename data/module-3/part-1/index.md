@@ -34,6 +34,9 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 In the first course project, your task is to create a web application that has
 at least five different flaws from the OWASP [top ten list](https://owasp.org/www-project-top-ten/).
 
+OWASP recently updated its list and there are now two lists: 2017 and 2021.
+You can use either list but specify which one you are using.
+
 We recommend that you implement the website using Python & Django. If you did the previous
 course you should already Django libraries installed. See [installation guide](/installation-guide) otherwise.
 To create a starter website, follow the instructions [here](https://docs.djangoproject.com/en/3.1/intro/tutorial01/).
