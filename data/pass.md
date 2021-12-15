@@ -108,29 +108,24 @@ passed, please contact the course staff via email.
 After you have completed the Open University course enrollment, you will
 receive course credits in the University of Helsinki study register typically within a week
 (in certain cases this may take longer, up to 6 weeks, due to the holiday service breaks).
-You can view the credits in WebOodi or in the national [My Studyinfo service](https://studyinfo.fi/oma-opintopolku/).
+You can view the credits in SISU or in the national [My Studyinfo service](https://studyinfo.fi/oma-opintopolku/).
 
 Note that you have to do this for each individual course, 6 times at most.
 
-You can merge your completions into two larger courses in WebOodi after completing the courses.
-The merge is required if these two courses are in your curriculum.
+The 6 individual courses correspond to the two larger UH courses:
 
-The courses are as follows:
-
-First course (TKT20009):
+First course TKT20009 (5 cr):
   * Introduction to Cyber Security (1 cr)
   * Securing Software (3 cr)
   * Course Project I (1 cr)
 
-Second course (CSM13204):
+Second course CSM13204 (5 cr):
   * Advanced Topics (3 cr)
   * Course Project II (1 cr)
   * Capture The Flag (1 cr)
-
-Instructions for merging the completions can be found [here](https://studies.helsinki.fi/instructions/article/compiling-study-module-open-university).
-
-Note that for the merge, we typically require that the individual courses are completed within a year. 
-If the time span is longer, we will make a decision on a case-by-case basis.
+ 
+In the past, the students were required to merge the smaller courses into
+larger courses. This is no longer required due to SISU.
 
 #### Instructions for Finnish residents
 
