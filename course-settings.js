@@ -45,6 +45,10 @@ const courseSettings = {
       path: "/pass",
     },
     {
+      title: "How to write and review essays",
+      path: "/rubric",
+    },
+    {
       title: "Installing Python and TMC",
       path: "/installation-guide",
     },

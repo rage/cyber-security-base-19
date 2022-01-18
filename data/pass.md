@@ -32,24 +32,7 @@ Typically, you get two chances of answering the question correctly.
 
 ##### Essays
 
-Essays are worth of 5 points. You will get only 1 chance to submit an essay, so
-submit only when you are ready.
-
-To pass an essay you must return an essay and provide at least 3 peer reviews
-for each essay.  Essays must be within the limits dictated by the system. If they're
-not within this limit you will not be able to submit your answer. We may also
-reject your answer if it's flagged too many times as spam or if it doesn't
-contain deep enough discussion. Also, we may reject your peer reviews if you
-haven't put genuine effort into them.
-
-Please write the essays carefully and with thought. Other participants in the course
-will review them and may give you feedback.
-Essays should be written individually and using your own words. Plagiarism is not
-allowed under any circumstances, and will have consequences when caught.
-
-What may happen is that the course deadline is passed, and you have not received enough
-feedback for the essay to be accepted automatically. In that case the course staff
-will check the essay.
+See instructions on writing and peer-reviewing essays [here](/rubric).
 
 
 ##### Programming exercises
