@@ -22,7 +22,7 @@ One of the important lists that they maintain is the [OWASP Top
 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) which
 contains a list of the ten most critical web application security risks. The
 most recent list is from
-[2017](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/).
+[2021](https://owasp.org/www-project-top-ten/).
 
 </text-box>
 
