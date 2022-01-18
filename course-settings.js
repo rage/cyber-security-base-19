@@ -1,6 +1,6 @@
 const courseSettings = {
   language: "en",
-  name: "Cyber Security Base 2021",
+  name: "Cyber Security Base 2022",
   siteUrl: "https://cybersecuritybase.mooc.fi",
   subtitle: "a free course series about cyber security",
   slug: "cyber-security-base-2020",

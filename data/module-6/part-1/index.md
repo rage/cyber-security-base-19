@@ -4,7 +4,7 @@ title: 'Capture the Flag'
 overview: true
 hidden: false
 ---
-<deadline>31.03.2021</deadline>
+<deadline>30.04.2022</deadline>
 
 The goal of the capture the flag (CTF) is to solve some simple problems related to the
 material you've studied so far. The challenges range from finding hidden messages,
