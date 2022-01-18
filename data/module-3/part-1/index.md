@@ -33,9 +33,13 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 
 In the first course project, your task is to create a web application that has
 at least five different flaws from the OWASP [top ten list](https://owasp.org/www-project-top-ten/).
+The application should have a backend.
 
 OWASP recently updated its list and there are now two lists: 2017 and 2021.
-You can use either list but specify which one you are using.
+You can use either list but specify which one you are using. Do not mix the lists.
+Note that CSRF is missing from both lists as it is more rare nowadays due to the more secure frameworks.
+However, due to its fundamental nature it is allowed as a flaw.
+
 
 We recommend that you implement the website using Python & Django. If you did the previous
 course you should already Django libraries installed. See [installation guide](/installation-guide) otherwise.
@@ -49,12 +53,13 @@ guidelines for installing any possible required dependencies).
 The code must be stored in a public repository so that other students may review it.
 A standard option is to use [Github](https://github.com/). If you are a student at Helsinki University, you
 can use [https://version.helsinki.fi](https://version.helsinki.fi). Make sure that the project is _public_.
+The easiest way to check the visibility is to try the links in incognito mode.
 Do _not_ remove the project until you have received the points.
 
 Note that essay is not accepted immediately as it needs to be approved by the course staff.
 
 
-### Essay
+### Writing essay
 
 You will then write a 1000 word report (hard limits: 800-1500) that pinpoints the flaws and 
 describes how they can be fixed. The report _must_ follow the following structure:
@@ -87,8 +92,32 @@ have the format `https://urldomain/repo/file.py#L42` (Line 42 in `file.py`).
 The links can be easily obtained by clicking the line numbers in the Github repository file browser.
 If the flaw involves in omitting some code, then comment-out the code, and provide the link to the beginning of the commented block. 
 
+Be specific with your fix. If possible, provide a fix to the problem in the
+code. The fix can be commented out. If appropriate, add a source link to each
+fix as well.
+
 We recommend not to write the essay directly to the browser. Instead write (and
 save) it using your favourite text editor, and then use copy-paste.
+
+### Peer reviewing essays
+
+Peer reviewing consists of general comments and 5 grades, one for each flaw.
+
+You should justify your grading in the general comments. Comment on each flaw.
+Be specific, constructive, and polite.
+
+If the essay contains more than 5 flaws, select 5 flaws you would like to grade, for example, 5 first
+or, in your opinion, 5 best.
+
+The rubric for the scores are as follows:
+
+1. _Failed:_ The flaw is missing, or otherwise inappropriate
+2. _Passable:_ The flaw is identified correctly, the fix partially corrects the problem. The underlying problem and the effect of the fix is somewhat misuderstood.
+3. _Average:_ The flaw described adequately and the fix fixes the problem. Minor misunderstanding of the underlying mechanism. The description is too vague but ultimately correct.
+4. _Good:_ The flaw and the fix are correctly done. Minor issues in descriptions.
+5. _Excellent:_ No issues or only cosmetic issues
+
+
 
 ### Submitting the project
 
