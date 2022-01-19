@@ -114,9 +114,9 @@ execution continues.
 
 _Note that the above is highly dependent on the way the execution is implemented._
 
-<quiz id="ae4b444e-f2e2-529e-9acd-a026b365b48f"></quiz>
+<quiz id="19eea3dd-d8be-5d9a-8f1b-54688a1d95bd"></quiz>
 
-<quiz id="cf9c1dff-6184-57c9-9231-cb9ddb99a3ee"></quiz>
+<quiz id="2db6aa39-640e-56df-8c69-8c15a98430c1"></quiz>
 
 If the attacker is able to write over the instruction pointer, then the
 attacker can direct the execution of the process to code in an unexpected
@@ -204,7 +204,7 @@ do.
 </text-box>
 
 
-<quiz id="664c5cff-3c7a-5c3e-b207-3b63d9c12a7f"></quiz>
+<quiz id="0f73cdea-cc52-5f06-ac65-3d01fe99431d"></quiz>
 
 
 ## Fuzzing
@@ -251,7 +251,7 @@ harness.
 
 
 
-<quiz id="1bd03d30-574b-5c40-8cef-fb019662be3f"></quiz>
+<quiz id="647e87b8-38c4-517f-8e5e-c4778d0bbf65"></quiz>
 
 <text-box variant=emph name="Sanitizing input">
 

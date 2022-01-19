@@ -35,7 +35,7 @@ Following this logic a step further the designers of GSM security concluded that
 
 Because the communication traffic was expected to be carried over fixed cables after the base station, it seemed sufficient to protect the voice traffic by encryption between the mobile device and the base station. Luckily, the voice traffic was designed to be carried over the radio interface in _digital_ form: The speech is _encoded_ into a stream of bits. This was a new thing in the GSM technology compared to its regional predecessors for mobile telephony. Now it was, at least in principle, to turn the encoded bit stream into _encrypted_ bit stream that was then sent over the radio interface. Please note the difference between _encoding_ and _encryption_ here.
 
-<quiz id="3efc19b7-d80f-5dfe-86e8-11234650bf9b"></quiz>
+<quiz id="19cc5626-d17a-5d99-84f4-2b58afc01156"></quiz>
 
 
 During the design of 3G security, some limitations of the GSM encryption have become evident. Sometimes the base stations were communicating with the rest of the network also over radio. This implied that it would be better to use encryption also for that communication link.
@@ -53,7 +53,7 @@ When it was time to develop 4G no significant limitations had been observed with
 
 The 4G (and current 5G) encryption algorithms are based on [SNOW3G](https://en.wikipedia.org/wiki/SNOW), [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) and [ZUC](https://en.wikipedia.org/wiki/Zuc_stream_cipher). All encryption functions in all generations of mobile communications technology are [stream ciphers](https://en.wikipedia.org/wiki/Stream_cipher). Both AES and KASUMI are actually [block ciphers](https://en.wikipedia.org/wiki/Block_cipher) but they are used in stream [cipher mode](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation). Stream cipher is suitable for high-speed communication scenarios because major part of encryption/decryption can be done already before the plaintext/ciphertext is even available.
 
-<quiz id="951b82c3-bd44-5a1f-b201-6832a6017b9b"></quiz>
+<quiz id="20d0c364-c435-5396-90ab-f17eeb6bc56e"></quiz>
 
 ## Authentication
 
@@ -102,7 +102,7 @@ In all generations, key generation happens as a by-product of authentication. Di
 In the GSM networks, the encryption key is the only key that is needed. In the 3G networks, another key was needed for the purpose of protecting _integrity_ of control communications. In the 4G networks, there is a whole _hierarchy_ of cryptographic keys intended for different purposes.
 5G networks have more complex key hierarchy than the one used in 4G, see for example [Figure 5](https://www.cablelabs.com/insights/a-comparative-introduction-to-4g-and-5g-authentication).
 
-<quiz id="291fe2f2-ad05-5297-bf38-9bae5da0614f"></quiz>
+<quiz id="2ed3152e-8417-5e90-b720-f1ae675ab11e"></quiz>
 
 ## Integrity protection
 
@@ -115,7 +115,7 @@ One of the good properties of a stream cipher is that it does not increase the s
 In current version of 5G, user plane protection with message authentication code is optional.
 
 
-<quiz id="f4bd40b8-f7d4-5c06-9d29-5fc9a1168c74"></quiz>
+<quiz id="2e4122bf-76ec-5a85-b458-6ab39ccba45d"></quiz>
 
 ## Identity privacy
 
@@ -127,8 +127,8 @@ The goal of the attack is to request the user to send its permanent identity IMS
 
 There is a serious effort of trying to prevent IMSI catchers in 5G technology: IMSI is encrypted by a _public key_ of the network whenever it is sent over the radio interface. Of course, the mobile device should get the public key in some other way than transmitted from the base station.
 
-<quiz id="238975c3-41cd-5a04-8470-edcf92982598"></quiz>
-<quiz id="fa192c4c-59fa-59eb-b03b-10091a4dbcc4"></quiz>
+<quiz id="456050ba-9527-5aac-a715-b0230ccbf2bb"></quiz>
+<quiz id="65da1aad-1d44-529f-b081-7ce8eae5c0a3"></quiz>
 
 
 In the next part of this course we are discussing about IoT security.

@@ -3,30 +3,30 @@ const courseSettings = {
   name: "Cyber Security Base 2022",
   siteUrl: "https://cybersecuritybase.mooc.fi",
   subtitle: "a free course series about cyber security",
-  slug: "cyber-security-base-2020",
+  slug: "cyber-security-base-2021",
   quizzesId: "d76439f1-f112-402e-9f9c-9c9949db573f",
   progressSections: [
     {
 	  name: "Introduction",
-	  quizId: "4e779897-4d93-4d76-8d8a-6f52aa95b4e6",
+	  quizId: "aa1ff55b-ac49-4865-8539-2f85b7f8b539",
     },
 	{
 	  name: "Securing Software",
-	  quizId: "5fb39fe4-4e6a-469a-ac6d-9681bb938a24",
-      tmcCourse: "securing-software-21",
+	  quizId: "5cc5416d-f818-4b78-97b5-c75df32eec86",
+      tmcCourse: "securing-software-22",
 	},
 	{
 	  name: "Project I",
-	  quizId: "64ee692f-fcbd-45ac-a9f0-dfc4ca55d96c",
+	  quizId: "fbd4b277-4c15-4610-bd93-9a6f80ccbea8",
 	},
 	{
 	  name: "Advanced Topics",
-	  quizId: "3dc7aebf-09b4-46b4-bea9-17b34285b859",
-      tmcCourse: "cyber-advanced-topics-2021",
+	  quizId: "4558716f-fd95-4ba8-8913-b489d243eb89",
+      tmcCourse: "cyber-advanced-topics-2022",
 	},
 	{
 	  name: "Project II",
-	  quizId: "c4a57b93-10d2-4558-a9a9-08f989559ad1",
+	  quizId: "5f6c0e4d-621a-4907-a17c-896e918c8bad",
 	},
   ],
   tmcOrganization: "mooc",

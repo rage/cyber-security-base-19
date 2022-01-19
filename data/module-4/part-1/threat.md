@@ -10,7 +10,7 @@ During threat modelling the system is put to analysis and decomposed. As a recap
 
 Now that the data flows and stores have been identified one has to consider the security services they need. As earlier mentioned not all data flows require all types of security services available. For example, some data may be public and only needs to be integrity protected to verify that it is not tampered with. One could use the simple CIA triad, Confidentiality, Integrity and Availability as the starting point with the needs for each flow and storage.
 
-<quiz id="5981004f-c24e-5b70-a73d-0704e5f29bc3"></quiz>
+<quiz id="aa1449e2-48a7-59cc-ba26-babd5e0be72e"></quiz>
 
 We have already briefly mentioned STRIDE and DREAD but here we delve deeper into the topic and discuss how they can be used to categorize and prioritize threats. Neither one is exhaustive, but  provide good structures for determining the type of a given threat.
 
@@ -49,7 +49,7 @@ _Denial of Service_ refers to all the cases in which the server or service is ma
 
 Lastly, _Elevation of Privilege_ is a threat type in which an unprivileged user finds a way to gain sufficient privileges to compromise the system. Elevation of privilege threats include those situations in which an attacker has effectively penetrated all system defenses and become part of the trusted system itself, a dangerous situation indeed.
 
-<quiz id="a12b5a9f-f470-5811-ab65-988fb973696e"></quiz>
+<quiz id="4beb05b9-20b1-59ae-bd13-4fd265497020"></quiz>
 
 
 ## Applying STRIDE
@@ -95,6 +95,6 @@ With the prioritization we can start the fixing job from the highest payoff task
 In essence you need to decide what is the cost to mitigate the problem and is it greater that the probability of it happening. This means that Risk is impact times the probability of it happening. Here the impact is easy to estimate, the probability not so easy and is usually a guess. How this is done in reality differs from case to case but it is in the end driven by the organisation and possibly some sort of risk management process in that organisation.
 
 
-<quiz id="7fc00160-347a-5920-b869-c9608da80c67"></quiz>
+<quiz id="cbc8fc51-6e76-57eb-a459-0806e7c1783a"></quiz>
 
 During this first part of the advanced topics course, we have taken the further steps into understanding architectural analysis. The next part will look into the purpose of log files and how to manage them.

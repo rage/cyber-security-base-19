@@ -59,7 +59,7 @@ Asymmetric encryption is often not efficient enough for encrypting large data st
 So in practice, it is used just to establish a symmetric hidden key that is only a valid
 for one session, and this key is then used with a more efficient algorithm based on a symmetric hidden key. 
 
-<quiz id="07ce1684-42d2-50f9-b2ed-fd47dd6ae187"></quiz>
+<quiz id="8b002dbc-2e59-5a90-b64e-b30857267c3b"></quiz>
 
 ## Cryptographic hashes
 
@@ -140,4 +140,4 @@ Alice then needs verify both Bob's and William's certificates.
 
 Similar scheme is also for signing executables.
 
-<quiz id="3b4e6450-9470-5e0d-9031-47894dace7b3"></quiz>
+<quiz id="a51ca308-a050-5bc5-8dfe-c804010dabba"></quiz>

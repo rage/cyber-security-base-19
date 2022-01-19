@@ -120,7 +120,7 @@ participants.
 
 ### Submitting the project
 
-<quiz id="04865135-2d5c-53ee-b5bf-c753f54b1d34"></quiz>
+<quiz id="43a3d610-d38b-5676-9266-1fa91f0b373a"></quiz>
 
 
 ### Installation notes
