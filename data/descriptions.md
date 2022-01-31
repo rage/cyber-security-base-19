@@ -13,15 +13,15 @@ started is not shown.
 All course material is in English.
 
 For students at University of Helsinki:
-the first 3 courses form a bachelor-level course 
+the first 3 courses correspond to a bachelor-level course 
 Introduction to Cyber Security (TKT20009), while
-the last 3 courses form a master-level course
+the last 3 courses correspond to a master-level course
 Cyber Security II (CSM13204).
 
 
 #### Introduction to Cyber Security 1 CR (ECTS)
 
-_Schedule: Feb., 2021 -- 31.12.2022_
+_Schedule: Feb., 2022 -- 31.12.2022_
 
 This part of the course series will introduce the participant to the relevant
 issues in cyber security. These issues include the stakeholders' and users'
