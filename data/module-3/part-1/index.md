@@ -99,6 +99,15 @@ fix as well.
 We recommend not to write the essay directly to the browser. Instead write (and
 save) it using your favourite text editor, and then use copy-paste.
 
+Please write the essay carefully and with thought. Other participants in the course
+will review them and give you feedback.
+Essays should be written individually and using your own words. Copy-pasteing
+from other sources is not allowed. Copy-pasteing text from other sources and pretending
+it to be your own counts as plagiarism.
+Plagiarism is not
+allowed under any circumstances, and will have consequences when caught.
+See [here](https://studies.helsinki.fi/instructions/article/what-cheating-and-plagiarism) for more detailed descriptions.
+
 ### Peer reviewing essays
 
 Peer reviewing consists of general comments and 5 grades, one for each flaw.
