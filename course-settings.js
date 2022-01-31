@@ -9,24 +9,29 @@ const courseSettings = {
     {
 	  name: "Introduction",
 	  quizId: "aa1ff55b-ac49-4865-8539-2f85b7f8b539",
+	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":38}],
     },
 	{
 	  name: "Securing Software",
 	  quizId: "5cc5416d-f818-4b78-97b5-c75df32eec86",
       tmcCourse: "securing-software-22",
+	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":2},{"group":"osa02","progress":0,"n_points":0,"max_points":1},{"group":"osa04","progress":0,"n_points":0,"max_points":8},{"group":"osa05","progress":0,"n_points":0,"max_points":5},{"group":"osa06","progress":0,"n_points":0,"max_points":15}],
 	},
 	{
 	  name: "Project I",
 	  quizId: "fbd4b277-4c15-4610-bd93-9a6f80ccbea8",
+	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":1}],
 	},
 	{
 	  name: "Advanced Topics",
 	  quizId: "4558716f-fd95-4ba8-8913-b489d243eb89",
       tmcCourse: "cyber-advanced-topics-2022",
+	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":11},{"group":"osa02","progress":0,"n_points":0,"max_points":7},{"group":"osa03","progress":0,"n_points":0,"max_points":11},{"group":"osa04","progress":0,"n_points":0,"max_points":10},{"group":"osa05","progress":0,"n_points":0,"max_points":15}],
 	},
 	{
 	  name: "Project II",
 	  quizId: "5f6c0e4d-621a-4907-a17c-896e918c8bad",
+	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":1}],
 	},
   ],
   tmcOrganization: "mooc",

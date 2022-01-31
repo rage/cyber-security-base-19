@@ -14,26 +14,35 @@ export async function fetchProgress() {
     progressSections.map(async section => {
       return [
         section.name,
-        await fetchSingleProgress(section.quizId, section.tmcCourse),
+        await fetchSingleProgress(
+          section.quizId,
+          section.tmcCourse,
+          section.defaultResponse,
+        ),
       ]
     }),
   )
 }
 
-export async function fetchSingleProgress(quizId, tmcCourse) {
+export async function fetchSingleProgress(quizId, tmcCourse, defaultResponse) {
   // await fetchQuizzesProgress()
   const serviceIdentifiers = ["Programming exercises", "Quizzes"]
-  //const serviceIdentifiers = ["Programming exercises", "Quizzes"]
   const progressesCollection = await Promise.all([
     fetchProgrammingProgress(tmcCourse),
     fetchQuizzesProgress(quizId),
   ])
+
+  const defaultCollection = [[], defaultResponse]
+
   const userDetails = await getCachedUserDetails()
   const currentCourseVariant = userDetails?.extra_fields?.course_variant
   const progressByGroup = {}
 
-  zip(serviceIdentifiers, progressesCollection).forEach(
-    ([identifier, progresses]) => {
+  zip(serviceIdentifiers, progressesCollection, defaultCollection).forEach(
+    ([identifier, progresses, def]) => {
+      if (progresses.length == 0) {
+        progresses = def
+      }
       console.log(JSON.stringify(progresses))
       progresses.forEach(progressEntry => {
         const group = improveGroupName(
