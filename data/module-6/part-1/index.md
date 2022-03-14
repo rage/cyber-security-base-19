@@ -39,12 +39,12 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 The challenges in this CTF come in three difficulty levels: easy, medium and hard.
 
 In order to ensure everyone has a fair chance to get the first completion,
-we're releasing the challenges in batches -- easy challenges are to be released on Monday (15.3.2021),
-medium challenges on Tuesday (16.3.2021), and hard challenges on Friday (17.3.2021).
+we're releasing the challenges in batches -- easy challenges are to be released on Monday (15.3.2022),
+medium challenges on Tuesday (16.3.2022), and hard challenges on Friday (17.3.2022).
 
 The exercises are published starting from 14:00, and new exercise will be added roughly every 20 minutes.
 
-There are 10 easy challenges, 9 medium, and 3 hard.
+There are 10 easy challenges, 10 medium, and 3 hard.
 
 The exercises can be found [here](https://csb-capture-the-flag.cs.helsinki.fi).
 Use your MOOC account to login.
@@ -58,11 +58,11 @@ encrypted. Part of the challenge is to figure out which encoding is being used.
 Some of the challenges expect you to analyze and/or execute a Linux 64-bit
 binary. If you have an incompatible OS consider setting up one in a VirtualBox.
 
-To pass the CTF, you need to complete at least 80% the easy challenges and at
-least 60% of the medium challenges, before the deadline. There is no need to complete
+To pass the CTF, you need to complete at least 8 easy challenges and at
+least 7 medium challenges, before the deadline. There is no need to complete
 hard challenges to pass the course.
 The number of students that have completed a challenge before you has no effect on passing the course.
-The deadline for completing the challenges is 31.3.2021.
+The deadline for completing the challenges is 30.4.2022.
 
 Medium challenges are open after you complete 80% of easy challenges.
 Hard challenges are open after you complete 80% of medium challenges.
