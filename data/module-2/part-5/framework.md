@@ -261,7 +261,7 @@ parts of the functionality and see whether the changes broke something. Writing
 tests for a project is also a good way of getting familiar with the component.
 
 For different types of testing, see a list provided by
-[testingexcellence.com](http://www.testingexcellence.com/types-of-software-testing-complete-list/).
+[atlassian](https://www.atlassian.com/continuous-delivery/software-testing/types-of-software-testing).
 Frameworks typically provide a set of tools that one can use to test the
 written functionalities, see e.g. [Spring Boot
 Testing](http://docs.spring.io/spring-boot/docs/current/reference/html/boot-features-testing.html)
