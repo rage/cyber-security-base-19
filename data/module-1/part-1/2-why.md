@@ -66,7 +66,7 @@ happened.
 Attacks can result in much mayhem and harm with significant monetary losses,
 but the business impact of a security breach can be difficult to tell. This is
 an area where it is hard to reach definitive and representative figures or
-findings. At least one study, however, from [Oxford Economics](https://www.oxfordeconomics.com/my-oxford/projects/276032), provides a set of findings based on
+findings. At least one study, however, from [Oxford Economics](https://www.oxfordeconomics.com/my-oxford/projects/276032) (the PDF is obtainable via [wayback machine](https://web.archive.org/web/20210121202944/https://www.oxfordeconomics.com/my-oxford/projects/276032)), provides a set of findings based on
 surveys and case studies. Those findings show that cyber attacks do indeed
 result in major business impact on victims.
 
