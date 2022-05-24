@@ -47,7 +47,7 @@ with form data.
 <programming-exercise name="Bad configuration" tmcname="part5-20.configuration" course="Securing Software">
 
 The assignment template contains a variant of the
-banking application used in the previous exercise. 
+banking application used in the previous exercise.
 
 Go over the code and fix the security issues.
 
@@ -227,9 +227,9 @@ reacts with their current version of the system.
 
 One of the most commonly used version control systems is
 [Git](https://en.wikipedia.org/wiki/Git), which is also used by
-[Github](https://github.com/). If you are not familiar with them, see the
+[GitHub](https://github.com/). If you are not familiar with them, see the
 [Hello World tutorial provided by
-Github](https://guides.github.com/activities/hello-world/) -- more advanced
+GitHub](https://guides.github.com/activities/hello-world/) -- more advanced
 users may benefit from the [Pro Git book](https://git-scm.com/book/en/v2).
 
 
@@ -294,10 +294,7 @@ hosted, the software may e.g. be deployed only into a small part of the
 servers.
 
 One possibility for hosting the software is cloud services such as
-[Heroku](https://www.heroku.com/). See e.g. [Heroku Github
-Integration](https://devcenter.heroku.com/articles/github-integration) and
-[Travis Heroku
-integration](https://docs.travis-ci.com/user/deployment/heroku/). The first
+[Heroku](https://www.heroku.com/). See e.g. [Heroku GitHub Integration](https://devcenter.heroku.com/articles/github-integration) and [Travis Heroku integration](https://docs.travis-ci.com/user/deployment/heroku/). The first
 link also has functionality for Travis CI integration.
 
 

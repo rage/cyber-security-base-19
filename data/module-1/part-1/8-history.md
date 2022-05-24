@@ -12,7 +12,7 @@ We will provide selected historical examples and comment on patterns and trends.
 Malware predates commercial, wide-spread internet.
 [Brain](https://www.youtube.com/watch?v=lnedOWfPKT0), the first _virus_
 for PC (with MS-DOS being the operating system) was written in January 1986.
-The virus infected the boot sector of floppy disks. 
+The virus infected the boot sector of floppy disks.
 If the floppy disk was inside the PC during its boot,
 a contemporary computer would first try boot it from the floppy, before moving
 to the hard disk (if such was present). Booting from the floppy disk allowed
@@ -68,9 +68,9 @@ possible due to the significant scripting abilities in Microsoft office programs
 led to a significant rise of macro viruses as now viruses could spread through
 documents, especially as email attachments.
 
-The first email virus/worm/trojan, _Happy99_ appeared in January 1999. 
+The first email virus/worm/trojan, _Happy99_ appeared in January 1999.
 The virus consisted of a trojan executable that upon execution would show firework
-animation, and attached itself to an existing windows library. Under certain conditions,
+animation, and attached itself to an existing Windows library. Under certain conditions,
 it would then send itself further over email to a new machine.
 In May, 2000, an internet worm _ILOVEYOU_ infected over 10 million Windows users.
 The worm consisted of an email asking to open an attachment "LOVE-LETTER-FOR-YOU.txt.vbs".
@@ -185,7 +185,7 @@ alleged connections as is, without further speculation.
 
 Notable examples of APT actions include:
 
-* [APT1](https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf), a Chinese cyber espionage group 
+* [APT1](https://www.fireeye.com/content/dam/fireeye-www/services/pdfs/mandiant-apt1-report.pdf), a Chinese cyber espionage group
 * [Guccifer 2.0](https://www.washingtonpost.com/world/national-security/cyber-researchers-confirm-russian-government-hack-of-democratic-national-committee/2016/06/20/e7375bc0-3719-11e6-9ccd-d6005beac8b3_story.html), a hacker group responsible for cyber security attack against Democratic National Committee in United States, supported by Russian government.
 * [Lazarus Group](https://www.nytimes.com/2014/12/18/world/asia/us-links-north-korea-to-sony-hacking.html?_r=0), a hacker group responsible for hacking Sony Pictures as a retaliation for the movie "The interview", with possible links to North Korea.
 * [Stuxnet](https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/) a significant and extremely sophisticated computer worm designed to attack

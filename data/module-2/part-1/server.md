@@ -66,7 +66,7 @@ each of these resources are retrieved separately by the browser (except for the
 
 Each resource that the browser retrieves is also a potential security threat.
 For example, if a malicious user has found means to include his or her own
-Javascript as a part of a site, the Javascript will be executed on the users'
+JavaScript as a part of a site, the JavaScript will be executed on the users'
 machine.
 
 Whilst this may not at first sound like such a bad deal, it can -- for example
@@ -171,7 +171,7 @@ urlpatterns = [
 ```python
 # views.py
 from django.http import HttpResponse
-  
+
 
 def pathView(request):
     return HttpResponse('Path')
@@ -212,7 +212,7 @@ urlpatterns = [
 ```python
 # views.py
 from django.http import HttpResponse
-  
+
 
 def greetView(request, user):
     return HttpResponse('Hi ' + user)
@@ -236,7 +236,7 @@ urlpatterns = [
 ```python
 # views.py
 from django.http import HttpResponse
-  
+
 
 def greetView(request):
 	user = request.GET.get('user')
@@ -364,7 +364,7 @@ def homePageView(request):
 
 The context variable is a
 [dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries),
-and it can also contain nested dictionaries and lists. 
+and it can also contain nested dictionaries and lists.
 
 The context can be then rendered using the `{{}}` syntax in the template
 
@@ -390,7 +390,7 @@ application. Forms are defined in HTML (see
 [form](http://www.w3schools.com/html/html_forms.asp)) using the `form`-element.
 The form-element will contain the path to which the content will be sent to,
 the type of the request, and the data. For now, the type of the request will be
-POST. We will discuss POST and GET later. 
+POST. We will discuss POST and GET later.
 
 The data is defined using fields such as the input field (`<input
 type="text"...`), and the content is sent to the server using a button (`<input
@@ -498,6 +498,6 @@ Once finished, submit the assignment to the TMC server.
 </programming-exercise>
 
 
-During this part of the securing software course, we have taken the first steps
+During this part of the Securing Software course, we have taken the first steps
 into understanding web applications. The next part will look into using
 databases and the underlying HTTP protocol.

@@ -12,7 +12,7 @@ participant will learn the principles of developing web applications, typical
 security issues that are related to such applications, and how such issues are
 discovered and mitigated.
 
-This course assumes that you are (somewhat) familiar with programming in python and
+This course assumes that you are (somewhat) familiar with programming in Python and
 comfortable with using command line commands.
 
 By continuing, you agree to not to do any harm with this information or other similar information on the internet.

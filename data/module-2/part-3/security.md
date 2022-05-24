@@ -221,13 +221,13 @@ that can be used for XSS testing.
 <programming-exercise name="Cookie heist" tmcname="part3-16.xss" course="Securing Software">
 
 The exercise contains a simple direct message application, where messages are
-not properly sanitized. This allows to send messages containing HTML code, and Javascript code.
+not properly sanitized. This allows to send messages containing HTML code, and JavaScript code.
 Write a message that---when viewed by the victim in the application---will steal the victim cookie.
 Write the message in `src/msg.html`.
 The test will simulate the heist by sending the message in `src/msg.html`
-to the victim and have the victim view the message. 
+to the victim and have the victim view the message.
 
-To steal the cookie, use Javascript to send the cookie to `mail/` on the same server.
+To steal the cookie, use JavaScript to send the cookie to `mail/` on the same server.
 Note that in the real world this can be _any_  server but for
 automatic testing we added the `mail/` service to the same server to simulate the heist.
 
@@ -241,11 +241,11 @@ The application has the following username and password combinations for testing
 
 
 Hints:
-* Look into Tasks exercise (addTask function) on how to do Javascript POST requests with JSON as request body.
+* Look into Tasks exercise (addTask function) on how to do JavaScript POST requests with JSON as request body.
 * For debugging purposes, the server will print to the console any mail obtained through `mail/` request.
 * When using POST make sure that you include `/` in `mail/`.
 * In certain situations you may get `Message: unknown error: DevToolsActivePort file doesn't exist` when running `tmc test`.
-This means that your chrome installation is a bit wonky, what often helps is commenting out
+This means that your Chrome installation is a bit wonky, what often helps is commenting out
 the line `options.add_argument('--user-data-dir=test/chrome_user_data')`
 in `test/test_xss.py`.
 
@@ -271,11 +271,11 @@ Python packages `safety` (and `safety-db`) can be used to check any vulnerable p
 
 Python package `safety` can be used to find installed vulnerable packages.
 The package relies on another package `safety-db` which is simply a curated
-JSON file of known vulnerable python modules.
+JSON file of known vulnerable Python modules.
 
 In this assignment, the goal is to write a simple query system that given
-the safety-db json file and a package name returns a list of all vulnerabilities
-associated with that package. 
+the safety-db JSON file and a package name returns a list of all vulnerabilities
+associated with that package.
 
 The output should contain a list of tuples
 ```python
@@ -283,7 +283,7 @@ The output should contain a list of tuples
 ```
 
 During the writing of this exercise the `safety-db` package was quite broken,
-so instead of installing `safety-db`, you should download the json file `insecure_full.json` directly
+so instead of installing `safety-db`, you should download the JSON file `insecure_full.json` directly
 from [here](https://github.com/pyupio/safety-db/tree/master/data).
 
 </programming-exercise>
@@ -303,7 +303,7 @@ Knowing the top 10 most critical web application security issues is a good
 start. However, new security flaws are constantly discovered, and a security
 professional needs to keep up with the development of the field. Incident
 databases such as [Common Vulnerabilities and
-Exposures](https://cve.mitre.org/) 
+Exposures](https://cve.mitre.org/)
 are crucial for keeping up with the
 latest developments of the field.
 
@@ -327,7 +327,7 @@ accessible. Many frameworks these days include CSRF defences by default.
 <programming-exercise name="CSRF Prompt-By Pass" tmcname="part3-18.csrf" course="Securing Software">
 
 The exercise contains an unsafe bank application that uses GET methods without
-any CSRF protection. 
+any CSRF protection.
 
 The application has the following username and password combinations for testing:
 
@@ -337,7 +337,7 @@ The application has the following username and password combinations for testing
 Write an HTML file that when opened (if the user is logged in) moves $10 to Alice's account.
 Note that there is a confirmation dialog which you also need to deal with.
 
-Do not use Javascript, instead use `img` tags.
+Do not use JavaScript, instead use `img` tags.
 
 The automated test will ignore the DNS name of the server in img tags, so you
 can use `localhost:8000` freely, or any other name, depending on your setup.
@@ -354,7 +354,7 @@ requires setting up an HTTPS server, which is not trivial.
 Instead, to test the file manually, do the following steps.
 - Start the server.
 - Login as bob.
-- in src directory, run `python3 -m http.server 9000` (this will start a second web server).
+- In src directory, run `python3 -m http.server 9000` (this will start a second web server).
 - Go to `http://localhost:9000/csrf.html` (this will process the csrf message).
 - Reload the original page where you have logged as bob.
 
@@ -367,6 +367,6 @@ They are not required when you use `tmc test` or `tmc submit`.
 </programming-exercise>
 
 
-In this this part of the securing software course, we looked at some of the
+In this this part of the Securing Software course, we looked at some of the
 most common web security issues. During the next part, we will look a bit
 deeper into finding flaws in software.

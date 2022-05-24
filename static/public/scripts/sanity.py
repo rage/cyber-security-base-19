@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import socket
 
-# There is a 'feature' in selenium which may cause the firewall to react unless you provide an explicit port for the driver
+# There is a 'feature' in Selenium which may cause the firewall to react unless you provide an explicit port for the driver
 def free_port():
 	free_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 	free_socket.bind(('localhost', 0))

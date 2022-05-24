@@ -18,7 +18,7 @@ be also visited.
 
 
 
-This course assumes that you are (somewhat) familiar with programming in python and
+This course assumes that you are (somewhat) familiar with programming in Python and
 comfortable with using command line commands.
 
 By continuing, you agree to not to do any harm with this information or other similar information on the internet.

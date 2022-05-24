@@ -20,22 +20,22 @@ is being sent to the server. Other common attribute names include `id` that is
 used to define a unique identifier for the element and `class` that is used to
 define a classification for that element.
 
-### Javascript
+### JavaScript
 
 While HTML is the language for defining the structure and content of a web
-page, Javascript is a language for defining dynamic content to the page.
-javascript is a programming language, and like almost any programming language,
+page, JavaScript is a language for defining dynamic content to the page.
+JavaScript is a programming language, and like almost any programming language,
 it is executed one command at a time, top to bottom, left to right.
 
 
-<text-box variant=emph name="What about all the Javascript frameworks out there?">
+<text-box variant=emph name="What about all the JavaScript frameworks out there?">
 
 For the purposes of this course, we use the [VanillaJS](http://vanilla-js.com/)
-framework. It is one of the most used Javascript frameworks, requires no
+framework. It is one of the most used JavaScript frameworks, requires no
 downloading or installing, and is crucial for an in-depth understanding of most
-of the other Javascript components and frameworks.
+of the other JavaScript components and frameworks.
 
-(VanillaJS is not actually a framework, just plain Javascript. _Understanding_
+(VanillaJS is not actually a framework, just plain JavaScript. _Understanding_
 it will likely help you immensely, and likely also reduce the possibility of
 writing code with plenty of holes that others must fix...)
 
@@ -51,12 +51,12 @@ href="https://twitter.com/iamdevloper/status/610191865216786432">14. June
 </text-box>
 
 
-Javascript file names typically end with `.js` and they are included to a HTML
+JavaScript file names typically end with `.js` and they are included to a HTML
 page using the `script` element. The element `script` has an attribute `src`,
 which defines the location of the source code file. Alternatively, one can
 add the code directly to HTML by surrounding it with `<script>` tags.
 
-Javascript source files can be stored under a directory meant for static files
+JavaScript source files can be stored under a directory meant for static files
 (same place as CSS files or images), see [documentation](https://docs.djangoproject.com/en/3.0/howto/static-files/).
 The app-specific directory is typically along the lines `pages/static/`,
 but one can also configure to have global static directory. The configuration
@@ -75,9 +75,9 @@ function sayHello() {
 }
 ```
 
-The Javascript file can be included to a HTML site as follows. Note that we
-load the Javascript file at the end of the document. This is both to allow the
-browser to parse the page before including the Javascript code, and to avoid
+The JavaScript file can be included to a HTML site as follows. Note that we
+load the JavaScript file at the end of the document. This is both to allow the
+browser to parse the page before including the JavaScript code, and to avoid
 any blocking downloading of content.
 
 ```html
@@ -93,28 +93,28 @@ any blocking downloading of content.
 
         <article>
             <p>Text content (within a paragraph, p). By pressing
-            the button below, a javascript function "sayHello" is called.</p>
+            the button below, a JavaScript function "sayHello" is called.</p>
             <input type="button" value="Boom!" onclick="sayHello();" />
         </article>
 
-        <!-- Ask the browser to load the Javascript -->
+        <!-- Ask the browser to load the JavaScript -->
         <script src="static/javascript/code.js"></script>
 
     </body>
 </html>
 ```
 
-<text-box variant=emph name="Javascript tutorials">
+<text-box variant=emph name="JavaScript tutorials">
 
 The Mozilla Developer Network has a high-quality and comprehensive
-[Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) tutorial.
+[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) tutorial.
 
 </text-box>
 
 
-### Modifying page content with Javascript
+### Modifying page content with JavaScript
 
-Each element in a web page can be accessed and modified using Javascript.
+Each element in a web page can be accessed and modified using JavaScript.
 Specific elements can be identified using the
 [querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 method. It allows identifying elements based in the id-attribute value
@@ -136,7 +136,7 @@ is used.
             <input type="button" value="Add!" onclick="increment();" />
         </article>
 
-        <!-- Ask the browser to load the Javascript -->
+        <!-- Ask the browser to load the JavaScript -->
         <script src="static/javascript/code.js"></script>
 
     </body>
@@ -144,7 +144,7 @@ is used.
 ```
 
 In the above HTML document, the input field can be identified with the id value
-"content". Using Javascript, the value of the field could be changed as
+"content". Using JavaScript, the value of the field could be changed as
 follows.
 
 ```javascript
@@ -193,7 +193,7 @@ field is not empty.
             <input type="button" value="Add!" onclick="validate();" />
         </article>
 
-        <!-- Ask the browser to load the Javascript -->
+        <!-- Ask the browser to load the JavaScript -->
         <script src="static/javascript/code.js"></script>
 
     </body>
@@ -212,9 +212,9 @@ function validate() {
 }
 ```
 
-<text-box variant=emph name="Validation and Javascript">
+<text-box variant=emph name="Validation and JavaScript">
 
-Note that Javascript code is executed within the browser. This means that the
+Note that JavaScript code is executed within the browser. This means that the
 above validation functionality works primarily as a way to increase usability
 of the site, but not the validity of the data. If there is a need to validate
 content, one cannot only rely on the browser (i.e. the client).
@@ -244,7 +244,7 @@ document.querySelector("#messages").appendChild(paragraph);
 
 <text-box variant=emph name="DOM">
 
-These Javascript calls use the Document Object Model (DOM) interface for
+These JavaScript calls use the Document Object Model (DOM) interface for
 altering the HTML document. See
 [https://developer.mozilla.org/en-US/docs/Web/API/Document\_Object\_Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 for additional information.
@@ -253,7 +253,7 @@ for additional information.
 
 ### JSON dataformat and retrieving data from a server
 
-Objects and data in Javascript are typically represented using the [Javascript
+Objects and data in JavaScript are typically represented using the [JavaScript
 Object Notation](http://www.json.org/) (JSON) format. The format follows
 essentially a key: value structure, where variables are separated using commas.
 The definition of an object starts and ends with a bracket. For example, a
@@ -293,13 +293,13 @@ In the example above, a query is made to the address
 processed and content from the response is shown to a user in an element with
 the id "content".
 
-<text-box variant=emph name="On debugging Javascript applications">
+<text-box variant=emph name="On debugging JavaScript applications">
 
-When building and analyzing Javascript applications, being able to debug them is crucial. Up to date browsers such as Google Chrome provide quite good tools for analyzing the application. See [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/) for a start.
+When building and analyzing JavaScript applications, being able to debug them is crucial. Up to date browsers such as Google Chrome provide quite good tools for analyzing the application. See [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/) for a start.
 
-When debugging your own applications, the very basic command is `console.log()`, which can be used to print out variable details and other information to the developer tools console. When the command `console.log("Hello world!");` is inserted into your Javascript code, the text "Hello world!" will be printed to the Developer tools console. When looking for problems in code, debugging using the console log is a good start.
+When debugging your own applications, the very basic command is `console.log()`, which can be used to print out variable details and other information to the developer tools console. When the command `console.log("Hello world!");` is inserted into your JavaScript code, the text "Hello world!" will be printed to the Developer tools console. When looking for problems in code, debugging using the console log is a good start.
 
-If you are familiar with debuggers and breakpoints in IDEs, similar functionality is available for browsers as well. See [Inspect and Debug Javascript](https://developers.google.com/web/tools/chrome-devtools/javascript/add-breakpoints) at Google Developers.
+If you are familiar with debuggers and breakpoints in IDEs, similar functionality is available for browsers as well. See [Inspect and Debug JavaScript](https://developers.google.com/web/tools/chrome-devtools/javascript/add-breakpoints) at Google Developers.
 
 </text-box>
 
@@ -328,12 +328,12 @@ Similarly to the previous part, these assignments are submitted to the Test My C
 
 The assignment template has some functionality for adding tasks. Your task is
 to alter the loadTasks function so that the existing tasks are loaded when the
-page is shown to the user. Do this using Javascript and the server `tasks` service.
+page is shown to the user. Do this using JavaScript and the server `tasks` service.
 
 If you wish an additional challenge, add the functionality to remove tasks as well.
 
 
-The automated test relies on using selenium with chromedriver and chrome, make
+The automated test relies on using Selenium with ChromeDriver and Chrome, make
 sure that you have installed them properly, see
 [instructions](/installation-guide), otherwise you cannot do local
 tests.
@@ -341,7 +341,7 @@ tests.
 Hints:
 
 - Do not use absolute URLs, the automated test will start its own server at its own port.
-- Javascript [for-loop](https://thecodebarbarian.com/for-vs-for-each-vs-for-in-vs-for-of-in-javascript) syntax.
+- JavaScript [for-loop](https://thecodebarbarian.com/for-vs-for-each-vs-for-in-vs-for-of-in-javascript) syntax.
 - The `tasks` service returns you a string that needs to be parsed into a JSON object. The JSON object
 will have a field named `tasks` containing the list of tasks.
 
@@ -351,9 +351,9 @@ will have a field named `tasks` containing the list of tasks.
 
 <text-box variant=emph name="Cross-origin Resource Sharing">
 
-Public resources such as javascript files, images and stylesheets and can be
+Public resources such as JavaScript files, images and stylesheets and can be
 accessed from anywhere. At the same time, if a web application requests data
-using javascript, the request may be blocked if the target server has not
+using JavaScript, the request may be blocked if the target server has not
 explicitly allowed such requests and the target server is not the same server
 on which the application is currently running on.
 
