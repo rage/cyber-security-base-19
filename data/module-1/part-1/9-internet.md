@@ -12,14 +12,14 @@ connected to the Internet.
 Internet has layers. Different protocols that are responsible for communication can be grouped
 in 4 layers.
 
-1. Link layer 
+1. Link layer
 2. Internet/network layer
 3. Transport layer
 4. Application layer
 
 Protocols at the link layer are responsible for direct communication between
 two entities over the same link, for example, a protocol responsible
-communication between a laptop and a WiFi-router establishes the 
+communication between a laptop and a WiFi-router establishes the
 frequency, as well as how bits are transferred over that frequency. On the
 other extreme, the protocols in the application layer establish common language between
 two applications sharing information, for example, the HTTP protocol describes how
@@ -48,7 +48,7 @@ Grouping protocols in 4 layers is often referred as _TCP/IP model_ (named after 
 _internet protocol suite_. Often the link layer is split in 2 layers, physical link, and data link, leading to 5 layers instead of 4.
 
 We can also use Open Systems Interconnection model (OSI model) which has 7 layers.
- 
+
 </text-box>
 
 ## Internet layer and IP protocol
@@ -77,14 +77,14 @@ packet size, and is smaller than the payload.  That is, if the payload is larger
 what the link layer can transmit in one packet, IP protocol will chop the packet in smaller
 fragments, and transmit them individually.
 A maximum size for a single IP
-packet is 65535 bytes of which 20 bytes are an IP header. Naive implementations of IP fragmentation 
+packet is 65535 bytes of which 20 bytes are an IP header. Naive implementations of IP fragmentation
 allowed for [exploits](https://www.kyberturvallisuuskeskus.fi/en/vulnerability-handling-ip-fragments) such as denial-of-service attacks.
 
 IP also provides a checksum to make sure that the payload has not been
 corrupted. Note that the goal of this checksum is to protect from non-malicious
 errors due to, for example noisy underlying communication channel. If the packet
 is modified by an attacker, it is trivial to compute a new valid checksum for
-that particular packet. 
+that particular packet.
 
 When a device, either the end host or a router, notices a corrupted IP packet,
 it is dropped, and an error message is sent back.
@@ -170,7 +170,7 @@ of the protocol is significant overhead, especially due to the acknowledgment
 packets.  This latency is not acceptable in certain real-time applications,
 for example, online gaming. An alternative protocol for TCP is User Datagram
 Protocol (UDP), a simple protocol providing ports and a(n optional) checksum as
-additional services, and nothing else. 
+additional services, and nothing else.
 
 <figure>
 
@@ -205,7 +205,7 @@ measures are taken, traffic data can be intercepted or, worse, modified. This
 is known as a man-in-the-middle attack, and modifying traffic can extremely
 sophisticated, for example,
 [injecting](https://thenextweb.com/insights/2017/12/11/comcast-continues-to-inject-its-own-code-into-websites-you-visit/)
-(java script) code to a web browser when a user visits 3rd party websites.
+(JavaScript) code to a web browser when a user visits 3rd party websites.
 
 Data encryption can be done in a link layer, for example, WiFi can use WPA2 to
 encrypt its traffic.  Similarly, data over cellular connection is encrypted.
@@ -229,7 +229,7 @@ the actual payload cannot be observed.
 
 It is possible to use the encryption protocol (known as TLS) used by HTTPS to
 encode normal IP traffic. Here, the user connects to a special server and establishes
-a secure channel. Using this channel the user sends IP data packets. 
+a secure channel. Using this channel the user sends IP data packets.
 The server then decrypts the stream, and forwards the
 packets to the address specified in the packets. The server also modifies the
 TCP/IP headers (similar to NAT) so that it seems that the connection is coming

@@ -31,10 +31,10 @@ Check out the tutorial at [https://sqlbolt.com/](https://sqlbolt.com/)
 
 ## Python and SQLite
 
-We will use SQLite with python since it is ridiculously easy to use.
+We will use SQLite with Python since it is ridiculously easy to use.
 SQLite is a naive SQL database engine, which makes it very easy to use,
 for example one does not need to care about setting up database user rights
-because there are no users. While SQLite is an ideal engine for learning 
+because there are no users. While SQLite is an ideal engine for learning
 SQL, more serious projects should use more refined database engines such as
 [MySQL](https://www.mysql.com/) or [PostgreSQL](https://www.postgresql.org/).
 Note that all of them support vanilla SQL commands, the differences are within
@@ -54,7 +54,7 @@ cursor = conn.cursor()
 Once the cursor has been established, we can use `cursor.execute()` to execute a single
 SQL command or `cursor.executescript()` to execute multiple SQL commands. If we
 modify the database, then we should save the changes with `conn.commit()`.
-For more information, see Python's sqlite [library](https://docs.python.org/3/library/sqlite3.html).
+For more information, see Python's SQLite [library](https://docs.python.org/3/library/sqlite3.html).
 
 
 
@@ -163,7 +163,7 @@ in the src directory.
 Read the [OWASP SQL Injection Prevention Cheat
 Sheet](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html).
 Try to implement the delete query incorrectly, that is, form the string
-directly. 
+directly.
 
 </text-box>
 
@@ -231,7 +231,7 @@ bob.age = 45
 bob.save()
 ```
 
-The models are saved in a database. The default database is a sqlite stored in
+The models are saved in a database. The default database is a SQLite stored in
 `db.sqlite` file.  The same database is also used for storing user sessions, as
 well as, registered users and admins (something that django provides as a
 built-in service).
@@ -277,7 +277,7 @@ executed, or that none of them are. Database management systems offer support
 for implementing transactions, but, as we often work outside the database,
 additional steps are needed.
 
-Transactions matter also if there are multiple database users, which may lead 
+Transactions matter also if there are multiple database users, which may lead
 to unintented consequences. Consider the following classic problem of transforming money
 from one account to another.
 
@@ -294,7 +294,7 @@ def transfer(sender, receiver, amount):
 ```
 
 Consider two threads A and B calling `transfer` at the same time with the following sequence:
-* Thread A retrieves the accounts 
+* Thread A retrieves the accounts
 * Thread B retrieves the accounts
 * Thread B updates and saves the accounts
 * Thread A updates and saves the accounts
@@ -343,7 +343,7 @@ is reached Django sends `BEGIN TRANSACTION` command to SQLite (Actually it
 sends `SAVEPOINT` but it is almost the same thing).
 Once the function is done Django sends `COMMIT` to SQLite which completes the transaction.
 
-SQLite does not allow any writes whenever there is an open (second) transaction. 
+SQLite does not allow any writes whenever there is an open (second) transaction.
 So in our previous example, _both_ threads A and B will fail, by throwing an exception.
 More importantly, the fail will happen only during the commit. That is, the local
 objects `acc1` and `acc2` that are currently held in memory during the call of `transfer` are updated,
@@ -354,11 +354,11 @@ no writes are possible. To see this effect in practice, we can open a connection
 database and open a transaction without closing it
 
 ```shell
-$ sqlite3 src/db.sqlite3 
+$ sqlite3 src/db.sqlite3
 SQLite version 3.30.1 2019-10-10 20:19:45
 Enter ".help" for usage hints.
 sqlite> BEGIN TRANSACTION;
-sqlite> 
+sqlite>
 ```
 
 As long as this connection is open, no other connection (manual or Django) can
@@ -413,7 +413,7 @@ acc = Account.objects.get(pk=0)
 user = acc.owner
 ```
 
-We can also cross-search accounts using owner's information 
+We can also cross-search accounts using owner's information
 
 ```python
 accounts_owned_by_johns = Account.objects.filter(owner__first_name='John')

@@ -62,7 +62,7 @@ Unlike in GET, the parameters are not shown in the URL browser (also it doesn't 
 to show them as the parameters can be, for example, images). Moreover, a modern browser
 will ask you whether to resubmit the form if you try to reload a web page that has been
 retrieved using a POST method: a sign that POST should be considered as something that modifies
-the server data while GET is simply to query the server. 
+the server data while GET is simply to query the server.
 
 <text-box variant=emph name="Other request methods">
 
@@ -105,7 +105,7 @@ maintained.
 <text-box variant=emph name="Session Management Cheat Sheet">
 
 Familiarize yourself with the [OWASP Session Management Cheat
-Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html). 
+Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html).
 
 Consider also checking information on [Session hijacking](https://en.wikipedia.org/wiki/Session_hijacking).
 
@@ -132,14 +132,14 @@ Hints:
 * You should be able to figure out the session id formula by studying the [cookies](https://developers.google.com/web/tools/chrome-devtools/storage/cookies).
 * During automated tests, the counter in the session id will be a small random number (between 1 and 11). The sniffer should do multiple guesses to find Alice.
 * Use Python library [requests](https://www.w3schools.com/python/ref_requests_get.asp).
-* Note that `json.loads` does not work with byte streams when using Python 3.5. 
+* Note that `json.loads` does not work with byte streams when using Python 3.5.
 * The session id for Django web servers is stored in a cookie named `sessionid`.
 
 
 </programming-exercise>
 
 
-During this part of the securing software course, we briefly visited frontend
+During this part of the Securing Software course, we briefly visited frontend
 and backend functionality and looked into how databases are used when
 developing web applications. During the next week we will look deeper into the
 typical security issues in web applications.

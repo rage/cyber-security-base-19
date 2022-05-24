@@ -51,7 +51,7 @@ installing and running the web application on Windows, Linux and Mac (including
 guidelines for installing any possible required dependencies).
 
 The code must be stored in a public repository so that other students may review it.
-A standard option is to use [Github](https://github.com/). If you are a student at Helsinki University, you
+A standard option is to use [GitHub](https://github.com/). If you are a student at Helsinki University, you
 can use [https://version.helsinki.fi](https://version.helsinki.fi). Make sure that the project is _public_.
 The easiest way to check the visibility is to try the links in incognito mode.
 Do _not_ remove the project until you have received the points.
@@ -61,7 +61,7 @@ Note that essay is not accepted immediately as it needs to be approved by the co
 
 ### Writing essay
 
-You will then write a 1000 word report (hard limits: 800-1500) that pinpoints the flaws and 
+You will then write a 1000 word report (hard limits: 800-1500) that pinpoints the flaws and
 describes how they can be fixed. The report _must_ follow the following structure:
 
 ```rest
@@ -87,10 +87,10 @@ how to fix it...
 
 ```
 
-Add source link to each flaw if appropriate. Ideally, the link should 
+Add source link to each flaw if appropriate. Ideally, the link should
 have the format `https://urldomain/repo/file.py#L42` (Line 42 in `file.py`).
-The links can be easily obtained by clicking the line numbers in the Github repository file browser.
-If the flaw involves in omitting some code, then comment-out the code, and provide the link to the beginning of the commented block. 
+The links can be easily obtained by clicking the line numbers in the GitHub repository file browser.
+If the flaw involves in omitting some code, then comment-out the code, and provide the link to the beginning of the commented block.
 
 Be specific with your fix. If possible, provide a fix to the problem in the
 code. The fix can be commented out. If appropriate, add a source link to each

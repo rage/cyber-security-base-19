@@ -80,7 +80,7 @@ _Hints:_
 1. Make sure to use both `self.remote_address`  and `self.path`.
 2. Requests library is your friend.
 3. You don't need to parse HTML. You can simply capitalize every letter in response (use `upper()`).
-This will certainly break certain pages, especially with javascript code.
+This will certainly break certain pages, especially with JavaScript code.
 Fancier approach would be to parse HTML with beautifulsoup but it is not needed for this exercise.
 
 </programming-exercise>
