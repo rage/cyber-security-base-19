@@ -87,7 +87,7 @@ It is not wise to store the only copies of the logs on the machine that might be
 
 <text-box variant=emph name="Only a small intro">
 
-This was only a small intro that scratched the surface and for more details one should consult the respective sites for the mentioned software. [Ubuntu logfiles](https://help.ubuntu.com/community/LinuxLogFiles), [Apache](https://httpd.apache.org/docs/1.3/logs.html), and [rsyslogd](http://www.rsyslog.com/) ([securing](http://www.rsyslog.com/doc/v8-stable/tutorials/tls_cert_summary.html))
+This was only a small intro that scratched the surface and for more details one should consult the respective sites for the mentioned software. [Ubuntu logfiles](https://help.ubuntu.com/community/LinuxLogFiles), [Apache](https://httpd.apache.org/docs/current/logs.html), and [rsyslogd](http://www.rsyslog.com/) ([securing](http://www.rsyslog.com/doc/v8-stable/tutorials/tls_cert_summary.html))
 
 </text-box>
 
