@@ -1,0 +1,24 @@
+FROM node:16
+
+RUN apt-get update && \
+  apt-get -y install nasm zlib1g build-essential \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir -p /app && chown -R node /app
+
+USER node
+
+WORKDIR /app
+
+COPY --chown=node package.json /app/
+COPY --chown=node package-lock.json /app/
+
+RUN npm ci --legacy-peer-deps
+
+COPY --chown=node . /app
+
+RUN npm run build
+
+EXPOSE 9000
+
+CMD [ "npm", "run", "serve" ]
