@@ -132,7 +132,7 @@ class CourseOptionsEditor extends React.Component {
 
   validate = () => {
     this.setState(prev => ({
-      error: prev.research === undefined,
+      error: false, //prev.research === undefined,
     }))
   }
 
@@ -247,55 +247,6 @@ class CourseOptionsEditor extends React.Component {
               </Row>
             </div>
           </Loading>
-
-          <h2>{this.props.t("researchTitle")}</h2>
-
-          <p>{this.props.t("research1")}</p>
-
-          <ol>
-            <li>{this.props.t("research2")}</li>
-            <li>{this.props.t("research3")}</li>
-            <li>{this.props.t("research4")}</li>
-          </ol>
-
-          <p>
-            {this.props.t("research5")}{" "}
-            <OutboundLink
-              href="https://dl.acm.org/citation.cfm?id=2858798"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Educational Data Mining and Learning Analytics in Programming:
-              Literature Review and Case Studies
-            </OutboundLink>
-            .
-          </p>
-
-          <p>{this.props.t("research6")}</p>
-
-          <p>{this.props.t("research7")}</p>
-
-          <Row>
-            <Loading loading={this.state.loading} heightHint="115px">
-              <RadioGroup
-                aria-label={this.props.t("researchAgree")}
-                name="research"
-                value={this.state.research}
-                onChange={this.handleInput}
-              >
-                <FormControlLabel
-                  value="1"
-                  control={<Radio color="primary" />}
-                  label={this.props.t("researchYes")}
-                />
-                <FormControlLabel
-                  value="0"
-                  control={<Radio />}
-                  label={this.props.t("researchNo")}
-                />
-              </RadioGroup>
-            </Loading>
-          </Row>
 
           <Row>
             <Button

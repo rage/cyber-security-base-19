@@ -51,11 +51,11 @@ export default class CourseContentTemplate extends React.Component {
       return
     }
 
-    let userInfo = await getCachedUserDetails()
-    const research = userInfo?.extra_fields?.research
-    if (research === undefined) {
-      navigate("/missing-info")
-    }
+    //let userInfo = await getCachedUserDetails()
+    //const research = userInfo?.extra_fields?.research
+    //if (research === undefined) {
+    //navigate("/missing-info")
+    //}
     if (typeof window !== "undefined" && window.location.hash) {
       const selector = window.location.hash
       setTimeout(() => {

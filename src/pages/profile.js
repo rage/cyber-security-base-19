@@ -46,11 +46,11 @@ class MissingInfo extends React.Component {
       return
     }
 
-    let userInfo = await getCachedUserDetails()
-    const research = userInfo?.extra_fields?.research
-    if (research === undefined) {
-      navigate("/missing-info")
-    }
+    //let userInfo = await getCachedUserDetails()
+    //const research = userInfo?.extra_fields?.research
+    //if (research === undefined) {
+    //navigate("/missing-info")
+    //}
   }
 
   render() {
