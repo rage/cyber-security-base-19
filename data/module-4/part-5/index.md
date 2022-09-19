@@ -42,7 +42,7 @@ Please read the [installation instructions](/installation-guide).
 
 #### Support channel and contact information
 
-For support channel use [Discord](https://study.cs.helsinki.fi/discord/join/csb).
+For support channel use [Discord](https://study.cs.helsinki.fi/discord/join/csb)  (use #csb_general channel).
 
 For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.fi.
 
