@@ -4,7 +4,7 @@ title: 'Part I'
 overview: true
 hidden: false
 ---
-<deadline>31.12.2022</deadline>
+<deadline>31.12.2023</deadline>
 
 
 In the first project, the participants will construct software with security

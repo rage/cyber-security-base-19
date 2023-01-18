@@ -21,7 +21,7 @@ Cyber Security II (CSM13204).
 
 #### Introduction to Cyber Security 1 CR (ECTS)
 
-_Schedule: Feb., 2022 -- 31.12.2022_
+_Schedule: Feb., 2023 -- 31.12.2023_
 
 This part of the course series will introduce the participant to the relevant
 issues in cyber security. These issues include the stakeholders' and users'
@@ -32,7 +32,7 @@ Estimated required hours to complete the course: 6-30 hours, depending on the ba
 
 #### Securing Software 3 CR (ECTS)
 
-_Schedule: Feb., 2022 -- 31.12.2022_
+_Schedule: Feb., 2023 -- 31.12.2023_
 
 
 This part focuses on security issues related to interconnected software. The
@@ -43,7 +43,7 @@ Estimated required hours to complete the course: 16-80 hours, depending on the b
 
 #### Course Project I 1 CR (ECTS)
 
-_Schedule: Feb., 2022 -- 31.12.2022_
+_Schedule: Feb., 2023 -- 31.12.2023_
 
 In the first project, the participants will construct software with security
 flaws, point out the flaws in the project, and provide the steps to fix them.
@@ -51,7 +51,7 @@ Estimated required hours to complete the course: 6-30 hours, depending on the ba
 
 #### Advanced Topics 3 CR (ECTS)
 
-_Schedule: Feb., 2022 -- 31.12.2022_
+_Schedule: Feb., 2023 -- 31.12.2023_
 
 This part focuses on security in networks, including internet security issues,
 issues in 4G networks as well as the issues and remedies planned for the
@@ -63,7 +63,7 @@ Estimated required hours to complete the course: 14-70 hours, depending on the b
 
 #### Course Project II 1 CR (ECTS)
 
-_Schedule: Feb., 2022 -- 31.12.2022_
+_Schedule: Feb., 2023 -- 31.12.2023_
 
 In the second project, the participants will install an operating system with a
 variety of vulnerabilities and then install a network intrusion prevention
@@ -73,7 +73,7 @@ Estimated required hours to complete the course: 6-20 hours, depending on the ba
 
 #### Capture The Flag  1 CR (ECTS)
 
-_Schedule: 15.3.2022 -- 30.4.2022_
+_Schedule: 15.3.2023 -- 30.4.2023_
 
 A Capture the Flag (CTF) competition will be organized at the end of the course
 series. In the competition, participants will be given a variety of tasks that
