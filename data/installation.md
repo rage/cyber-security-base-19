@@ -124,16 +124,16 @@ Provide login details, and use organization slug `mooc`.
 Download the exercises for securing software with the command
 
 ```shell
-tmc download mooc-securing-software-22
+tmc download mooc-securing-software-23
 ```
 
 Download the exercises for the advanced topics with the command
 
 ```shell
-tmc download mooc-cyber-advanced-topics-2022
+tmc download mooc-cyber-advanced-topics-2023
 ```
 
-NB! Do not change the name of the root directory, for example it should stay as `mooc-securing-software-22`.
+NB! Do not change the name of the root directory, for example it should stay as `mooc-securing-software-23`.
 
 You can test the exercises locally with `tmc test` and submit your solutions with `tmc submit`.
 See `tmc help` for additional commands.

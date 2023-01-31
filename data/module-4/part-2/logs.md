@@ -29,7 +29,7 @@ Moreover, there are other things, such as law, that the log collector has to rem
 
 
 
-<quiz id="3cecfdc7-e583-560b-820e-baf2c3bc90e0"></quiz>
+<quiz id="64f2f389-7592-57b9-8fae-01e515ba8402"></quiz>
 
 
 
@@ -91,7 +91,7 @@ This was only a small intro that scratched the surface and for more details one 
 
 </text-box>
 
-<quiz id="8114a7a3-6dc3-5224-88b7-63e0edfa0ad5"></quiz>
+<quiz id="f0acf105-97c4-55e4-9343-956dcc2b0b0d"></quiz>
 
 ## Analysing the log files
 
@@ -153,7 +153,7 @@ In addition, log files may contain information supplied directly by the client, 
 </text-box>
 
 
-<quiz id="4e089d9e-d63a-5b1e-8235-8b8a2f882f3d"></quiz>
+<quiz id="1fed198e-c532-5a19-9f2e-235a36c2c793"></quiz>
 
 
 During this second part of the advanced topics course, we have taken the steps into understanding system and application logging and how it can be used for intrusion detection. We also briefly glanced about the future with machine learning. This can be considered as intrusion detection.
