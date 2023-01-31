@@ -32,7 +32,7 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 ### Project description
 
 In the first course project, your task is to create a web application that has
-at least five different flaws from the OWASP [top ten list](https://owasp.org/www-project-top-ten/).
+at least five different flaws from the OWASP [top ten list](https://owasp.org/www-project-top-ten/) as well as their fixes.
 The application should have a backend.
 
 OWASP recently updated its list and there are now two lists: 2017 and 2021.
@@ -55,6 +55,11 @@ A standard option is to use [Github](https://github.com/). If you are a student 
 can use [https://version.helsinki.fi](https://version.helsinki.fi). Make sure that the project is _public_.
 The easiest way to check the visibility is to try the links in incognito mode.
 Do _not_ remove the project until you have received the points.
+
+Make sure that (these are the most common reasons for project being rejected)
+- The flaws are real, and not just hypothetical, and the fixes are included in the code,
+- The fix actually fixes the problem, and not just hide it,
+- There is a backend, and the flaws/fixes occur in the backend. Remember that the user can manipulate the frontend as much as possible.
 
 Note that essay is not accepted immediately as it needs to be approved by the course staff.
 
