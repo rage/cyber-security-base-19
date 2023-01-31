@@ -6,7 +6,7 @@ information_page: true
 banner: true
 ---
 
-Cyber Security Base is a free course series by University of Helsinki and MOOC.fi in collaboration with F-Secure that focuses on building core knowledge and abilities related to the work of a cyber security professional.
+Cyber Security Base is a free course series by University of Helsinki and MOOC.fi that focuses on building core knowledge and abilities related to the work of a cyber security professional.
 
 Learn about tools used to analyse flaws in software systems, necessary knowledge to build secure software systems (esp. within Web), the skills needed to perform risk and threat analysis on existing systems and the relevant legislation within EU.
 
