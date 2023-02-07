@@ -87,7 +87,7 @@ It is not wise to store the only copies of the logs on the machine that might be
 
 <text-box variant=emph name="Only a small intro">
 
-This was only a small intro that scratched the surface and for more details one should consult the respective sites for the mentioned software. [Ubuntu logfiles](https://help.ubuntu.com/community/LinuxLogFiles), [Apache](https://httpd.apache.org/docs/1.3/logs.html), and [rsyslogd](http://www.rsyslog.com/) ([securing](http://www.rsyslog.com/doc/v8-stable/tutorials/tls_cert_summary.html))
+This was only a small intro that scratched the surface and for more details one should consult the respective sites for the mentioned software. [Ubuntu logfiles](https://help.ubuntu.com/community/LinuxLogFiles), [Apache](https://httpd.apache.org/docs/2.4/logs.html), and [rsyslogd](http://www.rsyslog.com/) ([securing](http://www.rsyslog.com/doc/v8-stable/tutorials/tls_cert_summary.html))
 
 </text-box>
 
@@ -146,7 +146,7 @@ File paths and extensions is also something that one should look. Executable fil
 
 <text-box variant=emph name="Serious security Warning from the Apache manual">
 
-Anyone who can write to the directory where Apache is writing a log file can almost certainly gain access to the uid that the server is started as, which is normally root. Do NOT give people write access to the directory the logs are stored in without being aware of the consequences; see the [security tips](https://httpd.apache.org/docs/1.3/misc/security_tips.html) document for details.
+Anyone who can write to the directory where Apache is writing a log file can almost certainly gain access to the uid that the server is started as, which is normally root. Do NOT give people write access to the directory the logs are stored in without being aware of the consequences; see the [security tips](https://httpd.apache.org/docs/2.4/misc/security_tips.html) document for details.
 
 In addition, log files may contain information supplied directly by the client, without escaping. Therefore, it is possible for malicious clients to insert control-characters in the log files, so care must be taken in dealing with raw logs.
 
