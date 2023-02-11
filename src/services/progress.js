@@ -38,6 +38,8 @@ export async function fetchSingleProgress(quizId, tmcCourse, defaultResponse) {
   const currentCourseVariant = userDetails?.extra_fields?.course_variant
   const progressByGroup = {}
 
+  let total = {}
+
   zip(serviceIdentifiers, progressesCollection, defaultCollection).forEach(
     ([identifier, progresses, def]) => {
       if (progresses.length == 0) {
@@ -52,9 +54,21 @@ export async function fetchSingleProgress(quizId, tmcCourse, defaultResponse) {
           progressByGroup[group] = {}
         }
         progressByGroup[group][identifier] = progressEntry
+        if (!total[identifier]) {
+          total[identifier] = { n_points: 0, max_points: 0, progress: 0.0 }
+        }
+        total[identifier].n_points += progressEntry.n_points
+        total[identifier].max_points += progressEntry.max_points
+        total[identifier].progress =
+          total[identifier].n_points / total[identifier].max_points
       })
     },
   )
+
+  if (Object.keys(progressByGroup).length > 1) {
+    progressByGroup["Total"] = total
+  }
+
   const toBeDeleted = []
   /* Object.entries(progressByGroup).forEach(([group, serviceEntries]) => {
     if (!Object.keys(serviceEntries).find(o => o === "Programming exercises")) {
