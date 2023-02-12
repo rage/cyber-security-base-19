@@ -6,7 +6,7 @@ hidden: false
 
 _Cryptanalysis_ is the study of cryptographic algorithms and methods. The basic goal is to _break_ cryptographic algorithms in one way or another. For example, the attacker may have acquired knowledge of some cryptotexts and the corresponding plaintexts. Then he tries to use this information for finding the used key. In another setting, we assume that the attacker has only some cryptotexts based on which the key should be found. It is always assumed that the attacker knows all details of the encryption and decryption processes, only the secret key is not known. If this cannot be assumed then the encryption method is considered to be very weak.
 
-Let us take a look at the substitution cipher. Now every occurrence of the letter &rsquo;e&rsquo; in the plaintext is encrypted as the same letter in the cryptotext, lets say &rsquo;&Aring;&rsquo;. Because &rsquo;e&rsquo; is the most common letter in the English language, &rsquo;&Aring;&rsquo; should be one of the most common letters of the cryptotext. So we may assume that the common letters in the cryptotext correspond to common letters in the language of the plaintext and use this information for making educated guesses about how each letter is encrypted. This cryptanalytic approach is called _frequency analysis_.
+Let us take a look at the substitution cipher. Now every occurrence of the letter &rsquo;e&rsquo; in the plaintext is encrypted as the same letter in the cryptotext, let's say &rsquo;&Aring;&rsquo;. Because &rsquo;e&rsquo; is the most common letter in the English language, &rsquo;&Aring;&rsquo; should be one of the most common letters of the cryptotext. So we may assume that the common letters in the cryptotext correspond to common letters in the language of the plaintext and use this information for making educated guesses about how each letter is encrypted. This cryptanalytic approach is called _frequency analysis_.
 
 <programming-exercise name="Frequency attack" tmcname="part3-04.frequency" course="Advanced Topics">
 
@@ -27,9 +27,9 @@ Hint: `string.ascii_lowercase` and `islower()` can be handy.
 
 </programming-exercise>
 
-The same approach cannot be used against OTP. If the key is chosen randomly, both 0 and 1 appear as often in the cryptotext, in average. This happens regardless of how common 1 is in the plaintext. In fact, any cryptotext could result from any plaintext with a suitable key. Assume the known cryptotext bit is C. Now the corresponding plaintext bit could be either C (which happens if the key bit is zero) or 1-C (which happens if the key bit is one). Therefore, knowing the cryptotext does not provide any new information about the plaintext to the attacker. This means the OTP is _unconditionally_ secure.
+The same approach cannot be used against OTP. If the key is chosen randomly, both 0 and 1 appear as often in the cryptotext, on average. This happens regardless of how common 1 is in the plaintext. In fact, any cryptotext could result from any plaintext with a suitable key. Assume the known cryptotext bit is C. Now the corresponding plaintext bit could be either C (which happens if the key bit is zero) or 1-C (which happens if the key bit is one). Therefore, knowing the cryptotext does not provide any new information about the plaintext to the attacker. This means the OTP is _unconditionally_ secure.
 
-For the OTP, we applied the setting where the attacker knows only the cryptotext. If the attacker knows both the cryptotext and the corresponding plaintext, then he can easily recover the used key. However, breaking OTP in this setting is not relevant because the recovered key is not used to encrypt anything else than the plaintext that the attacker already knows.
+For the OTP, we applied the setting where the attacker knows only the cryptotext. If the attacker knows both the cryptotext and the corresponding plaintext, then he can easily recover the used key. However, breaking OTP in this setting is not relevant because the recovered key is not used to encrypt anything other than the plaintext that the attacker already knows.
 
 ## Modes of operation
 
@@ -37,19 +37,19 @@ A block cipher, like AES, is used to encrypt blocks of a certain size. What shou
 
 The simplest way to encrypt a long message is to take the first block, encrypt it using the key to produce the first cryptotext block, then take the second block, encrypt it using the same key to produce the second cryptotext block etc. This approach is one of the [block cipher modes of operation](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation), called _Electronic Codebook_ (ECB). It is the simplest way but often could be broken by frequency analysis. The attacker notices if you encrypt the same plaintext block twice because the two cryptotexts are also the same. This happens, for example, if plaintext contains some commonly used short pattern, like 'OK'.
 
-Other modes of operation avoid this problem by using extra input in addition to plaintext and key. For instance, previously computed cryptotext blocks or _counters_ could be used for this purpose. Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`) makes use of AES algorithm in _Galois/Counter Mode_. The key length is 256 bits.
+Other modes of operation avoid this problem by using extra input in addition to plaintext and key. For instance, previously computed cryptotext blocks or _counters_ could be used for this purpose. Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`) makes use of the AES algorithm in _Galois/Counter Mode_. The key length is 256 bits.
 
 The next 3 exercises should be done in order.
 
 <programming-exercise name="Feistel ciphers" tmcname="part3-05.feistel" course="Advanced Topics">
 
-Feistel ciphers are used as a building blocks in constructing many known block ciphers.
+Feistel ciphers are used as building blocks in constructing many known block ciphers.
 
 In feistel cipher you are given a block cipher $F$ that can encrypt a message of length $m$.
 You are also given $n$ keys $(K_1, \ldots, K_n)$.
 
 Feistel cipher is a block cipher encrypting messages of $2m$.
-At the beginning, original message is split in two halves, $L_0$ and $R_0$, each of size $m$.
+In the beginning, the original message is split in two halves, $L_0$ and $R_0$, each of size $m$.
 Then $n$ iterations are done with updates
 
 $$
@@ -58,7 +58,7 @@ L_i & = R_{i - 1}  \\
 R_i & = L_{i - 1} \oplus F(R_{i - 1}, K_i). \\
 \end{aligned}
 $$
-Here $L_i$ and $R_i$ are the two halves of the ciphertext after ith round.
+Here $L_i$ and $R_i$ are the two halves of the ciphertext after _i_th round.
 
 The final cipher is $L_n$ followed by $R_n$.
 
@@ -75,7 +75,7 @@ In other words, we can start from $L_n$ and $R_n$ and reverse all the way back t
 ![Feistel](./feistel.svg)
 
 Implement Feistel cipher: complete encrypt and decrypt in `src/feistel.py`.
-The function $F$ is a class parameter `self.roundf`, and the keys is an array in class parameters `self.keys`.
+The function $F$ is a class parameter `self.roundf`, and the keys are an array in the class parameter `self.keys`.
 
 You can assume that the block size $m$ of $F$ is 4.
 
@@ -86,7 +86,7 @@ You can assume that the block size $m$ of $F$ is 4.
 <programming-exercise name="Cipher block chaining (CBC)" tmcname="part3-06.cbc" course="Advanced Topics">
 
 Feistel cipher in the previous exercise can only handle blocks of $m = 8$. Next we are going to extend the cipher
-to handle messages of any sizes.
+to handle messages of any size.
 We will use cipher block chaining (CBC).
 
 The first step is to make sure that the message length is a multiple of 8.
@@ -113,7 +113,7 @@ $$
 C_i = encrypt(P_i \oplus C_{i - 1}),
 $$
 where $encrypt$ is our block cipher.
-The final cipher message is $C_1C_2C_3\ldots$. Note that we do not include $C_0$ here, the initilization vector is sent separately.
+The final cipher message is $C_1C_2C_3\ldots$. Note that we do not include $C_0$ here, the initialization vector is sent separately.
 
 ![CBC encrypt](./cbcencrypt.svg)
 
@@ -131,7 +131,7 @@ $$
 Complete Cbc class by implementing `encode` and `decode`. Remember to add and remove the padding.
 Note that you will also need the fully-implemented Feistel class from the previous exercise.
 
-Hint: you will probably find the xor helper function helpful. Do not forget add the pad even if the message length is already a multiple of 8.
+Hint: you will probably find the xor helper function helpful. Do not forget to add the pad even if the message length is already a multiple of 8.
 
 </programming-exercise>
 
@@ -176,7 +176,7 @@ In summary, we can find $c$ and solve $A[8]$.
 
 Once we have solved $A[8]$ we can move to solving $A[7]$. This is done by setting $M_i[8] = A[8] \oplus 2$
 and $M_i[7] = i$. Using the oracle we can find the index $c$ for which $Q_c[7] = A[7] \oplus c = 2$, resulting in a valid padding.
-Note that, unlike in the case for the last byte, the oracle will find only index (can you see why?).
+Note that, unlike in the case of the last byte, the oracle will only find the index (can you see why?).
 Finding $c$ allows us to solve $A[7]$. We can now move to to $A[6]$ by setting $M_i[8] = A[8] \oplus 3$, $M_i[7] = A[7] \oplus 3$,
 and $M_i[6] = i$. We continue until we have solved $A$, which will give us $P_2$.
 
@@ -199,7 +199,7 @@ You will need to copy your implementations of Feistel cipher and Cbc class.
 _Hints:_
 
 1. There is a lot of xorring here, be careful and perhaps spend some time with pen and paper.
-2. When solving 7, 6, 5, ... bytes of the block make sure that you setup the trailing padding bytes correctly.
+2. When solving 7, 6, 5, ... bytes of the block make sure that you set up the trailing padding bytes correctly.
 3. Don't forget that ultimately we are looking for $P_2$ and not $A$.
 
 </programming-exercise>
