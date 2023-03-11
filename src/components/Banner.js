@@ -15,7 +15,7 @@ const BannerWrapper = styled.header`
   align-items: center;
   margin-bottom: 2rem;
   background-color: #c0392b;
-  background-position: 0% 50%;
+  background-position: 50% 50%;
   background-image: url(${BannerImage});
   background-size: cover;
   text-align: right;
