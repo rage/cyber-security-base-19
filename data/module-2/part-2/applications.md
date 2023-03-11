@@ -364,6 +364,6 @@ restrict and allow queries to specific external resources. It is configured on
 the server.
 
 At the moment, Django does not have a built-in CORS support, but it is possible
-to install a trird-party [app](https://pypi.org/project/django-cors-headers/) to enable CORS.
+to install a third-party [app](https://pypi.org/project/django-cors-headers/) to enable CORS.
 
 </text-box>
