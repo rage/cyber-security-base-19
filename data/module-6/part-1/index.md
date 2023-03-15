@@ -38,9 +38,14 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 
 The challenges in this CTF come in three difficulty levels: easy, medium and hard.
 
+<p>
 In order to ensure everyone has a fair chance to get the first completion,
-we're releasing the challenges in batches -- easy challenges are to be released on Wednesday (15.3.2023),
-medium challenges on Thursday (16.3.2023), and hard challenges on Friday (17.3.2023).
+we're releasing the challenges in batches -- easy challenges are to be released on <s>Wednesday (15.3.2023)</s>,
+medium challenges on <s>Thursday (16.3.2023)</s>, and hard challenges on <s>Friday (17.3.2023)</s>.
+</p>
+
+The start of the course is delayed due to server issues. The course will most likely start the following week. 
+The information will be updated here and on Discord channel.
 
 The exercises are published starting from 14:00, and new exercise will be added roughly every 20 minutes.
 
