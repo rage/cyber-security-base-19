@@ -50,14 +50,15 @@ The exercises are published starting from 14:00, and new exercise will be added 
 
 There are 10 easy challenges, 10 medium, and 3 hard.
 
-The exercises can be found [here](https://csb-capture-the-flag.cs.helsinki.fi).
+The exercises can be found [here](https://csb-capture-the-flag.tb.cs.helsinki.fi).
 Use your MOOC account to login.
 
 To finish a challenge, find a special code and submit it to the site.
 
 For certain challenges, binary inspection command line tools like `strings` or
 `xxd` will be useful.  Passwords will be often encoded and/or hashed and/or
-encrypted. Part of the challenge is to figure out which encoding is being used.
+encrypted. Part of the challenge is to figure out which encoding is being used,
+online [converters](https://emn178.github.io/online-tools/) may prove useful.
 
 Some of the challenges expect you to analyze and/or execute a Linux 64-bit
 binary. If you have an incompatible OS consider setting up one in a VirtualBox.
