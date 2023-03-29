@@ -151,7 +151,7 @@ these control signals which allowed them to among other things free long-distanc
 An early phone phreak, Joe Engressia, discovered that whistling 2600Hz tone had an effect
 on phone switches. John Draper used a toy whistle packaged with breakfast cereal to generate
 the 2600Hz to manipulate phone switches. More sophisticated tone generators, known as blue boxes,
-were constructed. Among blue-box enthusiasts were Steve Wosniak and Steve Jobs (who later founded Apple).
+were constructed. Among blue-box enthusiasts were Steve Wozniak and Steve Jobs (who later founded Apple).
 
 The main reason why phone phreaking was possible is that control signals and
 user data (conversation) shared the same communication channel. The lack of
