@@ -176,7 +176,7 @@ In summary, we can find $c$ and solve $A[8]$.
 
 Once we have solved $A[8]$ we can move to solving $A[7]$. This is done by setting $M_i[8] = A[8] \oplus 2$
 and $M_i[7] = i$. Using the oracle we can find the index $c$ for which $Q_c[7] = A[7] \oplus c = 2$, resulting in a valid padding.
-Note that, unlike in the case for the last byte, the oracle will find only index (can you see why?).
+Note that, unlike in the case for the last byte, the oracle will find only one index (can you see why?).
 Finding $c$ allows us to solve $A[7]$. We can now move to to $A[6]$ by setting $M_i[8] = A[8] \oplus 3$, $M_i[7] = A[7] \oplus 3$,
 and $M_i[6] = i$. We continue until we have solved $A$, which will give us $P_2$.
 
