@@ -3,7 +3,6 @@ import styled from "styled-components"
 import ContentLoader from "react-content-loader"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPencilAlt as icon, faRedo } from "@fortawesome/free-solid-svg-icons"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { get } from "lodash"
 import { Card, CardContent, Button } from "@material-ui/core"
 
@@ -286,24 +285,24 @@ class ProgrammingExercise extends React.Component {
                     <Small>
                       <p>
                         {this.props.t("submitNB")}{" "}
-                        <OutboundLink
+                        <a
                           href="/installation-guide"
                           rel="noopener noreferrer"
                           target="_blank"
                         >
                           {this.props.t("submitHowTo")}
-                        </OutboundLink>
+                        </a>
                         .
                       </p>
                       <p>
                         {this.props.t("seeSubmissions")}{" "}
-                        <OutboundLink
+                        <a
                           href={`https://tmc.mooc.fi/exercises/${this.state.exerciseDetails.id}?use_clients=1`}
                           rel="noopener noreferrer"
                           target="_blank"
                         >
                           {this.props.t("here")}.
-                        </OutboundLink>
+                        </a>
                       </p>
                       <StyledDivider />
                     </Small>

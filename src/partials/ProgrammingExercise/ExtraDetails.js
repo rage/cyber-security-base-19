@@ -1,6 +1,5 @@
 import React from "react"
 import Loading from "../../components/Loading"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import {
   ExpansionPanel,
   ExpansionPanelSummary,
@@ -30,24 +29,24 @@ const ExtraDetails = ({ exerciseDetails, onUpdate, noCoins, t }) => {
           <div>
             <StyledTypography>
               {t("submitNetBeans")}{" "}
-              <OutboundLink
+              <a
                 href="/installation-guide"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 {t("submitHowTo")}
-              </OutboundLink>
+              </a>
               .
             </StyledTypography>
             <StyledTypography>
               {t("seeSubmissions")}{" "}
-              <OutboundLink
+              <a
                 href={`https://tmc.mooc.fi/exercises/${exerciseDetails.id}?use_clients=1`}
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 {t("here")}
-              </OutboundLink>
+              </a>
               .
             </StyledTypography>
           </div>
