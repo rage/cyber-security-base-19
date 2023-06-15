@@ -70,8 +70,9 @@ alternatively follow these instructions to install [pip](https://pypi.org/projec
 Install the following packages using pip
 
 ```shell
-python3 -m pip install django selenium beautifulsoup4 requests 
+python3 -m pip install django "selenium<4" beautifulsoup4 requests
 ```
+The latest selenium (major version 4) has some issues, so we are installing an older version.
 
 You need to allow your firewall software to allow python to listen and to connect to the internet.
 
