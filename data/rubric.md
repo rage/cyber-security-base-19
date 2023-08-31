@@ -23,8 +23,8 @@ haven't put genuine effort into them.
 
 Please write the essays carefully and with thought. Other participants in the course
 will review them and give you feedback.
-Essays should be written individually and using your own words. Copy-pasteing
-from other sources is not allowed. Copy-pasteing text from other sources, such as Internet, other student answers, or text generating tools, and pretending
+Essays should be written individually and using your own words. Copy-pasting
+from other sources is not allowed. Copy-pasting text from other sources, such as Internet, other student answers, or text generating tools, and pretending
 it to be your own counts as plagiarism.
 Plagiarism is not
 allowed under any circumstances, and will have consequences when caught.
