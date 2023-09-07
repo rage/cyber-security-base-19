@@ -125,9 +125,9 @@ will review them and give you feedback.
 Essays should be written individually and using your own words. Copy-pasting
 from other sources is not allowed. Copy-pasting text from other sources and pretending
 it to be your own counts as plagiarism.
-Plagiarism is not
+[Plagiarism](https://studies.helsinki.fi/instructions/article/what-cheating-and-plagiarism) is not
 allowed under any circumstances, and will have consequences when caught.
-See [here](https://studies.helsinki.fi/instructions/article/what-cheating-and-plagiarism) for more detailed descriptions, especially on the usage of LLMs.
+See [here](https://cybersecuritybase.mooc.fi/rubric#heading-on-the-usage-of-llm) regarding the usage of LLMs.
 
 If appropriate, add a list of references to the end of the essay.
 
