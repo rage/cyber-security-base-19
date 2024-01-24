@@ -229,6 +229,6 @@ F-Secure web server asks us to look for the content from the address
 If you do not reside in Finland and make the same request as above, you are likely directed to another address.
 </text-box>
 
-<quiz id="3bde4a8d-4569-5d74-abdd-148c744195f0"></quiz>
+<quiz id="4c68478a-1547-533a-a1af-51fc5cb45509"></quiz>
 
-<quiz id="7e4ad6b2-a18a-5292-a424-750021e330b4"></quiz>
+<quiz id="5265157e-ca1f-503c-a256-3d17ab6fd8b9"></quiz>
