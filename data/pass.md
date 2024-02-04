@@ -63,6 +63,8 @@ are not immediately accepted once you have written them as they need to be peer-
 
 Each course has a deadline, and you have gather enough points before the deadline.
 If you do not have enough points once the deadline has passed, the points are lost.
+Essays that have been submitted on-time such that the author has given enough feedback to other
+essays will be checked, regardless whether they have received enough peer reviews.
 
 Once you have gathered enough points, mooc.fi will acknowledge that you have passed the course.
 There may be some delay between having enough points and being acknowledged for passing the course, especially
