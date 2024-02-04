@@ -4,7 +4,7 @@ title: 'Part I'
 overview: true
 hidden: false
 ---
-<deadline>31.12.2023</deadline>
+<deadline>31.5.2024</deadline>
 
 ### About the course
 
@@ -17,7 +17,7 @@ basics of internet communication protocols and a gentle introduction to cryptogr
 
 This course has only 1 part.
 
-To pass the course you need 32 (out of 38) points.
+To pass the course you need 27 (out of 33) points.
 
 #### Before starting the course
 

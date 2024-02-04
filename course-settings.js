@@ -1,15 +1,15 @@
 const courseSettings = {
   language: "en",
-  name: "Cyber Security Base 2023",
+  name: "Cyber Security Base 2024",
   siteUrl: "https://cybersecuritybase.mooc.fi",
   subtitle: "a free course series about cyber security",
-  slug: "cyber-security-base-2023",
+  slug: "cyber-security-base-2024",
   quizzesId: "d76439f1-f112-402e-9f9c-9c9949db573f",
   progressSections: [
     {
 	  name: "Introduction",
-	  quizId: "09100bd9-764c-47ae-8481-543051688008",
-	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":38}],
+	  quizId: "d2266ed9-f2b5-4199-b2eb-a91ae7ada0e0",
+	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":33}],
     },
 	{
 	  name: "Securing Software",
