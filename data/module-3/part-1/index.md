@@ -4,7 +4,7 @@ title: 'Part I'
 overview: true
 hidden: false
 ---
-<deadline>31.12.2023</deadline>
+<deadline>31.5.2024</deadline>
 
 
 In the first project, the participants will construct software with security
@@ -135,5 +135,5 @@ The rubric for the scores are as follows:
 
 ### Submitting the project
 
-<quiz id="d3954ed9-c75f-59e9-8e6d-a71ea3b87bd0"></quiz>
+<quiz id="df558692-ddd1-5df7-8c84-c5dc269fa58f"></quiz>
 
