@@ -49,7 +49,6 @@ _Denial of Service_ refers to all the cases in which the server or service is ma
 
 Lastly, _Elevation of Privilege_ is a threat type in which an unprivileged user finds a way to gain sufficient privileges to compromise the system. Elevation of privilege threats include those situations in which an attacker has effectively penetrated all system defenses and become part of the trusted system itself, a dangerous situation indeed.
 
-<quiz id="b6f55f2c-5308-55a1-b608-85347d3a7360"></quiz>
 
 
 ## Applying STRIDE

@@ -26,7 +26,7 @@ const courseSettings = {
 	  name: "Advanced Topics",
 	  quizId: "8e404ef5-0201-4f28-950c-c6b6586ec0c6",
       tmcCourse: "cyber-advanced-topics-2024",
-	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":11},{"group":"osa02","progress":0,"n_points":0,"max_points":7},{"group":"osa03","progress":0,"n_points":0,"max_points":11},{"group":"osa04","progress":0,"n_points":0,"max_points":10},{"group":"osa05","progress":0,"n_points":0,"max_points":15}],
+	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":6},{"group":"osa02","progress":0,"n_points":0,"max_points":7},{"group":"osa03","progress":0,"n_points":0,"max_points":11},{"group":"osa04","progress":0,"n_points":0,"max_points":10},{"group":"osa05","progress":0,"n_points":0,"max_points":5}],
 	},
 	{
 	  name: "Project II",

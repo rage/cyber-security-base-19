@@ -6,7 +6,7 @@ hidden: false
 ---
 
 
-<deadline>31.12.2023</deadline>
+<deadline>31.5.2024</deadline>
 
 This material contains the advanced topics part of the course series [Cyber
 Security Base](https://cybersecuritybase.mooc.fi/). During this
@@ -27,7 +27,7 @@ By continuing, you agree to not to do any harm with this information or other si
 
 The course consists of 5 parts.
 
-To pass the course you need 81 points out of 94.
+To pass the course you need 66 points out of 79.
 
 
 #### Before starting the course
