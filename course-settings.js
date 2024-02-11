@@ -30,7 +30,7 @@ const courseSettings = {
 	},
 	{
 	  name: "Project II",
-	  quizId: "2d43c849-cd3d-435b-bf5d-27e841b70a3d",
+	  quizId: "5e36ca3f-e868-4bd5-804c-c5fd7b9081bf",
 	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":1}],
 	},
   ],

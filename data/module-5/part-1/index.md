@@ -4,7 +4,7 @@ title: 'Project II'
 overview: true
 hidden: false
 ---
-<deadline>31.12.2023</deadline>
+<deadline>31.5.2024</deadline>
 
 In the second project, the participants will install an operating system with a
 variety of vulnerabilities and then install a network intrusion prevention
@@ -168,7 +168,7 @@ When providing feedback take into account length limitations on essays.
 
 ### Submitting the project
 
-<quiz id="f8aa7d5e-28f9-5c87-94d8-e13b31448d54"></quiz>
+<quiz id="0ff1f0c5-63c6-5978-b06e-1e1748dfd676"></quiz>
 
 
 ### Installation notes
