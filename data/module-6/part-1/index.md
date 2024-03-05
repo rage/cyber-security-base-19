@@ -4,7 +4,7 @@ title: 'Capture the Flag'
 overview: true
 hidden: false
 ---
-<deadline>30.04.2023</deadline>
+<deadline>30.04.2024</deadline>
 
 The goal of the capture the flag (CTF) is to solve some simple problems related to the
 material you've studied so far. The challenges range from finding hidden messages,
@@ -38,19 +38,16 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 
 The challenges in this CTF come in three difficulty levels: easy, medium and hard.
 
-<p>
 In order to ensure everyone has a fair chance to get the first completion,
-we're releasing the challenges in batches -- easy challenges are to be released on <s>Wednesday (15.3.2023)</s> Tuesday (28.3.2023),
-medium challenges on <s>Thursday (16.3.2023)</s> Wednesday (29.3.2023), and hard challenges on <s>Friday (17.3.2023)</s> Thursday (30.3.2023).
-</p>
+we're releasing the challenges in batches -- easy challenges are to be released on Wednesday (13.3.2024),
+medium challenges on Thursday (14.3.2023), and hard challenges on Friday (15.3.2023).
 
-The start of the course was delayed due to server issues.
 
 The exercises are published starting from 14:00, and new exercise will be added roughly every 20 minutes.
 
 There are 10 easy challenges, 10 medium, and 3 hard.
 
-The exercises can be found [here](https://csb-capture-the-flag.tb.cs.helsinki.fi).
+The exercises can be found (link will be added later).
 Use your MOOC account to login.
 
 To finish a challenge, find a special code and submit it to the site.
@@ -67,7 +64,7 @@ To pass the CTF, you need to complete at least 8 easy challenges and at
 least 7 medium challenges, before the deadline. There is no need to complete
 hard challenges to pass the course.
 The number of students that have completed a challenge before you has no effect on passing the course.
-The deadline for completing the challenges is 30.4.2022.
+The deadline for completing the challenges is 30.4.2024.
 
 Medium challenges are open after you complete 80% of easy challenges.
 Hard challenges are open after you complete 80% of medium challenges.
