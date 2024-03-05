@@ -40,7 +40,7 @@ The challenges in this CTF come in three difficulty levels: easy, medium and har
 
 In order to ensure everyone has a fair chance to get the first completion,
 we're releasing the challenges in batches -- easy challenges are to be released on Wednesday (13.3.2024),
-medium challenges on Thursday (14.3.2023), and hard challenges on Friday (15.3.2023).
+medium challenges on Thursday (14.3.2024), and hard challenges on Friday (15.3.2024).
 
 
 The exercises are published starting from 14:00, and new exercise will be added roughly every 20 minutes.
