@@ -47,7 +47,7 @@ The exercises are published starting from 14:00, and new exercise will be added 
 
 There are 10 easy challenges, 10 medium, and 3 hard.
 
-The exercises can be found (link will be added later).
+The exercises can be found [here](https://csb-capture-the-flag.tb.cs.helsinki.fi).
 Use your MOOC account to login.
 
 To finish a challenge, find a special code and submit it to the site.
