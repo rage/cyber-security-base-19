@@ -42,7 +42,7 @@ However, due to its fundamental nature it is allowed as a flaw.
 
 
 We recommend that you implement the website using Python & Django. If you did the previous
-course you should already Django libraries installed. See [installation guide](/installation-guide) otherwise.
+course you should already have Django libraries installed. See [installation guide](/installation-guide) otherwise.
 To create a starter website, follow the instructions [here](https://docs.djangoproject.com/en/3.1/intro/tutorial01/).
 
 You may do the project without using the starter template (in a language of
@@ -56,17 +56,17 @@ can use [https://version.helsinki.fi](https://version.helsinki.fi). Make sure th
 The easiest way to check the visibility is to try the links in incognito mode.
 Do _not_ remove the project until you have received the points.
 
-Make sure that (these are the most common reasons for project being rejected)
+Make sure that (these are the most common reasons for a project being rejected)
 - The flaws are real, and not just hypothetical, and the fixes are included in the code,
-- The fix actually fixes the problem, and not just hide it,
+- The fix actually fixes the problem, and not just hides it,
 - There is a backend, and the flaws/fixes occur in the backend. Remember that the user can manipulate the frontend as much as possible.
 
-Note that essay is not accepted immediately as it needs to be approved by the course staff.
+Note that the essay is not accepted immediately as it needs to be approved by the course staff.
 
 
 ### Writing essay
 
-You will then write a 1000 word report (hard limits: 800-1500) that pinpoints the flaws and 
+You will then write a 1000 word report (hard limits: 800-1500) that pinpoints the flaws and
 describes how they can be fixed. The report _must_ follow the following structure:
 
 ```rest
@@ -92,10 +92,10 @@ how to fix it...
 
 ```
 
-Add source link to each flaw if appropriate. Ideally, the link should 
+Add source link to each flaw if appropriate. Ideally, the link should
 have the format `https://urldomain/repo/file.py#L42` (Line 42 in `file.py`).
 The links can be easily obtained by clicking the line numbers in the Github repository file browser.
-If the flaw involves in omitting some code, then comment-out the code, and provide the link to the beginning of the commented block. 
+If the flaw involves in omitting some code, then comment-out the code, and provide the link to the beginning of the commented block.
 
 Be specific with your fix. If possible, provide a fix to the problem in the
 code. The fix can be commented out. If appropriate, add a source link to each
@@ -126,8 +126,8 @@ or, in your opinion, 5 best.
 The rubric for the scores are as follows:
 
 1. _Failed:_ The flaw is missing, or otherwise inappropriate
-2. _Passable:_ The flaw is identified correctly, the fix partially corrects the problem. The underlying problem and the effect of the fix is somewhat misuderstood.
-3. _Average:_ The flaw described adequately and the fix fixes the problem. Minor misunderstanding of the underlying mechanism. The description is too vague but ultimately correct.
+2. _Passable:_ The flaw is identified correctly, the fix partially corrects the problem. The underlying problem and the effect of the fix is somewhat misunderstood.
+3. _Average:_ The flaw is described adequately and the fix fixes the problem. Minor misunderstanding of the underlying mechanism. The description is too vague but ultimately correct.
 4. _Good:_ The flaw and the fix are correctly done. Minor issues in descriptions.
 5. _Excellent:_ No issues or only cosmetic issues
 
@@ -136,4 +136,3 @@ The rubric for the scores are as follows:
 ### Submitting the project
 
 <quiz id="df558692-ddd1-5df7-8c84-c5dc269fa58f"></quiz>
-
