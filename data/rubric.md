@@ -68,7 +68,7 @@ For citing references you can use numbers in brackets, for example [1].
 4) Rerefences should be relevant. The factual statements in your essays should be backed by your citations.
 5) References should be credible.
 6) Ideally, reference should not be behind a paywall.
-7) Avoid using wikipedia as a reference. 
+7) Do not use wikipedia as a reference. The reason is that wikipedia articles are missing a responsible author.
 8) Avoid using course material as a reference (though the external links are fine).
 9) References should be in English. In emergency case, Finnish is also allowed
 but only if the same information cannot be found in English. No other languages are allowed.
