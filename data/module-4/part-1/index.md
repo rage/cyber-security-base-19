@@ -5,8 +5,7 @@ overview: true
 hidden: false
 ---
 
-
-<deadline>31.5.2024</deadline>
+<deadline>30.11.2024</deadline>
 
 This material contains the advanced topics part of the course series [Cyber
 Security Base](https://cybersecuritybase.mooc.fi/). During this
