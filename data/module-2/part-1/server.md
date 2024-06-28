@@ -171,7 +171,7 @@ urlpatterns = [
 ```python
 # views.py
 from django.http import HttpResponse
-  
+
 
 def pathView(request):
     return HttpResponse('Path')
@@ -212,7 +212,7 @@ urlpatterns = [
 ```python
 # views.py
 from django.http import HttpResponse
-  
+
 
 def greetView(request, user):
     return HttpResponse('Hi ' + user)
@@ -236,7 +236,7 @@ urlpatterns = [
 ```python
 # views.py
 from django.http import HttpResponse
-  
+
 
 def greetView(request):
 	user = request.GET.get('user')
@@ -364,7 +364,7 @@ def homePageView(request):
 
 The context variable is a
 [dictionary](https://docs.python.org/3/tutorial/datastructures.html#dictionaries),
-and it can also contain nested dictionaries and lists. 
+and it can also contain nested dictionaries and lists.
 
 The context can be then rendered using the `{{}}` syntax in the template
 
@@ -390,7 +390,7 @@ application. Forms are defined in HTML (see
 [form](http://www.w3schools.com/html/html_forms.asp)) using the `form`-element.
 The form-element will contain the path to which the content will be sent to,
 the type of the request, and the data. For now, the type of the request will be
-POST. We will discuss POST and GET later. 
+POST. We will discuss POST and GET later.
 
 The data is defined using fields such as the input field (`<input
 type="text"...`), and the content is sent to the server using a button (`<input
@@ -489,7 +489,7 @@ python3 manage.py migrate
 ```
 
 NB! Be wary that `items = request.session.get('items', [])` doesn't create a new list in session if one doesn't exist,
-it will simply initializes `items` to `[]`. Moreover, for example, `items = []` will not update the list in sessions.
+it will simply initialize `items` to `[]`. Moreover, for example, `items = []` will not update the list in sessions.
 It will only set the `items` to point to `[]`.
 Consequently, in certain cases, you have to update the actual list explicitly for example with `request.session['items'] = items`.
 
