@@ -24,7 +24,7 @@ define a classification for that element.
 
 While HTML is the language for defining the structure and content of a web
 page, Javascript is a language for defining dynamic content to the page.
-javascript is a programming language, and like almost any programming language,
+Javascript is a programming language, and like almost any programming language,
 it is executed one command at a time, top to bottom, left to right.
 
 
