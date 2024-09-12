@@ -35,7 +35,7 @@ This is not a false impression but there is quite much more in cryptography as w
 
 But let us start with the basic setting and define some basic terms.
 
-We call the original message that is supposed to be kept hidden the _plaintext_. The idea of ciphering is to use some _encryption function_ and some _encryption key_ to get the _cryptotext._ That is the message in the hidden form. For the reverse direction, we need a _decrypting function_, a method that is used together with a _decryption key_ in order to retrieve the original plaintext.
+We call the original message that is supposed to be kept hidden the _plaintext_. The idea of ciphering is to use some _encryption function_ and some _encryption key_ to get the _ciphertext_. That is the message in the hidden form. For the reverse direction, we need a _decrypting function_, a method that is used together with a _decryption key_ in order to retrieve the original plaintext.
 
 Encryption is used to protect _confidentiality_ of the data.
 
@@ -70,10 +70,10 @@ Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`)
 
 <programming-exercise name="Break the hash" tmcname="part3-01.password" course="Advanced Topics">
 
-In this exercise you are given a hash and a list of candidate passwords, and
-your task is to write a password guesser that finds the password in the candidates that was used to generate the hash.
+In this exercise you are given a hash and a list of candidate passwords.
+Your task is to write a password guesser which finds which password in the candidates list was the one that was used to generate the hash.
 
-The hash follows a common format used for storing hashed password
+The hash follows a common format used for storing hashed password:
 ```
 procotol$salt$hash
 ```
@@ -99,7 +99,7 @@ There are nowadays also encryption methods that are _not_ symmetric, i.e., being
 
 Symmetric encryption methods are still useful in many situations, and they are typically much faster than asymmetric ones. Therefore, symmetric encryption is in wide use, and new symmetric methods are developed. One-time pad (OTP) and AES are examples of symmetric encrypting schemes.
 
-One of the oldest encryption methods is substituting every instance of a letter with some other letter. A cipher like this is called a _substitution cipher_. An example is the _CAESAR_ cipher which is an encryption algorithm where you get the cryptotext by rotating every letter in the plaintext three positions forward in the alphabet. Decryption is done by rotating every letter of the cryptotext three positions backwards.
+One of the oldest encryption methods is substituting every instance of a letter with some other letter. A cipher like this is called a _substitution cipher_. An example is the _CAESAR_ cipher which is an encryption algorithm where you get the ciphertext by rotating every letter in the plaintext three positions forward in the alphabet. Decryption is done by rotating every letter of the cipherext three positions backwards.
 
 <quiz id="1d9b650a-f96e-5f95-94b8-a66bc1f9541e"></quiz>
 
@@ -109,19 +109,18 @@ One of the oldest encryption methods is substituting every instance of a letter 
 
 Implement a substitution cipher: complete `encrypt` and `decrypt` functions in `src/substitution.py`.
 
-Both functions are byte arrays and should output an byte array as an output.
-The key is an array such that `key[c]` is equal to the _encrypted_ value of `c`.
+Both functions take two byte array parameters and each should also return a byte array. The key is an array such that `key[c]` is equal to the _encrypted_ value of `c`.
 
 </programming-exercise>
 
 
-One-time pad (OTP) is one of the simplest encryption methods. To encrypt a message of, say, 140 bits you need a secret key of 140 bits. You compute the XOR of each message bit with the corresponding key bit, and you get 140 cryptotext bits,
+One-time pad (OTP) is one of the simplest encryption methods. To encrypt a message of, say, 140 bits you need a secret key of 140 bits. You compute the XOR of each message bit with the corresponding key bit, and you get 140 ciphertext bits,
 
 $$
 C = M \oplus K.
 $$
 
-The decrypting process is exactly the same as the encryption process. If you know the secret key you can decrypt the message by XORing bit-by-bit the cryptotext message and the key,
+The decrypting process is exactly the same as the encryption process. If you know the secret key you can decrypt the message by XORing bit-by-bit the ciphertext message and the key,
 
 $$
 M = C \oplus K.
@@ -144,7 +143,8 @@ The only downside of the OTP is that the key must be as long as the actual plain
 <programming-exercise name="Repeating pads" tmcname="part3-03.xorpad" course="Advanced Topics">
 
 Implement a xorpad cipher: complete `encrypt` and `decrypt` functions in `src/xorpad.py`.
-Both functions are byte arrays and should output an byte array as an output.
+
+Both functions take two byte array parameters and each should also return a byte array.
 
 The pad can be significantly shorter than the message. In such a case you should repeat the pad as long as needed.
 
@@ -153,6 +153,6 @@ deduce the pad if a short part of message is known in advance (can you figure ou
 
 </programming-exercise>
 
-Advanced Encryption Standard ([AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)) is a family of modern _block ciphers_. AES-256 has key size of 256 bits and it turns 128-bit plaintext blocks into 128-bit cryptotext blocks, and vice versa. This algorithm is quite fast even when implemented in software and considered secure enough for almost all uses. Many modern processors provide hardware support for AES.
+Advanced Encryption Standard ([AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)) is a family of modern _block ciphers_. AES-256 has key size of 256 bits and it turns 128-bit plaintext blocks into 128-bit ciphertext blocks, and vice versa. This algorithm is quite fast even when implemented in software and considered secure enough for almost all uses. Many modern processors provide hardware support for AES.
 
 <quiz id="6b937f95-ca26-5b59-bba1-b41d96fa0d38"></quiz>

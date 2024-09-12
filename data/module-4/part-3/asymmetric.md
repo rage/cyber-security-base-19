@@ -93,7 +93,7 @@ and $q$ to anybody.
 Let us assume that Alice has given her public key to Bob. Bob can now encrypt
 any &quot;message&quot; $x$ that is (encoded as) an integer between 0 and
 $n$ by calculating $x^e \mod n = y$ .Bob would send the
-result to Alice. Alice can decrypt the cryptotext $y$ because she knows
+result to Alice. Alice can decrypt the ciphertext $y$ because she knows
 the secret decrypting exponent $d$. She calculates $y^d \mod n
 = x$.
 

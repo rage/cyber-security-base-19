@@ -4,9 +4,9 @@ title: 'Cryptanalysis'
 hidden: false
 ---
 
-_Cryptanalysis_ is the study of cryptographic algorithms and methods. The basic goal is to _break_ cryptographic algorithms in one way or another. For example, the attacker may have acquired knowledge of some cryptotexts and the corresponding plaintexts. Then he tries to use this information for finding the used key. In another setting, we assume that the attacker has only some cryptotexts based on which the key should be found. It is always assumed that the attacker knows all details of the encryption and decryption processes, only the secret key is not known. If this cannot be assumed then the encryption method is considered to be very weak.
+_Cryptanalysis_ is the study of cryptographic algorithms and methods. The basic goal is to _break_ cryptographic algorithms in one way or another. For example, the attacker may have acquired knowledge of some ciphertexts and the corresponding plaintexts. Then he tries to use this information for finding the used key. In another setting, we assume that the attacker has only some ciphertexts based on which the key should be found. It is always assumed that the attacker knows all details of the encryption and decryption processes, only the secret key is not known. If this cannot be assumed then the encryption method is considered to be very weak.
 
-Let us take a look at the substitution cipher. Now every occurrence of the letter &rsquo;e&rsquo; in the plaintext is encrypted as the same letter in the cryptotext, lets say &rsquo;&Aring;&rsquo;. Because &rsquo;e&rsquo; is the most common letter in the English language, &rsquo;&Aring;&rsquo; should be one of the most common letters of the cryptotext. So we may assume that the common letters in the cryptotext correspond to common letters in the language of the plaintext and use this information for making educated guesses about how each letter is encrypted. This cryptanalytic approach is called _frequency analysis_.
+Let us take a look at the substitution cipher. Now every occurrence of the letter &rsquo;e&rsquo; in the plaintext is encrypted as the same letter in the ciphertext, lets say &rsquo;&Aring;&rsquo;. Because &rsquo;e&rsquo; is the most common letter in the English language, &rsquo;&Aring;&rsquo; should be one of the most common letters of the ciphertext. So we may assume that the common letters in the ciphertext correspond to common letters in the language of the plaintext and use this information for making educated guesses about how each letter is encrypted. This cryptanalytic approach is called _frequency analysis_.
 
 <programming-exercise name="Frequency attack" tmcname="part3-04.frequency" course="Advanced Topics">
 
@@ -27,17 +27,17 @@ Hint: `string.ascii_lowercase` and `islower()` can be handy.
 
 </programming-exercise>
 
-The same approach cannot be used against OTP. If the key is chosen randomly, both 0 and 1 appear as often in the cryptotext, in average. This happens regardless of how common 1 is in the plaintext. In fact, any cryptotext could result from any plaintext with a suitable key. Assume the known cryptotext bit is C. Now the corresponding plaintext bit could be either C (which happens if the key bit is zero) or 1-C (which happens if the key bit is one). Therefore, knowing the cryptotext does not provide any new information about the plaintext to the attacker. This means the OTP is _unconditionally_ secure.
+The same approach cannot be used against OTP. If the key is chosen randomly, both 0 and 1 appear as often in the ciphertext, in average. This happens regardless of how common 1 is in the plaintext. In fact, any ciphertext could result from any plaintext with a suitable key. Assume the known ciphertext bit is C. Now the corresponding plaintext bit could be either C (which happens if the key bit is zero) or 1-C (which happens if the key bit is one). Therefore, knowing the ciphertext does not provide any new information about the plaintext to the attacker. This means the OTP is _unconditionally_ secure.
 
-For the OTP, we applied the setting where the attacker knows only the cryptotext. If the attacker knows both the cryptotext and the corresponding plaintext, then he can easily recover the used key. However, breaking OTP in this setting is not relevant because the recovered key is not used to encrypt anything else than the plaintext that the attacker already knows.
+For the OTP, we applied the setting where the attacker knows only the ciphertext. If the attacker knows both the ciphertext and the corresponding plaintext, then he can easily recover the used key. However, breaking OTP in this setting is not relevant because the recovered key is not used to encrypt anything else than the plaintext that the attacker already knows.
 
 ## Modes of operation
 
 A block cipher, like AES, is used to encrypt blocks of a certain size. What should be done if the message is longer than that size?
 
-The simplest way to encrypt a long message is to take the first block, encrypt it using the key to produce the first cryptotext block, then take the second block, encrypt it using the same key to produce the second cryptotext block etc. This approach is one of the [block cipher modes of operation](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation), called _Electronic Codebook_ (ECB). It is the simplest way but often could be broken by frequency analysis. The attacker notices if you encrypt the same plaintext block twice because the two cryptotexts are also the same. This happens, for example, if plaintext contains some commonly used short pattern, like 'OK'.
+The simplest way to encrypt a long message is to take the first block, encrypt it using the key to produce the first ciphertext block, then take the second block, encrypt it using the same key to produce the second ciphertext block etc. This approach is one of the [block cipher modes of operation](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation), called _Electronic Codebook_ (ECB). It is the simplest way but often could be broken by frequency analysis. The attacker notices if you encrypt the same plaintext block twice because the two ciphertexts are also the same. This happens, for example, if plaintext contains some commonly used short pattern, like 'OK'.
 
-Other modes of operation avoid this problem by using extra input in addition to plaintext and key. For instance, previously computed cryptotext blocks or _counters_ could be used for this purpose. Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`) makes use of AES algorithm in _Galois/Counter Mode_. The key length is 256 bits.
+Other modes of operation avoid this problem by using extra input in addition to plaintext and key. For instance, previously computed ciphertext blocks or _counters_ could be used for this purpose. Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`) makes use of AES algorithm in _Galois/Counter Mode_. The key length is 256 bits.
 
 The next 3 exercises should be done in order.
 
@@ -139,7 +139,7 @@ Hint: you will probably find the xor helper function helpful. Do not forget add 
 
 Padding oracle attack shows that a tiny amount of additional information can be enough to break the cipher.
 
-Earlier versions of CBC decipher implementations would return an error message to the sender if the padding of the sent message was correct. 
+Earlier versions of CBC decipher implementations would return an error message to the sender if the padding of the sent message was incorrect. 
 This information, assuming that we have access to submit our own messages to the decipher, is enough to break CBC encryption!
 Furthermore, the breakage doesn't depend on the underlying block cipher.
 
