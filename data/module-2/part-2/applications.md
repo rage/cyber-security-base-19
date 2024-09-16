@@ -24,7 +24,7 @@ define a classification for that element.
 
 While HTML is the language for defining the structure and content of a web
 page, Javascript is a language for defining dynamic content to the page.
-javascript is a programming language, and like almost any programming language,
+Javascript is a programming language, and like almost any programming language,
 it is executed one command at a time, top to bottom, left to right.
 
 
@@ -351,9 +351,9 @@ will have a field named `tasks` containing the list of tasks.
 
 <text-box variant=emph name="Cross-origin Resource Sharing">
 
-Public resources such as javascript files, images and stylesheets and can be
+Public resources such as Javascript files, images and stylesheets and can be
 accessed from anywhere. At the same time, if a web application requests data
-using javascript, the request may be blocked if the target server has not
+using Javascript, the request may be blocked if the target server has not
 explicitly allowed such requests and the target server is not the same server
 on which the application is currently running on.
 
