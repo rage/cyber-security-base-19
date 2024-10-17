@@ -28,7 +28,7 @@ By continuing, you agree to not to do any harm with this information or other si
 
 The course consists of 5 parts.
 
-To pass the course you need 81 points out of 94.
+To pass the course you need 66 points out of 79.
 
 
 #### Before starting the course
