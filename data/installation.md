@@ -15,10 +15,10 @@ In order to do programming exercises, you need to install several software packa
 
 In addition, Securing Software requires
 
-- several additional packages to test python exercises 
+- several additional packages to test python exercises
 - ChromeDriver + Chrome to test javascript exercises
 
-## Installing TMC 
+## Installing TMC
 
 TMC requires a fairly modern Java 8 or later to work properly.
   Open jdk 1.8.0_212 for example works
@@ -33,7 +33,7 @@ terminal/command prompt.
 
 If you detest command line usage, it is possible to use Visual Studio IDE (with
 python) as there is also a Visual Studio
-[plugin](https://www.mooc.fi/en/installation/vscode) for TMC client.  
+[plugin](https://www.mooc.fi/en/installation/vscode) for TMC client.
 
 ## Installing Python 3
 
@@ -63,7 +63,7 @@ for mac and linux. Official Windows installer asks whether you want to have yout
 This step is only required for Securing Software.
 
 Package installer for Python (pip) should be already installed with modern python if you installed python from python.org or using conda distribution.
-If you you installed it using apt-get or port, then most likely you will need to install pip. The package name is probably `python3-pip`,
+If you installed it using apt-get or port, then most likely you will need to install pip. The package name is probably `python3-pip`,
 alternatively follow these instructions to install [pip](https://pypi.org/project/pip/).
 
 
@@ -77,7 +77,7 @@ The latest selenium (major version 4) and the latest urllib3 (major version 2) h
 You need to allow your firewall software to allow python to listen and to connect to the internet.
 
 
-## Installing ChromeDriver and Chrome 
+## Installing ChromeDriver and Chrome
 
 This step is only required for Securing Software.
 
@@ -86,7 +86,7 @@ In order to test these exercises locally, the tests rely on a chrome browser.
 
 Two pieces of software are required
 - the browser [Google Chrome](https://www.google.com/chrome/)
-- a software that allows python communicate with the the browser [ChromeDriver](https://sites.google.com/chromium.org/driver/)
+- a software that allows python to communicate with the browser [ChromeDriver](https://sites.google.com/chromium.org/driver/)
 
 When installing ChromeDriver you need to make sure that the driver version matches the browser version,
 otherwise the driver refuses to work.
@@ -110,7 +110,7 @@ download the [script](/public/scripts/sanity.py) and test it with python
 python3 sanity.py
 ```
 
-The script will test if the python packages are installed and uses selenium to access google.com. 
+The script will test if the python packages are installed and uses selenium to access google.com.
 Note that this script tests the installations required for the Securing Software course.
 These packages are not needed for Advanced topics.
 
@@ -134,18 +134,18 @@ Download the exercises for the advanced topics with the command
 tmc download mooc-cyber-advanced-topics-2024
 ```
 
-NB! Do not change the name of the root directory, for example it should stay as `mooc-securing-software-23`.
+NB! Do not change the name of the root directory, for example it should stay as `mooc-securing-software-24`.
 
 You can test the exercises locally with `tmc test` and submit your solutions with `tmc submit`.
 See `tmc help` for additional commands.
 
 You can test individual exercise by going to an exercise-specific folder, or
-you can test all of them at once by issuing testing commands at root. 
+you can test all of them at once by issuing testing commands at root.
 
 Every exercise has automated tests. If you end up in situation where `tmc test` cannot
 find any test, you can locate the bug by either starting the application yourself
 (if the programming exercise is django, then start the server with `manage.py`)
-or submit the exercise and see the logs on TMC website. 
+or submit the exercise and see the logs on TMC website.
 
 NB! The TMC server tests the exercises with Python 3.7. Most likely, your
 Python installation will be a newer version. Make sure that you do not use

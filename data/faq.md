@@ -8,7 +8,7 @@ information_page: true
 <table-of-contents></table-of-contents>
 
 ### MOOC?
-Massive Open Online Courses (MOOCs) are as the name says they open, free, and online. You do not have to care about course fees, not on this MOOC anyway. You do not have to care about commute as you can do it where you are as long as you have Internet connectivity. You do not have to care about schedules, well you have a start and end dates but between them it is upto you when you do the tasks.
+Massive Open Online Courses (MOOCs) are as the name says they are open, free, and online. You do not have to care about course fees, not on this MOOC anyway. You do not have to care about commute as you can do it where you are as long as you have Internet connectivity. You do not have to care about schedules, well you have a start and end dates but between them it is up to you when you do the tasks.
 
 ### Is the course series free?
 Yes.
@@ -33,7 +33,7 @@ Generally speaking, Java and Python are both easy for beginners to learn, and
 fairly common. On the other hand, C/C++ can teach you more about how computers
 actually work, which can be useful for certain types of programming. So if
 you’re learning from scratch, you should consider what kind of work you want to
-do after the course ends. 
+do after the course ends.
 
 ### Can I earn credits toward university degrees?
 Students at Finnish universities can receive up to 10 ECTS credits if they complete all parts of the course. These credits can be transferred to schools outside of Finland (students have done so in the past), but this requires a little bit of additional paperwork and approval by the recipient school.
@@ -69,7 +69,7 @@ Certificates will be available later.
 Read carefully these [instructions](/pass).
 
 ### How soon should I ask the registration of the ECTS to WebOodi?
-As soon as you receive the registration instructions. The registration closes after certain period of time. 
+As soon as you receive the registration instructions. The registration closes after certain period of time.
 
 ### Can I get the ECTS registered in my home university if I do not study in Finland?
 It is possible and it has been done. Sometimes extra paper work is needed. It really depends on the University in question. We suggest discussing with your local study counselor beforehand.
