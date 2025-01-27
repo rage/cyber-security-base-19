@@ -4,7 +4,7 @@ title: 'Part I'
 overview: true
 hidden: false
 ---
-<deadline>30.11.2024</deadline>
+<deadline>31.08.2025</deadline>
 
 ### About the course
 

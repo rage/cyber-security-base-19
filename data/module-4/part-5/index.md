@@ -6,7 +6,7 @@ hidden: false
 ---
 
 
-<deadline>30.11.2024</deadline>
+<deadline>31.08.2025</deadline>
 
 
 This material contains the advanced topics part of the course series [Cyber
