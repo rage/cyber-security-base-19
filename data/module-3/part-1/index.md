@@ -32,7 +32,7 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 ### Project description
 
 In the first course project, your task is to create a web application that has
-at least five different flaws from the OWASP [top ten list](https://owasp.org/www-project-top-ten/) as well as their fixes.
+at least 5 different flaws from the OWASP [top ten list](https://owasp.org/www-project-top-ten/) as well as their fixes.
 The application should have a backend.
 
 OWASP recently updated its list and there are now two lists: 2017 and 2021.
@@ -56,10 +56,23 @@ can use [https://version.helsinki.fi](https://version.helsinki.fi). Make sure th
 The easiest way to check the visibility is to try the links in incognito mode.
 Do _not_ remove the project until you have received the points.
 
+The code should (almost) always also contain the fix of the flaw. The fix should be commented out.
+Do not use git branches or versions for fixes. Just provide the commented fixes and the flaws in one version.
+
+In addition, you should add screenshots for each flaw demonstrating the effect of the flaw before and after the fix.
+Typically, the screenshots should be of your browser.
+Make sure that the screenshots do not contain any sensitive information.
+You can have multiple screenshots demonstrating the effect. Store them in a `screenshots` folder of your repository and name them 
+`flaw-1-before-1.png`, `flaw-1-after-1.png`, and so on.
+
+
 Make sure that (these are the most common reasons for project being rejected)
-- The flaws are real, and not just hypothetical, and the fixes are included in the code,
-- The fix actually fixes the problem, and not just hide it,
+- The flaws are real, and not just hypothetical, and the fixes are included in the code.
+- The flaws are in the code or in installation script, for example, having admin/admin user in the database is not enough.
+- The fix actually fixes the problem, and not just hide it.
+- Screenshots are included in the repository.
 - There is a backend, and the flaws/fixes occur in the backend. Remember that the user can manipulate the frontend as much as possible.
+
 
 Note that essay is not accepted immediately as it needs to be approved by the course staff.
 
@@ -98,8 +111,8 @@ The links can be easily obtained by clicking the line numbers in the Github repo
 If the flaw involves in omitting some code, then comment-out the code, and provide the link to the beginning of the commented block. 
 
 Be specific with your fix. If possible, provide a fix to the problem in the
-code. The fix can be commented out. If appropriate, add a source link to each
-fix as well.
+code. The fix should be commented out. If appropriate, add a source link to each
+fix as well. You can also refer to the screenshots.
 
 We recommend not to write the essay directly to the browser. Instead write (and
 save) it using your favourite text editor, and then use copy-paste.
@@ -135,5 +148,5 @@ The rubric for the scores are as follows:
 
 ### Submitting the project
 
-<quiz id="df558692-ddd1-5df7-8c84-c5dc269fa58f"></quiz>
+<quiz id="f927b446-4106-5a8e-ab63-e006352ac5de"></quiz>
 

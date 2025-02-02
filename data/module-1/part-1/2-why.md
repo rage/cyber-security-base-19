@@ -70,7 +70,7 @@ findings. At least one study, however, from [Oxford Economics](https://www.oxfor
 surveys and case studies. Those findings show that cyber attacks do indeed
 result in major business impact on victims.
 
-<quiz id="706df398-dd02-5286-bbbb-0de47d5a8a51"></quiz>
+<quiz id="5652f1f7-0670-59de-a12a-b62188b891d7"></quiz>
 
 The job of a vulnerability researcher is to come up with recommendations for
 minimizing the risk to an organization. The tasks of protecting enterprise
@@ -110,7 +110,7 @@ the Office of National Statistics show that the frequency of incidents is
 increasing, it is still commonly believed that cyber crime is an underreported
 area of illegality.
 
-<quiz id="41851ec5-273a-52ea-bcdf-d01a70a7afdc"></quiz>
+<quiz id="328d4ca3-3153-583e-b1db-5b66e334293d"></quiz>
 
 The above conveys a bleak picture of the current state of things. At the same time, however, governments, organizations, corporations and institutions are funnelling more and more money, research and effort into improving the situation.
 
@@ -150,7 +150,7 @@ companies have also noticed the impending GDPR and have introduced various
 types of cyber security insurance which would cover some costs caused by a
 breach (for example a loss of profit).
 
-<quiz id="596d46fc-a017-5b37-8782-4c99743165b2"></quiz>
+<quiz id="db791651-0632-5c02-8bef-92c7ef230747"></quiz>
 
 However, the law is for the law abiding; for a criminal it is just a deterrent.
 The Internet provides anonymity and distances the attacker from the victim,
