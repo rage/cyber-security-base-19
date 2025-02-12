@@ -52,7 +52,7 @@ Note that the graph is not smooth and it is not growing like the &rsquo;normal&r
 
 ![mod lines](mod101_lines.png)
 
-<quiz id="446ff40b-22ca-5863-bf8c-6e769a2f8308"></quiz>
+<quiz id="19b9cfc2-003f-5e11-94b2-62ad0f7e8220"></quiz>
 
 A _key agreement protocol_ is a method for two parties, say Alice and Bob, to agree on a shared secret key over an insecure channel, but still in such way that nobody else who is eavesdropping on the channel is able to learn the shared secret. An example of such method is _Diffie-Hellman key agreement protocol_.
 

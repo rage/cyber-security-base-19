@@ -66,7 +66,7 @@ One of the commonly used methods for constructing a MAC function is [hmac](https
 Our HTTPS example (`TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384_256 bit keys,TLS 1.2`) makes use of a SHA384 hash function.
 
 <!-- QUIZ -->
-<quiz id="a0192c44-ae83-5013-bd28-f0410443e122"></quiz>
+<quiz id="44627814-6f28-53a3-8300-f1111aee969b"></quiz>
 
 <programming-exercise name="Break the hash" tmcname="part3-01.password" course="Advanced Topics">
 
@@ -101,9 +101,9 @@ Symmetric encryption methods are still useful in many situations, and they are t
 
 One of the oldest encryption methods is substituting every instance of a letter with some other letter. A cipher like this is called a _substitution cipher_. An example is the _CAESAR_ cipher which is an encryption algorithm where you get the cryptotext by rotating every letter in the plaintext three positions forward in the alphabet. Decryption is done by rotating every letter of the cryptotext three positions backwards.
 
-<quiz id="1d9b650a-f96e-5f95-94b8-a66bc1f9541e"></quiz>
+<quiz id="025f6735-f0d7-51fe-aee0-bed57e4877bc"></quiz>
 
-<quiz id="4f3f64f7-faca-58c8-9ca8-95ec40eb2fed"></quiz>
+<quiz id="79f4467d-e61a-5f74-a6dc-7c013c70de0f"></quiz>
 
 <programming-exercise name="Substitution cipher" tmcname="part3-02.substitution" course="Advanced Topics">
 
@@ -139,7 +139,7 @@ Although OTP is very simple and fast, it possesses some very good security prope
 The only downside of the OTP is that the key must be as long as the actual plaintext message. And you should not use the key more than once, hence the name &rdquo;one-time pad&rdquo;.
 
 
-<quiz id="1d711835-082f-56a7-a7a4-16bd049e80e2"></quiz>
+<quiz id="ae0b31e8-ae5e-539f-bf5d-8a547e9cbd64"></quiz>
 
 <programming-exercise name="Repeating pads" tmcname="part3-03.xorpad" course="Advanced Topics">
 
@@ -155,4 +155,4 @@ deduce the pad if a short part of message is known in advance (can you figure ou
 
 Advanced Encryption Standard ([AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)) is a family of modern _block ciphers_. AES-256 has key size of 256 bits and it turns 128-bit plaintext blocks into 128-bit cryptotext blocks, and vice versa. This algorithm is quite fast even when implemented in software and considered secure enough for almost all uses. Many modern processors provide hardware support for AES.
 
-<quiz id="6b937f95-ca26-5b59-bba1-b41d96fa0d38"></quiz>
+<quiz id="c9d4b47b-604e-553d-95ec-22fb7a762511"></quiz>

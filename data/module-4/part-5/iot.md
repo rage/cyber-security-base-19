@@ -167,6 +167,6 @@ One of the most interesting problems in the security of IoT devices is the lifec
 
 </text-box>
 
-<quiz id="fd28b183-a63a-5b26-85e5-80b8d554b5e6"></quiz>
+<quiz id="002cd335-d66e-5f40-8f1d-b80edc9fd5de"></quiz>
 
 Although this part of the course painted a bleak picture of IoT it has its benefits but remember the field of IoT security is still alive and evolving and we have to take care that it is done properly and not forgotten. During this course, we have taken a tour on some of the more advanced topics of security. In the course project, some of this knowledge is taken into use. Stay tuned.
