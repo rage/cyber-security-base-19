@@ -84,7 +84,9 @@ that Snort could identify and two attacks that Snort could not identify into
 the report.
 Describe shortly each attack, what component is being attacked, how the attack is performed in metasploit. 
 
-For the detected attacks include the Snort output (if the output is too long, then shorten it, for example by selecting a single line).
+For the detected attacks include the Snort output. if the output is too long,
+then shorten it, for example by selecting a single line; do not shorten the
+line itself though.
 
 A port scan does *not* count as an attack.
 If you cannot find any attacks that Snort cannot identify, remove
@@ -168,7 +170,7 @@ When providing feedback take into account length limitations on essays.
 
 ### Submitting the project
 
-<quiz id="0ff1f0c5-63c6-5978-b06e-1e1748dfd676"></quiz>
+<quiz id="baa8c6ea-a31a-55d9-8546-aace1347b56c"></quiz>
 
 
 ### Installation notes
