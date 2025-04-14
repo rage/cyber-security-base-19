@@ -55,9 +55,9 @@ from a stream of data that the remote machine sends.
 <text-box variant=emph name="Coding horror: they're asking me to do Python?!!">
 
 From now on, the materials will include programming examples as well as
-programming assignments in Python. Python has decent libraries and syntax has a gentle
+programming assignments in Python. Python has decent libraries, syntax, and a gentle
 learning curve. The language is not without its [issues](https://wiki.theory.org/index.php/YourLanguageSucks)
-but it very suitable for this course.
+but it is very suitable for this course.
 
 The previous iterations of this course were based on Java, Spring framework, and Thymeleaf.
 It is recommended to look into this frameworks as well as knowing more than a single
