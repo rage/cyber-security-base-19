@@ -4,7 +4,7 @@ title: 'Capture the Flag'
 overview: true
 hidden: false
 ---
-<deadline>30.04.2025</deadline>
+<deadline>07.05.2025</deadline>
 
 The goal of the capture the flag (CTF) is to solve some simple problems related to the
 material you've studied so far. The challenges range from finding hidden messages,
@@ -64,7 +64,7 @@ To pass the CTF, you need to complete at least 8 easy challenges and at
 least 7 medium challenges, before the deadline. There is no need to complete
 hard challenges to pass the course.
 The number of students that have completed a challenge before you has no effect on passing the course.
-The deadline for completing the challenges is 30.4.2024.
+The deadline for completing the challenges is 07.05.2025.
 
 Medium challenges are open after you complete 80% of easy challenges.
 Hard challenges are open after you complete 80% of medium challenges.

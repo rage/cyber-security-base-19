@@ -73,7 +73,7 @@ Estimated required hours to complete the course: 6-20 hours, depending on the ba
 
 #### Capture The Flag  1 CR (ECTS)
 
-_Schedule: 10.3.2025 -- 30.4.2025_
+_Schedule: 10.3.2025 -- 07.05.2025_
 
 A Capture the Flag (CTF) competition will be organized at the end of the course
 series. In the competition, participants will be given a variety of tasks that
