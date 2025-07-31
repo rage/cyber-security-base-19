@@ -281,15 +281,15 @@ var xmlHttp = new XMLHttpRequest();
 xmlHttp.onreadystatechange = function() {
     if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {
         var response = JSON.parse(xmlHttp.responseText);
-        document.querySelector("#content").innerHTML = response.value.joke;
+        document.querySelector("#content").value = response.setup + " " + response.punchline;
     }
 }
-xmlHttp.open("GET", "http://api.icndb.com/jokes/random/", true);
+xmlHttp.open("GET", "https://official-joke-api.appspot.com/random_joke", true);
 xmlHttp.send(null);
 ```
 
 In the example above, a query is made to the address
-"http://api.icndb.com/jokes/random/". When a response is received, it is
+"https://official-joke-api.appspot.com/random_joke". When a response is received, it is
 processed and content from the response is shown to a user in an element with
 the id "content".
 
