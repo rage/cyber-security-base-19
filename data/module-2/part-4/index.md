@@ -4,7 +4,7 @@ title: 'Part IV'
 overview: true
 hidden: false
 ---
-<deadline>31.08.2025</deadline>
+<deadline>31.08.2026</deadline>
 
 
 This part focuses on security issues related to interconnected software. The
