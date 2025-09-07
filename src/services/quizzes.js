@@ -21,7 +21,7 @@ export async function fetchQuizNames(cid) {
     course = cid
   }
   const response = await axios.get(
-    `https://quizzes.mooc.fi/api/v1/quizzes/${course}/titles/${quizzesLanguage}`,
+    `https://quizzes.mooc.fi/api/v2/general/course/${course}/quiz-titles`,
   )
   return response.data
 }
