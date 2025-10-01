@@ -58,11 +58,8 @@ Readings, essays, quizzes, and puzzles are used in different modules. Some modul
 It depends on the course part. The criteria can be like the following: "In order to pass the course one had to pass both of the essays and 2/3 of the reviews. Some essays were rejected for being too short, for not containing deep enough discussion or for being flagged too many times as spam during the peer review."
 
 ### How do I show someone I have passed a course part?
-You get an online certificate (you can print it if you like).
+You should register the course.
 
-### Where do I get the certificate?
-
-Certificates will be available later.
 
 ### How do I get the ECTS?
 

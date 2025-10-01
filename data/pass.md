@@ -141,9 +141,6 @@ study counselor before starting the course.
 
 #### Instructions for non-Finnish residents
 
-Once the system has acknowledged that you have passed the course, you will receive a certificate,
-which can be downloaded at [the completed courses](https://www.mooc.fi/en/profile/completions) page.
-
 If you are a student at the university, you may be able to transfer these
 credits using the certificate. Discuss this possibility with your study
 counselor before starting the course.
