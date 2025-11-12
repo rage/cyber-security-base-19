@@ -60,7 +60,8 @@ The code should (almost) always also contain the fix of the flaw. The fix should
 Do not use git branches or versions for fixes. Just provide the commented fixes and the flaws in one version.
 
 In addition, you should add screenshots for each flaw demonstrating the effect of the flaw before and after the fix.
-Typically, the screenshots should be of your browser.
+Typically, the screenshots should be of your browser, or in some cases of the server terminal.
+Do not include screenshots of your code!
 Make sure that the screenshots do not contain any sensitive information.
 You can have multiple screenshots demonstrating the effect. Store them in a `screenshots` folder of your repository and name them 
 `flaw-1-before-1.png`, `flaw-1-after-1.png`, and so on.
