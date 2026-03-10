@@ -39,11 +39,9 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 The challenges in this CTF come in three difficulty levels: easy, medium and hard.
 
 In order to ensure everyone has a fair chance to get the first completion,
-we're releasing the challenges in batches -- easy challenges are to be released on Monday (09.3.2026),
-medium challenges on Tuesday (10.3.2026), and hard challenges on Wednesday (11.3.2026).
-
-
-The exercises are published starting from 14:00, and new exercise will be added roughly every 20 minutes.
+we're releasing the challenges in batches -- easy challenges are to be released on Tuesday (10.3.2026, 16:00),
+medium challenges on Wednesday (11.3.2026, 14:00), and hard challenges on Thursday (12.3.2026, 14:00).
+The exercises will be added every 20 minutes.
 
 There are 10 easy challenges, 10 medium, and 3 hard.
 
