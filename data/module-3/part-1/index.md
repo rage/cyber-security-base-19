@@ -71,7 +71,9 @@ Make sure that (these are the most common reasons for project being rejected)
 - The flaws are real, and not just hypothetical, and the fixes are included in the code.
 - The flaws are in the code or in installation script, for example, having admin/admin user in the database is not enough.
 - The fix actually fixes the problem, and not just hide it.
-- Screenshots are included in the repository.
+- Screenshots are included in the repository, and are named as instructed.
+- Each flaw has its own category.
+- The flaws are placed in the correct categories, especially insecure design is problematic and should be avoided.
 - There is a backend, and the flaws/fixes occur in the backend. Remember that the user can manipulate the frontend as much as possible.
 
 
