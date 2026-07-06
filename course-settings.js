@@ -42,6 +42,10 @@ const courseSettings = {
       path: "/",
     },
     {
+      title: "Changes in courses from Autumn 2026",
+      path: "/changes",
+    },
+    {
       title: "Course descriptions and timetable",
       path: "/descriptions",
     },
