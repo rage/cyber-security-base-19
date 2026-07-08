@@ -15,7 +15,7 @@ The course material is freely available, and you can read it without any
 account.  In order to complete the course, you  will need to answer the
 questionnaires, essays  and complete programming exercises. For that you will
 need a [mooc.fi](https://mooc.fi) account that you can create at the right hand corner of this
-course material. This is the only required registration. 
+course material. This is the only required registration.
 
 Once you have created the account, please consider answering a background [questionnaire](https://elomake.helsinki.fi/lomakkeet/74256/lomake.html). Answering the
 questionnaire should take less than 10 minutes and will be very valuable for
@@ -61,7 +61,7 @@ To complete an individual course you will have to gather enough points. The poin
 threshold is indicated on each individual course. Note that the essays
 are not immediately accepted once you have written them as they need to be peer-reviewed or possibly checked by the staff.
 
-Each course has a deadline, and you have gather enough points before the deadline.
+Each course has a deadline, and you have to gather enough points before the deadline.
 If you do not have enough points once the deadline has passed, the points are lost.
 Essays that have been submitted on-time such that the author has given enough feedback to other
 essays will be checked, regardless whether they have received enough peer reviews.
@@ -79,7 +79,7 @@ Your next actions depend on your status:
 
 Once the system has acknowledged that you have passed the course, you
 must register the course through the Open University enrollment form to receive credits.
-The form is available 
+The form is available
 either through [the completed courses](https://www.mooc.fi/en/profile/completions) page
 or by following the link in the notification email.
 
@@ -108,7 +108,7 @@ Second course CSM13204 (5 cr):
   * Advanced Topics (3 cr)
   * Course Project II (1 cr)
   * Capture The Flag (1 cr)
- 
+
 In the past, the students were required to merge the smaller courses into
 larger courses. This is no longer required due to SISU.
 
