@@ -63,7 +63,7 @@ for mac and linux. Official Windows installer asks whether you want to have yout
 This step is only required for Securing Software.
 
 Package installer for Python (pip) should be already installed with modern python if you installed python from python.org or using conda distribution.
-If you you installed it using apt-get or port, then most likely you will need to install pip. The package name is probably `python3-pip`,
+If you installed it using apt-get or port, then most likely you will need to install pip. The package name is probably `python3-pip`,
 alternatively follow these instructions to install [pip](https://pypi.org/project/pip/).
 
 
