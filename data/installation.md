@@ -35,6 +35,14 @@ If you detest command line usage, it is possible to use Visual Studio IDE (with
 python) as there is also a Visual Studio
 [plugin](https://www.mooc.fi/en/installation/vscode) for TMC client.  
 
+## TMC alternative (does not require java)
+
+This version of command line TMC should work on Windows, Linux and Mac without requiring any dependencies such as Java.
+
+You can find the installation instructions here: [TMC client alternative](https://github.com/rage/tmc-cli-rust#installation).
+
+The available commands may differ from the Java-version, you can consult [the usage manual](https://github.com/rage/tmc-cli-rust#commands) if necessary.
+
 ## Installing Python 3
 
 The exercises requires Python 3 (3.5 or higher). This may be confusing as for
