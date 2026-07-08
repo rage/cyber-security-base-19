@@ -299,7 +299,7 @@ When building and analyzing Javascript applications, being able to debug them is
 
 When debugging your own applications, the very basic command is `console.log()`, which can be used to print out variable details and other information to the developer tools console. When the command `console.log("Hello world!");` is inserted into your Javascript code, the text "Hello world!" will be printed to the Developer tools console. When looking for problems in code, debugging using the console log is a good start.
 
-If you are familiar with debuggers and breakpoints in IDEs, similar functionality is available for browsers as well. See [Inspect and Debug Javascript](https://developers.google.com/web/tools/chrome-devtools/javascript/add-breakpoints) at Google Developers.
+If you are familiar with debuggers and breakpoints in IDEs, similar functionality is available for browsers as well. See [Debug Javascript](https://developer.chrome.com/docs/devtools/javascript/#event-breakpoint) at Google Developers.
 
 </text-box>
 
