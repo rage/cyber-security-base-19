@@ -92,7 +92,7 @@ and Bob, and an attacker Melissa. Alice wishes to send safely a message to Bob, 
 to intercept the message.
 
 1. Melissa makes Alice believe that she is Bob.
-2. Alice asks Bob (Melissa in disquise) for a public key. Instead Melissa provides Alice with her own public key.
+2. Alice asks Bob (Melissa in disguise) for a public key. Instead Melissa provides Alice with her own public key.
 3. Alice encrypts the information with the spoofed key and sends it back to Melissa.
 4. Melissa decrypts the information using her secret key.
 
