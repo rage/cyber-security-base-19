@@ -38,6 +38,7 @@ import ExercisesInThisSection from "./ExercisesInThisSection"
 import AbStudy from "./AbStudy"
 import CrowdSorcerer from "./CrowdSorcerer"
 import MoodleExercise from "./MoodleExercise"
+import ExamExercise from "./ExamExercise"
 import SqlTrainerExercise from "./SqlTrainerExercise"
 import "katex/dist/katex.min.css"
 
@@ -86,6 +87,7 @@ const mapping = {
   "registration-link": RegistrationLink,
   "registration-link-ohja": RegistrationLink2,
   "moodle-exercise": MoodleExercise,
+  "exam-exercise": ExamExercise,
   "sqltrainer-exercise": SqlTrainerExercise,
   notice: Notice,
   crowdsorcerer: CrowdSorcerer,
