@@ -1,8 +1,8 @@
 const courseSettings = {
   language: "en",
-  name: "Cyber Security Base 2025",
+  name: "Cyber Security Base 2026",
   siteUrl: "https://cybersecuritybase.mooc.fi",
-  subtitle: "a free course series about cyber security",
+  subtitle: "course series about cyber security",
   slug: "cyber-security-base-2025",
   quizzesId: "da0ff334-487e-4ca1-9860-d768d09856e6",
   progressSections: [
