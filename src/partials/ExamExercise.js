@@ -36,7 +36,7 @@ const Header = styled.div`
   font-weight: normal;
   padding 1rem 0;
   border-bottom: 1px solid #f7f7f9;
-  background-color: #D23D48;
+  background-color: #06402B;
   display: flex;
   flex-direction: row;
   align-items: 0;
@@ -62,7 +62,7 @@ const HeaderMuted = styled.span`
 
 const Body = styled.div`
   padding-bottom: 0.5rem;
-  min-height: 300px;
+  min-height: 100px;
 `
 
 const Small = styled.div`
