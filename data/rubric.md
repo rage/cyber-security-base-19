@@ -1,8 +1,8 @@
 ---
 path: "/rubric"
 title: "Writing and reviewing essays"
-hidden: false
-information_page: true
+hidden: true
+information_page: false
 ---
 
 This page provides general instructions for writing and peer reviewing
