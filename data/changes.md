@@ -31,3 +31,8 @@ then you have the chance to complete the missing parts during the academic year
 2026-2027. Note that this option only applies to the students at UH, students of other universities
 or open university should use the new structure.
 These legacy courses will be phased out.
+
+If you are eligible for the legacy courses and wish to complete them, then you
+have to first register to the course in SISU, which will then gives you access
+to the moodle page, containing detailed instructions on how to complete the
+course.

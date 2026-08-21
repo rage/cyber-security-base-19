@@ -70,7 +70,6 @@ findings. At least one study, however, from [Oxford Economics](https://www.oxfor
 surveys and case studies. Those findings show that cyber attacks do indeed
 result in major business impact on victims.
 
-<quiz id="5652f1f7-0670-59de-a12a-b62188b891d7"></quiz>
 
 The job of a vulnerability researcher is to come up with recommendations for
 minimizing the risk to an organization. The tasks of protecting enterprise
@@ -88,6 +87,26 @@ Watch Paul Carugati's talk [Cyber Self-Defense](https://www.youtube.com/watch?v=
 Watch James Lyne's talk [Everyday cybercrime -- and what you can do about it](https://www.ted.com/talks/james_lyne_everyday_cybercrime_and_what_you_can_do_about_it?language=en) on TEDTv.
 
 </text-box>
+
+<exam-exercise name="Who are the opponents">
+
+[For this question, read Chapter 2 of Security Engineering, 3rd ed. by Ross Anderson] 
+
+_Security Engineering_ describes 4 broad categories of opponents in cyber security.
+
+Name and describe shortly 4 categories of opponents in cyber security.
+
+</exam-exercise>
+
+<exam-exercise name="Criminal infrastructure">
+
+[For this question, read Chapter 2.3.1 of Security Engineering, 3rd ed. by Ross Anderson] 
+
+_Security Engineering_ describes several typical specializations of cyber criminals.
+
+Name and describe shortly 4 cyber criminal specializations.
+
+</exam-exercise>
 
 
 
@@ -110,8 +129,6 @@ the Office of National Statistics show that the frequency of incidents is
 increasing, it is still commonly believed that cyber crime is an underreported
 area of illegality.
 
-<quiz id="328d4ca3-3153-583e-b1db-5b66e334293d"></quiz>
-
 The above conveys a bleak picture of the current state of things. At the same time, however, governments, organizations, corporations and institutions are funnelling more and more money, research and effort into improving the situation.
 
 <text-box variant="emph" name="Additional links to breach news">
@@ -122,6 +139,8 @@ The above conveys a bleak picture of the current state of things. At the same ti
 - [Hackers Turn Security Camera DVRs Into Bitcoin Miners](https://www.wired.com/2014/04/hikvision)
 
 </text-box>
+
+
 
 
 ## Responsibilities and liabilities
@@ -149,8 +168,6 @@ production, we may see the same happening with data protection. Insurance
 companies have also noticed the impending GDPR and have introduced various
 types of cyber security insurance which would cover some costs caused by a
 breach (for example a loss of profit).
-
-<quiz id="db791651-0632-5c02-8bef-92c7ef230747"></quiz>
 
 However, the law is for the law abiding; for a criminal it is just a deterrent.
 The Internet provides anonymity and distances the attacker from the victim,

@@ -227,6 +227,8 @@ port, that is, a man-in-the-middle knows that the user has contacted the
 server, and he probably can guess the requested service based on the port, but
 the actual payload cannot be observed.
 
+<text-box variant="emph" name="VPN and its cousins">
+
 It is possible to use the encryption protocol (known as TLS) used by HTTPS to
 encode normal IP traffic. Here, the user connects to a special server and establishes
 a secure channel. Using this channel the user sends IP data packets. 
@@ -251,4 +253,21 @@ external party cannot deduce the user identity based on the IP information.
 However, any sensitive information that is not encrypted separately in the
 payload (such as passwords sent over plain HTTP) can be read after VPN.
 
-<quiz id="1ab90666-ba0a-5c1d-b8ed-b0491d8c14d7"></quiz>
+</text-box>
+
+<exam-exercise name="Protocols">
+
+Describe shortly the function of IP and TCP protocols: what do these protocols provide?
+What is the relationship of these two protocols with link layer protocols and application layer protocols?
+
+</exam-exercise>
+
+
+<exam-exercise name="Firewalls">
+
+[For this question, read Chapter 21.4. of Security Engineering, 3rd ed. by Ross Anderson]
+
+Explain shortly the following concepts and their relationships with each other: firewall, IP-level packet filtering,
+application proxy, egress filtering.
+
+</exam-exercise>

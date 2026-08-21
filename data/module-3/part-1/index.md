@@ -1,10 +1,10 @@
 ---
 path: '/module-3.1'
-title: 'Part I'
+title: 'Part VII'
 overview: true
 hidden: false
 ---
-<deadline>31.08.2026</deadline>
+<deadline>13.12.2026</deadline>
 
 
 In the first project, the participants will construct software with security
@@ -13,10 +13,10 @@ flaws, point out the flaws in the project, and provide the steps to fix them.
 
 <please-login></please-login>
 
-The project has only 1 part.
+The project is a required part of _Introduction to Cyber Security: MOOC_ course.
 
 
-#### Before starting the course
+#### Before starting the project
 
 Please read the [instructions](/pass) on how to start and pass the course.
 Especially, pay extra attention on 'how to pass' section as this course
@@ -35,14 +35,21 @@ In the first course project, your task is to create a web application that has
 at least 5 different flaws from the OWASP [top ten list](https://owasp.org/www-project-top-ten/) as well as their fixes.
 The application should have a backend.
 
-OWASP recently updated its list and there are now two lists: 2017 and 2021.
-You can use either list but specify which one you are using. Do not mix the lists.
+OWASP updated its list and there are now three lists: [2017](https://owasp.org/www-project-top-ten/2017/), [2021](https://owasp.org/Top10/2021/), and [2025](https://owasp.org/Top10/2025/).
+You can use any of the lists but specify which one you are using. Do not mix the lists.
 Note that CSRF is missing from both lists as it is more rare nowadays due to the more secure frameworks.
 However, due to its fundamental nature it is allowed as a flaw.
 
+We recommend that you use the 2021 list and use the following flaws:
+_(1) Broken Access Control,
+(2) Cryptographic Failures,
+(3) Injection,
+(4) Identification and Authentication Failures,
+(5) Security Logging and Monitoring Failures_.
+
 
 We recommend that you implement the website using Python & Django. If you did the previous
-course you should already Django libraries installed. See [installation guide](/installation-guide) otherwise.
+exercises you should already Django libraries installed. See [installation guide](/installation-guide) otherwise.
 To create a starter website, follow the instructions [here](https://docs.djangoproject.com/en/3.1/intro/tutorial01/).
 
 You may do the project without using the starter template (in a language of
@@ -62,13 +69,15 @@ Do not use git branches or versions for fixes. Just provide the commented fixes 
 In addition, you should add screenshots for each flaw demonstrating the effect of the flaw before and after the fix.
 Typically, the screenshots should be of your browser, or in some cases of the server terminal.
 Do not include screenshots of your code!
-Make sure that the screenshots do not contain any sensitive information.
+If the browser is shown, it is preferred that that the URL is shown to minimize any confusion.
+However, make sure that the screenshots do not contain any your own personal (sensitive) information.
 You can have multiple screenshots demonstrating the effect. Store them in a `screenshots` folder of your repository and name them 
 `flaw-1-before-1.png`, `flaw-1-after-1.png`, and so on.
 
 
 Make sure that (these are the most common reasons for project being rejected)
 - The flaws are real, and not just hypothetical, and the fixes are included in the code.
+- The server works before and after the fix. This is often the issue with register/login flaws.
 - The flaws are in the code or in installation script, for example, having admin/admin user in the database is not enough.
 - The fix actually fixes the problem, and not just hide it.
 - Screenshots are included in the repository, and are named as instructed.
@@ -151,5 +160,5 @@ The rubric for the scores are as follows:
 
 ### Submitting the project
 
-<quiz id="f927b446-4106-5a8e-ab63-e006352ac5de"></quiz>
+<quiz id="02902cca-c730-457f-b9bf-7a2bc7fbf8e0"></quiz>
 

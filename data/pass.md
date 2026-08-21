@@ -55,6 +55,9 @@ then you do not need to complete the remaining 3 courses.
 You can complete the courses out-of-order but it is recommended that you read the material in order
 due to the prerequisites.
 
+The exam courses are examinarium exams and require prior [registration](https://studies.helsinki.fi/instructions/article/taking-exams-examinarium-electronic-exam-rooms),
+and will be graded directly to SISU.
+
 To complete an individual MOOC course you will have to gather enough points. The point
 threshold is indicated on each individual course.
 

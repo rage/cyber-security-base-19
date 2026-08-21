@@ -45,5 +45,3 @@ more effort is put into protection, there will be less risk to tolerate. The
 risk can be minimized but not removed completely!
 
 </text-box>
-
-<quiz id="8f756be5-8ec6-56e1-96b3-3ae34a1ce51b"></quiz>

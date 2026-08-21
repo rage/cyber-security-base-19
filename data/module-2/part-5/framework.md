@@ -318,7 +318,7 @@ changes are pushed to production frequently, which also leads to the need for
 the automatization, optimization, and simplification of the deployment process.
 This also makes the whole process more transparent and auditable.
 
-<quiz id="7ba92a89-e4c5-5922-9a75-b147202cb826"></quiz>
+<quiz id="d5e6fc49-dddd-510c-8ad5-55f523ea9e71"></quiz>
 
 Automating the deployment of new changes can be beneficial when patching the
 system(s) against common security flaws. When new security flaws are published,

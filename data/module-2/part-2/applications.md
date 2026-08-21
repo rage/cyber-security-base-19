@@ -221,7 +221,7 @@ content, one cannot only rely on the browser (i.e. the client).
 
 </text-box>
 
-<quiz id="78c6fcc4-b58a-5945-a215-72e30e33d0cc"></quiz>
+<quiz id="f7b1ad59-862a-54d2-9dcf-06f3ed5ffae4"></quiz>
 
 
 ### Adding elements to a page
