@@ -79,6 +79,8 @@ const courseSettings = {
 	{ title: "Part VI", path: "/module-2.6"},
     //{ separator: true, title: "Project I" },
 	{ title: "Part VII", path: "/module-3.1"},
+    { separator: true, title: "Question archive of 2025-2026 edition" },
+	{ title: "Archive", path: "/archive"},
 
     /*{ separator: true, title: "Advanced Topics"},
 	{ title: "Part I", path: "/module-4.1"},
