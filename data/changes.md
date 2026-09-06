@@ -33,6 +33,11 @@ or open university should use the new structure.
 These legacy courses will be phased out.
 
 If you are eligible for the legacy courses and wish to complete them, then you
-have to first register to the course in SISU, which will then gives you access
-to the moodle page, containing detailed instructions on how to complete the
-course.
+have to first register to the course in SISU. The autumn legacy instances are
+
+- [TKT200091](https://studies.helsinki.fi/kurssit/toteutus/otm-8832635f-08d9-4e2c-82db-e72a304ae142/TKT200091)
+- [TKT200092](https://studies.helsinki.fi/kurssit/toteutus/otm-effc6b9c-b193-418f-a2d8-0db3a41c5fd8/TKT200092)
+- [TKT200093](https://studies.helsinki.fi/kurssit/toteutus/otm-f91d8f3a-1e8d-4786-b497-e65814be97e1/TKT200093)
+
+The registration will then gives you access to the moodle page, containing
+the detailed instructions on how to complete the course.

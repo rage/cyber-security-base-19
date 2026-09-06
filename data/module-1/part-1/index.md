@@ -16,6 +16,11 @@ basics of internet communication protocols and a gentle introduction to cryptogr
 
 This course has only 1 part.
 
+The structure of CSB courses has changed recently; currently the same website is used for the new course
+structure as the retiring old structure. If you wish to follow the old structure, and you are _eligible_,
+then follow the instructions given [here](/changes). See the same page for eligibility.
+
+
 To pass the course you need to book and pass examinarium exam (akvaariotentti).
 See [here](/exam) for more details about the exam.
 

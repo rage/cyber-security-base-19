@@ -23,7 +23,9 @@ The course consists of 7 parts, with the last part being a project.
 
 To pass the course you need 99+100=199 points out of 216. The mandatory project is worth 100 points.
 
-
+The structure of CSB courses has changed recently; currently the same website is used for the new course
+structure as the retiring old structure. If you wish to follow the old structure, and you are _eligible_,
+then follow the instructions given [here](/changes). See the same page for eligibility.
 
 #### Before starting the course
 

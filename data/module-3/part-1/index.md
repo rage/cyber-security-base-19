@@ -15,6 +15,10 @@ flaws, point out the flaws in the project, and provide the steps to fix them.
 
 The project is a required part of _Introduction to Cyber Security: MOOC_ course.
 
+The structure of CSB courses has changed recently; currently the same website is used for the new course
+structure as the retiring old structure. If you wish to follow the old structure, and you are _eligible_,
+then follow the instructions given [here](/changes). See the same page for eligibility.
+
 
 #### Before starting the project
 
