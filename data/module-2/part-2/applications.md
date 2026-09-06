@@ -324,7 +324,7 @@ Similarly to the previous part, these assignments are submitted to the Test My C
 
 </text-box>
 
-<programming-exercise name="Tasks" tmcname="part2-07.tasks" course="Securing Software">
+<programming-exercise name="Tasks" tmcname="part2-07.tasks" course="Introduction to Cyber Security: MOOC">
 
 The assignment template has some functionality for adding tasks. Your task is
 to alter the loadTasks function so that the existing tasks are loaded when the

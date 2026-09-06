@@ -136,7 +136,7 @@ The optional `name` parameter is sometimes handy if you need to refer to the pat
 The file `views.py` contains the actual definition of `homePageView`.
 
 
-<programming-exercise name="Hello Web!" tmcname="part1-02.helloweb" course="Securing Software">
+<programming-exercise name="Hello Web!" tmcname="part1-02.helloweb" course="Introduction to Cyber Security: MOOC">
 
 In this assignment, you will familiarize yourself with the very basic
 functionality of the web framework.
@@ -247,7 +247,7 @@ We will be mostly using this approach throughout the course.
 
 
 
-<programming-exercise name="Calculator" tmcname="part1-03.calculator" course="Securing Software">
+<programming-exercise name="Calculator" tmcname="part1-03.calculator" course="Introduction to Cyber Security: MOOC">
 
 
 In this assignment, you will familiarize yourself with handling (1) requests to
@@ -327,7 +327,7 @@ def homePageView(request):
 ```
 
 
-<programming-exercise name="Hello Templates" tmcname="part1-04.templates"  course="Securing Software">
+<programming-exercise name="Hello Templates" tmcname="part1-04.templates"  course="Introduction to Cyber Security: MOOC">
 
 Next, we will look into returning content created using a template. Implement
 the following functionality in `views.py`:
@@ -445,7 +445,7 @@ The list can be enumerated using the `{% for %}` syntax in the template
 ```
 
 
-<programming-exercise name="Hello List" tmcname="part1-05.hellolist"  course="Securing Software">
+<programming-exercise name="Hello List" tmcname="part1-05.hellolist"  course="Introduction to Cyber Security: MOOC">
 
 In this assignment we will look into using lists and using them as data for the
 templates.
@@ -472,7 +472,7 @@ Sessions are stored in a database by default, meaning that if you restart the se
 the session will still be intact.
 
 
-<programming-exercise name="Notebook" tmcname="part1-06.notebook"  course="Securing Software">
+<programming-exercise name="Notebook" tmcname="part1-06.notebook"  course="Introduction to Cyber Security: MOOC">
 
 
 Implement a notebook application in `views.py`
