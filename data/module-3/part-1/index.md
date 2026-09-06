@@ -51,6 +51,11 @@ _(1) Broken Access Control,
 (4) Identification and Authentication Failures,
 (5) Security Logging and Monitoring Failures_.
 
+We recommend to avoid the following flaws from 2021 list:
+_Software and Data Integrity Failures,
+Server Side Request Forgery (SSRF),
+Insecure Design_.
+
 
 We recommend that you implement the website using Python & Django. If you did the previous
 exercises you should already Django libraries installed. See [installation guide](/installation-guide) otherwise.
@@ -88,6 +93,7 @@ Make sure that (these are the most common reasons for project being rejected)
 - Each flaw has its own category.
 - The flaws are placed in the correct categories, especially insecure design is problematic and should be avoided.
 - There is a backend, and the flaws/fixes occur in the backend. Remember that the user can manipulate the frontend as much as possible.
+- The website makes (some) sense as a website: the website is not just a static collection of flaws, and the users can enter and store some information.
 
 
 Note that essay is not accepted immediately as it needs to be approved by the course staff.
