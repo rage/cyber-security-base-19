@@ -1,26 +1,26 @@
 const courseSettings = {
   language: "en",
-  name: "Cyber Security Base 2025",
+  name: "Cyber Security Base 2026",
   siteUrl: "https://cybersecuritybase.mooc.fi",
-  subtitle: "a free course series about cyber security",
-  slug: "cyber-security-base-2025",
-  quizzesId: "da0ff334-487e-4ca1-9860-d768d09856e6",
+  subtitle: "course series about cyber security",
+  slug: "cyber-intro-2026",
+  quizzesId: "2dc7f4e3-e6c1-44b1-80cf-a4125a52c47c",
   progressSections: [
-    {
+    /*{
 	  name: "Introduction",
 	  quizId: "6de8f907-77b0-4584-b4c1-fcdfbb92beea",
 	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":33}],
-    },
+    },*/
 	{
-	  name: "Securing Software",
-	  quizId: "a714f344-15d2-47ee-86b9-0cc39cc170fd",
-      tmcCourse: "securing-software-25",
-	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":2},{"group":"osa02","progress":0,"n_points":0,"max_points":1},{"group":"osa04","progress":0,"n_points":0,"max_points":8},{"group":"osa05","progress":0,"n_points":0,"max_points":5},{"group":"osa06","progress":0,"n_points":0,"max_points":15}],
+	  name: "Introduction to Cyber Security: MOOC",
+	  quizId: "2dc7f4e3-e6c1-44b1-80cf-a4125a52c47c",
+      tmcCourse: "securing-software-26",
+	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":2},{"group":"osa02","progress":0,"n_points":0,"max_points":1},{"group":"osa04","progress":0,"n_points":0,"max_points":3},{"group":"osa05","progress":0,"n_points":0,"max_points":0},{"group":"osa06","progress":0,"n_points":0,"max_points":5}, {"group":"osa07","progress":0,"n_points":0,"max_points":100}],
 	},
-	{
+	/*{
 	  name: "Project I",
-	  quizId: "4842e13a-1557-43d3-8d5b-93c6512142ad",
-	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":1}],
+	  quizId: "2dc7f4e3-e6c1-44b1-80cf-a4125a52c47c",
+	  defaultResponse: [{"group":"osa07","progress":0,"n_points":0,"max_points":100}],
 	},
 	{
 	  name: "Advanced Topics",
@@ -32,7 +32,7 @@ const courseSettings = {
 	  name: "Project II",
 	  quizId: "da0ff334-487e-4ca1-9860-d768d09856e6",
 	  defaultResponse: [{"group":"osa01","progress":0,"n_points":0,"max_points":1}],
-	},
+	},*/
   ],
   tmcOrganization: "mooc",
   bannerPath: "banner.svg",
@@ -42,45 +42,47 @@ const courseSettings = {
       path: "/",
     },
     {
-      title: "Changes in courses from Autumn 2026",
-      path: "/changes",
-    },
-    {
       title: "Course descriptions and timetable",
       path: "/descriptions",
+    },
+    {
+      title: "Exam descriptions",
+      path: "/exam",
     },
     {
       title: "How to start and pass a course",
       path: "/pass",
     },
     {
-      title: "How to write and review essays",
-      path: "/rubric",
-    },
-    {
       title: "Installing Python and TMC",
       path: "/installation-guide",
+    },
+    {
+      title: "Changes in courses from Autumn 2026",
+      path: "/changes",
     },
     {
       title: "Frequently asked questions",
       path: "/faq",
     },
-    { separator: true, title: "Introduction to Cyber Security" },
+    { separator: true, title: "Introduction to Cyber Security: Exam" },
 	{
       title: "Part I",
       path: "/module-1",
 	},
-    { separator: true, title: "Securing Software" },
+    { separator: true, title: "Introduction to Cyber Security: MOOC" },
 	{ title: "Part I", path: "/module-2.1"},
 	{ title: "Part II", path: "/module-2.2"},
 	{ title: "Part III", path: "/module-2.3"},
 	{ title: "Part IV", path: "/module-2.4"},
 	{ title: "Part V", path: "/module-2.5"},
 	{ title: "Part VI", path: "/module-2.6"},
-    { separator: true, title: "Project I" },
-	{ title: "Part I", path: "/module-3.1"},
+    //{ separator: true, title: "Project I" },
+	{ title: "Part VII", path: "/module-3.1"},
+    { separator: true, title: "Question archive of 2025-2026 edition" },
+	{ title: "Archive", path: "/archive"},
 
-    { separator: true, title: "Advanced Topics"},
+    /*{ separator: true, title: "Advanced Topics"},
 	{ title: "Part I", path: "/module-4.1"},
 	{ title: "Part II", path: "/module-4.2"},
 	{ title: "Part III", path: "/module-4.3"},
@@ -89,7 +91,7 @@ const courseSettings = {
     { separator: true, title: "Project II" },
 	{ title: "Part I", path: "/module-5.1/index"},
     { separator: true, title: "CTF" },
-	{ title: "Part I", path: "/module-6.1/index"},
+	{ title: "Part I", path: "/module-6.1/index"},*/
   ],
   sidebarFuturePages: [],
   splitCourses: false,

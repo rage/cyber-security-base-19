@@ -59,8 +59,6 @@ Asymmetric encryption is often not efficient enough for encrypting large data st
 So in practice, it is used just to establish a symmetric hidden key that is only a valid
 for one session, and this key is then used with a more efficient algorithm based on a symmetric hidden key. 
 
-<quiz id="b9fcb703-5a4f-5991-899e-f27fd94cbb33"></quiz>
-
 ## Cryptographic hashes
 
 Modern computer systems rarely store passwords as clear text. Otherwise, if the
@@ -82,6 +80,15 @@ Currently, the most prominent hash function family is
 [MD5](https://en.wikipedia.org/wiki/MD5), has also been used for hashing
 sensitive data. However it has been severely compromised, and should not be
 used for any security application. MD5 is still useful, for example, as providing unique identifier for  documents.
+
+
+<exam-exercise name="Hash or no hash">
+
+Describe shortly what is symmetric-key encryption, asymmetric-key encryption, and (crytographic) hash functions.
+Point out their differences, and provide of each an example in cyber security where they are used.
+
+</exam-exercise>
+
 
 ## Certificates
 
@@ -140,4 +147,12 @@ Alice then needs verify both Bob's and William's certificates.
 
 Similar scheme is also for signing executables.
 
-<quiz id="e18931a5-c66d-5e58-ba0b-1c34201827a0"></quiz>
+<exam-exercise name="Challenge and response">
+
+[For this question, read Chapter 4.3. of Security Engineering, 3rd ed. by Ross Anderson]
+
+Describe shortly the following concepts:
+a challenge-response protocol, a two-factor authentication protocol,
+and a man-in-the-middle attack. Explain their relations to each other.
+
+</exam-exercise>

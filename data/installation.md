@@ -5,7 +5,7 @@ hidden: false
 information_page: true
 ---
 
-The programming exercises in Securing Software and Advanced Topics
+The programming exercises in the MOOC courses
 are based on python, save for few exceptions where javascript is used.
 
 In order to do programming exercises, you need to install several software packages:
@@ -13,12 +13,25 @@ In order to do programming exercises, you need to install several software packa
 - TestMyCode (TMC) client in order to download the exercises and upload your solutions
 - Python 3
 
-In addition, Securing Software requires
+In addition, the first course requires
 
 - several additional packages to test python exercises 
 - ChromeDriver + Chrome to test javascript exercises
 
 ## Installing TMC 
+
+There are 4 ways to obtain TMC exercises:
+
+You can either
+
+- install visual studio and use the tmc-plugin, see instructions at https://www.mooc.fi/en/installation/vscode/. *This is the recommended way to use TMC.*
+- or install old but battle-tested command line client, see instructions at https://github.com/testmycode/tmc-cli. This client requires Java.
+- or install new command line client, see instructions at https://github.com/rage/tmc-cli-rust.
+- If everything else fails, you can download the exercises directly as a zip file. You will not be able to use handy tmc commands but you can still run local tests (see below) and in order to submit the code to the server you have to manually zip your exercise and upload it to the server.
+
+#### Installing old TMC client
+
+What follows are installation instructions for old TMC client, if you choose to use it.
 
 TMC requires a fairly modern Java 8 or later to work properly.
   Open jdk 1.8.0_212 for example works
@@ -60,7 +73,7 @@ for mac and linux. Official Windows installer asks whether you want to have yout
 
 ## Installing additional packages
 
-This step is only required for Securing Software.
+This step is only required for first course.
 
 Package installer for Python (pip) should be already installed with modern python if you installed python from python.org or using conda distribution.
 If you you installed it using apt-get or port, then most likely you will need to install pip. The package name is probably `python3-pip`,
@@ -79,7 +92,7 @@ You need to allow your firewall software to allow python to listen and to connec
 
 ## Installing ChromeDriver and Chrome 
 
-This step is only required for Securing Software.
+This step is only required for first course.
 
 There are few programming exercises that require writing javascript.
 In order to test these exercises locally, the tests rely on a chrome browser.
@@ -111,10 +124,13 @@ python3 sanity.py
 ```
 
 The script will test if the python packages are installed and uses selenium to access google.com. 
-Note that this script tests the installations required for the Securing Software course.
-These packages are not needed for Advanced topics.
+Note that this script tests the installations required for the first MOOC course.
+These packages are not needed for second MOOC course.
 
 ## Downloading the exercises
+
+These are instructions for downloading the exercises using the old client. If
+you use the TMC plugin, follow the respective instructions.
 
 Go to a folder where you want to download the exercises, and issue command `tmc login`.
 
@@ -125,14 +141,9 @@ Provide login details, and use organization slug `mooc`.
 Download the exercises for securing software with the command
 
 ```shell
-tmc download mooc-securing-software-25
+tmc download mooc-securing-software-26
 ```
 
-Download the exercises for the advanced topics with the command
-
-```shell
-tmc download mooc-cyber-advanced-topics-2025
-```
 
 NB! Do not change the name of the root directory, for example it should stay as `mooc-securing-software-23`.
 

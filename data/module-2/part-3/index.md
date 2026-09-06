@@ -4,7 +4,7 @@ title: 'Part III'
 overview: true
 hidden: false
 ---
-<deadline>31.08.2026</deadline>
+<deadline>13.12.2026</deadline>
 
 
 This part focuses on security issues related to interconnected software. The
@@ -19,9 +19,13 @@ By continuing, you agree to not to do any harm with this information or other si
 
 <please-login></please-login>
 
-The course consists of 6 parts.
+The course consists of 7 parts, with the last part being a project.
 
-To pass the course you need 115 points out of 136.
+To pass the course you need 99+100=199 points out of 216. The mandatory project is worth 100 points.
+
+The structure of CSB courses has changed recently; currently the same website is used for the new course
+structure as the retiring old structure. If you wish to follow the old structure, and you are _eligible_,
+then follow the instructions given [here](/changes). See the same page for eligibility.
 
 
 #### Before starting the course

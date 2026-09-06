@@ -104,7 +104,23 @@ with the consequence that _every_ domain name is valid. The theorized logic behi
 domain, that should not exist, exists, then surely we are in a sandbox environment, so
 we should remain dormant.
 
-<quiz id="cf870373-8ed7-58fc-9f99-86f7e7b6f986"></quiz>
+<exam-exercise name="Malware types">
+
+[For this question, read Chapter 21.3. of Security Engineering, 3rd ed. by Ross Anderson]
+
+Describe shortly pointing out the differences in how a virus, a trojan, and a worm spread.
+Describe shortly at least 3 different nefarious activities that malware can do to its target.
+
+</exam-exercise>
+
+<exam-exercise name="Botnets">
+
+[For this question, read Chapter 2.3. of Security Engineering, 3rd ed. by Ross Anderson]
+
+Describe shortly a botnet. Describe 3 (nefarious) activities for which botnets can be used.
+
+</exam-exercise>
+
 
 ## Hacking
 

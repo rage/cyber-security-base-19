@@ -4,7 +4,6 @@ title: 'Part I'
 overview: true
 hidden: false
 ---
-<deadline>31.08.2026</deadline>
 
 ### About the course
 
@@ -17,13 +16,20 @@ basics of internet communication protocols and a gentle introduction to cryptogr
 
 This course has only 1 part.
 
-To pass the course you need 27 (out of 33) points.
+The structure of CSB courses has changed recently; currently the same website is used for the new course
+structure as the retiring old structure. If you wish to follow the old structure, and you are _eligible_,
+then follow the instructions given [here](/changes). See the same page for eligibility.
 
-#### Before starting the course
 
-Please read the [instructions](/pass) on how to start and pass the course.
-Especially, pay extra attention on 'how to pass' section as this course
-requires additional steps in order to receive ECTS credits.
+To pass the course you need to book and pass examinarium exam (akvaariotentti).
+See [here](/exam) for more details about the exam.
+
+The questions rely either on the course material or on the course book
+_Security Engineering: A Guide to Building Dependable Distributed Systems, 3rd Edition by Ross Anderson, ISBN: 978-1-119-64281-7_.
+The relevant book chapters are 1-4, and 21.
+The book can be bought either from Wiley or Amazon. It is also available for [free](https://www.cl.cam.ac.uk/archive/rja14/book.html) from the author's webpage.
+The e-version of the book is also available via Helsinki University library.
+
 
 
 #### Support channel and contact information
@@ -38,6 +44,3 @@ For any further questions, contact grp-cybersecuritybase(at)removethis.helsinki.
 
 
 <pages-in-this-section></pages-in-this-section>
-
-
-<exercises-in-this-section course="Introduction"></exercises-in-this-section>

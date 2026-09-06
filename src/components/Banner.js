@@ -15,7 +15,7 @@ const BannerWrapper = styled.header`
   align-items: center;
   margin-bottom: 2rem;
   background-color: #c0392b;
-  background-position: 50% 50%;
+  background-position: 50% 25%;
   background-image: url(${BannerImage});
   background-size: cover;
   text-align: right;
@@ -33,7 +33,7 @@ const Heading = styled.div`
   font-weight: 500;
   font-size: 1rem;
   color: #c0392b;
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   padding: 0.5rem;
   margin: 1rem;
   text-align: center;
@@ -48,7 +48,7 @@ const SubHeading = styled.div`
       'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
     font-weight: 500;
     color: #c0392b;
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
     padding .5rem;
     font-size: 0.7rem;
     margin: 0 1rem;

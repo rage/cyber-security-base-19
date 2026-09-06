@@ -95,4 +95,33 @@ titled [I'll Let Myself In: Tactics of Physical Pen Testers](https://www.youtube
 
 
 
-<quiz id="cbef73dc-b991-55b9-8dd4-24b97ab1ef51"></quiz>
+<exam-exercise name="Human error types">
+
+[For this question, read Chapter 3.2.1 of Security Engineering, 3rd ed. by Ross Anderson]
+
+Human errors are classified in 3 categories by _Security Engineering_.
+Name and describe shortly them. For each category, provide an example in cyber security.
+
+</exam-exercise>
+
+<exam-exercise name="Phishing">
+
+[For this question, read Chapters 2 and 3.3 of Security Engineering, 3rd ed. by Ross Anderson]
+
+Explain shortly phishing and spear phishing, pointing out their differences.
+_Security Engineering_ mentions six main classes of technique used to influence people.
+Describe shortly two of these.
+Construct a short phishing message using one of the mentioned techniques.
+Construct a short spear phishing message using the other mentioned technique.
+
+</exam-exercise>
+
+
+<exam-exercise name="Password recovery">
+
+[For this question, read Chapter 3.4 of Security Engineering, 3rd ed. by Ross Anderson]
+
+Describe shortly two different password recovery techniques. Point out at least one weakness in each recovery technique.
+
+</exam-exercise>
+
