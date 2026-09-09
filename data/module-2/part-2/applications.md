@@ -132,7 +132,7 @@ is used.
     <body>
 
         <article>
-            <input type="text" id="content" value="0"></input></p>
+            <input type="text" id="content" value="0" />
             <input type="button" value="Add!" onclick="increment();" />
         </article>
 
