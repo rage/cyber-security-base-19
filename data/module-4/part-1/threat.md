@@ -83,15 +83,15 @@ Cornucopia has more relevance to the web applications than EoP.
 
 
 
-## Why to prioritize
+## Why prioritize?
 
-Now we have some threats, but what to do with them? This part can be called the risk analysis, as you have to decide what is the amount of risk they pose. All threats do not pose the same amount of risk.
+Now that we have identified some threats, what do we do about them? This part can be called the risk analysis, as you have to decide what is the amount of risk they pose. All threats do not pose the same amount of risk.
 
-The prioritizing of the threats can be critical for many reasons. In some case there really is no good (or any) fix for the problem. Sometimes business comes in the way. Sometimes the business might decide that they are willing to take the risk as they believe they can tolerate a certain level of risk. But the main thing here is that the situation is always different and it involves a calculation of benefit. Or more precisely is it worth the effort and cost to fix the issue. The problem might be fixable in limited time but costs a large sum of money but the likelihood of exploitation is low.
+The prioritizing of threats can be critical for many reasons. In some case there really is no good (or any) fix for the problem. Sometimes business comes in the way. Sometimes the business might decide that they are willing to take the risk as they believe they can tolerate a certain level of risk. But the main thing here is that the situation is always different and it involves a calculation of benefit. Or more precisely is it worth the effort and cost to fix the issue. The problem might be fixable in limited time but costs a large sum of money but the likelihood of exploitation is low.
 
-With the prioritization we can start the fixing job from the highest payoff tasks. There is basically just two questions: how likely it is that the sh\*t hits the fan, and how large of clean job you have in your hands after it. Sometimes these questions are skipped and it is just assumed that everything has to be fixed. There may be situations where you find a problem but it is not applicable into the current operating scenario or environment. But remember sometimes a threat does not look that dangerous on the first glance but could still hit the fan and land you with a massive cleaning task. Care has to be used and common sense also.
+With the prioritization we can start the fixing job from the highest payoff tasks. There is basically just two questions: how likely it is that the sh\*t hits the fan, and how large of cleanup job you have on your hands after it. Sometimes these questions are skipped and it is just assumed that everything has to be fixed. There may be situations where you find a problem but it is not applicable in the current operating scenario or environment. But remember sometimes a threat does not look that dangerous on the first glance but could still hit the fan and land you with a massive cleaning task. Care has to be used and common sense also.
 
-In essence you need to decide what is the cost to mitigate the problem and is it greater that the probability of it happening. This means that Risk is impact times the probability of it happening. Here the impact is easy to estimate, the probability not so easy and is usually a guess. How this is done in reality differs from case to case but it is in the end driven by the organisation and possibly some sort of risk management process in that organisation.
+In essence you need to estimate the cost to mitigate the problem and the probability of it happening. The Risk is calculated as the impact (cost) times the probability of it happening. Whilst the impact is easy to estimate, the probability is not so easy and is usually a guess. How this is done in reality differs from case to case but it is in the end driven by the organisation and possibly some sort of risk management process in that organisation.
 
 
 <quiz id="234973fd-4e89-55e8-b87a-6d5eab49d928"></quiz>
