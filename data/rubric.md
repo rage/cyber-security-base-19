@@ -1,7 +1,7 @@
 ---
 path: "/rubric"
 title: "Writing and reviewing essays"
-hidden: true
+hidden: false
 information_page: false
 ---
 
