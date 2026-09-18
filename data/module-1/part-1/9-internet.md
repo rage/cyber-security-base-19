@@ -18,7 +18,7 @@ in 4 layers.
 4. Application layer
 
 Protocols at the link layer are responsible for direct communication between
-two entities over the same link, for example, a protocol responsible
+two entities over the same link, for example, a protocol responsible for
 communication between a laptop and a WiFi-router establishes the 
 frequency, as well as how bits are transferred over that frequency. On the
 other extreme, the protocols in the application layer establish common language between
