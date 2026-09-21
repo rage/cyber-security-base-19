@@ -108,6 +108,20 @@ Please read and follow the [instructions](/installation-guide).
 
 </text-box>
 
+<text-box variant=emph name="Careful what you scan">
+
+Note that port scanning can be seen as a preparation for a cyber attack. It
+may be also that your internet service provider (ISP) has prohibited making
+port scans.
+
+If you need a good server to test your scanner against, use **scanme.nmap.org**,
+a service provided specifically for testing port scanning tools. Even then, try
+to be a good netizen and only scan it a few times a day to verify your solution works.
+
+The quizzes below provide locally hosted servers to test your scanner against.
+
+</text-box>
+
 
 <programming-exercise name="Port Scanner" tmcname='part1-01.portscanner'  course="Introduction to Cyber Security: MOOC">
 
@@ -164,11 +178,6 @@ Note that while we implement port scanners and other tools, we will later also
 look into existing software that have similar functionality.
 
 </programming-exercise>
-
-Note that port scanning can be seen as a preparation for a cyber attack. It
-may be also that your internet service provider (ISP) has prohibited making
-port scans. Before participating in the following quiz, verify that you are
-allowed to do so.
 
 
 
