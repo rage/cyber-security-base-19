@@ -73,8 +73,6 @@ In this article he tells how they use DFDs and how they scale up.
 </text-box>
 
 
-<quiz id="7ac095d7-db05-50b5-83ad-d9c8b7b16291"></quiz>
-
 ### Message Sequence Chart
 
 What if there are more communicating entities and/or more complex protocols
@@ -351,7 +349,5 @@ mean removing _memsets_. More information of this and related things can be
 found from the [Secure Coding
 Guidelines](http://www.oracle.com/technetwork/java/seccodeguide-139067.html#2)
 for Java SE.
-
-<quiz id="2d249761-c03e-524a-9c9f-b528390ac5b0"></quiz>
 
 During this course, we have taken an introductory tour to securing (web) software. In the course project, some of this knowledge is taken into use. Stay tuned.

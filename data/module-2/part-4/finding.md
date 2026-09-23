@@ -251,7 +251,6 @@ harness.
 
 
 
-<quiz id="30e5c8ec-08d2-5ad7-88e9-8eed8d9c8fae"></quiz>
 
 <text-box variant=emph name="Sanitizing input">
 
