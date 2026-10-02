@@ -84,7 +84,7 @@ used for any security application. MD5 is still useful, for example, as providin
 
 <exam-exercise name="Hash or no hash">
 
-Describe shortly what is symmetric-key encryption, asymmetric-key encryption, and (crytographic) hash functions.
+Describe shortly what is symmetric-key encryption, asymmetric-key encryption, and (cryptographic) hash functions.
 Point out their differences, and provide of each an example in cyber security where they are used.
 
 </exam-exercise>

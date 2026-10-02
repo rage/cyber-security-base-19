@@ -258,7 +258,7 @@ payload (such as passwords sent over plain HTTP) can be read after VPN.
 <exam-exercise name="Protocols">
 
 Describe shortly the function of IP and TCP protocols: what do these protocols provide?
-What is the relationship of these two protocols with link layer protocols and application layer protocols?
+What is the relationship between these two protocols and the link layer protocols and the application layer protocols?
 
 </exam-exercise>
 
@@ -267,7 +267,7 @@ What is the relationship of these two protocols with link layer protocols and ap
 
 [For this question, read Chapter 21.4. of Security Engineering, 3rd ed. by Ross Anderson]
 
-Explain shortly the following concepts and their relationships with each other: firewall, IP-level packet filtering,
+Explain shortly the following concepts and their relationships with each other: firewall, packet filtering based on IP protocol,
 application proxy, egress filtering.
 
 </exam-exercise>
