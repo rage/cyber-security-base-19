@@ -94,6 +94,7 @@ Make sure that (these are the most common reasons for project being rejected)
 - The flaws are placed in the correct categories, especially insecure design is problematic and should be avoided.
 - There is a backend, and the flaws/fixes occur in the backend. Remember that the user can manipulate the frontend as much as possible.
 - The website makes (some) sense as a website: the website is not just a static collection of flaws, and the users can enter and store some information.
+- You have done peer reviews properly, commenting on every flaw. Vacuous peer reviews lead to rejections.
 
 
 Note that essay is not accepted immediately as it needs to be approved by the course staff.
