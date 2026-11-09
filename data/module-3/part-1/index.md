@@ -147,7 +147,7 @@ from other sources is not allowed. Copy-pasting text from other sources and pret
 it to be your own counts as plagiarism.
 [Plagiarism](https://studies.helsinki.fi/instructions/article/what-cheating-and-plagiarism) is not
 allowed under any circumstances, and will have consequences when caught.
-See [here](https://cybersecuritybase.mooc.fi/rubric#heading-on-the-usage-of-llm) regarding the usage of LLMs.
+See [here](https://cybersecuritybase.mooc.fi/llm) regarding the usage of LLMs.
 
 ### Peer reviewing essays
 
